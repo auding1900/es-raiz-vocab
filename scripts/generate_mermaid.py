@@ -85,6 +85,10 @@ ROOT_NODE_STYLE: Tuple[str, str] = ("#bbdefb", "#1565c0")
 
 GENERATED_MARK = "<!-- 由 scripts/generate_mermaid.py 自动生成，请勿手工编辑 -->"
 
+# Mermaid 默认 maxTextSize = 50000 字符，超过后 GitHub / 浏览器会直接显示
+# “Maximum text size in diagram exceeded”。留出余量后按此阈值告警。
+MAX_DIAGRAM_CHARS = 45000
+
 FORBIDDEN_KEYS = frozenset(
     {
         "definition",
@@ -592,6 +596,33 @@ def _mermaid(diagram: Sequence[str]) -> str:
     return "\n".join(["```mermaid"] + list(diagram) + ["```"])
 
 
+def _diagram(
+    dataset: Dataset, names: Iterable[str], relations: Sequence[Relation], levels: Dict[str, Optional[str]]
+) -> List[str]:
+    """拼一张完整的 graph LR 图（节点 + 边 + 样式 + click）。"""
+    roots = {root.id: root for root in dataset.raices}
+    names = list(names)
+    lines: List[str] = ["graph LR"]
+    lines.extend(_declare_nodes(dataset, names, levels))
+    edges, styles = _edge_block(dataset, relations, roots)
+    lines.extend(edges)
+    lines.extend(styles)
+    lines.extend(_class_defs())
+    lines.extend(_click_lines(dataset, [name for name in names if name not in roots]))
+    return lines
+
+
+def _size_guard(label: str, diagram: Sequence[str]) -> None:
+    """单张图超过 mermaid 上限时告警（不阻断生成）。"""
+    size = len("\n".join(diagram))
+    if size > MAX_DIAGRAM_CHARS:
+        warn(
+            "图「{0}」{1} 字符，超过阈值 {2}；mermaid 默认 maxTextSize=50000，需要继续拆分".format(
+                label, size, MAX_DIAGRAM_CHARS
+            )
+        )
+
+
 # ---------------------------------------------------------------------------
 # 渲染：页面
 # ---------------------------------------------------------------------------
@@ -607,22 +638,15 @@ def _link_table(dataset: Dataset, words: Sequence[str]) -> str:
 
 
 def render_root_tree_page(dataset: Dataset) -> str:
-    roots = {root.id: root for root in dataset.raices}
+    """每个词根一张 mermaid 图：单图过大时浏览器 / GitHub 会拒绝渲染。"""
     levels = word_levels(dataset)
-
-    word_names = sorted(
+    roots = {root.id: root for root in dataset.raices}
+    grouped, orphan = _blocks_by_root(dataset)
+    all_words = sorted(
         {rel.target for rel in dataset.relations}
         | {rel.source for rel in dataset.relations if rel.source not in roots},
         key=sort_key,
     )
-
-    diagram: List[str] = ["graph LR"]
-    diagram.extend(_declare_nodes(dataset, list(roots) + word_names, levels))
-    edges, styles = _edge_block(dataset, dataset.relations, roots)
-    diagram.extend(edges)
-    diagram.extend(styles)
-    diagram.extend(_class_defs())
-    diagram.extend(_click_lines(dataset, word_names))
 
     lines = [
         GENERATED_MARK,
@@ -630,19 +654,64 @@ def render_root_tree_page(dataset: Dataset) -> str:
         "# 词根树导图",
         "",
         "- 词根 {0} 个 · 单词 {1} 个 · 关系 {2} 条".format(
-            len(dataset.raices), len(word_names), len(dataset.relations)
+            len(dataset.raices), len(all_words), len(dataset.relations)
         ),
+        "- 每个词根一张图，避免单图超过 mermaid 的 `maxTextSize` 上限",
         "- 线型：`derivar` 实线黑 · `asociar` 虚线 `#4488bb` · `confundir` 虚线 `#dd4444`",
-        "- 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用下方链接表）",
-        "",
-        _mermaid(diagram),
-        "",
-        "## 单词链接表",
-        "",
-        _link_table(dataset, word_names),
+        "- 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用文末链接表）",
         "",
     ]
+
+    for root in sorted(dataset.raices, key=lambda item: sort_key(item.id)):
+        relations = grouped.get(root.id, [])
+        names = {root.id} | {rel.source for rel in relations} | {rel.target for rel in relations}
+        words = sorted((name for name in names if name not in roots), key=sort_key)
+        lines.append("## `{0}` — {1}".format(root.root_name, root.latin_origin))
+        lines.append("")
+        if words:
+            lines.append("单词 {0} 个 · 关系 {1} 条".format(len(words), len(relations)))
+            lines.append("")
+        diagram = _diagram(dataset, names, relations, levels)
+        _size_guard(root.id, diagram)
+        lines.append(_mermaid(diagram))
+        lines.append("")
+
+    if orphan:
+        names = {rel.source for rel in orphan} | {rel.target for rel in orphan}
+        lines.extend(
+            [
+                "## 未绑定词根",
+                "",
+                "以下单词只出现在联想 / 易混关系中，尚未归入任何词根。",
+                "",
+            ]
+        )
+        diagram = _diagram(dataset, names, orphan, levels)
+        _size_guard("orphan", diagram)
+        lines.append(_mermaid(diagram))
+        lines.append("")
+
+    lines.extend(["## 单词链接表", "", _link_table(dataset, all_words), ""])
     return "\n".join(lines)
+
+
+def _blocks_by_root(dataset: Dataset) -> Tuple[Dict[str, List[Relation]], List[Relation]]:
+    """把关系按词根分组；无法归属词根的边进入 orphan 列表。"""
+    root_ids = dataset.root_ids
+    grouped: Dict[str, List[Relation]] = {root.id: [] for root in dataset.raices}
+    orphan: List[Relation] = []
+    for relation in dataset.relations:
+        if relation.rel_type == "derivar":
+            owner = root_of_word(dataset, relation.target)
+            if owner is None and relation.source in root_ids:
+                owner = relation.source
+        else:
+            owner = root_of_word(dataset, relation.source) or root_of_word(dataset, relation.target)
+        if owner in grouped:
+            grouped[owner].append(relation)
+        else:
+            orphan.append(relation)
+    return grouped, orphan
 
 
 def render_associate_page(dataset: Dataset) -> str:
@@ -653,13 +722,8 @@ def render_associate_page(dataset: Dataset) -> str:
     names = sorted({rel.source for rel in relations} | {rel.target for rel in relations}, key=sort_key)
 
     if relations:
-        diagram: List[str] = ["graph LR"]
-        diagram.extend(_declare_nodes(dataset, names, levels))
-        edges, styles = _edge_block(dataset, relations, roots)
-        diagram.extend(edges)
-        diagram.extend(styles)
-        diagram.extend(_class_defs())
-        diagram.extend(_click_lines(dataset, [name for name in names if name not in roots]))
+        diagram = _diagram(dataset, names, relations, levels)
+        _size_guard("associate_graph", diagram)
         body = _mermaid(diagram)
     else:
         body = "（暂无 `asociar` / `confundir` 关系：在 `data/relations.yaml` 中补充后可重新生成。）"
