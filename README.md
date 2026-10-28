@@ -71,6 +71,7 @@ python3 scripts/generate_mermaid.py                   # 产物写入 mindmaps/ �
 ```
 es-raiz-vocab/
 ├── README.md
+├── CHANGELOG.md
 ├── LICENSE
 ├── data/
 │   ├── raices.yaml      # 词根节点：id / root_name / latin_origin
@@ -288,3 +289,5 @@ python3 scripts/generate_mermaid.py
 本项目以 [MIT License](LICENSE) 授权，可自由使用、修改、分发，请保留版权声明。
 
 仓库**仅包含单词关系图谱**（词根、词形、关系、级别、拉丁词源），**不含任何词典内容**：不提供释义、例句、译文或中文解释。释义、例句、辨析请使用页内豆包链接，由豆包实时生成，生成结果与本仓库无关，请自行核对来源。单词词形与拉丁词源属公共语言事实；若你认为某处内容侵权，请开 issue，我们会移除。
+
+版本变更记录见 [CHANGELOG.md](CHANGELOG.md)。
