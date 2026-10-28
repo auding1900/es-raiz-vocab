@@ -1,0 +1,75 @@
+# ============================================================================
+# 关系库 —— relations.yaml
+# ============================================================================
+# 每条记录 = 一条有向边；同时是“单词节点”的声明处：
+# 单词通过 target 出现，CEFR 级别挂在派生边上。
+#
+# 字段（白名单，多写/少写都会报错）：
+#   source           起点：raices.yaml 中的词根 id，或已在本文件出现过的单词
+#   target           终点：单词词形（不能是词根 id）
+#   rel_type         derivar | asociar | confundir
+#   cefr_level       A1 A2 B1 B2 C1 C2；未标注写 null
+#   prompt_template  跳转豆包的查询模板，变量 {word} {root}；写 null 使用默认模板
+#
+# 默认 prompt 模板（{word} = 单词词形，{root} = 所属词根）：
+#   西班牙语{word}，词根{root}，解释词义、DELE等级、语体、常用搭配、近义词辨析，
+#   并且给2条来自公版西语文本（Wikisource/古登堡）的自然例句，
+#   例句优先选用现代标准西班牙语，古体例句标注【arcaísmo】
+#
+# 关系类型与图中线型：
+#   derivar   词根派生              实线 -->
+#   asociar   同义 / 语义联想        虚线 -.->
+#   confundir 形近易混              粗线 ==>
+#
+# 约束：单词节点不带中文释义、不带例句。只有 prompt_template 允许中文
+#       （它是查询指令，不是词典内容）。
+# ============================================================================
+
+version: 2
+
+relations:
+  # ---- 派生关系：词根 duc -> 单词，CEFR 级别挂在边上 ----
+  - source: duc
+    target: conducir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: duc
+    target: reducir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: duc
+    target: deducir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: duc
+    target: inducir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ---- 语义联想：可跨词族，写一条即可（渲染时按无向边处理）----
+  - source: reducir
+    target: mermar
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  # ---- 形近易混样例（按需启用）----
+  # - source: deducir
+  #   target: seducir
+  #   rel_type: confundir
+  #   cefr_level: C1
+  #   prompt_template: null
+
+  # ---- 单条关系覆盖默认模板的写法 ----
+  # - source: duc
+  #   target: inducir
+  #   rel_type: derivar
+  #   cefr_level: C1
+  #   prompt_template: "西班牙语{word}，词根{root}，只比较 inducir / deducir / reducir 的构词差异，并给1条公版文本例句"
