@@ -22,13 +22,324 @@
 #   confundir 形近易混              粗线 ==>
 #
 # 约束：单词节点不带中文释义、不带例句。只有 prompt_template 允许中文
-#       （它是查询指令，不是词典内容）。
+#       （它是查询指令，不是词典内容）；本文件的注释不受此限。
 # ============================================================================
 
 version: 2
 
 relations:
-  # ---- 派生关系：词根 duc -> 单词，CEFR 级别挂在边上 ----
+  # ==========================================================================
+  # ag（agere）——行动 / 驱动
+  # ==========================================================================
+  - source: ag
+    target: agenda
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ag
+    target: acción
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ag
+    target: actividad
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ag
+    target: agente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ag
+    target: activo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ag
+    target: actor
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ag
+    target: ágil
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ag
+    target: agilidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # pon（ponere）——放置
+  # ==========================================================================
+  - source: pon
+    target: poner
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: pon
+    target: posición
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pon
+    target: proponer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pon
+    target: propuesta
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pon
+    target: suponer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pon
+    target: exponer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pon
+    target: exposición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pon
+    target: imponer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pon
+    target: componer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # cap（capere）——抓取 / 拿取
+  # ==========================================================================
+  - source: cap
+    target: aceptar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cap
+    target: recibir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cap
+    target: capacidad
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cap
+    target: capaz
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cap
+    target: participar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cap
+    target: caber
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cap
+    target: capturar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cap
+    target: captar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cap
+    target: concebir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cap
+    target: percibir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # vid（videre）——看见
+  # ==========================================================================
+  - source: vid
+    target: ver
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: vid
+    target: vista
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: vid
+    target: televisión
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vid
+    target: visible
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vid
+    target: visión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vid
+    target: revisar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vid
+    target: evidente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vid
+    target: visual
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vid
+    target: revisión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vid
+    target: prever
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vid
+    target: evidencia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # mit（mittere）——送出 / 派遣
+  # ==========================================================================
+  - source: mit
+    target: permiso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mit
+    target: prometer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mit
+    target: misión
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mit
+    target: transmitir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mit
+    target: admitir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mit
+    target: permitir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mit
+    target: promesa
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mit
+    target: emitir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mit
+    target: emisión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mit
+    target: transmisión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mit
+    target: omitir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # duc（ducere）——引导 / 带领
+  # ==========================================================================
   - source: duc
     target: conducir
     rel_type: derivar
@@ -53,23 +364,120 @@ relations:
     cefr_level: C1
     prompt_template: null
 
-  # ---- 语义联想：可跨词族，写一条即可（渲染时按无向边处理）----
+  # ==========================================================================
+  # fac（facere）——做 / 制造
+  # ==========================================================================
+  - source: fac
+    target: hacer
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: fac
+    target: hecho
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: fácil
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: difícil
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: fábrica
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: perfecto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: efecto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fac
+    target: fabricar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fac
+    target: defecto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fac
+    target: afecto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  # ==========================================================================
+  # 语义联想（asociar）——适量，跨词族优先
+  # ==========================================================================
   - source: reducir
     target: mermar
     rel_type: asociar
     cefr_level: null
     prompt_template: null
 
-  # ---- 形近易混样例（按需启用）----
-  # - source: deducir
-  #   target: seducir
-  #   rel_type: confundir
-  #   cefr_level: C1
-  #   prompt_template: null
+  - source: componer
+    target: fabricar
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: percibir
+    target: ver
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: aceptar
+    target: recibir
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: fácil
+    target: difícil
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  # ==========================================================================
+  # 形近易混（confundir）——仅保留高频真实易混对
+  # ==========================================================================
+  - source: efecto
+    target: afecto
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: emitir
+    target: omitir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
 
   # ---- 单条关系覆盖默认模板的写法 ----
-  # - source: duc
-  #   target: inducir
+  # - source: mit
+  #   target: omitir
   #   rel_type: derivar
   #   cefr_level: C1
-  #   prompt_template: "西班牙语{word}，词根{root}，只比较 inducir / deducir / reducir 的构词差异，并给1条公版文本例句"
+  #   prompt_template: "西班牙语{word}，词根{root}，只比较 emitir / omitir / admitir 的构词差异，并给1条公版文本例句"

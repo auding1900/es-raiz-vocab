@@ -3,27 +3,52 @@
 # ============================================================================
 # 每条记录 = 一个“词根节点”。只有三个字段（脚本按白名单校验，多写/少写都报错）：
 #
-#   id            唯一标识，同时用作 mindmaps/<id>.md 的文件名
-#   root_name     词根书写形式（不含连字符；变体写法见注释说明）
+#   id            唯一短代号，同时用作 mermaid 节点 id
+#   root_name     词根书写形式（不含连字符）
 #   latin_origin  拉丁本源：拉丁词形 + 本源含义（英文短注）
 #                 ⚠ 这是“词根本义”，不是任何现代单词的释义
 #
 # 注意：本文件不列单词。单词节点统一在 relations.yaml 的 target 处声明，
 #       CEFR 级别挂在派生边上，避免同一份数据两处维护。
 #
-# 禁止出现：现代词义 / 例句 / 翻译 / 中文解释。
+# 禁止出现：现代词义 / 例句 / 翻译 / 中文解释（中文只允许出现在注释里）。
 # 词义、语体、搭配、例句一律跳转豆包查询（见 README）。
 # ============================================================================
 
 version: 2
 
 raices:
-  # ---- 样例词根：duc（变体 duct-）----
+  # ---- 行动 / 驱动（A1 区间）----
+  - id: ag
+    root_name: ag
+    latin_origin: "agere (to drive, to act)"
+
+  # ---- 放置（A1 区间）----
+  - id: pon
+    root_name: pon
+    latin_origin: "ponere (to place, to put)"
+
+  # ---- 抓取 / 拿取（A1 区间）----
+  - id: cap
+    root_name: cap
+    latin_origin: "capere (to take, to seize)"
+
+  # ---- 看见（A1 区间）----
+  - id: vid
+    root_name: vid
+    latin_origin: "videre (to see)"
+
+  # ---- 送出 / 派遣（A2 区间）----
+  - id: mit
+    root_name: mit
+    latin_origin: "mittere (to send, to let go)"
+
+  # ---- 引导 / 带领（A2 区间）----
   - id: duc
     root_name: duc
     latin_origin: "ducere (to lead)"
 
-  # ---- 新增词根请复制上面的结构 ----
-  # - id: port
-  #   root_name: port
-  #   latin_origin: "portare (to carry)"
+  # ---- 做 / 制造（A1 区间）----
+  - id: fac
+    root_name: fac
+    latin_origin: "facere (to make, to do)"
