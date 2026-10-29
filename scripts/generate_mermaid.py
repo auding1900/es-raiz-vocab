@@ -113,9 +113,14 @@ FORBIDDEN_KEYS = frozenset(
 )
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-ALLOWED_ROOT_KEYS = ("id", "root_name", "latin_origin")
+ALLOWED_ROOT_KEYS = ("id", "root_name", "latin_origin", "batch")
 ALLOWED_AFIJO_KEYS = ("id", "affix", "meaning", "type")
 ALLOWED_RELATION_KEYS = ("source", "target", "rel_type", "cefr_level", "prompt_template")
+
+# 未标注 batch 的词根（v0.1.0–v0.12.0 历史数据）统一归入此批次
+DEFAULT_BATCH = "v0"
+# batch 排序：v0 最前，其次按批次字母+数字自然序（b9 < b10）
+BATCH_SORT_PATTERN = re.compile(r"^([a-z]*)(\d*)$")
 
 _CJK_RE = re.compile(r"[\u3000-\u303f\u3400-\u4dbf\u4e00-\u9fff\uff00-\uffef]")
 
@@ -141,6 +146,7 @@ class Root:
     id: str
     root_name: str
     latin_origin: str
+    batch: str = DEFAULT_BATCH
 
 
 @dataclasses.dataclass(frozen=True)
@@ -323,6 +329,7 @@ def load_dataset(data_dir: Path) -> Dataset:
                 id=_require_str(mapping, "id", where),
                 root_name=_require_str(mapping, "root_name", where),
                 latin_origin=_require_str(mapping, "latin_origin", where),
+                batch=(_optional_str(mapping, "batch", where) or DEFAULT_BATCH),
             )
         )
 
@@ -397,6 +404,8 @@ def validate(dataset: Dataset) -> List[str]:
             errors.append("raices: 词根 id 重复：{0!r}".format(root.id))
         if not re.match(r"^[a-z0-9][a-z0-9_-]*$", root.id):
             errors.append("raices: 词根 id {0!r} 只能包含小写字母/数字/下划线/连字符".format(root.id))
+        if not re.match(r"^[a-z0-9][a-z0-9_-]*$", root.batch):
+            errors.append("raices: 词根 {0!r} 的 batch {1!r} 只能包含小写字母/数字/下划线/连字符".format(root.id, root.batch))
         roots[root.id] = root
 
     afijo_ids: set = set()
@@ -643,8 +652,72 @@ def _link_table(dataset: Dataset, words: Sequence[str]) -> str:
     return md_table(["单词", "级别", "词根", "豆包"], rows)
 
 
-def render_root_tree_page(dataset: Dataset) -> str:
-    """每个词根一张 mermaid 图：单图过大时浏览器 / GitHub 会拒绝渲染。"""
+def _batch_key(batch: str) -> Tuple[int, str, int, str]:
+    """批次排序键：v0 最前，b9 排在 b10 之前。"""
+    if batch == DEFAULT_BATCH:
+        return (0, "", 0, "")
+    match = BATCH_SORT_PATTERN.match(batch)
+    if match is None:
+        return (1, batch, 0, batch)
+    letters, digits = match.group(1), match.group(2)
+    return (1, letters, int(digits) if digits else 0, batch)
+
+
+def root_file_name(root: Root) -> str:
+    """词根导图文件名（相对 mindmaps/）：raiz_<批次>_<词根>.md。"""
+    return "raiz_{0}_{1}.md".format(root.batch, root.id)
+
+
+def _family(dataset: Dataset, root: Root, grouped: Dict[str, List[Relation]]) -> Tuple[List[str], List[Relation]]:
+    """单个词族涉及的所有节点名与关系。"""
+    relations = grouped.get(root.id, [])
+    names = {root.id} | {rel.source for rel in relations} | {rel.target for rel in relations}
+    return sorted(names, key=sort_key), relations
+
+
+def render_root_page(dataset: Dataset, root: Root) -> str:
+    """单个词族一页一图：控制单文件体量，避免 mermaid maxTextSize 与 GitHub 渲染超时。"""
+    levels = word_levels(dataset)
+    roots = {root.id: root for root in dataset.raices}
+    grouped, _ = _blocks_by_root(dataset)
+    names, relations = _family(dataset, root, grouped)
+    words = sorted((name for name in names if name not in roots), key=sort_key)
+
+    derived = sum(1 for rel in relations if rel.rel_type == "derivar")
+    linked = len(relations) - derived
+
+    lines = [
+        GENERATED_MARK,
+        "",
+        "# `{0}` — {1}".format(root.root_name, root.latin_origin),
+        "",
+        md_table(
+            ["词根 id", "批次", "派生单词", "本族关系"],
+            [("`{0}`".format(root.id), root.batch, len(words), "{0}（派生 {1} · 联想 {2}）".format(len(relations), derived, linked))],
+        ),
+        "",
+        "- 线型：`derivar` 实线（词根派生）· `asociar` 蓝色虚线（同族联想）· `confundir` 红色虚线（易混）",
+        "- 节点标签只含单词与 CEFR 级别，不含词义；点击节点或用文末链接表查豆包",
+        "- 索引：[返回词根索引](root_tree.md)",
+        "",
+    ]
+
+    if relations:
+        diagram = _diagram(dataset, names, relations, levels)
+        _size_guard(root.id, diagram)
+        lines.append(_mermaid(diagram))
+        lines.append("")
+    else:
+        lines.extend(["本词根暂无派生关系。", ""])
+
+    if words:
+        lines.extend(["## 单词链接表", "", _link_table(dataset, words), ""])
+
+    return "\n".join(lines)
+
+
+def render_root_index_page(dataset: Dataset) -> str:
+    """词根索引：按批次分组，链到每个词根的独立导图页。"""
     levels = word_levels(dataset)
     roots = {root.id: root for root in dataset.raices}
     grouped, orphan = _blocks_by_root(dataset)
@@ -654,33 +727,35 @@ def render_root_tree_page(dataset: Dataset) -> str:
         key=sort_key,
     )
 
+    batches: Dict[str, List[Root]] = {}
+    for root in dataset.raices:
+        batches.setdefault(root.batch, []).append(root)
+
     lines = [
         GENERATED_MARK,
         "",
-        "# 词根树导图",
+        "# 词根索引",
         "",
         "- 词根 {0} 个 · 单词 {1} 个 · 关系 {2} 条".format(
             len(dataset.raices), len(all_words), len(dataset.relations)
         ),
-        "- 每个词根一张图，避免单图超过 mermaid 的 `maxTextSize` 上限",
-        "- 线型：`derivar` 实线黑 · `asociar` 虚线 `#4488bb` · `confundir` 虚线 `#dd4444`",
-        "- 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用文末链接表）",
+        "- **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大",
+        "- 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线",
+        "- 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）",
         "",
     ]
 
-    for root in sorted(dataset.raices, key=lambda item: sort_key(item.id)):
-        relations = grouped.get(root.id, [])
-        names = {root.id} | {rel.source for rel in relations} | {rel.target for rel in relations}
-        words = sorted((name for name in names if name not in roots), key=sort_key)
-        lines.append("## `{0}` — {1}".format(root.root_name, root.latin_origin))
-        lines.append("")
-        if words:
-            lines.append("单词 {0} 个 · 关系 {1} 条".format(len(words), len(relations)))
-            lines.append("")
-        diagram = _diagram(dataset, names, relations, levels)
-        _size_guard(root.id, diagram)
-        lines.append(_mermaid(diagram))
-        lines.append("")
+    for batch in sorted(batches, key=_batch_key):
+        group = sorted(batches[batch], key=lambda item: sort_key(item.id))
+        label = "历史词根（v0.1.0–v0.12.0）" if batch == DEFAULT_BATCH else "批次 `{0}`".format(batch)
+        lines.extend(["## {0}".format(label), ""])
+        rows = []
+        for root in group:
+            names, relations = _family(dataset, root, grouped)
+            count = sum(1 for name in names if name not in roots)
+            link = "[{0}]({1})".format(root_file_name(root), root_file_name(root))
+            rows.append(("`{0}`".format(root.id), root.root_name, root.latin_origin, count, len(relations), link))
+        lines.extend([md_table(["词根", "root_name", "拉丁本源", "单词", "关系", "导图"], rows), ""])
 
     if orphan:
         names = {rel.source for rel in orphan} | {rel.target for rel in orphan}
@@ -688,16 +763,36 @@ def render_root_tree_page(dataset: Dataset) -> str:
             [
                 "## 未绑定词根",
                 "",
-                "以下单词只出现在联想 / 易混关系中，尚未归入任何词根。",
+                "以下单词只出现在联想 / 易混关系中，尚未归入任何词根：[raiz_sin_raiz.md](raiz_sin_raiz.md)。",
+                "",
+                _link_table(dataset, sorted(names - roots.keys(), key=sort_key)),
                 "",
             ]
         )
+
+    return "\n".join(lines)
+
+
+def render_orphan_page(dataset: Dataset) -> str:
+    """未归属词根的联想 / 易混关系单独成页。"""
+    levels = word_levels(dataset)
+    roots = {root.id: root for root in dataset.raices}
+    _, orphan = _blocks_by_root(dataset)
+    lines = [
+        GENERATED_MARK,
+        "",
+        "# 未绑定词根",
+        "",
+        "以下单词只出现在联想 / 易混关系中，尚未归入任何词根。",
+        "",
+    ]
+    if orphan:
+        names = {rel.source for rel in orphan} | {rel.target for rel in orphan}
         diagram = _diagram(dataset, names, orphan, levels)
         _size_guard("orphan", diagram)
-        lines.append(_mermaid(diagram))
-        lines.append("")
-
-    lines.extend(["## 单词链接表", "", _link_table(dataset, all_words), ""])
+        lines.extend([_mermaid(diagram), ""])
+        lines.extend(["## 单词链接表", "", _link_table(dataset, sorted(names - roots.keys(), key=sort_key)), ""])
+    lines.extend(["- 索引：[返回词根索引](root_tree.md)", ""])
     return "\n".join(lines)
 
 
@@ -766,46 +861,85 @@ def _associate_diagrams(
     return parts
 
 
-def render_associate_page(dataset: Dataset) -> str:
-    """联想网状图：asociar 与 confundir 分开；单图过长时再按词根首字母拆分。"""
+def _label_slug(label: str) -> str:
+    """分块标签 -> 文件名片段：`A–L 1/3` -> `a-l-1`，`未归属` -> `otros`。"""
+    if not label:
+        return "all"
+    text = label.strip().lower()
+    text = text.replace("–", "-").replace("—", "-").replace(" ", "-").replace("/", "-")
+    text = text.replace("未归属", "otros")
+    text = re.sub(r"[^a-z0-9-]+", "", text)
+    text = re.sub(r"-{2,}", "-", text).strip("-")
+    return text or "otros"
+
+
+def _associate_page(
+    dataset: Dataset, rel_type: str, label: str, subset: Sequence[Relation], diagram: Sequence[str], total: int
+) -> str:
+    """联想 / 易混的单个分块页：一块一图。"""
+    color = EDGE_STYLE[rel_type][1].split(",")[0].replace("stroke:", "")
+    title = "语义联想（`asociar`）" if rel_type == "asociar" else "形近易混（`confundir`）"
+    names = sorted({rel.source for rel in subset} | {rel.target for rel in subset}, key=sort_key)
     levels = word_levels(dataset)
-    sections: List[str] = []
-    rows: List[Tuple[str, str, str, str, str]] = []
+
+    lines = [
+        GENERATED_MARK,
+        "",
+        "# {0}{1}".format(title, " · 词根 {0}".format(label) if label else ""),
+        "",
+        "- 虚线 `{0}` · 本页关系 {1} 条 / 该类型共 {2} 条 · 涉及单词 {3} 个".format(
+            color, len(subset), total, len(names)
+        ),
+        "- 索引：[联想网状图总览](associate_graph.md)",
+        "",
+        _mermaid(diagram),
+        "",
+        "## 关系清单",
+        "",
+    ]
+    rows = [(rel.source, rel.target) for rel in subset]
+    lines.extend([md_table(["起点", "终点"], rows), ""])
+
+    if names:
+        lines.extend(["## 单词与豆包查询", "", _link_table(dataset, names), ""])
+    return "\n".join(lines)
+
+
+def render_associate_outputs(dataset: Dataset) -> Dict[str, str]:
+    """联想网状图：asociar / confundir 分开，每个分块独立成文件，索引页只放链接与清单。"""
+    levels = word_levels(dataset)
+    outputs: Dict[str, str] = {}
+    index_rows: List[Tuple[str, str, str, int]] = []
+    list_rows: List[Tuple[str, str, str]] = []
     total_edges = 0
+    total_blocks = 0
 
     for rel_type in ("asociar", "confundir"):
         relations = [rel for rel in dataset.relations if rel.rel_type == rel_type]
+        if not relations:
+            continue
+        total_edges += len(relations)
         color = EDGE_STYLE[rel_type][1].split(",")[0].replace("stroke:", "")
         title = "语义联想（`asociar`）" if rel_type == "asociar" else "形近易混（`confundir`）"
 
-        if not relations:
-            sections.extend(["## {0} — 虚线 `{1}`".format(title, color), "", "（暂无此类关系）", ""])
-            continue
-
         for label, subset, diagram in _associate_diagrams(dataset, relations, levels):
-            heading = "## {0} — 虚线 `{1}`".format(title, color)
-            if label:
-                heading += " · 词根 {0}".format(label)
-            names = {rel.source for rel in subset} | {rel.target for rel in subset}
-            sections.append(heading)
-            sections.append("")
-            sections.append("关系 {0} 条 · 涉及单词 {1} 个".format(len(subset), len(names)))
-            sections.append("")
-            _size_guard("associate_graph_{0}{1}".format(rel_type, "_" + label if label else ""), diagram)
-            sections.append(_mermaid(diagram))
-            sections.append("")
-
-        total_edges += len(relations)
-        for rel in relations:
-            rows.append(
+            file_name = "{0}_{1}.md".format(rel_type, _label_slug(label))
+            _size_guard(file_name, diagram)
+            outputs["mindmaps/{0}".format(file_name)] = _associate_page(
+                dataset, rel_type, label, subset, diagram, len(relations)
+            )
+            total_blocks += 1
+            index_rows.append(
                 (
-                    rel.rel_type,
-                    rel.source,
-                    rel.target,
-                    "[豆包]({0})".format(word_link(dataset, rel.source)),
-                    "[豆包]({0})".format(word_link(dataset, rel.target)),
+                    "[{0}]({0})".format(file_name),
+                    title,
+                    label or "全部",
+                    len(subset),
                 )
             )
+
+        for rel in relations:
+            list_rows.append((rel.rel_type, rel.source, rel.target))
 
     lines = [
         GENERATED_MARK,
@@ -813,14 +947,23 @@ def render_associate_page(dataset: Dataset) -> str:
         "# 联想网状图（asociar + confundir）",
         "",
         "- 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`",
-        "- 两类关系分开渲染；单图超过 {0} 字符时再按词根首字母（A–L / M–Z）拆分".format(SPLIT_THRESHOLD),
-        "- 关系 {0} 条".format(total_edges),
+        "- 两类关系分开渲染；单图超过 {0} 字符时按词根首字母（A–L / M–Z）拆，仍超则按 {1} 条关系切片".format(
+            SPLIT_THRESHOLD, CHUNK_EDGES
+        ),
+        "- **每个分块独立成文件**，共 {0} 张图 / 关系 {1} 条".format(total_blocks, total_edges),
+        "- 词根索引：[root_tree.md](root_tree.md)",
+        "",
+        "## 分块导航",
+        "",
+        md_table(["文件", "类型", "范围", "关系"], index_rows),
+        "",
+        "## 关系清单",
+        "",
+        md_table(["关系", "起点", "终点"], list_rows),
         "",
     ]
-    lines.extend(sections)
-    if rows:
-        lines.extend(["## 关系清单", "", md_table(["关系", "起点", "终点", "起点查询", "终点查询"], rows), ""])
-    return "\n".join(lines)
+    outputs["mindmaps/associate_graph.md"] = "\n".join(lines)
+    return outputs
 
 
 def _level_nav(current: str) -> str:
@@ -868,9 +1011,12 @@ def render_level_page(level: str, dataset: Dataset) -> str:
 def render_outputs(dataset: Dataset) -> Dict[str, str]:
     """返回 {相对仓库根的路径: 内容}。"""
     outputs: Dict[str, str] = {
-        "mindmaps/root_tree.md": render_root_tree_page(dataset),
-        "mindmaps/associate_graph.md": render_associate_page(dataset),
+        "mindmaps/root_tree.md": render_root_index_page(dataset),
+        "mindmaps/raiz_sin_raiz.md": render_orphan_page(dataset),
     }
+    outputs.update(render_associate_outputs(dataset))
+    for root in dataset.raices:
+        outputs["mindmaps/{0}".format(root_file_name(root))] = render_root_page(dataset, root)
     for level in LEVELS:
         outputs["levels/{0}.md".format(level)] = render_level_page(level, dataset)
     return outputs

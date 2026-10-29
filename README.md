@@ -74,12 +74,13 @@ es-raiz-vocab/
 ├── CHANGELOG.md
 ├── LICENSE
 ├── data/
-│   ├── raices.yaml      # 词根节点：id / root_name / latin_origin
+│   ├── raices.yaml      # 词根节点：id / root_name / latin_origin / batch
 │   ├── afijos.yaml      # 词缀节点：id / affix / meaning / type
 │   └── relations.yaml   # 关系边：source / target / rel_type / cefr_level / prompt_template
 ├── scripts/
 │   └── generate_mermaid.py   # 读取 yaml，渲染 mindmaps/ 与 levels/ 下的静态 md
-├── mindmaps/            # 产物：root_tree.md（词根树） + associate_graph.md（联想网状图）
+├── mindmaps/            # 产物：root_tree.md（索引）+ raiz_<批次>_<词根>.md（一词根一文件一图）
+│                        #       + associate_graph.md（联想索引）+ asociar_*.md / confundir_*.md
 └── levels/              # 产物：A1.md ~ C2.md 分级清单
 ```
 
@@ -100,13 +101,19 @@ raices:
   - id: duc
     root_name: duc
     latin_origin: "ducere (to lead)"
+
+  - id: pac
+    root_name: pac
+    latin_origin: "pax, pacis (peace)"
+    batch: b9
 ```
 
 | 字段 | 必填 | 含义 |
 | --- | --- | --- |
-| `id` | 是 | 词根唯一标识，同时用于节点 id |
+| `id` | 是 | 词根唯一标识，同时用于节点 id 与文件名 |
 | `root_name` | 是 | 词根书写形式（不含连字符） |
 | `latin_origin` | 是 | 拉丁本源：拉丁词形 + 本义（英文短注），**不是单词释义** |
+| `batch` | 否 | 批次号（`b9`、`c1` …），决定文件名 `raiz_<batch>_<id>.md` 与索引分组；省略则归入 `v0` |
 
 本文件不列单词——单词统一在关系文件的 `target` 处声明。
 
@@ -160,8 +167,11 @@ relations:
 
 | 产物 | 内容 |
 | --- | --- |
-| [`mindmaps/root_tree.md`](mindmaps/root_tree.md) | `graph LR` 词根树，**每个词根一张图**（避免单图超出 mermaid 大小上限）：词根节点显示 `root_name` + `latin_origin`，单词节点显示 `单词` + 级别，全部单词节点带豆包 `click` |
-| [`mindmaps/associate_graph.md`](mindmaps/associate_graph.md) | 联想网状图：`asociar` / `confundir` 分开；单图超 25000 字符时按词根首字母（A–L / M–Z）拆，仍超则按 8 条关系切片，附关系清单 |
+| [`mindmaps/root_tree.md`](mindmaps/root_tree.md) | 词根索引：按批次分组，列出每个词根的单词数 / 关系数并链接到各自的导图页，**本页不含图** |
+| `mindmaps/raiz_<批次>_<词根>.md`（如 [`raiz_b9_pac.md`](mindmaps/raiz_b9_pac.md)） | **一个词根一个文件、一张图**：`graph LR`，词根节点显示 `root_name` + `latin_origin`，单词节点显示 `单词` + 级别，全部单词节点带豆包 `click`，页末附本族单词链接表 |
+| [`mindmaps/raiz_sin_raiz.md`](mindmaps/raiz_sin_raiz.md) | 尚未归入任何词根的联想 / 易混单词 |
+| [`mindmaps/associate_graph.md`](mindmaps/associate_graph.md) | 联想网状图索引：分块导航 + 全部 `asociar` / `confundir` 关系清单 |
+| `mindmaps/asociar_*.md` / `mindmaps/confundir_*.md` | 联想 / 易混的单个分块页，一块一图（超 25000 字符按词根首字母拆，仍超则按 8 条关系切片） |
 | [`levels/A1.md`](levels/A1.md) … [`levels/C2.md`](levels/C2.md) | 分级清单，每行 `单词 \| 词根 \| 豆包` |
 
 关系类型与线型：
@@ -174,7 +184,13 @@ relations:
 
 节点配色：A1 `#e8f5e9` → A2 `#c8e6c9` → B1 `#fff8e1` → B2 `#ffe0b2` → C1 `#ffccbc` → C2 `#ffcdd2`；未标注级别为灰色 `#f5f5f5`；词根为蓝色 `#bbdefb`。
 
-单图上限：mermaid 默认 `maxTextSize` 为 50000 字符，超过后 GitHub 只会显示 `Maximum text size in diagram exceeded`。因此词根树按词根分块；联想图先按关系类型分开，超过 25000 字符时按词根首字母拆分，若单个分桶仍超限则再按 8 条关系切片；脚本对超过 45000 字符的单图会打印告警。
+单图上限：mermaid 默认 `maxTextSize` 为 50000 字符，超过后 GitHub 只会显示 `Maximum text size in diagram exceeded`。因此**每个词根独立成页、一页一图**（B 批次 9 起文件名统一为 `raiz_<批次>_<词根>.md`，历史词根为 `raiz_v0_<词根>.md`）；联想图先按关系类型分开，超过 25000 字符时按词根首字母拆分，若单个分桶仍超限则再按 8 条关系切片，每个分块同样独立成文件；脚本对超过 45000 字符的单图会打印告警。
+
+### 5.1 批次导图索引
+
+新增词根的导图按批次归档，直接点开即可查看，也可在 [`mindmaps/root_tree.md`](mindmaps/root_tree.md) 查看完整索引（含 v0 历史词根）。
+
+<!-- BATCH_INDEX -->
 
 ---
 
@@ -273,7 +289,7 @@ python3 scripts/generate_mermaid.py
 
 9. 先 `--check` 再正式生成；
 10. 产物目录每次清空重建，不要在里面放手工文件；`data/` 与 `mindmaps/`、`levels/` 一起提交；
-11. 生成后抽查三点：新词是否出现在 `root_tree.md`、级别是否落入正确的 `levels/<级别>.md`、点开豆包看 query 里的单词与词根是否对应。
+11. 生成后抽查三点：新词是否出现在对应的 `mindmaps/raiz_<批次>_<词根>.md` 且该页只有一个词族、级别是否落入正确的 `levels/<级别>.md`、点开豆包看 query 里的单词与词根是否对应。
 
 ---
 
