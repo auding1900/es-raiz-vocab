@@ -8,6 +8,18 @@
 
 暂无。
 
+## [0.26.0] - 2026-10-29
+
+数据规模：**197 个词根 / 1264 个单词 / 1348 条关系**。
+
+### Added
+
+- 新增 8 个词根（C 批次 9）：`path`、`dol`、`san`、`cur`、`med`、`vulner`、`contag`、`pest`。
+- 新增 40 条 `derivar` 关系：path 8、dol 5、san 5、cur 6、med 6、vulner 3、contag 3、pest 4。
+- 新增 `asociar`（`sano ↔ enfermo`）与 `confundir`（`medicina ↔ medicamento`）。
+- 数据集达到 1264 个单词 / 1348 条关系（1266 条 `derivar` + 52 条 `asociar` + 30 条 `confundir`）。
+- 级别分布 A1 74 / A2 196 / B1 306 / B2 374 / C1 259 / C2 51，另有 4 个未标注（`mermar`、`muerte`、`enfermo` 等）。
+
 ## [0.25.0] - 2026-10-29
 
 数据规模：**189 个词根 / 1223 个单词 / 1306 条关系**。

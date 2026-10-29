@@ -7953,10 +7953,280 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 path（pati）——承受、病痛
+  # ==========================================================================
+  - source: path
+    target: simpático
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: path
+    target: paciente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: path
+    target: paciencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: path
+    target: simpatía
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: path
+    target: pasión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: path
+    target: apasionado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: path
+    target: compatible
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: path
+    target: patético
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 dol（dolor）——疼痛
+  # ==========================================================================
+  - source: dol
+    target: dolor
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dol
+    target: doler
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dol
+    target: doloroso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dol
+    target: duelo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dol
+    target: dolencia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 san（sanus）——健康
+  # ==========================================================================
+  - source: san
+    target: sano
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: san
+    target: sanar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: san
+    target: sanidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: san
+    target: saneamiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: san
+    target: sanatorio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 cur（curare）——医治
+  # ==========================================================================
+  - source: cur
+    target: seguro
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cur
+    target: curioso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cur
+    target: cura
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cur
+    target: curar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cur
+    target: curiosidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cur
+    target: curación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 med（medicus）——医者
+  # ==========================================================================
+  - source: med
+    target: médico
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: med
+    target: medicina
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: med
+    target: medicamento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: med
+    target: remedio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: med
+    target: medicar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: med
+    target: medicinal
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vulner（vulnus）——伤口
+  # ==========================================================================
+  - source: vulner
+    target: vulnerable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vulner
+    target: vulnerar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vulner
+    target: vulnerabilidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 contag（contagium）——传染
+  # ==========================================================================
+  - source: contag
+    target: contagiar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: contag
+    target: contagio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: contag
+    target: contagioso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 pest（pestis）——瘟疫
+  # ==========================================================================
+  - source: pest
+    target: peste
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pest
+    target: pestilencia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pest
+    target: pestilente
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pest
+    target: pesticida
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: sano
+    target: enfermo
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -8434,6 +8704,12 @@ relations:
 
   - source: literal
     target: literario
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: medicina
+    target: medicamento
     rel_type: confundir
     cefr_level: null
     prompt_template: null

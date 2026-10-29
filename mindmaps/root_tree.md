@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 189 个 · 单词 1223 个 · 关系 1306 条
+- 词根 197 个 · 单词 1264 个 · 关系 1348 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -265,3 +265,16 @@
 | `rhet` | rhet | rhetor (orator, teacher of speech) | 2 | 2 | [raiz_c8_rhet.md](raiz_c8_rhet.md) |
 | `script` | script | scriptum (something written) | 3 | 3 | [raiz_c8_script.md](raiz_c8_script.md) |
 | `verb` | verb | verbum (word) | 5 | 5 | [raiz_c8_verb.md](raiz_c8_verb.md) |
+
+## 批次 `c9`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `contag` | contag | contagium (contagion) | 3 | 3 | [raiz_c9_contag.md](raiz_c9_contag.md) |
+| `cur` | cur | curare (to care for, to heal) | 6 | 6 | [raiz_c9_cur.md](raiz_c9_cur.md) |
+| `dol` | dol | dolor (pain) | 5 | 5 | [raiz_c9_dol.md](raiz_c9_dol.md) |
+| `med` | med | medicus (physician) | 6 | 7 | [raiz_c9_med.md](raiz_c9_med.md) |
+| `path` | path | pati (to suffer, to endure) | 8 | 8 | [raiz_c9_path.md](raiz_c9_path.md) |
+| `pest` | pest | pestis (plague) | 4 | 4 | [raiz_c9_pest.md](raiz_c9_pest.md) |
+| `san` | san | sanus (healthy) | 6 | 6 | [raiz_c9_san.md](raiz_c9_san.md) |
+| `vulner` | vulner | vulnus, vulneris (wound) | 3 | 3 | [raiz_c9_vulner.md](raiz_c9_vulner.md) |

@@ -368,6 +368,19 @@ relations:
 
 > `escribir` / `escritor` / `escritura` / `describir` / `manuscrito` 已属 `scrib` 词族，`script` 只收其他派生词。
 
+**C 批次 9 —— 病痛、医治、健康（8 个词根 / 40 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `path` | pati（承受、病痛） | [`raiz_c9_path.md`](mindmaps/raiz_c9_path.md) | 8 |
+| `dol` | dolor（疼痛） | [`raiz_c9_dol.md`](mindmaps/raiz_c9_dol.md) | 5 |
+| `san` | sanus（健康） | [`raiz_c9_san.md`](mindmaps/raiz_c9_san.md) | 5 |
+| `cur` | curare（医治） | [`raiz_c9_cur.md`](mindmaps/raiz_c9_cur.md) | 6 |
+| `med` | medicus（医者） | [`raiz_c9_med.md`](mindmaps/raiz_c9_med.md) | 6 |
+| `vulner` | vulnus（伤口） | [`raiz_c9_vulner.md`](mindmaps/raiz_c9_vulner.md) | 3 |
+| `contag` | contagium（传染） | [`raiz_c9_contag.md`](mindmaps/raiz_c9_contag.md) | 3 |
+| `pest` | pestis（瘟疫） | [`raiz_c9_pest.md`](mindmaps/raiz_c9_pest.md) | 4 |
+
 ---
 
 ## 6. 本地部署与生成

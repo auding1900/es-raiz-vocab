@@ -1125,3 +1125,55 @@ raices:
     root_name: gloss
     latin_origin: "glossa (tongue, gloss)"
     batch: c8
+
+  # ==========================================================================
+  # C 批次 9：病痛 · 医治 · 健康
+  # ==========================================================================
+
+  # ---- 承受、病痛（C1 区间）----
+  - id: path
+    root_name: path
+    latin_origin: "pati (to suffer, to endure)"
+    batch: c9
+
+  # ---- 疼痛（C1 区间）----
+  - id: dol
+    root_name: dol
+    latin_origin: "dolor (pain)"
+    batch: c9
+
+  # ---- 健康（C1 区间）----
+  - id: san
+    root_name: san
+    latin_origin: "sanus (healthy)"
+    batch: c9
+
+  # ---- 医治（C1 区间）----
+  - id: cur
+    root_name: cur
+    latin_origin: "curare (to care for, to heal)"
+    batch: c9
+
+  # ---- 医者（C1 区间）----
+  - id: med
+    root_name: med
+    latin_origin: "medicus (physician)"
+    batch: c9
+
+  # ---- 伤口（C2 区间）----
+  - id: vulner
+    root_name: vulner
+    latin_origin: "vulnus, vulneris (wound)"
+    batch: c9
+
+  # ---- 传染（C2 区间）----
+  - id: contag
+    root_name: contag
+    latin_origin: "contagium (contagion)"
+    batch: c9
+
+  # ---- 瘟疫（C2 区间）----
+  - id: pest
+    root_name: pest
+    latin_origin: "pestis (plague)"
+    batch: c9
