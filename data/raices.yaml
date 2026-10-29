@@ -232,3 +232,38 @@ raices:
   - id: surg
     root_name: surg
     latin_origin: "surgere (to rise)"
+
+  # ---- 生长 / 增长（B1 区间）----
+  - id: cresc
+    root_name: cresc
+    latin_origin: "crescere (to grow)"
+
+  # ---- 养育 / 滋养（B2 区间）----
+  - id: al
+    root_name: al
+    latin_origin: "alere (to nourish, to feed)"
+
+  # ---- 喂养（B2 区间）----
+  - id: nutr
+    root_name: nutr
+    latin_origin: "nutrire (to feed, to nourish)"
+
+  # ---- 开花（B1 区间）----
+  - id: flor
+    root_name: flor
+    latin_origin: "florere (to bloom)"
+
+  # ---- 萌芽（B2 区间）----
+  - id: germ
+    root_name: germ
+    latin_origin: "germen (sprout, seed)"
+
+  # ---- 根部（B1 区间）----
+  - id: rad
+    root_name: rad
+    latin_origin: "radix (root)"
+
+  # ---- 叶子（B2 区间）----
+  - id: fol
+    root_name: fol
+    latin_origin: "folium (leaf)"

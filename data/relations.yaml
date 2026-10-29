@@ -2462,6 +2462,315 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # cresc（crescere）——生长 / 增长
+  # ==========================================================================
+  - source: cresc
+    target: crecer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cresc
+    target: crecimiento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cresc
+    target: creciente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cresc
+    target: incremento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cresc
+    target: incrementar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cresc
+    target: decrecer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cresc
+    target: acrecentar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cresc
+    target: crescendo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # al（alere）——养育 / 滋养
+  # ==========================================================================
+  - source: al
+    target: alimento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: al
+    target: alumno
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: al
+    target: alimentar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: al
+    target: alimentación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: al
+    target: adulto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: al
+    target: alimenticio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: al
+    target: adolescente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: al
+    target: prole
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # nutr（nutrire）——喂养
+  # ==========================================================================
+  - source: nutr
+    target: nutrir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: nutr
+    target: nutrición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: nutr
+    target: nutricional
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: nutr
+    target: nutriente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: nutr
+    target: desnutrición
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: nutr
+    target: malnutrición
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: nutr
+    target: nutrido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # flor（florere）——开花（词根本身即单词 flor，故不单独声明该词节点）
+  # ==========================================================================
+  - source: flor
+    target: florecer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: flor
+    target: florero
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: flor
+    target: flora
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flor
+    target: floral
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flor
+    target: floración
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flor
+    target: floreciente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flor
+    target: floristería
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # germ（germen）——萌芽
+  # ==========================================================================
+  - source: germ
+    target: germen
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: germ
+    target: germinar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: germ
+    target: germinación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: germ
+    target: germicida
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # rad（radix）——根部
+  # ==========================================================================
+  - source: rad
+    target: raíz
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: rad
+    target: radical
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rad
+    target: radicar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rad
+    target: arraigar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rad
+    target: arraigo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rad
+    target: erradicar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rad
+    target: erradicación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rad
+    target: radicalismo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # fol（folium）——叶子
+  # ==========================================================================
+  - source: fol
+    target: hoja
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: fol
+    target: folleto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fol
+    target: folio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fol
+    target: follaje
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fol
+    target: foliar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: fol
+    target: folículo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -2566,6 +2875,24 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: crecer
+    target: florecer
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: florecer
+    target: hoja
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: alimento
+    target: nutrición
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -2637,6 +2964,12 @@ relations:
 
   - source: proceso
     target: proyecto
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: radicar
+    target: erradicar
     rel_type: confundir
     cefr_level: null
     prompt_template: null
