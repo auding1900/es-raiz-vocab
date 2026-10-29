@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 136 个 · 单词 987 个 · 关系 1051 条
+- 词根 143 个 · 单词 1021 个 · 关系 1087 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -177,3 +177,15 @@
 | `log` | log | logos (word, reason, study) | 7 | 8 | [raiz_c1_log.md](raiz_c1_log.md) |
 | `polis` | polis | polis (city-state) | 6 | 6 | [raiz_c1_polis.md](raiz_c1_polis.md) |
 | `psych` | psych | psykhe (soul, mind) | 6 | 6 | [raiz_c1_psych.md](raiz_c1_psych.md) |
+
+## 批次 `c2`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `aequ` | aequ | aequus (level, equal) | 5 | 5 | [raiz_c2_aequ.md](raiz_c2_aequ.md) |
+| `equ` | equ | aequare (to make equal) | 3 | 3 | [raiz_c2_equ.md](raiz_c2_equ.md) |
+| `heter` | heter | heteros (other, different) | 4 | 4 | [raiz_c2_heter.md](raiz_c2_heter.md) |
+| `homo` | homo | homos (same) | 5 | 5 | [raiz_c2_homo.md](raiz_c2_homo.md) |
+| `id` | id | idem (the same) | 5 | 5 | [raiz_c2_id.md](raiz_c2_id.md) |
+| `par` | par | par (equal, a pair) | 6 | 6 | [raiz_c2_par.md](raiz_c2_par.md) |
+| `sim` | sim | similis (like, similar) | 7 | 8 | [raiz_c2_sim.md](raiz_c2_sim.md) |

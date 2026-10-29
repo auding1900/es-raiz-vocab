@@ -268,6 +268,20 @@ relations:
 | `psych` | psykhe（灵魂） | [`raiz_c1_psych.md`](mindmaps/raiz_c1_psych.md) | 6 |
 | `log` | logos（言语、学科） | [`raiz_c1_log.md`](mindmaps/raiz_c1_log.md) | 7 |
 
+**C 批次 2 —— 平等、相似、相异（7 个词根 / 34 个单词）**
+
+| 词根 | 本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `aequ` | aequus（平等） | [`raiz_c2_aequ.md`](mindmaps/raiz_c2_aequ.md) | 4 |
+| `equ` | aequare（使相等） | [`raiz_c2_equ.md`](mindmaps/raiz_c2_equ.md) | 3 |
+| `par` | par（对等） | [`raiz_c2_par.md`](mindmaps/raiz_c2_par.md) | 6 |
+| `sim` | similis（相似） | [`raiz_c2_sim.md`](mindmaps/raiz_c2_sim.md) | 7 |
+| `id` | idem（同一） | [`raiz_c2_id.md`](mindmaps/raiz_c2_id.md) | 5 |
+| `homo` | homos（相同） | [`raiz_c2_homo.md`](mindmaps/raiz_c2_homo.md) | 5 |
+| `heter` | heteros（相异） | [`raiz_c2_heter.md`](mindmaps/raiz_c2_heter.md) | 4 |
+
+> `vari` 已在 B 批次 12 建档，本批次不重复。`par` 词根与单词 par 同名，该词不单独声明节点。
+
 ---
 
 ## 6. 本地部署与生成

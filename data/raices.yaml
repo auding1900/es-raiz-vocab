@@ -771,3 +771,52 @@ raices:
     root_name: log
     latin_origin: "logos (word, reason, study)"
     batch: c1
+
+  # ==========================================================================
+  # C 批次 2：平等 · 相似 · 相异
+  # ==========================================================================
+
+  # ---- 平等（C1 区间）----
+  - id: aequ
+    root_name: aequ
+    latin_origin: "aequus (level, equal)"
+    batch: c2
+
+  # ---- 相等（C1 区间）----
+  # 注：id 用 `equ` 表示 aequare（使相等），与 aequ（aequus 平等）分工
+  - id: equ
+    root_name: equ
+    latin_origin: "aequare (to make equal)"
+    batch: c2
+
+  # ---- 对等（C1 区间）----
+  # 注：id `par` 与单词 par 同名，该词不单独声明节点
+  - id: par
+    root_name: par
+    latin_origin: "par (equal, a pair)"
+    batch: c2
+
+  # ---- 相似（C1 区间）----
+  - id: sim
+    root_name: sim
+    latin_origin: "similis (like, similar)"
+    batch: c2
+
+  # ---- 同一（C1 区间）----
+  - id: id
+    root_name: id
+    latin_origin: "idem (the same)"
+    batch: c2
+
+  # ---- 相同（C1 区间）----
+  # 注：取希腊语 homos（相同），不含拉丁语 homo（人）的 homicidio 家族
+  - id: homo
+    root_name: homo
+    latin_origin: "homos (same)"
+    batch: c2
+
+  # ---- 相异（C1 区间）----
+  - id: heter
+    root_name: heter
+    latin_origin: "heteros (other, different)"
+    batch: c2

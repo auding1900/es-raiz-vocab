@@ -8,6 +8,24 @@
 
 暂无。
 
+## [0.19.0] - 2026-10-29
+
+数据规模：**143 个词根 / 1021 个单词 / 1087 条关系**。
+
+### Added
+
+- 新增 7 个词根（C 批次 2）：`aequ`、`equ`、`par`、`sim`、`id`、`homo`、`heter`。
+- 新增 34 条 `derivar` 关系：aequ 4、equ 3、par 6、sim 7、id 5、homo 5、heter 4。
+- 新增 1 条 `asociar`（`igual ↔ idéntico`）与 1 条 `confundir`（`similar ↔ semejante`）。
+- 数据集达到 1021 个单词 / 1087 条关系（1019 条 `derivar` + 45 条 `asociar` + 23 条 `confundir`）。
+- 级别分布 A1 54 / A2 172 / B1 249 / B2 314 / C1 207 / C2 23，另有 2 个未标注（`mermar`、`muerte`）。
+
+### Notes
+
+- `vari` 已在 B 批次 12 建档，本批次不重复。
+- `equivalente` / `equivaler` 已归属 `val`（valere），本批次不重复声明。
+- `par` 词根与单词 par 同名，该词不单独声明节点。
+
 ## [0.18.0] - 2026-10-29
 
 数据规模：**136 个词根 / 987 个单词 / 1051 条关系**。

@@ -4,7 +4,7 @@
 
 - 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`
 - 两类关系分开渲染；单图超过 25000 字符时按词根首字母（A–L / M–Z）拆，仍超则按 8 条关系切片
-- **每个分块独立成文件**，共 9 张图 / 关系 66 条
+- **每个分块独立成文件**，共 10 张图 / 关系 68 条
 - 词根索引：[root_tree.md](root_tree.md)
 
 ## 分块导航
@@ -14,18 +14,20 @@
 | [asociar_a-l-1-4.md](asociar_a-l-1-4.md) | 语义联想（`asociar`） | A–L 1/4 | 8 |
 | [asociar_a-l-2-4.md](asociar_a-l-2-4.md) | 语义联想（`asociar`） | A–L 2/4 | 8 |
 | [asociar_a-l-3-4.md](asociar_a-l-3-4.md) | 语义联想（`asociar`） | A–L 3/4 | 8 |
-| [asociar_a-l-4-4.md](asociar_a-l-4-4.md) | 语义联想（`asociar`） | A–L 4/4 | 1 |
+| [asociar_a-l-4-4.md](asociar_a-l-4-4.md) | 语义联想（`asociar`） | A–L 4/4 | 2 |
 | [asociar_m-z-1-3.md](asociar_m-z-1-3.md) | 语义联想（`asociar`） | M–Z 1/3 | 8 |
 | [asociar_m-z-2-3.md](asociar_m-z-2-3.md) | 语义联想（`asociar`） | M–Z 2/3 | 8 |
 | [asociar_m-z-3-3.md](asociar_m-z-3-3.md) | 语义联想（`asociar`） | M–Z 3/3 | 3 |
 | [confundir_a-l.md](confundir_a-l.md) | 形近易混（`confundir`） | A–L | 9 |
-| [confundir_m-z.md](confundir_m-z.md) | 形近易混（`confundir`） | M–Z | 13 |
+| [confundir_m-z-1-2.md](confundir_m-z-1-2.md) | 形近易混（`confundir`） | M–Z 1/2 | 8 |
+| [confundir_m-z-2-2.md](confundir_m-z-2-2.md) | 形近易混（`confundir`） | M–Z 2/2 | 6 |
 
 ## 关系清单
 
 | 关系 | 起点 | 终点 |
 | --- | --- | --- |
 | asociar | paz | guerra |
+| asociar | igual | idéntico |
 | asociar | vida | muerte |
 | asociar | luz | sombra |
 | asociar | movimiento | variación |
@@ -91,3 +93,4 @@
 | confundir | convertir | advertir |
 | confundir | claridad | caridad |
 | confundir | catálogo | monólogo |
+| confundir | similar | semejante |

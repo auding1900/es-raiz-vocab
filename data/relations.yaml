@@ -6348,10 +6348,241 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 aequ（aequus）——平等
+  # ==========================================================================
+  - source: aequ
+    target: igual
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: aequ
+    target: igualdad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aequ
+    target: igualar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aequ
+    target: ecuánime
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 equ（aequare）——相等
+  # ==========================================================================
+  - source: equ
+    target: ecuación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: equ
+    target: equidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: equ
+    target: equivalencia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 par（par）——对等
+  # ==========================================================================
+  - source: par
+    target: comparar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: par
+    target: pareja
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: par
+    target: comparación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: par
+    target: comparable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: par
+    target: paridad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: par
+    target: impar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sim（similis）——相似
+  # ==========================================================================
+  - source: sim
+    target: semejante
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sim
+    target: similar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sim
+    target: semejanza
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sim
+    target: asimilar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sim
+    target: similitud
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sim
+    target: asimilación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sim
+    target: simulacro
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 id（idem）——同一
+  # ==========================================================================
+  - source: id
+    target: identificar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: id
+    target: identidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: id
+    target: idéntico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: id
+    target: identificación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: id
+    target: idiosincrasia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 homo（homos）——相同
+  # ==========================================================================
+  - source: homo
+    target: homogéneo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: homo
+    target: homónimo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: homo
+    target: homogeneidad
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: homo
+    target: homólogo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: homo
+    target: homonimia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 heter（heteros）——相异
+  # ==========================================================================
+  - source: heter
+    target: heterosexual
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: heter
+    target: heterogéneo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: heter
+    target: heterogeneidad
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: heter
+    target: heterodoxo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: igual
+    target: idéntico
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -6745,6 +6976,12 @@ relations:
 
   - source: catálogo
     target: monólogo
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: similar
+    target: semejante
     rel_type: confundir
     cefr_level: null
     prompt_template: null
