@@ -92,6 +92,9 @@ MAX_DIAGRAM_CHARS = 45000
 # 联想图单图超过该字符数时，自动按词根首字母（A–L / M–Z）拆分
 SPLIT_THRESHOLD = 25000
 
+# 单个分桶仍然过大时，按固定条数切片，保证单图有上界
+CHUNK_EDGES = 8
+
 FORBIDDEN_KEYS = frozenset(
     {
         "definition",
@@ -744,7 +747,22 @@ def _associate_diagrams(
         if not subset:
             continue
         subset_names = {rel.source for rel in subset} | {rel.target for rel in subset}
-        parts.append((label, subset, _diagram(dataset, subset_names, subset, levels)))
+        subset_diagram = _diagram(dataset, subset_names, subset, levels)
+        if len("\n".join(subset_diagram)) <= SPLIT_THRESHOLD:
+            parts.append((label, subset, subset_diagram))
+            continue
+
+        # 单个分桶仍然过大：按固定条数切片，保证每张图都有上界
+        chunks = [subset[index : index + CHUNK_EDGES] for index in range(0, len(subset), CHUNK_EDGES)]
+        for number, chunk in enumerate(chunks, 1):
+            chunk_names = {rel.source for rel in chunk} | {rel.target for rel in chunk}
+            parts.append(
+                (
+                    "{0} {1}/{2}".format(label, number, len(chunks)),
+                    chunk,
+                    _diagram(dataset, chunk_names, chunk, levels),
+                )
+            )
     return parts
 
 

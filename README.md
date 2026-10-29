@@ -161,7 +161,7 @@ relations:
 | 产物 | 内容 |
 | --- | --- |
 | [`mindmaps/root_tree.md`](mindmaps/root_tree.md) | `graph LR` 词根树，**每个词根一张图**（避免单图超出 mermaid 大小上限）：词根节点显示 `root_name` + `latin_origin`，单词节点显示 `单词` + 级别，全部单词节点带豆包 `click` |
-| [`mindmaps/associate_graph.md`](mindmaps/associate_graph.md) | 联想网状图：`asociar` / `confundir` 分开，单图超 25000 字符时再按词根首字母（A–L / M–Z）自动拆分，附关系清单 |
+| [`mindmaps/associate_graph.md`](mindmaps/associate_graph.md) | 联想网状图：`asociar` / `confundir` 分开；单图超 25000 字符时按词根首字母（A–L / M–Z）拆，仍超则按 8 条关系切片，附关系清单 |
 | [`levels/A1.md`](levels/A1.md) … [`levels/C2.md`](levels/C2.md) | 分级清单，每行 `单词 \| 词根 \| 豆包` |
 
 关系类型与线型：
@@ -174,7 +174,7 @@ relations:
 
 节点配色：A1 `#e8f5e9` → A2 `#c8e6c9` → B1 `#fff8e1` → B2 `#ffe0b2` → C1 `#ffccbc` → C2 `#ffcdd2`；未标注级别为灰色 `#f5f5f5`；词根为蓝色 `#bbdefb`。
 
-单图上限：mermaid 默认 `maxTextSize` 为 50000 字符，超过后 GitHub 只会显示 `Maximum text size in diagram exceeded`。因此词根树按词根分块，联想图先按关系类型分开、超过 25000 字符时再按词根首字母拆分；脚本对超过 45000 字符的单图会打印告警。
+单图上限：mermaid 默认 `maxTextSize` 为 50000 字符，超过后 GitHub 只会显示 `Maximum text size in diagram exceeded`。因此词根树按词根分块；联想图先按关系类型分开，超过 25000 字符时按词根首字母拆分，若单个分桶仍超限则再按 8 条关系切片；脚本对超过 45000 字符的单图会打印告警。
 
 ---
 
