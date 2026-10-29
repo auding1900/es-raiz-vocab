@@ -6,16 +6,35 @@
 
 ## [Unreleased]
 
+暂无。
+
+## [0.4.0] - 2026-10-29
+
+数据规模：**36 个词根 / 324 个单词 / 348 条关系**。
+
 ### Added
 
-- 词根扩充至 36 个：`ag`、`pon`、`cap`、`vid`、`mit`、`duc`、`fac`、`dic`、`leg`、`scrib`、`port`、`ven`、`ire`、`sta`、`sed`、`sol`、`clus`、`apert`、`aud`、`sent`、`curr`、`ped`、`man`、`cor`、`anim`、`pop`、`civ`、`terra`、`aqu`、`ign`、`aer`、`temp`、`dies`、`ann`、`mens`、`numer`；数据集达到 324 个单词 / 348 条关系（323 条 `derivar` + 15 条 `asociar` + 10 条 `confundir`）。
-- 每个派生单词都标注 CEFR 级别，级别分布 A1 33 / A2 78 / B1 94 / B2 82 / C1 36，另有 1 个未标注（`mermar`）。
+- 新增 15 个词根：`ped`、`man`、`cor`、`anim`、`pop`、`civ`、`terra`、`aqu`、`ign`、`aer`、`temp`、`dies`、`ann`、`mens`、`numer`。
+- 数据集达到 324 个单词 / 348 条关系（323 条 `derivar` + 15 条 `asociar` + 10 条 `confundir`）。
+- 级别分布 A1 33 / A2 78 / B1 94 / B2 82 / C1 36，另有 1 个未标注（`mermar`）。
 
 ### Fixed
 
-- 导图超过 mermaid 的 `maxTextSize`（50000 字符）时，GitHub 只会显示 `Maximum text size in diagram exceeded`：`root_tree.md` 改为**每个词根一张图**，单图均在 11k 字符以内。
-- `associate_graph.md` 同样拆分：`asociar` 与 `confundir` 各一张图（最大 25k），不再随联想关系增加而撞上限。
-- 生成器新增单图大小告警（超过 45000 字符即提示继续拆分），避免以后再撞上限而无人察觉。
+- `associate_graph.md` 按关系类型拆成两张图（`asociar` 约 25k / `confundir` 约 17k），不再随联想关系增加而撞 mermaid `maxTextSize` 上限。
+
+## [0.3.0] - 2026-10-29
+
+### Added
+
+- 新增 7 个词根：`sed`、`sol`、`clus`、`apert`、`aud`、`sent`、`curr`。
+- 数据集达到 21 个词根 / 198 个单词 / 214 条关系（197 条 `derivar` + 10 条 `asociar` + 7 条 `confundir`）。
+
+## [0.2.0] - 2026-10-29
+
+### Added
+
+- 新增 7 个词根：`dic`、`leg`、`scrib`、`port`、`ven`、`ire`、`sta`。
+- 数据集达到 14 个词根 / 134 个单词 / 145 条关系（133 条 `derivar` + 8 条 `asociar` + 4 条 `confundir`）。
 
 ## [0.1.0] - 2026-10-28
 
@@ -32,6 +51,10 @@
 - **编码处理**：URL 全量 UTF-8 编码并做 NFC 归一，`ñ á é í ó ú` 等字符不会乱码。
 - **CLI**：`--check`（只校验不写盘）、`--dry-run`、`--quiet`、`--data`、`--repo`；默认流程先清空 `mindmaps/`、`levels/` 下的旧产物再渲染。
 - **文档**：README（项目原理、使用教程、数据格式、贡献指南与自查清单、定级声明）、MIT 协议、`.gitignore`。
+
+### Fixed
+
+- 导图超过 mermaid `maxTextSize`（50000 字符）时 GitHub 只显示报错：`root_tree.md` 改为**每个词根一张图**（单图 <12k），并加入 45000 字符的单图大小告警。
 
 ### 本版数据
 
