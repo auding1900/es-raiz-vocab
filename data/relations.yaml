@@ -6573,10 +6573,292 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 cent（centum）——百
+  # ==========================================================================
+  - source: cent
+    target: cien
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cent
+    target: ciento
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cent
+    target: porcentaje
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cent
+    target: centímetro
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cent
+    target: centenario
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cent
+    target: centuria
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mill（mille）——千
+  # ==========================================================================
+  - source: mill
+    target: mil
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: mill
+    target: millón
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mill
+    target: milímetro
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mill
+    target: milla
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mill
+    target: millonario
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mill
+    target: millar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 dec（decem）——十
+  # ==========================================================================
+  - source: dec
+    target: diez
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: dec
+    target: diciembre
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: dec
+    target: década
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dec
+    target: décimo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dec
+    target: decimal
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dec
+    target: decenio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sept（septem）——七
+  # ==========================================================================
+  - source: sept
+    target: siete
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: sept
+    target: septiembre
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: sept
+    target: séptimo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 nov（novus）——新
+  # ==========================================================================
+  - source: nov
+    target: nuevo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: nov
+    target: novela
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: nov
+    target: innovación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: nov
+    target: renovar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: nov
+    target: novedad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: nov
+    target: novato
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: nov
+    target: innovar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vet（vetus）——旧
+  # ==========================================================================
+  - source: vet
+    target: viejo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: vet
+    target: vejez
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vet
+    target: veterano
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vet
+    target: inveterado
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: vet
+    target: vetusto
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 prim（primus）——第一
+  # ==========================================================================
+  - source: prim
+    target: primero
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: prim
+    target: primavera
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: prim
+    target: primo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: prim
+    target: primitivo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: prim
+    target: primario
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: prim
+    target: primordial
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 ult（ultimus）——最后
+  # ==========================================================================
+  - source: ult
+    target: último
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ult
+    target: ultimátum
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ult
+    target: ultimar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: viejo
+    target: nuevo
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -6982,6 +7264,12 @@ relations:
 
   - source: similar
     target: semejante
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: decimal
+    target: décimo
     rel_type: confundir
     cefr_level: null
     prompt_template: null

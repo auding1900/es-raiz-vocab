@@ -820,3 +820,56 @@ raices:
     root_name: heter
     latin_origin: "heteros (other, different)"
     batch: c2
+
+  # ==========================================================================
+  # C 批次 3：数量 · 新旧 · 首末
+  # ==========================================================================
+
+  # ---- 百（C1 区间）----
+  - id: cent
+    root_name: cent
+    latin_origin: "centum (hundred)"
+    batch: c3
+
+  # ---- 千（C1 区间）----
+  # 注：milenio 已属 ann（annus）词族，本词根不收
+  - id: mill
+    root_name: mill
+    latin_origin: "mille (thousand)"
+    batch: c3
+
+  # ---- 十（C1 区间）----
+  - id: dec
+    root_name: dec
+    latin_origin: "decem (ten)"
+    batch: c3
+
+  # ---- 七（C1 区间）----
+  - id: sept
+    root_name: sept
+    latin_origin: "septem (seven)"
+    batch: c3
+
+  # ---- 新（B2/C1 区间）----
+  - id: nov
+    root_name: nov
+    latin_origin: "novus (new)"
+    batch: c3
+
+  # ---- 旧（C1 区间）----
+  - id: vet
+    root_name: vet
+    latin_origin: "vetus, veteris (old)"
+    batch: c3
+
+  # ---- 第一（B2 区间）----
+  - id: prim
+    root_name: prim
+    latin_origin: "primus (first)"
+    batch: c3
+
+  # ---- 最后（C1 区间）----
+  - id: ult
+    root_name: ult
+    latin_origin: "ultimus (last)"
+    batch: c3

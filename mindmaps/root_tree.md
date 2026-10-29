@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 143 个 · 单词 1021 个 · 关系 1087 条
+- 词根 151 个 · 单词 1063 个 · 关系 1131 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -189,3 +189,16 @@
 | `id` | id | idem (the same) | 5 | 5 | [raiz_c2_id.md](raiz_c2_id.md) |
 | `par` | par | par (equal, a pair) | 6 | 6 | [raiz_c2_par.md](raiz_c2_par.md) |
 | `sim` | sim | similis (like, similar) | 7 | 8 | [raiz_c2_sim.md](raiz_c2_sim.md) |
+
+## 批次 `c3`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `cent` | cent | centum (hundred) | 6 | 6 | [raiz_c3_cent.md](raiz_c3_cent.md) |
+| `dec` | dec | decem (ten) | 6 | 7 | [raiz_c3_dec.md](raiz_c3_dec.md) |
+| `mill` | mill | mille (thousand) | 6 | 6 | [raiz_c3_mill.md](raiz_c3_mill.md) |
+| `nov` | nov | novus (new) | 7 | 7 | [raiz_c3_nov.md](raiz_c3_nov.md) |
+| `prim` | prim | primus (first) | 6 | 6 | [raiz_c3_prim.md](raiz_c3_prim.md) |
+| `sept` | sept | septem (seven) | 3 | 3 | [raiz_c3_sept.md](raiz_c3_sept.md) |
+| `ult` | ult | ultimus (last) | 3 | 3 | [raiz_c3_ult.md](raiz_c3_ult.md) |
+| `vet` | vet | vetus, veteris (old) | 6 | 6 | [raiz_c3_vet.md](raiz_c3_vet.md) |

@@ -8,6 +8,22 @@
 
 暂无。
 
+## [0.20.0] - 2026-10-29
+
+数据规模：**151 个词根 / 1063 个单词 / 1131 条关系**。
+
+### Added
+
+- 新增 8 个词根（C 批次 3）：`cent`、`mill`、`dec`、`sept`、`nov`、`vet`、`prim`、`ult`。
+- 新增 42 条 `derivar` 关系：cent 6、mill 6、dec 6、sept 3、nov 7、vet 5、prim 6、ult 3。
+- 新增 1 条 `asociar`（`viejo ↔ nuevo`）与 1 条 `confundir`（`decimal ↔ décimo`）。
+- 数据集达到 1063 个单词 / 1131 条关系（1061 条 `derivar` + 46 条 `asociar` + 24 条 `confundir`）。
+- 级别分布 A1 67 / A2 175 / B1 260 / B2 322 / C1 211 / C2 26，另有 2 个未标注（`mermar`、`muerte`）。
+
+### Notes
+
+- `milenio` 已在 `ann`（annus）词族，本批次不重复声明。
+
 ## [0.19.0] - 2026-10-29
 
 数据规模：**143 个词根 / 1021 个单词 / 1087 条关系**。

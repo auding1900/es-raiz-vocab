@@ -282,6 +282,21 @@ relations:
 
 > `vari` 已在 B 批次 12 建档，本批次不重复。`par` 词根与单词 par 同名，该词不单独声明节点。
 
+**C 批次 3 —— 数量、新旧、首末（8 个词根 / 42 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `cent` | centum（百） | [`raiz_c3_cent.md`](mindmaps/raiz_c3_cent.md) | 6 |
+| `mill` | mille（千） | [`raiz_c3_mill.md`](mindmaps/raiz_c3_mill.md) | 6 |
+| `dec` | decem（十） | [`raiz_c3_dec.md`](mindmaps/raiz_c3_dec.md) | 6 |
+| `sept` | septem（七） | [`raiz_c3_sept.md`](mindmaps/raiz_c3_sept.md) | 3 |
+| `nov` | novus（新） | [`raiz_c3_nov.md`](mindmaps/raiz_c3_nov.md) | 7 |
+| `vet` | vetus（旧） | [`raiz_c3_vet.md`](mindmaps/raiz_c3_vet.md) | 5 |
+| `prim` | primus（第一） | [`raiz_c3_prim.md`](mindmaps/raiz_c3_prim.md) | 6 |
+| `ult` | ultimus（最后） | [`raiz_c3_ult.md`](mindmaps/raiz_c3_ult.md) | 3 |
+
+> `milenio` 已属 `ann`（annus）词族，本批次不重复。
+
 ---
 
 ## 6. 本地部署与生成
