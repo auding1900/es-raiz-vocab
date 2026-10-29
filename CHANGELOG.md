@@ -8,6 +8,23 @@
 
 暂无。
 
+## [0.27.0] - 2026-10-29
+
+数据规模：**212 个词根 / 1321 个单词 / 1407 条关系**。
+
+### Added
+
+- 新增 15 个词根（C 批次 10，最后一批）：`spat`、`loc`、`sit`、`vic`、`proxim`、`remot`、`inter`、`intra`、`extra`、`ultra`、`infra`、`supra`、`trans`、`circum`、`peri`。
+- 新增 57 条 `derivar` 关系：spat 4、loc 6、sit 4、vic 3、proxim 5、remot 1、inter 6、intra 2、extra 3、ultra 3、infra 3、supra 2、trans 5、circum 5、peri 5。
+- 新增 `asociar`（`próximo ↔ remoto`）与 `confundir`（`situación ↔ sitio`）。
+- 数据集达到 1321 个单词 / 1407 条关系。
+- 至此 B 批次 9 – C 批次 10 共 15 个批次全部完成，新增词根 100 余个，每个词根均有独立导图页。
+
+### Notes
+
+- `extra` 词根不收 `extraer` / `extraordinario`（已属 `tract` 等词族）；`trans` 词根不收 `transporte` / `transmitir`（已属 `port` / `mit`）。
+- `ultra`（超越）与 C3 的 `ult`（ultimus 最后）分属两个词根。
+
 ## [0.26.0] - 2026-10-29
 
 数据规模：**197 个词根 / 1264 个单词 / 1348 条关系**。

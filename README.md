@@ -381,6 +381,28 @@ relations:
 | `contag` | contagium（传染） | [`raiz_c9_contag.md`](mindmaps/raiz_c9_contag.md) | 3 |
 | `pest` | pestis（瘟疫） | [`raiz_c9_pest.md`](mindmaps/raiz_c9_pest.md) | 4 |
 
+**C 批次 10 —— 空间、方位、环绕（15 个词根 / 57 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `spat` | spatium（空间） | [`raiz_c10_spat.md`](mindmaps/raiz_c10_spat.md) | 4 |
+| `loc` | locus（地点） | [`raiz_c10_loc.md`](mindmaps/raiz_c10_loc.md) | 6 |
+| `sit` | situs（位置） | [`raiz_c10_sit.md`](mindmaps/raiz_c10_sit.md) | 4 |
+| `vic` | vicus（邻域） | [`raiz_c10_vic.md`](mindmaps/raiz_c10_vic.md) | 3 |
+| `proxim` | proximus（邻近） | [`raiz_c10_proxim.md`](mindmaps/raiz_c10_proxim.md) | 5 |
+| `remot` | remotus（遥远） | [`raiz_c10_remot.md`](mindmaps/raiz_c10_remot.md) | 1 |
+| `inter` | inter（之间） | [`raiz_c10_inter.md`](mindmaps/raiz_c10_inter.md) | 6 |
+| `intra` | intra（内部） | [`raiz_c10_intra.md`](mindmaps/raiz_c10_intra.md) | 2 |
+| `extra` | extra（外部） | [`raiz_c10_extra.md`](mindmaps/raiz_c10_extra.md) | 3 |
+| `ultra` | ultra（超越） | [`raiz_c10_ultra.md`](mindmaps/raiz_c10_ultra.md) | 3 |
+| `infra` | infra（在下） | [`raiz_c10_infra.md`](mindmaps/raiz_c10_infra.md) | 3 |
+| `supra` | supra（在上） | [`raiz_c10_supra.md`](mindmaps/raiz_c10_supra.md) | 2 |
+| `trans` | trans（跨越） | [`raiz_c10_trans.md`](mindmaps/raiz_c10_trans.md) | 5 |
+| `circum` | circum（环绕） | [`raiz_c10_circum.md`](mindmaps/raiz_c10_circum.md) | 5 |
+| `peri` | peri（四周） | [`raiz_c10_peri.md`](mindmaps/raiz_c10_peri.md) | 5 |
+
+> `extraer` / `extraordinario`（`tract` 等）、`transporte` / `transmitir`（`port` / `mit`）已属 v0 词族，本批次不重复。到此 B9→C10 全部批次完成。
+
 ---
 
 ## 6. 本地部署与生成

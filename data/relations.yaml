@@ -8217,10 +8217,403 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 spat（spatium）——空间
+  # ==========================================================================
+  - source: spat
+    target: espacio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: spat
+    target: espacial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: spat
+    target: espacioso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: spat
+    target: espaciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 loc（locus）——地点
+  # ==========================================================================
+  - source: loc
+    target: lugar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: loc
+    target: local
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: loc
+    target: localidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: loc
+    target: localizar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: loc
+    target: localización
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: loc
+    target: locutor
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sit（situs）——位置
+  # ==========================================================================
+  - source: sit
+    target: sitio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sit
+    target: situación
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sit
+    target: situar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sit
+    target: situado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vic（vicus）——邻域
+  # ==========================================================================
+  - source: vic
+    target: vecino
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vic
+    target: vecindad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vic
+    target: vecindario
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 proxim（proximus）——邻近
+  # ==========================================================================
+  - source: proxim
+    target: próximo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: proxim
+    target: aproximar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: proxim
+    target: aproximado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: proxim
+    target: proximidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: proxim
+    target: aproximación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 remot（remotus）——遥远
+  # ==========================================================================
+  - source: remot
+    target: remoto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 inter（inter）——之间
+  # ==========================================================================
+  - source: inter
+    target: entre
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: inter
+    target: interior
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: inter
+    target: internacional
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: inter
+    target: intercambio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: inter
+    target: intersección
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: inter
+    target: internar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 intra（intra）——内部
+  # ==========================================================================
+  - source: intra
+    target: intracelular
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: intra
+    target: intravenoso
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 extra（extra）——外部
+  # ==========================================================================
+  - source: extra
+    target: extraño
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: extra
+    target: extranjero
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: extra
+    target: extraterrestre
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 ultra（ultra）——超越
+  # ==========================================================================
+  - source: ultra
+    target: ultraje
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ultra
+    target: ultrajar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ultra
+    target: ultramar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 infra（infra）——在下
+  # ==========================================================================
+  - source: infra
+    target: infraestructura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: infra
+    target: infravalorar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: infra
+    target: infrahumano
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 supra（supra）——在上
+  # ==========================================================================
+  - source: supra
+    target: supranacional
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: supra
+    target: suprarrenal
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 trans（trans）——跨越
+  # ==========================================================================
+  - source: trans
+    target: transportar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: trans
+    target: transformar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: trans
+    target: transformación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: trans
+    target: transición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: trans
+    target: transcurrir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 circum（circum）——环绕
+  # ==========================================================================
+  - source: circum
+    target: círculo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: circum
+    target: circunstancia
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: circum
+    target: circular
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: circum
+    target: circuito
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: circum
+    target: circunferencia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 peri（peri）——四周
+  # ==========================================================================
+  - source: peri
+    target: periódico
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: peri
+    target: periodo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: peri
+    target: periferia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: peri
+    target: perímetro
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: peri
+    target: periférico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: próximo
+    target: remoto
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -8710,6 +9103,12 @@ relations:
 
   - source: medicina
     target: medicamento
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: situación
+    target: sitio
     rel_type: confundir
     cefr_level: null
     prompt_template: null

@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 197 个 · 单词 1264 个 · 关系 1348 条
+- 词根 212 个 · 单词 1321 个 · 关系 1407 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -278,3 +278,23 @@
 | `pest` | pest | pestis (plague) | 4 | 4 | [raiz_c9_pest.md](raiz_c9_pest.md) |
 | `san` | san | sanus (healthy) | 6 | 6 | [raiz_c9_san.md](raiz_c9_san.md) |
 | `vulner` | vulner | vulnus, vulneris (wound) | 3 | 3 | [raiz_c9_vulner.md](raiz_c9_vulner.md) |
+
+## 批次 `c10`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `circum` | circum | circum (around) | 5 | 5 | [raiz_c10_circum.md](raiz_c10_circum.md) |
+| `extra` | extra | extra (outside) | 3 | 3 | [raiz_c10_extra.md](raiz_c10_extra.md) |
+| `infra` | infra | infra (below) | 3 | 3 | [raiz_c10_infra.md](raiz_c10_infra.md) |
+| `inter` | inter | inter (between) | 6 | 6 | [raiz_c10_inter.md](raiz_c10_inter.md) |
+| `intra` | intra | intra (within) | 2 | 2 | [raiz_c10_intra.md](raiz_c10_intra.md) |
+| `loc` | loc | locus (place) | 6 | 6 | [raiz_c10_loc.md](raiz_c10_loc.md) |
+| `peri` | peri | peri (around) | 5 | 5 | [raiz_c10_peri.md](raiz_c10_peri.md) |
+| `proxim` | proxim | proximus (nearest) | 6 | 6 | [raiz_c10_proxim.md](raiz_c10_proxim.md) |
+| `remot` | remot | remotus (remote) | 1 | 1 | [raiz_c10_remot.md](raiz_c10_remot.md) |
+| `sit` | sit | situs (position) | 4 | 5 | [raiz_c10_sit.md](raiz_c10_sit.md) |
+| `spat` | spat | spatium (space) | 4 | 4 | [raiz_c10_spat.md](raiz_c10_spat.md) |
+| `supra` | supra | supra (above) | 2 | 2 | [raiz_c10_supra.md](raiz_c10_supra.md) |
+| `trans` | trans | trans (across) | 5 | 5 | [raiz_c10_trans.md](raiz_c10_trans.md) |
+| `ultra` | ultra | ultra (beyond) | 3 | 3 | [raiz_c10_ultra.md](raiz_c10_ultra.md) |
+| `vic` | vic | vicus (village, neighbourhood) | 3 | 3 | [raiz_c10_vic.md](raiz_c10_vic.md) |

@@ -1177,3 +1177,100 @@ raices:
     root_name: pest
     latin_origin: "pestis (plague)"
     batch: c9
+
+  # ==========================================================================
+  # C 批次 10：空间 · 方位 · 环绕
+  # ==========================================================================
+
+  # ---- 空间（C1 区间）----
+  - id: spat
+    root_name: spat
+    latin_origin: "spatium (space)"
+    batch: c10
+
+  # ---- 地点（B2/C1 区间）----
+  - id: loc
+    root_name: loc
+    latin_origin: "locus (place)"
+    batch: c10
+
+  # ---- 位置（C2 区间）----
+  - id: sit
+    root_name: sit
+    latin_origin: "situs (position)"
+    batch: c10
+
+  # ---- 邻域（C2 区间）----
+  - id: vic
+    root_name: vic
+    latin_origin: "vicus (village, neighbourhood)"
+    batch: c10
+
+  # ---- 邻近（C1 区间）----
+  - id: proxim
+    root_name: proxim
+    latin_origin: "proximus (nearest)"
+    batch: c10
+
+  # ---- 遥远（C2 区间）----
+  - id: remot
+    root_name: remot
+    latin_origin: "remotus (remote)"
+    batch: c10
+
+  # ---- 之间（C1 区间）----
+  - id: inter
+    root_name: inter
+    latin_origin: "inter (between)"
+    batch: c10
+
+  # ---- 内部（C1 区间）----
+  - id: intra
+    root_name: intra
+    latin_origin: "intra (within)"
+    batch: c10
+
+  # ---- 外部（C1 区间）----
+  # 注：extraer / extraordinario 已属 tract 等 v0 词族，本词根不收
+  - id: extra
+    root_name: extra
+    latin_origin: "extra (outside)"
+    batch: c10
+
+  # ---- 超越（C2 区间）----
+  # 注：id 用 `ultra`，与 C3 的 `ult`（ultimus 最后）分开
+  - id: ultra
+    root_name: ultra
+    latin_origin: "ultra (beyond)"
+    batch: c10
+
+  # ---- 在下（C2 区间）----
+  - id: infra
+    root_name: infra
+    latin_origin: "infra (below)"
+    batch: c10
+
+  # ---- 在上（C2 区间）----
+  - id: supra
+    root_name: supra
+    latin_origin: "supra (above)"
+    batch: c10
+
+  # ---- 跨越（B2/C1 区间）----
+  # 注：transporte / transmitir 已属 port / mit 词族，本词根不收
+  - id: trans
+    root_name: trans
+    latin_origin: "trans (across)"
+    batch: c10
+
+  # ---- 环绕（C2 区间）----
+  - id: circum
+    root_name: circum
+    latin_origin: "circum (around)"
+    batch: c10
+
+  # ---- 四周（C2 区间）----
+  - id: peri
+    root_name: peri
+    latin_origin: "peri (around)"
+    batch: c10
