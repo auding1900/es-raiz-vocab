@@ -157,3 +157,43 @@ raices:
   - id: terra
     root_name: terra
     latin_origin: "terra (earth, land)"
+
+  # ---- 水（A1 区间）----
+  - id: aqu
+    root_name: aqu
+    latin_origin: "aqua (water)"
+
+  # ---- 火（A2 区间）----
+  - id: ign
+    root_name: ign
+    latin_origin: "ignis (fire)"
+
+  # ---- 空气（A2 区间）----
+  - id: aer
+    root_name: aer
+    latin_origin: "aer (air)"
+
+  # ---- 时间（A1 区间）----
+  - id: temp
+    root_name: temp
+    latin_origin: "tempus (time)"
+
+  # ---- 白天（A1 区间）----
+  - id: dies
+    root_name: dies
+    latin_origin: "dies (day)"
+
+  # ---- 年份（A1 区间）----
+  - id: ann
+    root_name: ann
+    latin_origin: "annus (year)"
+
+  # ---- 头脑 / 思考（A2 区间）----
+  - id: mens
+    root_name: mens
+    latin_origin: "mens, mentis (mind, thought)"
+
+  # ---- 数字（A1 区间）----
+  - id: numer
+    root_name: numer
+    latin_origin: "numerus (number)"

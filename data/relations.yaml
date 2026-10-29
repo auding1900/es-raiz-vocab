@@ -1685,6 +1685,396 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # aqu（aqua）——水
+  # ==========================================================================
+  - source: aqu
+    target: agua
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: aqu
+    target: paraguas
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: aqu
+    target: acuario
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aqu
+    target: acuático
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aqu
+    target: acueducto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aqu
+    target: aguacero
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aqu
+    target: acuoso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: aqu
+    target: acuífero
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # ign（ignis）——火（西语中派生词较少）
+  # ==========================================================================
+  - source: ign
+    target: ignición
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ign
+    target: ígneo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ign
+    target: ignífugo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # aer（aer）——空气
+  # ==========================================================================
+  - source: aer
+    target: aire
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: aer
+    target: aeropuerto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: aer
+    target: aéreo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aer
+    target: aerolínea
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aer
+    target: aerosol
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aer
+    target: airear
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aer
+    target: aeronave
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aer
+    target: aerodinámico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # temp（tempus）——时间
+  # ==========================================================================
+  - source: temp
+    target: tiempo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: temp
+    target: temporada
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: temp
+    target: temporal
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: temp
+    target: temporizador
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: temp
+    target: tempestad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: temp
+    target: contemporáneo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: temp
+    target: contratiempo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # dies（dies）——白天
+  # ==========================================================================
+  - source: dies
+    target: día
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: dies
+    target: mediodía
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dies
+    target: diario
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dies
+    target: diariamente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dies
+    target: jornada
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dies
+    target: diurno
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dies
+    target: cotidiano
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dies
+    target: meridiano
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # ann（annus）——年份
+  # ==========================================================================
+  - source: ann
+    target: año
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ann
+    target: anual
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ann
+    target: aniversario
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ann
+    target: anualmente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ann
+    target: milenio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ann
+    target: anuario
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ann
+    target: antaño
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ann
+    target: bienio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ann
+    target: perenne
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # mens（mens, mentis）——头脑 / 思考
+  # ==========================================================================
+  - source: mens
+    target: comentar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mens
+    target: comentario
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mens
+    target: mente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mens
+    target: mental
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mens
+    target: mentalidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mens
+    target: comentarista
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mens
+    target: mentalizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mens
+    target: demente
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mens
+    target: demencia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # numer（numerus）——数字
+  # ==========================================================================
+  - source: numer
+    target: número
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: numer
+    target: numeroso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: numer
+    target: numerar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: numer
+    target: numérico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: numer
+    target: numeración
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: numer
+    target: innumerable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: numer
+    target: numeral
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: numer
+    target: enumerar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: numer
+    target: numerador
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -1765,6 +2155,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: agua
+    target: aire
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: tiempo
+    target: día
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -1818,6 +2220,12 @@ relations:
 
   - source: impedir
     target: permitir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: temporal
+    target: temporada
     rel_type: confundir
     cefr_level: null
     prompt_template: null
