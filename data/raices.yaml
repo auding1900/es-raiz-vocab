@@ -614,3 +614,50 @@ raices:
     root_name: appet
     latin_origin: "appetere (to reach for, to desire)"
     batch: b11
+
+  # ==========================================================================
+  # B 批次 12：移动 · 转向 · 改变
+  # ==========================================================================
+
+  # ---- 移动（A1 区间）----
+  - id: mov
+    root_name: mov
+    latin_origin: "movere (to move)"
+    batch: b12
+
+  # ---- 运动（B1 区间）----
+  - id: mot
+    root_name: mot
+    latin_origin: "motus (movement)"
+    batch: b12
+
+  # ---- 翻转、转向（B1 区间）----
+  - id: vers
+    root_name: vers
+    latin_origin: "vertere (to turn)"
+    batch: b12
+
+  # ---- 转变（B1 区间）----
+  - id: vert
+    root_name: vert
+    latin_origin: "versus (a turning)"
+    batch: b12
+
+  # ---- 改变（B1 区间）----
+  - id: mut
+    root_name: mut
+    latin_origin: "mutare (to change)"
+    batch: b12
+
+  # ---- 互换（B2 区间）----
+  - id: commut
+    root_name: commut
+    latin_origin: "commutare (to exchange)"
+    batch: b12
+
+  # ---- 多样、变化（B1 区间）----
+  # 注：C 批次 2 也列出 vari，已在 B12 建词根，C2 不重复
+  - id: vari
+    root_name: vari
+    latin_origin: "varius (varied)"
+    batch: b12

@@ -227,6 +227,20 @@ relations:
 | `cup` | cupere（渴望） | [`raiz_b11_cup.md`](mindmaps/raiz_b11_cup.md) | codicia, codiciar, codicioso, cupidez |
 | `appet` | appetere（渴求） | [`raiz_b11_appet.md`](mindmaps/raiz_b11_appet.md) | apetito, apetecer, apetecible, apetitoso, inapetencia |
 
+**B 批次 12 —— 移动、转向、改变（7 个词根 / 45 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `mov` | movere（移动） | [`raiz_b12_mov.md`](mindmaps/raiz_b12_mov.md) | 8 |
+| `mot` | motus（运动） | [`raiz_b12_mot.md`](mindmaps/raiz_b12_mot.md) | 6 |
+| `vers` | vertere（翻转、转向） | [`raiz_b12_vers.md`](mindmaps/raiz_b12_vers.md) | 7 |
+| `vert` | versus（转变） | [`raiz_b12_vert.md`](mindmaps/raiz_b12_vert.md) | 7 |
+| `mut` | mutare（改变） | [`raiz_b12_mut.md`](mindmaps/raiz_b12_mut.md) | 5 |
+| `commut` | commutare（互换） | [`raiz_b12_commut.md`](mindmaps/raiz_b12_commut.md) | 4 |
+| `vari` | varius（多样、变化） | [`raiz_b12_vari.md`](mindmaps/raiz_b12_vari.md) | 8 |
+
+> `vari` 在 C 批次 2 中重复出现，统一在 B12 建档；具体词表见各导图页。
+
 ---
 
 ## 6. 本地部署与生成

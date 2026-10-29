@@ -8,6 +8,23 @@
 
 暂无。
 
+## [0.16.0] - 2026-10-29
+
+数据规模：**119 个词根 / 892 个单词 / 953 条关系**。
+
+### Added
+
+- 新增 7 个词根（B 批次 12）：`mov`（movere）、`mot`（motus）、`vers`（vertere）、`vert`（versus）、`mut`（mutare）、`commut`（commutare）、`vari`（varius）。
+- 新增 45 条 `derivar` 关系：mov 8、mot 6、vers 7、vert 7、mut 5、commut 4、vari 8。
+- 新增 1 条 `asociar`（`movimiento ↔ variación`）与 1 条 `confundir`（`convertir ↔ advertir`）。
+- 数据集达到 892 个单词 / 953 条关系（891 条 `derivar` + 42 条 `asociar` + 20 条 `confundir`）。
+- 级别分布 A1 50 / A2 163 / B1 225 / B2 279 / C1 166 / C2 8，另有 1 个未标注（`mermar`）。
+
+### Notes
+
+- `vari` 同时出现在 B 批次 12 与 C 批次 2，只建一次（B12）。
+- `vers` / `vert` 同出 `vertere`，按「名词性（versión / diversión）」与「动词性（convertir / invertir）」分工，避免派生词跨族重复。
+
 ## [0.15.0] - 2026-10-29
 
 数据规模：**112 个词根 / 847 个单词 / 906 条关系**。

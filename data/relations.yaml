@@ -5442,10 +5442,307 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 mov（movere）——移动
+  # ==========================================================================
+  - source: mov
+    target: mover
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: mov
+    target: movimiento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mov
+    target: móvil
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mov
+    target: emoción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mov
+    target: promover
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mov
+    target: conmover
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mov
+    target: remover
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mov
+    target: movilizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mot（motus）——运动
+  # ==========================================================================
+  - source: mot
+    target: motivo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mot
+    target: motor
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mot
+    target: motivar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mot
+    target: motivación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mot
+    target: motín
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mot
+    target: motriz
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vers（vertere）——翻转、转向
+  # ==========================================================================
+  - source: vers
+    target: conversar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vers
+    target: conversación
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vers
+    target: versión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vers
+    target: diversión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vers
+    target: diverso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vers
+    target: controversia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vers
+    target: versátil
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vert（versus）——转变
+  # ==========================================================================
+  - source: vert
+    target: convertir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vert
+    target: advertir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vert
+    target: divertir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vert
+    target: verter
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vert
+    target: inversión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vert
+    target: invertir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vert
+    target: conversión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mut（mutare）——改变
+  # ==========================================================================
+  - source: mut
+    target: mutación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mut
+    target: mutante
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mut
+    target: mutar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mut
+    target: inmutable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mut
+    target: mutabilidad
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 commut（commutare）——互换
+  # ==========================================================================
+  - source: commut
+    target: conmutar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: commut
+    target: conmutador
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: commut
+    target: conmutación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: commut
+    target: permutar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vari（varius）——多样、变化
+  # ==========================================================================
+  - source: vari
+    target: varios
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vari
+    target: variar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vari
+    target: variedad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vari
+    target: variado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vari
+    target: variable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vari
+    target: variante
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vari
+    target: variación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vari
+    target: invariable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: movimiento
+    target: variación
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -5803,6 +6100,12 @@ relations:
 
   - source: vencer
     target: convencer
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: convertir
+    target: advertir
     rel_type: confundir
     cefr_level: null
     prompt_template: null
