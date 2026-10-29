@@ -89,6 +89,9 @@ GENERATED_MARK = "<!-- 由 scripts/generate_mermaid.py 自动生成，请勿手�
 # “Maximum text size in diagram exceeded”。留出余量后按此阈值告警。
 MAX_DIAGRAM_CHARS = 45000
 
+# 联想图单图超过该字符数时，自动按词根首字母（A–L / M–Z）拆分
+SPLIT_THRESHOLD = 25000
+
 FORBIDDEN_KEYS = frozenset(
     {
         "definition",
@@ -714,8 +717,39 @@ def _blocks_by_root(dataset: Dataset) -> Tuple[Dict[str, List[Relation]], List[R
     return grouped, orphan
 
 
+def _bucket_label(dataset: Dataset, relation: Relation) -> str:
+    """按所属词根 id 的首字母分桶，用于超长联想图自动拆分。"""
+    owner = root_of_word(dataset, relation.source) or root_of_word(dataset, relation.target)
+    if not owner:
+        return "未归属"
+    return "A–L" if owner[0].lower() <= "l" else "M–Z"
+
+
+def _associate_diagrams(
+    dataset: Dataset, relations: Sequence[Relation], levels: Dict[str, Optional[str]]
+) -> List[Tuple[str, Sequence[Relation], List[str]]]:
+    """返回 [(分块标签, 关系子集, 图代码)]；单图不超过阈值就不拆。"""
+    names = {rel.source for rel in relations} | {rel.target for rel in relations}
+    diagram = _diagram(dataset, names, relations, levels)
+    if len("\n".join(diagram)) <= SPLIT_THRESHOLD:
+        return [("", relations, diagram)]
+
+    buckets: Dict[str, List[Relation]] = {}
+    for relation in relations:
+        buckets.setdefault(_bucket_label(dataset, relation), []).append(relation)
+
+    parts: List[Tuple[str, Sequence[Relation], List[str]]] = []
+    for label in ("A–L", "M–Z", "未归属"):
+        subset = buckets.get(label)
+        if not subset:
+            continue
+        subset_names = {rel.source for rel in subset} | {rel.target for rel in subset}
+        parts.append((label, subset, _diagram(dataset, subset_names, subset, levels)))
+    return parts
+
+
 def render_associate_page(dataset: Dataset) -> str:
-    """联想网状图：asociar 与 confundir 各一张，避免单图超过 maxTextSize。"""
+    """联想网状图：asociar 与 confundir 分开；单图过长时再按词根首字母拆分。"""
     levels = word_levels(dataset)
     sections: List[str] = []
     rows: List[Tuple[str, str, str, str, str]] = []
@@ -725,21 +759,25 @@ def render_associate_page(dataset: Dataset) -> str:
         relations = [rel for rel in dataset.relations if rel.rel_type == rel_type]
         color = EDGE_STYLE[rel_type][1].split(",")[0].replace("stroke:", "")
         title = "语义联想（`asociar`）" if rel_type == "asociar" else "形近易混（`confundir`）"
-        sections.append("## {0} — 虚线 `{1}`".format(title, color))
-        sections.append("")
+
         if not relations:
-            sections.extend(["（暂无此类关系）", ""])
+            sections.extend(["## {0} — 虚线 `{1}`".format(title, color), "", "（暂无此类关系）", ""])
             continue
 
-        names = {rel.source for rel in relations} | {rel.target for rel in relations}
-        diagram = _diagram(dataset, names, relations, levels)
-        _size_guard("associate_graph_{0}".format(rel_type), diagram)
-        sections.append("关系 {0} 条 · 涉及单词 {1} 个".format(len(relations), len(names)))
-        sections.append("")
-        sections.append(_mermaid(diagram))
-        sections.append("")
-        total_edges += len(relations)
+        for label, subset, diagram in _associate_diagrams(dataset, relations, levels):
+            heading = "## {0} — 虚线 `{1}`".format(title, color)
+            if label:
+                heading += " · 词根 {0}".format(label)
+            names = {rel.source for rel in subset} | {rel.target for rel in subset}
+            sections.append(heading)
+            sections.append("")
+            sections.append("关系 {0} 条 · 涉及单词 {1} 个".format(len(subset), len(names)))
+            sections.append("")
+            _size_guard("associate_graph_{0}{1}".format(rel_type, "_" + label if label else ""), diagram)
+            sections.append(_mermaid(diagram))
+            sections.append("")
 
+        total_edges += len(relations)
         for rel in relations:
             rows.append(
                 (
@@ -757,7 +795,7 @@ def render_associate_page(dataset: Dataset) -> str:
         "# 联想网状图（asociar + confundir）",
         "",
         "- 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`",
-        "- 两类关系各一张图，避免单图超过 mermaid 的 `maxTextSize` 上限",
+        "- 两类关系分开渲染；单图超过 {0} 字符时再按词根首字母（A–L / M–Z）拆分".format(SPLIT_THRESHOLD),
         "- 关系 {0} 条".format(total_edges),
         "",
     ]
