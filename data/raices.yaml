@@ -973,3 +973,56 @@ raices:
     root_name: scrut
     latin_origin: "scrutari (to search closely)"
     batch: c5
+
+  # ==========================================================================
+  # C 批次 6：流动 · 水 · 冲洗
+  # ==========================================================================
+
+  # ---- 流淌（C1 区间）----
+  - id: flu
+    root_name: flu
+    latin_origin: "fluere (to flow)"
+    batch: c6
+
+  # ---- 流动（C1 区间）----
+  - id: flux
+    root_name: flux
+    latin_origin: "fluxus (a flowing)"
+    batch: c6
+
+  # ---- 溪流（C1 区间）----
+  - id: riv
+    root_name: riv
+    latin_origin: "rivus (stream)"
+    batch: c6
+
+  # ---- 激流（C2 区间）----
+  # 注：id 用 `torren`（torrens）与 C7 的 `torr`（torrere 烤）区分
+  - id: torren
+    root_name: torren
+    latin_origin: "torrens (torrent, rushing stream)"
+    batch: c6
+
+  # ---- 波浪（C2 区间）----
+  - id: und
+    root_name: und
+    latin_origin: "unda (wave)"
+    batch: c6
+
+  # ---- 冲洗（C1 区间）----
+  - id: lav
+    root_name: lav
+    latin_origin: "lavare (to wash)"
+    batch: c6
+
+  # ---- 浇灌（C2 区间）----
+  - id: rig
+    root_name: rig
+    latin_origin: "rigare (to water)"
+    batch: c6
+
+  # ---- 灌溉（C2 区间）----
+  - id: irrig
+    root_name: irrig
+    latin_origin: "irrigare (to irrigate)"
+    batch: c6

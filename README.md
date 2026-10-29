@@ -324,6 +324,21 @@ relations:
 
 > `judic` 已在 v0 历史批次；`seleccionar` / `elegir` 已属 `leg`（legere）词族，本批次不重复。
 
+**C 批次 6 —— 流动、水、冲洗（8 个词根 / 33 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `flu` | fluere（流淌） | [`raiz_c6_flu.md`](mindmaps/raiz_c6_flu.md) | 6 |
+| `flux` | fluxus（流动） | [`raiz_c6_flux.md`](mindmaps/raiz_c6_flux.md) | 3 |
+| `riv` | rivus（溪流） | [`raiz_c6_riv.md`](mindmaps/raiz_c6_riv.md) | 4 |
+| `torren` | torrens（激流） | [`raiz_c6_torren.md`](mindmaps/raiz_c6_torren.md) | 2 |
+| `und` | unda（波浪） | [`raiz_c6_und.md`](mindmaps/raiz_c6_und.md) | 8 |
+| `lav` | lavare（冲洗） | [`raiz_c6_lav.md`](mindmaps/raiz_c6_lav.md) | 5 |
+| `rig` | rigare（浇灌） | [`raiz_c6_rig.md`](mindmaps/raiz_c6_rig.md) | 3 |
+| `irrig` | irrigare（灌溉） | [`raiz_c6_irrig.md`](mindmaps/raiz_c6_irrig.md) | 2 |
+
+> 词根 `torrens`（激流）使用 id `torren`，与 C 批次 7 的 `torr`（torrere 烤）区分。
+
 ---
 
 ## 6. 本地部署与生成

@@ -4,7 +4,7 @@
 
 - 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`
 - 两类关系分开渲染；单图超过 25000 字符时按词根首字母（A–L / M–Z）拆，仍超则按 8 条关系切片
-- **每个分块独立成文件**，共 10 张图 / 关系 74 条
+- **每个分块独立成文件**，共 11 张图 / 关系 76 条
 - 词根索引：[root_tree.md](root_tree.md)
 
 ## 分块导航
@@ -17,16 +17,18 @@
 | [asociar_a-l-4-4.md](asociar_a-l-4-4.md) | 语义联想（`asociar`） | A–L 4/4 | 3 |
 | [asociar_m-z-1-3.md](asociar_m-z-1-3.md) | 语义联想（`asociar`） | M–Z 1/3 | 8 |
 | [asociar_m-z-2-3.md](asociar_m-z-2-3.md) | 语义联想（`asociar`） | M–Z 2/3 | 8 |
-| [asociar_m-z-3-3.md](asociar_m-z-3-3.md) | 语义联想（`asociar`） | M–Z 3/3 | 5 |
+| [asociar_m-z-3-3.md](asociar_m-z-3-3.md) | 语义联想（`asociar`） | M–Z 3/3 | 6 |
 | [confundir_a-l.md](confundir_a-l.md) | 形近易混（`confundir`） | A–L | 10 |
-| [confundir_m-z-1-2.md](confundir_m-z-1-2.md) | 形近易混（`confundir`） | M–Z 1/2 | 8 |
-| [confundir_m-z-2-2.md](confundir_m-z-2-2.md) | 形近易混（`confundir`） | M–Z 2/2 | 8 |
+| [confundir_m-z-1-3.md](confundir_m-z-1-3.md) | 形近易混（`confundir`） | M–Z 1/3 | 8 |
+| [confundir_m-z-2-3.md](confundir_m-z-2-3.md) | 形近易混（`confundir`） | M–Z 2/3 | 8 |
+| [confundir_m-z-3-3.md](confundir_m-z-3-3.md) | 形近易混（`confundir`） | M–Z 3/3 | 1 |
 
 ## 关系清单
 
 | 关系 | 起点 | 终点 |
 | --- | --- | --- |
 | asociar | paz | guerra |
+| asociar | regar | irrigar |
 | asociar | opción | elección |
 | asociar | construir | destruir |
 | asociar | viejo | nuevo |
@@ -100,3 +102,4 @@
 | confundir | decimal | décimo |
 | confundir | techo | teja |
 | confundir | selección | elección |
+| confundir | abundar | inundar |

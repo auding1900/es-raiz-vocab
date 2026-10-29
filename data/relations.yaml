@@ -7302,10 +7302,238 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 flu（fluere）——流淌
+  # ==========================================================================
+  - source: flu
+    target: influir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: flu
+    target: influencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: flu
+    target: fluir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flu
+    target: fluido
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flu
+    target: influyente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flu
+    target: afluente
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 flux（fluxus）——流动
+  # ==========================================================================
+  - source: flux
+    target: flujo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: flux
+    target: reflujo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: flux
+    target: fluxión
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 riv（rivus）——溪流
+  # ==========================================================================
+  - source: riv
+    target: río
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: riv
+    target: rival
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: riv
+    target: rivalidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: riv
+    target: rivera
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 torren（torrens）——激流
+  # ==========================================================================
+  - source: torren
+    target: torrente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: torren
+    target: torrencial
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 und（unda）——波浪
+  # ==========================================================================
+  - source: und
+    target: onda
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: und
+    target: inundar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: und
+    target: inundación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: und
+    target: ondulado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: und
+    target: abundar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: und
+    target: abundancia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: und
+    target: ondear
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: und
+    target: redundante
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 lav（lavare）——冲洗
+  # ==========================================================================
+  - source: lav
+    target: lavar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: lav
+    target: lavabo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lav
+    target: lavandería
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lav
+    target: lavado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lav
+    target: lavatorio
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 rig（rigare）——浇灌
+  # ==========================================================================
+  - source: rig
+    target: regar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: rig
+    target: riego
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rig
+    target: regadío
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 irrig（irrigare）——灌溉
+  # ==========================================================================
+  - source: irrig
+    target: irrigar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: irrig
+    target: irrigación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: regar
+    target: irrigar
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -7747,6 +7975,12 @@ relations:
 
   - source: selección
     target: elección
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: abundar
+    target: inundar
     rel_type: confundir
     cefr_level: null
     prompt_template: null

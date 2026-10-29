@@ -8,6 +8,22 @@
 
 暂无。
 
+## [0.23.0] - 2026-10-29
+
+数据规模：**174 个词根 / 1161 个单词 / 1238 条关系**。
+
+### Added
+
+- 新增 8 个词根（C 批次 6）：`flu`、`flux`、`riv`、`torren`、`und`、`lav`、`rig`、`irrig`。
+- 新增 33 条 `derivar` 关系：flu 6、flux 3、riv 4、torren 2、und 8、lav 5、rig 3、irrig 2。
+- 新增 1 条 `asociar`（`regar ↔ irrigar`）与 1 条 `confundir`（`abundar ↔ inundar`）。
+- 数据集达到 1161 个单词 / 1238 条关系。
+- 级别分布 A1 69 / A2 184 / B1 282 / B2 350 / C1 236 / C2 38，另有 2 个未标注。
+
+### Notes
+
+- C 批次清单中 `torr` 出现两次（torrens 激流 / torrere 烤），分别使用 `torren` 与 `torr`。
+
 ## [0.22.0] - 2026-10-29
 
 数据规模：**166 个词根 / 1128 个单词 / 1203 条关系**。

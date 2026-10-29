@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 166 个 · 单词 1128 个 · 关系 1203 条
+- 词根 174 个 · 单词 1161 个 · 关系 1238 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -227,3 +227,16 @@
 | `opt` | opt | optare (to choose, to wish) | 5 | 5 | [raiz_c5_opt.md](raiz_c5_opt.md) |
 | `scrut` | scrut | scrutari (to search closely) | 2 | 2 | [raiz_c5_scrut.md](raiz_c5_scrut.md) |
 | `select` | select | seligere (to pick out) | 5 | 5 | [raiz_c5_select.md](raiz_c5_select.md) |
+
+## 批次 `c6`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `flu` | flu | fluere (to flow) | 6 | 6 | [raiz_c6_flu.md](raiz_c6_flu.md) |
+| `flux` | flux | fluxus (a flowing) | 3 | 3 | [raiz_c6_flux.md](raiz_c6_flux.md) |
+| `irrig` | irrig | irrigare (to irrigate) | 2 | 2 | [raiz_c6_irrig.md](raiz_c6_irrig.md) |
+| `lav` | lav | lavare (to wash) | 5 | 5 | [raiz_c6_lav.md](raiz_c6_lav.md) |
+| `rig` | rig | rigare (to water) | 4 | 4 | [raiz_c6_rig.md](raiz_c6_rig.md) |
+| `riv` | riv | rivus (stream) | 4 | 4 | [raiz_c6_riv.md](raiz_c6_riv.md) |
+| `torren` | torren | torrens (torrent, rushing stream) | 2 | 2 | [raiz_c6_torren.md](raiz_c6_torren.md) |
+| `und` | und | unda (wave) | 8 | 9 | [raiz_c6_und.md](raiz_c6_und.md) |

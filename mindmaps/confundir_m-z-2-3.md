@@ -1,8 +1,8 @@
 <!-- 由 scripts/generate_mermaid.py 自动生成，请勿手工编辑 -->
 
-# 形近易混（`confundir`） · 词根 M–Z 2/2
+# 形近易混（`confundir`） · 词根 M–Z 2/3
 
-- 虚线 `#dd4444` · 本页关系 8 条 / 该类型共 26 条 · 涉及单词 16 个
+- 虚线 `#dd4444` · 本页关系 8 条 / 该类型共 27 条 · 涉及单词 16 个
 - 索引：[联想网状图总览](associate_graph.md)
 
 ```mermaid
