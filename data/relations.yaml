@@ -5733,10 +5733,307 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 clar（clarus）——明亮、清晰
+  # ==========================================================================
+  - source: clar
+    target: claro
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: clar
+    target: claridad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clar
+    target: declarar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clar
+    target: declaración
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clar
+    target: aclarar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: clar
+    target: clarificar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: clar
+    target: clarividente
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 lumin（lumen）——光
+  # ==========================================================================
+  - source: lumin
+    target: lumbre
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lumin
+    target: luminoso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lumin
+    target: iluminar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lumin
+    target: iluminación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: lumin
+    target: luminaria
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 luc（lux）——光线
+  # ==========================================================================
+  - source: luc
+    target: luz
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: luc
+    target: lucir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: luc
+    target: relucir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: luc
+    target: lúcido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: luc
+    target: lucidez
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: luc
+    target: lucero
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 splendor（splendere）——发光
+  # ==========================================================================
+  - source: splendor
+    target: espléndido
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: splendor
+    target: esplendor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: splendor
+    target: resplandor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: splendor
+    target: resplandecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: splendor
+    target: esplendoroso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 teneb（tenebrae）——黑暗
+  # ==========================================================================
+  - source: teneb
+    target: tinieblas
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: teneb
+    target: tenebroso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 obscur（obscurus）——昏暗
+  # ==========================================================================
+  - source: obscur
+    target: oscuro
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: obscur
+    target: oscuridad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: obscur
+    target: oscurecer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: obscur
+    target: oscurecimiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: obscur
+    target: oscurantismo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 umbr（umbra）——阴影
+  # ==========================================================================
+  - source: umbr
+    target: sombra
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: umbr
+    target: sombrilla
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: umbr
+    target: sombrío
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: umbr
+    target: penumbra
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: umbr
+    target: umbrío
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 pur（purus）——纯净
+  # ==========================================================================
+  - source: pur
+    target: puro
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pur
+    target: pureza
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pur
+    target: purificar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pur
+    target: purificación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pur
+    target: impuro
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mund（mundus）——洁净、世界
+  # ==========================================================================
+  - source: mund
+    target: mundo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: mund
+    target: mundial
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mund
+    target: mundano
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mund
+    target: inmundo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: luz
+    target: sombra
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -6106,6 +6403,12 @@ relations:
 
   - source: convertir
     target: advertir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: claridad
+    target: caridad
     rel_type: confundir
     cefr_level: null
     prompt_template: null

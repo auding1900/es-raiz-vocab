@@ -241,6 +241,20 @@ relations:
 
 > `vari` 在 C 批次 2 中重复出现，统一在 B12 建档；具体词表见各导图页。
 
+**B 批次 13 —— 光、暗与纯净（9 个词根 / 44 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `clar` | clarus（明亮、清晰） | [`raiz_b13_clar.md`](mindmaps/raiz_b13_clar.md) | 7 |
+| `lumin` | lumen（光） | [`raiz_b13_lumin.md`](mindmaps/raiz_b13_lumin.md) | 5 |
+| `luc` | lux（光线） | [`raiz_b13_luc.md`](mindmaps/raiz_b13_luc.md) | 6 |
+| `splendor` | splendere（发光） | [`raiz_b13_splendor.md`](mindmaps/raiz_b13_splendor.md) | 5 |
+| `teneb` | tenebrae（黑暗） | [`raiz_b13_teneb.md`](mindmaps/raiz_b13_teneb.md) | 2 |
+| `obscur` | obscurus（昏暗） | [`raiz_b13_obscur.md`](mindmaps/raiz_b13_obscur.md) | 5 |
+| `umbr` | umbra（阴影） | [`raiz_b13_umbr.md`](mindmaps/raiz_b13_umbr.md) | 5 |
+| `pur` | purus（纯净） | [`raiz_b13_pur.md`](mindmaps/raiz_b13_pur.md) | 5 |
+| `mund` | mundus（洁净、世界） | [`raiz_b13_mund.md`](mindmaps/raiz_b13_mund.md) | 4 |
+
 ---
 
 ## 6. 本地部署与生成

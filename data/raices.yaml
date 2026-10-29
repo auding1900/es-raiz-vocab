@@ -661,3 +661,61 @@ raices:
     root_name: vari
     latin_origin: "varius (varied)"
     batch: b12
+
+  # ==========================================================================
+  # B 批次 13：光 · 暗 · 纯净
+  # ==========================================================================
+
+  # ---- 明亮、清晰（B1 区间）----
+  - id: clar
+    root_name: clar
+    latin_origin: "clarus (clear, bright)"
+    batch: b13
+
+  # ---- 光（B2 区间）----
+  - id: lumin
+    root_name: lumin
+    latin_origin: "lumen, luminis (light)"
+    batch: b13
+
+  # ---- 光线（B1 区间）----
+  - id: luc
+    root_name: luc
+    latin_origin: "lux, lucis (light)"
+    batch: b13
+
+  # ---- 发光（B2 区间）----
+  - id: splendor
+    root_name: splendor
+    latin_origin: "splendere (to shine)"
+    batch: b13
+
+  # ---- 黑暗（B2 区间）----
+  - id: teneb
+    root_name: teneb
+    latin_origin: "tenebrae (darkness)"
+    batch: b13
+
+  # ---- 昏暗（B2 区间）----
+  - id: obscur
+    root_name: obscur
+    latin_origin: "obscurus (dark)"
+    batch: b13
+
+  # ---- 阴影（B2 区间）----
+  - id: umbr
+    root_name: umbr
+    latin_origin: "umbra (shadow)"
+    batch: b13
+
+  # ---- 纯净（B1 区间）----
+  - id: pur
+    root_name: pur
+    latin_origin: "purus (pure)"
+    batch: b13
+
+  # ---- 洁净、世界（B2 区间）----
+  - id: mund
+    root_name: mund
+    latin_origin: "mundus (clean; the world)"
+    batch: b13

@@ -8,6 +8,18 @@
 
 暂无。
 
+## [0.17.0] - 2026-10-29
+
+数据规模：**128 个词根 / 936 个单词 / 999 条关系**。
+
+### Added
+
+- 新增 9 个词根（B 批次 13）：`clar`、`lumin`、`luc`、`splendor`、`teneb`、`obscur`、`umbr`、`pur`、`mund`。
+- 新增 44 条 `derivar` 关系：clar 7、lumin 5、luc 6、splendor 5、teneb 2、obscur 5、umbr 5、pur 5、mund 4。
+- 新增 1 条 `asociar`（`luz ↔ sombra`）与 1 条 `confundir`（`claridad ↔ caridad`）。
+- 数据集达到 936 个单词 / 999 条关系（935 条 `derivar` + 43 条 `asociar` + 21 条 `confundir`）。
+- 级别分布 A1 53 / A2 165 / B1 234 / B2 288 / C1 184 / C2 11，另有 1 个未标注（`mermar`）。
+
 ## [0.16.0] - 2026-10-29
 
 数据规模：**119 个词根 / 892 个单词 / 953 条关系**。

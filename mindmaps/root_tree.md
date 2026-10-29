@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 119 个 · 单词 892 个 · 关系 953 条
+- 词根 128 个 · 单词 936 个 · 关系 999 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -150,3 +150,17 @@
 | `vari` | vari | varius (varied) | 8 | 8 | [raiz_b12_vari.md](raiz_b12_vari.md) |
 | `vers` | vers | vertere (to turn) | 7 | 7 | [raiz_b12_vers.md](raiz_b12_vers.md) |
 | `vert` | vert | versus (a turning) | 7 | 8 | [raiz_b12_vert.md](raiz_b12_vert.md) |
+
+## 批次 `b13`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `clar` | clar | clarus (clear, bright) | 8 | 8 | [raiz_b13_clar.md](raiz_b13_clar.md) |
+| `luc` | luc | lux, lucis (light) | 7 | 7 | [raiz_b13_luc.md](raiz_b13_luc.md) |
+| `lumin` | lumin | lumen, luminis (light) | 5 | 5 | [raiz_b13_lumin.md](raiz_b13_lumin.md) |
+| `mund` | mund | mundus (clean; the world) | 4 | 4 | [raiz_b13_mund.md](raiz_b13_mund.md) |
+| `obscur` | obscur | obscurus (dark) | 5 | 5 | [raiz_b13_obscur.md](raiz_b13_obscur.md) |
+| `pur` | pur | purus (pure) | 5 | 5 | [raiz_b13_pur.md](raiz_b13_pur.md) |
+| `splendor` | splendor | splendere (to shine) | 5 | 5 | [raiz_b13_splendor.md](raiz_b13_splendor.md) |
+| `teneb` | teneb | tenebrae (darkness) | 2 | 2 | [raiz_b13_teneb.md](raiz_b13_teneb.md) |
+| `umbr` | umbr | umbra (shadow) | 5 | 5 | [raiz_b13_umbr.md](raiz_b13_umbr.md) |
