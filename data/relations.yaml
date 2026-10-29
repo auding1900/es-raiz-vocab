@@ -3842,6 +3842,303 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # mensur（metiri）——测量（`mens` 已用于 mens, mentis）
+  # ==========================================================================
+  - source: mensur
+    target: medida
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mensur
+    target: medir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mensur
+    target: medición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mensur
+    target: dimensión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mensur
+    target: inmenso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mensur
+    target: medidor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mensur
+    target: inmensidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mensur
+    target: mensurable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # calcul（calculus）——计算
+  # ==========================================================================
+  - source: calcul
+    target: calcular
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: calcul
+    target: cálculo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: calcul
+    target: calculadora
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: calcul
+    target: incalculable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: calcul
+    target: recalcular
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: calcul
+    target: calculista
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # ponder（pondus）——重量 / 权衡
+  # ==========================================================================
+  - source: ponder
+    target: ponderar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ponder
+    target: ponderación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ponder
+    target: ponderado
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ponder
+    target: imponderable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # estim（aestimare）——估价
+  # ==========================================================================
+  - source: estim
+    target: estima
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: estim
+    target: estimar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: estim
+    target: autoestima
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: estim
+    target: estimación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: estim
+    target: estimado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: estim
+    target: desestimar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # preti（pretium）——价格
+  # ==========================================================================
+  - source: preti
+    target: precio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: preti
+    target: precioso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: preti
+    target: apreciar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: preti
+    target: aprecio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: preti
+    target: apreciación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: preti
+    target: apreciable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: preti
+    target: depreciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: preti
+    target: depreciación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # lib（libra）——天平 / 称量
+  # ==========================================================================
+  - source: lib
+    target: nivel
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: lib
+    target: equilibrio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lib
+    target: libra
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lib
+    target: equilibrar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lib
+    target: equilibrado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lib
+    target: nivelar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lib
+    target: desnivel
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lib
+    target: nivelación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # tax（taxare）——评估 / 征税
+  # ==========================================================================
+  - source: tax
+    target: tasa
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tax
+    target: tasar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tax
+    target: tasación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tax
+    target: taxímetro
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tax
+    target: tasador
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: tax
+    target: taxativo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -4008,6 +4305,24 @@ relations:
 
   - source: regla
     target: orden
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: precio
+    target: valor
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: medir
+    target: calcular
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: equilibrio
+    target: nivel
     rel_type: asociar
     cefr_level: null
     prompt_template: null

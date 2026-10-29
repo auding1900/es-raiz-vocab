@@ -373,3 +373,39 @@ raices:
   - id: rect
     root_name: rect
     latin_origin: "rectus (straight, right)"
+
+  # ---- 测量（B2 区间）----
+  # 注：id `mens` 已被 mens, mentis（头脑）占用，此处用 `mensur` 区分
+  - id: mensur
+    root_name: mensur
+    latin_origin: "metiri, mensus (to measure)"
+
+  # ---- 计算（B2 区间）----
+  - id: calcul
+    root_name: calcul
+    latin_origin: "calculus (pebble, reckoning)"
+
+  # ---- 重量 / 权衡（B2 区间）----
+  - id: ponder
+    root_name: ponder
+    latin_origin: "pondus, ponderis (weight)"
+
+  # ---- 估价（B2 区间）----
+  - id: estim
+    root_name: estim
+    latin_origin: "aestimare (to value, to estimate)"
+
+  # ---- 价格（B2 区间）----
+  - id: preti
+    root_name: preti
+    latin_origin: "pretium (price, value)"
+
+  # ---- 天平 / 称量（B2 区间）----
+  - id: lib
+    root_name: lib
+    latin_origin: "libra (balance, scales)"
+
+  # ---- 评估 / 征税（B2 区间）----
+  - id: tax
+    root_name: tax
+    latin_origin: "taxare (to assess, to tax)"
