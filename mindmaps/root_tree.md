@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 151 个 · 单词 1063 个 · 关系 1131 条
+- 词根 159 个 · 单词 1103 个 · 关系 1175 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -40,7 +40,7 @@
 | `duc` | duc | ducere (to lead) | 5 | 5 | [raiz_v0_duc.md](raiz_v0_duc.md) |
 | `dur` | dur | durus (hard, lasting) | 10 | 10 | [raiz_v0_dur.md](raiz_v0_dur.md) |
 | `estim` | estim | aestimare (to value, to estimate) | 6 | 6 | [raiz_v0_estim.md](raiz_v0_estim.md) |
-| `fac` | fac | facere (to make, to do) | 10 | 12 | [raiz_v0_fac.md](raiz_v0_fac.md) |
+| `fac` | fac | facere (to make, to do) | 10 | 14 | [raiz_v0_fac.md](raiz_v0_fac.md) |
 | `fid` | fid | fides (trust, faith) | 9 | 9 | [raiz_v0_fid.md](raiz_v0_fid.md) |
 | `firm` | firm | firmus (firm, solid) | 8 | 9 | [raiz_v0_firm.md](raiz_v0_firm.md) |
 | `flor` | flor | florere (to bloom) | 8 | 8 | [raiz_v0_flor.md](raiz_v0_flor.md) |
@@ -202,3 +202,16 @@
 | `sept` | sept | septem (seven) | 3 | 3 | [raiz_c3_sept.md](raiz_c3_sept.md) |
 | `ult` | ult | ultimus (last) | 3 | 3 | [raiz_c3_ult.md](raiz_c3_ult.md) |
 | `vet` | vet | vetus, veteris (old) | 6 | 6 | [raiz_c3_vet.md](raiz_c3_vet.md) |
+
+## 批次 `c4`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `aed` | aed | aedes (building, temple) | 4 | 4 | [raiz_c4_aed.md](raiz_c4_aed.md) |
+| `constru` | constru | construere (to build up) | 7 | 7 | [raiz_c4_constru.md](raiz_c4_constru.md) |
+| `fabric` | fabric | fabrica (workshop, craft) | 3 | 3 | [raiz_c4_fabric.md](raiz_c4_fabric.md) |
+| `mol` | mol | moles (mass, massive structure) | 5 | 5 | [raiz_c4_mol.md](raiz_c4_mol.md) |
+| `mur` | mur | murus (wall) | 4 | 4 | [raiz_c4_mur.md](raiz_c4_mur.md) |
+| `pont` | pont | pons, pontis (bridge) | 4 | 4 | [raiz_c4_pont.md](raiz_c4_pont.md) |
+| `struct` | struct | struere (to build, to pile up) | 7 | 7 | [raiz_c4_struct.md](raiz_c4_struct.md) |
+| `tect` | tect | tegere (to cover) | 7 | 8 | [raiz_c4_tect.md](raiz_c4_tect.md) |

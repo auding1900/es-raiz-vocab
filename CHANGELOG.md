@@ -8,6 +8,22 @@
 
 暂无。
 
+## [0.21.0] - 2026-10-29
+
+数据规模：**159 个词根 / 1103 个单词 / 1175 条关系**。
+
+### Added
+
+- 新增 8 个词根（C 批次 4）：`struct`、`fabric`、`constru`、`mol`、`aed`、`tect`、`mur`、`pont`。
+- 新增 42 条 `derivar` 关系：struct 7、fabric 5、constru 6、mol 5、aed 4、tect 7、mur 4、pont 4。
+- 新增 1 条 `asociar`（`construir ↔ destruir`）与 1 条 `confundir`（`techo ↔ teja`）。
+- 数据集达到 1103 个单词 / 1175 条关系（1103 条 `derivar` + 47 条 `asociar` + 25 条 `confundir`）。
+- 级别分布 A1 68 / A2 181 / B1 270 / B2 332 / C1 219 / C2 31，另有 2 个未标注（`mermar`、`muerte`）。
+
+### Notes
+
+- `fabricar` 原先仅出现在 `asociar` 示例边上，本批次归入 `fabric` 词族。
+
 ## [0.20.0] - 2026-10-29
 
 数据规模：**151 个词根 / 1063 个单词 / 1131 条关系**。

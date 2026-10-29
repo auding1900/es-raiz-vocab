@@ -873,3 +873,55 @@ raices:
     root_name: ult
     latin_origin: "ultimus (last)"
     batch: c3
+
+  # ==========================================================================
+  # C 批次 4：搭建 · 制造 · 建筑
+  # ==========================================================================
+
+  # ---- 搭建、建造（C1 区间）----
+  - id: struct
+    root_name: struct
+    latin_origin: "struere (to build, to pile up)"
+    batch: c4
+
+  # ---- 制造（C1 区间）----
+  - id: fabric
+    root_name: fabric
+    latin_origin: "fabrica (workshop, craft)"
+    batch: c4
+
+  # ---- 构筑（C1 区间）----
+  - id: constru
+    root_name: constru
+    latin_origin: "construere (to build up)"
+    batch: c4
+
+  # ---- 大块、工程（C2 区间）----
+  - id: mol
+    root_name: mol
+    latin_origin: "moles (mass, massive structure)"
+    batch: c4
+
+  # ---- 建筑（C2 区间）----
+  - id: aed
+    root_name: aed
+    latin_origin: "aedes (building, temple)"
+    batch: c4
+
+  # ---- 覆盖、屋顶（C2 区间）----
+  - id: tect
+    root_name: tect
+    latin_origin: "tegere (to cover)"
+    batch: c4
+
+  # ---- 墙壁（C1 区间）----
+  - id: mur
+    root_name: mur
+    latin_origin: "murus (wall)"
+    batch: c4
+
+  # ---- 桥梁（C2 区间）----
+  - id: pont
+    root_name: pont
+    latin_origin: "pons, pontis (bridge)"
+    batch: c4

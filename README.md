@@ -297,6 +297,19 @@ relations:
 
 > `milenio` 已属 `ann`（annus）词族，本批次不重复。
 
+**C 批次 4 —— 搭建、制造、建筑（8 个词根 / 42 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `struct` | struere（搭建、建造） | [`raiz_c4_struct.md`](mindmaps/raiz_c4_struct.md) | 7 |
+| `fabric` | fabrica（制造） | [`raiz_c4_fabric.md`](mindmaps/raiz_c4_fabric.md) | 5 |
+| `constru` | construere（构筑） | [`raiz_c4_constru.md`](mindmaps/raiz_c4_constru.md) | 6 |
+| `mol` | moles（大块、工程） | [`raiz_c4_mol.md`](mindmaps/raiz_c4_mol.md) | 5 |
+| `aed` | aedes（建筑） | [`raiz_c4_aed.md`](mindmaps/raiz_c4_aed.md) | 4 |
+| `tect` | tegere（覆盖、屋顶） | [`raiz_c4_tect.md`](mindmaps/raiz_c4_tect.md) | 7 |
+| `mur` | murus（墙壁） | [`raiz_c4_mur.md`](mindmaps/raiz_c4_mur.md) | 4 |
+| `pont` | pons（桥梁） | [`raiz_c4_pont.md`](mindmaps/raiz_c4_pont.md) | 4 |
+
 ---
 
 ## 6. 本地部署与生成

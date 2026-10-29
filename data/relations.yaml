@@ -6849,10 +6849,292 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 struct（struere）——搭建、建造
+  # ==========================================================================
+  - source: struct
+    target: estructura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: struct
+    target: instrumento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: struct
+    target: instruir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: struct
+    target: instrucción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: struct
+    target: destruir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: struct
+    target: estructural
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: struct
+    target: obstruir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 fabric（fabrica）——制造
+  # ==========================================================================
+  - source: fabric
+    target: fábrica
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fabric
+    target: fabricar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fabric
+    target: fabricación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fabric
+    target: fabricante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fabric
+    target: prefabricado
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 constru（construere）——构筑
+  # ==========================================================================
+  - source: constru
+    target: construir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: constru
+    target: construcción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: constru
+    target: reconstruir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: constru
+    target: constructor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: constru
+    target: constructivo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: constru
+    target: reconstrucción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mol（moles）——大块、工程
+  # ==========================================================================
+  - source: mol
+    target: molécula
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mol
+    target: demoler
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mol
+    target: mole
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mol
+    target: demolición
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mol
+    target: molecular
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 aed（aedes）——建筑
+  # ==========================================================================
+  - source: aed
+    target: edificio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: aed
+    target: edificar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aed
+    target: edificación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: aed
+    target: edil
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 tect（tegere）——覆盖、屋顶
+  # ==========================================================================
+  - source: tect
+    target: techo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: tect
+    target: proteger
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: tect
+    target: protección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tect
+    target: detectar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tect
+    target: detective
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tect
+    target: teja
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tect
+    target: tegumento
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 mur（murus）——墙壁
+  # ==========================================================================
+  - source: mur
+    target: muro
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mur
+    target: muralla
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mur
+    target: amurallar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mur
+    target: intramuros
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 pont（pons）——桥梁
+  # ==========================================================================
+  - source: pont
+    target: puente
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pont
+    target: pontífice
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pont
+    target: pontificado
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pont
+    target: pontón
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: construir
+    target: destruir
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -7270,6 +7552,12 @@ relations:
 
   - source: decimal
     target: décimo
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: techo
+    target: teja
     rel_type: confundir
     cefr_level: null
     prompt_template: null

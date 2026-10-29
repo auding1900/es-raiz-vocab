@@ -4,7 +4,7 @@
 
 | 词根 id | 批次 | 派生单词 | 本族关系 |
 | --- | --- | --- | --- |
-| `fac` | v0 | 10 | 12（派生 10 · 联想 2） |
+| `fac` | v0 | 10 | 14（派生 12 · 联想 2） |
 
 - 线型：`derivar` 实线（词根派生）· `asociar` 蓝色虚线（同族联想）· `confundir` 红色虚线（易混）
 - 节点标签只含单词与 CEFR 级别，不含词义；点击节点或用文末链接表查豆包
@@ -12,6 +12,7 @@
 
 ```mermaid
 graph LR
+  R_fabric["fabric<br/>fabrica (workshop, craft)"]:::root
   R_fac["fac<br/>facere (to make, to do)"]:::root
   W_afecto["afecto<br/>B1"]:::lvlB1
   W_defecto["defecto<br/>B1"]:::lvlB1
@@ -33,6 +34,8 @@ graph LR
   R_fac --> W_fabricar
   R_fac --> W_defecto
   R_fac --> W_afecto
+  R_fabric --> W_fabrica
+  R_fabric --> W_fabricar
   W_facil -.->|asociar| W_dificil
   W_efecto -.->|confundir| W_afecto
   linkStyle 0 stroke:#000000,stroke-width:1.5px
@@ -45,8 +48,10 @@ graph LR
   linkStyle 7 stroke:#000000,stroke-width:1.5px
   linkStyle 8 stroke:#000000,stroke-width:1.5px
   linkStyle 9 stroke:#000000,stroke-width:1.5px
-  linkStyle 10 stroke:#4488bb,stroke-width:2px,stroke-dasharray:6 4
-  linkStyle 11 stroke:#dd4444,stroke-width:2px,stroke-dasharray:6 4
+  linkStyle 10 stroke:#000000,stroke-width:1.5px
+  linkStyle 11 stroke:#000000,stroke-width:1.5px
+  linkStyle 12 stroke:#4488bb,stroke-width:2px,stroke-dasharray:6 4
+  linkStyle 13 stroke:#dd4444,stroke-width:2px,stroke-dasharray:6 4
   classDef root fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
   classDef lvlA1 fill:#e8f5e9,stroke:#2e7d32,color:#1a1a1a
   classDef lvlA2 fill:#c8e6c9,stroke:#2e7d32,color:#1a1a1a
