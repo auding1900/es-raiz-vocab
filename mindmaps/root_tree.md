@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 99 个 · 单词 779 个 · 关系 834 条
+- 词根 105 个 · 单词 811 个 · 关系 868 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -115,3 +115,14 @@
 | `sedat` | sedat | sedare (to calm, to settle) | 4 | 4 | [raiz_b9_sedat.md](raiz_b9_sedat.md) |
 | `seren` | seren | serenus (clear, serene) | 4 | 4 | [raiz_b9_seren.md](raiz_b9_seren.md) |
 | `tranqu` | tranqu | tranquillus (calm, quiet) | 5 | 5 | [raiz_b9_tranqu.md](raiz_b9_tranqu.md) |
+
+## 批次 `b10`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `col` | col | colere (to till, to cultivate) | 10 | 10 | [raiz_b10_col.md](raiz_b10_col.md) |
+| `domic` | domic | domus (house, home) | 5 | 5 | [raiz_b10_domic.md](raiz_b10_domic.md) |
+| `habit` | habit | habitare (to dwell, to inhabit) | 7 | 7 | [raiz_b10_habit.md](raiz_b10_habit.md) |
+| `incol` | incol | incola (inhabitant) | 3 | 3 | [raiz_b10_incol.md](raiz_b10_incol.md) |
+| `rural` | rural | ruralis (of the countryside) | 2 | 2 | [raiz_b10_rural.md](raiz_b10_rural.md) |
+| `urb` | urb | urbs, urbis (city) | 7 | 7 | [raiz_b10_urb.md](raiz_b10_urb.md) |

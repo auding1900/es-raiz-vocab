@@ -528,3 +528,43 @@ raices:
     root_name: sedat
     latin_origin: "sedare (to calm, to settle)"
     batch: b9
+
+  # ==========================================================================
+  # B 批次 10：耕种 · 居住 · 城与乡
+  # ==========================================================================
+
+  # ---- 耕种、培育（B2 区间）----
+  - id: col
+    root_name: col
+    latin_origin: "colere (to till, to cultivate)"
+    batch: b10
+
+  # ---- 居住（B1 区间）----
+  - id: habit
+    root_name: habit
+    latin_origin: "habitare (to dwell, to inhabit)"
+    batch: b10
+
+  # ---- 家（B1 区间）----
+  - id: domic
+    root_name: domic
+    latin_origin: "domus (house, home)"
+    batch: b10
+
+  # ---- 城市（B1 区间）----
+  - id: urb
+    root_name: urb
+    latin_origin: "urbs, urbis (city)"
+    batch: b10
+
+  # ---- 乡村（B2 区间）----
+  - id: rural
+    root_name: rural
+    latin_origin: "ruralis (of the countryside)"
+    batch: b10
+
+  # ---- 居民（B2 区间）----
+  - id: incol
+    root_name: incol
+    latin_origin: "incola (inhabitant)"
+    batch: b10

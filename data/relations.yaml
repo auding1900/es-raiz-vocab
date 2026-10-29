@@ -4994,6 +4994,217 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 col（colere）——耕种、培育
+  # ==========================================================================
+  - source: col
+    target: cultura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: col
+    target: cultivo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: col
+    target: cultivar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: col
+    target: cultural
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: col
+    target: colonia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: col
+    target: colonial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: col
+    target: colono
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: col
+    target: colonizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: col
+    target: inculto
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 habit（habitare）——居住
+  # ==========================================================================
+  - source: habit
+    target: habitación
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: habit
+    target: habitante
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: habit
+    target: habitar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: habit
+    target: hábitat
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: habit
+    target: habitable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: habit
+    target: inhabitable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 domic（domus）——家
+  # ==========================================================================
+  - source: domic
+    target: doméstico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: domic
+    target: domicilio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: domic
+    target: domesticar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: domic
+    target: domiciliario
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: domic
+    target: domesticación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 urb（urbs）——城市
+  # ==========================================================================
+  - source: urb
+    target: urbano
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: urb
+    target: urbanización
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: urb
+    target: suburbio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: urb
+    target: urbanizar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: urb
+    target: urbanismo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: urb
+    target: urbanidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: urb
+    target: interurbano
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 rural（ruralis）——乡村
+  # 注：id `rural` 与单词 rural 同名，该词不单独声明节点（同 flor、don、arma）
+  # ==========================================================================
+  - source: rural
+    target: ruralidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rural
+    target: rurícola
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 incol（incola）——居民
+  # ==========================================================================
+  - source: incol
+    target: inquilino
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: incol
+    target: inquilinato
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: incol
+    target: íncola
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
@@ -5004,6 +5215,18 @@ relations:
 
   - source: quieto
     target: tranquilo
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: habitante
+    target: población
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: colono
+    target: habitante
     rel_type: asociar
     cefr_level: null
     prompt_template: null

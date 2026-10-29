@@ -202,6 +202,19 @@ relations:
 | `paus` | pausa（停歇） | [`raiz_b9_paus.md`](mindmaps/raiz_b9_paus.md) | pausa, pausado, pausar, pausadamente |
 | `sedat` | sedare（安抚） | [`raiz_b9_sedat.md`](mindmaps/raiz_b9_sedat.md) | sedante, sedar, sedación, sedativo |
 
+**B 批次 10 —— 耕种、居住与城乡（6 个词根 / 32 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 派生单词 |
+| --- | --- | --- | --- |
+| `col` | colere（耕种、培育） | [`raiz_b10_col.md`](mindmaps/raiz_b10_col.md) | cultura, cultivo, cultivar, cultural, colonia, colonial, colono, colonizar, inculto |
+| `habit` | habitare（居住） | [`raiz_b10_habit.md`](mindmaps/raiz_b10_habit.md) | habitación, habitante, habitar, hábitat, habitable, inhabitable |
+| `domic` | domus（家） | [`raiz_b10_domic.md`](mindmaps/raiz_b10_domic.md) | doméstico, domicilio, domesticar, domiciliario, domesticación |
+| `urb` | urbs（城市） | [`raiz_b10_urb.md`](mindmaps/raiz_b10_urb.md) | urbano, urbanización, suburbio, urbanizar, urbanismo, urbanidad, interurbano |
+| `rural` | ruralis（乡村） | [`raiz_b10_rural.md`](mindmaps/raiz_b10_rural.md) | ruralidad, rurícola |
+| `incol` | incola（居民） | [`raiz_b10_incol.md`](mindmaps/raiz_b10_incol.md) | inquilino, inquilinato, íncola |
+
+> 本批次未新增 `civ`（城邦）导图：该词根已在 v0 历史批次中。`rural` 词根与单词 rural 同名，故该词不单独声明节点。
+
 ---
 
 ## 6. 本地部署与生成

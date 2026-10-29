@@ -8,6 +8,24 @@
 
 暂无。
 
+## [0.14.0] - 2026-10-29
+
+数据规模：**105 个词根 / 811 个单词 / 868 条关系**。
+
+### Added
+
+- 新增 6 个词根（B 批次 10）：`col`（colere）、`habit`（habitare）、`domic`（domus）、`urb`（urbs）、`rural`（ruralis）、`incol`（incola）。
+- 新增 32 条 `derivar` 关系：col 9、habit 6、domic 5、urb 7、rural 2、incol 3。
+- 新增 2 条 `asociar` 关系：`habitante ↔ población`、`colono ↔ habitante`。
+- 新导图页：`mindmaps/raiz_b10_*.md`（6 个，一词根一文件）。
+- 数据集达到 811 个单词 / 868 条关系（810 条 `derivar` + 39 条 `asociar` + 19 条 `confundir`）。
+- 级别分布 A1 46 / A2 155 / B1 203 / B2 258 / C1 144 / C2 4，另有 1 个未标注（`mermar`）。
+
+### Notes
+
+- `civ`（城邦）已在 v0 历史批次中，本批次不重复建词根。
+- 词根 `rural` 与单词 `rural` 同名，该词不单独声明节点（同 `flor`、`don`、`arma`）。
+
 ## [0.13.0] - 2026-10-29
 
 数据规模：**99 个词根 / 779 个单词 / 834 条关系**。

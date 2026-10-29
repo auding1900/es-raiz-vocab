@@ -4,7 +4,7 @@
 
 - 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`
 - 两类关系分开渲染；单图超过 25000 字符时按词根首字母（A–L / M–Z）拆，仍超则按 8 条关系切片
-- **每个分块独立成文件**，共 8 张图 / 关系 56 条
+- **每个分块独立成文件**，共 8 张图 / 关系 58 条
 - 词根索引：[root_tree.md](root_tree.md)
 
 ## 分块导航
@@ -13,7 +13,7 @@
 | --- | --- | --- | --- |
 | [asociar_a-l-1-3.md](asociar_a-l-1-3.md) | 语义联想（`asociar`） | A–L 1/3 | 8 |
 | [asociar_a-l-2-3.md](asociar_a-l-2-3.md) | 语义联想（`asociar`） | A–L 2/3 | 8 |
-| [asociar_a-l-3-3.md](asociar_a-l-3-3.md) | 语义联想（`asociar`） | A–L 3/3 | 3 |
+| [asociar_a-l-3-3.md](asociar_a-l-3-3.md) | 语义联想（`asociar`） | A–L 3/3 | 5 |
 | [asociar_m-z-1-3.md](asociar_m-z-1-3.md) | 语义联想（`asociar`） | M–Z 1/3 | 8 |
 | [asociar_m-z-2-3.md](asociar_m-z-2-3.md) | 语义联想（`asociar`） | M–Z 2/3 | 8 |
 | [asociar_m-z-3-3.md](asociar_m-z-3-3.md) | 语义联想（`asociar`） | M–Z 3/3 | 2 |
@@ -26,6 +26,8 @@
 | --- | --- | --- |
 | asociar | paz | guerra |
 | asociar | quieto | tranquilo |
+| asociar | habitante | población |
+| asociar | colono | habitante |
 | asociar | reducir | mermar |
 | asociar | componer | fabricar |
 | asociar | percibir | ver |
