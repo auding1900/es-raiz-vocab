@@ -4,7 +4,7 @@
 
 | 词根 id | 批次 | 派生单词 | 本族关系 |
 | --- | --- | --- | --- |
-| `scrib` | v0 | 10 | 10（派生 10 · 联想 0） |
+| `scrib` | v0 | 10 | 13（派生 13 · 联想 0） |
 
 - 线型：`derivar` 实线（词根派生）· `asociar` 蓝色虚线（同族联想）· `confundir` 红色虚线（易混）
 - 节点标签只含单词与 CEFR 级别，不含词义；点击节点或用文末链接表查豆包
@@ -13,6 +13,7 @@
 ```mermaid
 graph LR
   R_scrib["scrib<br/>scribere (to write)"]:::root
+  R_script["script<br/>scriptum (something written)"]:::root
   W_describir["describir<br/>B1"]:::lvlB1
   W_descripcion["descripción<br/>B1"]:::lvlB1
   W_escribir["escribir<br/>A1"]:::lvlA1
@@ -33,6 +34,9 @@ graph LR
   R_scrib --> W_inscripcion
   R_scrib --> W_manuscrito
   R_scrib --> W_prescribir
+  R_script --> W_descripcion
+  R_script --> W_suscripcion
+  R_script --> W_inscripcion
   linkStyle 0 stroke:#000000,stroke-width:1.5px
   linkStyle 1 stroke:#000000,stroke-width:1.5px
   linkStyle 2 stroke:#000000,stroke-width:1.5px
@@ -43,6 +47,9 @@ graph LR
   linkStyle 7 stroke:#000000,stroke-width:1.5px
   linkStyle 8 stroke:#000000,stroke-width:1.5px
   linkStyle 9 stroke:#000000,stroke-width:1.5px
+  linkStyle 10 stroke:#000000,stroke-width:1.5px
+  linkStyle 11 stroke:#000000,stroke-width:1.5px
+  linkStyle 12 stroke:#000000,stroke-width:1.5px
   classDef root fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
   classDef lvlA1 fill:#e8f5e9,stroke:#2e7d32,color:#1a1a1a
   classDef lvlA2 fill:#c8e6c9,stroke:#2e7d32,color:#1a1a1a

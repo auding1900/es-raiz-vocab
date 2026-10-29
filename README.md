@@ -353,6 +353,21 @@ relations:
 
 > `ign`（火焰）已在 v0 历史批次，本批次不重复。
 
+**C 批次 8 —— 文字、言辞、规则（8 个词根 / 34 个单词）**
+
+| 词根 | 本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `script` | scriptum（文字、文稿） | [`raiz_c8_script.md`](mindmaps/raiz_c8_script.md) | 6 |
+| `liter` | littera（字母） | [`raiz_c8_liter.md`](mindmaps/raiz_c8_liter.md) | 6 |
+| `verb` | verbum（词语） | [`raiz_c8_verb.md`](mindmaps/raiz_c8_verb.md) | 4 |
+| `or` | orare（演说） | [`raiz_c8_or.md`](mindmaps/raiz_c8_or.md) | 5 |
+| `rhet` | rhetor（修辞） | [`raiz_c8_rhet.md`](mindmaps/raiz_c8_rhet.md) | 2 |
+| `gram` | gramma（书写规则） | [`raiz_c8_gram.md`](mindmaps/raiz_c8_gram.md) | 6 |
+| `dial` | dialektos（方言） | [`raiz_c8_dial.md`](mindmaps/raiz_c8_dial.md) | 2 |
+| `gloss` | glossa（注解） | [`raiz_c8_gloss.md`](mindmaps/raiz_c8_gloss.md) | 3 |
+
+> `escribir` / `escritor` / `escritura` / `describir` / `manuscrito` 已属 `scrib` 词族，`script` 只收其他派生词。
+
 ---
 
 ## 6. 本地部署与生成

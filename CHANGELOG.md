@@ -8,6 +8,22 @@
 
 暂无。
 
+## [0.25.0] - 2026-10-29
+
+数据规模：**189 个词根 / 1223 个单词 / 1306 条关系**。
+
+### Added
+
+- 新增 8 个词根（C 批次 8）：`script`、`liter`、`verb`、`or`、`rhet`、`gram`、`dial`、`gloss`。
+- 新增 34 条 `derivar` 关系：script 6、liter 6、verb 4、or 5、rhet 2、gram 6、dial 2、gloss 3。
+- 新增 1 条 `asociar`（`verbo ↔ palabra`）与 1 条 `confundir`（`literal ↔ literario`）。
+- 数据集达到 1223 个单词 / 1306 条关系。
+- 级别分布 A1 72 / A2 192 / B1 294 / B2 364 / C1 250 / C2 48，另有 2 个未标注。
+
+### Notes
+
+- `escribir` / `escritor` / `escritura` / `describir` / `manuscrito` 已在 `scrib` 词族，`script` 不重复声明。
+
 ## [0.24.0] - 2026-10-29
 
 数据规模：**181 个词根 / 1191 个单词 / 1270 条关系**。

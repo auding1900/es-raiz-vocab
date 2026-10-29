@@ -1072,3 +1072,56 @@ raices:
     root_name: gel
     latin_origin: "gelu (frost, ice)"
     batch: c7
+
+  # ==========================================================================
+  # C 批次 8：文字 · 言辞 · 书写规则
+  # ==========================================================================
+
+  # ---- 文字、文稿（C1 区间）----
+  # 注：escribir / escritor / escritura / describir / manuscrito 已属 scrib 词族
+  - id: script
+    root_name: script
+    latin_origin: "scriptum (something written)"
+    batch: c8
+
+  # ---- 字母（C1 区间）----
+  - id: liter
+    root_name: liter
+    latin_origin: "littera (letter)"
+    batch: c8
+
+  # ---- 词语（C1 区间）----
+  - id: verb
+    root_name: verb
+    latin_origin: "verbum (word)"
+    batch: c8
+
+  # ---- 演说（C2 区间）----
+  - id: or
+    root_name: or
+    latin_origin: "orare (to speak, to plead)"
+    batch: c8
+
+  # ---- 修辞（C2 区间）----
+  - id: rhet
+    root_name: rhet
+    latin_origin: "rhetor (orator, teacher of speech)"
+    batch: c8
+
+  # ---- 书写规则（C2 区间）----
+  - id: gram
+    root_name: gram
+    latin_origin: "gramma (written mark)"
+    batch: c8
+
+  # ---- 方言（C2 区间）----
+  - id: dial
+    root_name: dial
+    latin_origin: "dialektos (dialect)"
+    batch: c8
+
+  # ---- 注解（C2 区间）----
+  - id: gloss
+    root_name: gloss
+    latin_origin: "glossa (tongue, gloss)"
+    batch: c8

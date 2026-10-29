@@ -7725,10 +7725,244 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 script（scriptum）——文字、文稿
+  # ==========================================================================
+  - source: script
+    target: descripción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: script
+    target: escritorio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: script
+    target: suscripción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: script
+    target: prescripción
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: script
+    target: inscripción
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: script
+    target: transcripción
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 liter（littera）——字母
+  # ==========================================================================
+  - source: liter
+    target: letra
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: liter
+    target: literatura
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: liter
+    target: literario
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: liter
+    target: literal
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: liter
+    target: literato
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: liter
+    target: analfabeto
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 verb（verbum）——词语
+  # ==========================================================================
+  - source: verb
+    target: verbo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: verb
+    target: verbal
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: verb
+    target: proverbio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: verb
+    target: verboso
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 or（orare）——演说
+  # ==========================================================================
+  - source: or
+    target: oración
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: or
+    target: adorar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: or
+    target: orar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: or
+    target: orador
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: or
+    target: oratoria
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 rhet（rhetor）——修辞
+  # ==========================================================================
+  - source: rhet
+    target: retórica
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rhet
+    target: retórico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 gram（gramma）——书写规则
+  # ==========================================================================
+  - source: gram
+    target: gramática
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: gram
+    target: programa
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: gram
+    target: gramo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: gram
+    target: telegrama
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: gram
+    target: gramatical
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: gram
+    target: diagrama
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 dial（dialektos）——方言
+  # ==========================================================================
+  - source: dial
+    target: dialecto
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: dial
+    target: dialectal
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 gloss（glossa）——注解
+  # ==========================================================================
+  - source: gloss
+    target: glosario
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: gloss
+    target: glosa
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: gloss
+    target: glosar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: verbo
+    target: palabra
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -8194,6 +8428,12 @@ relations:
 
   - source: álgido
     target: gélido
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: literal
+    target: literario
     rel_type: confundir
     cefr_level: null
     prompt_template: null

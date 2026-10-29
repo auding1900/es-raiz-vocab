@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 181 个 · 单词 1191 个 · 关系 1270 条
+- 词根 189 个 · 单词 1223 个 · 关系 1306 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -84,7 +84,7 @@
 | `rect` | rect | rectus (straight, right) | 8 | 8 | [raiz_v0_rect.md](raiz_v0_rect.md) |
 | `reg` | reg | regere (to rule, to guide) | 12 | 12 | [raiz_v0_reg.md](raiz_v0_reg.md) |
 | `rob` | rob | robur (strength, oak) | 5 | 5 | [raiz_v0_rob.md](raiz_v0_rob.md) |
-| `scrib` | scrib | scribere (to write) | 10 | 10 | [raiz_v0_scrib.md](raiz_v0_scrib.md) |
+| `scrib` | scrib | scribere (to write) | 10 | 13 | [raiz_v0_scrib.md](raiz_v0_scrib.md) |
 | `sed` | sed | sedere (to sit) | 10 | 10 | [raiz_v0_sed.md](raiz_v0_sed.md) |
 | `sent` | sent | sentire (to feel, to perceive) | 12 | 13 | [raiz_v0_sent.md](raiz_v0_sent.md) |
 | `sentent` | sentent | sententia (opinion, judgment) | 3 | 3 | [raiz_v0_sentent.md](raiz_v0_sentent.md) |
@@ -252,3 +252,16 @@
 | `frig` | frig | frigidus (cold) | 5 | 5 | [raiz_c7_frig.md](raiz_c7_frig.md) |
 | `gel` | gel | gelu (frost, ice) | 7 | 7 | [raiz_c7_gel.md](raiz_c7_gel.md) |
 | `torr` | torr | torrere (to roast, to scorch) | 3 | 3 | [raiz_c7_torr.md](raiz_c7_torr.md) |
+
+## 批次 `c8`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `dial` | dial | dialektos (dialect) | 2 | 2 | [raiz_c8_dial.md](raiz_c8_dial.md) |
+| `gloss` | gloss | glossa (tongue, gloss) | 3 | 3 | [raiz_c8_gloss.md](raiz_c8_gloss.md) |
+| `gram` | gram | gramma (written mark) | 6 | 6 | [raiz_c8_gram.md](raiz_c8_gram.md) |
+| `liter` | liter | littera (letter) | 6 | 7 | [raiz_c8_liter.md](raiz_c8_liter.md) |
+| `or` | or | orare (to speak, to plead) | 5 | 5 | [raiz_c8_or.md](raiz_c8_or.md) |
+| `rhet` | rhet | rhetor (orator, teacher of speech) | 2 | 2 | [raiz_c8_rhet.md](raiz_c8_rhet.md) |
+| `script` | script | scriptum (something written) | 3 | 3 | [raiz_c8_script.md](raiz_c8_script.md) |
+| `verb` | verb | verbum (word) | 5 | 5 | [raiz_c8_verb.md](raiz_c8_verb.md) |
