@@ -1274,6 +1274,417 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # ped（pes, pedis）——行走 / 脚
+  # ==========================================================================
+  - source: ped
+    target: pie
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ped
+    target: pedal
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ped
+    target: pedalear
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ped
+    target: impedir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ped
+    target: peatón
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ped
+    target: pedestal
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ped
+    target: impedimento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ped
+    target: expedir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # man（manus）——手
+  # ==========================================================================
+  - source: man
+    target: mano
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: man
+    target: manejar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: man
+    target: mantener
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: man
+    target: manual
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: man
+    target: manejo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: man
+    target: mantenimiento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: man
+    target: manipular
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: man
+    target: manipulación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: man
+    target: manufactura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: man
+    target: manicura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # cor（cor, cordis）——心
+  # ==========================================================================
+  - source: cor
+    target: corazón
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cor
+    target: recordar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cor
+    target: recuerdo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cor
+    target: acordar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cor
+    target: acuerdo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cor
+    target: coraje
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cor
+    target: cordial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cor
+    target: cordialidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cor
+    target: concordia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cor
+    target: discordia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # anim（animus）——生命 / 心灵
+  # ==========================================================================
+  - source: anim
+    target: animal
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: anim
+    target: animar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: anim
+    target: ánimo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: anim
+    target: animado
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: anim
+    target: animación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: anim
+    target: unánime
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anim
+    target: unanimidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anim
+    target: inanimado
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anim
+    target: ecuanimidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # pop（populus）——人群
+  # ==========================================================================
+  - source: pop
+    target: pueblo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: pop
+    target: popular
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pop
+    target: población
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pop
+    target: poblado
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pop
+    target: poblar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pop
+    target: popularidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pop
+    target: popularizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pop
+    target: populismo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pop
+    target: despoblar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # civ（civis）——公民
+  # ==========================================================================
+  - source: civ
+    target: ciudad
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: civ
+    target: ciudadano
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: civ
+    target: ciudadanía
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: civ
+    target: civil
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: civ
+    target: civilización
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: civ
+    target: civilizado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: civ
+    target: cívico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: civ
+    target: civilizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: civ
+    target: civismo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # terra（terra）——土地
+  # ==========================================================================
+  - source: terra
+    target: tierra
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: terra
+    target: terreno
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: terra
+    target: territorio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: terra
+    target: terremoto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: terra
+    target: terraza
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: terra
+    target: enterrar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: terra
+    target: aterrizar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: terra
+    target: territorial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: terra
+    target: subterráneo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: terra
+    target: mediterráneo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -1336,6 +1747,24 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: mano
+    target: pie
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: corazón
+    target: ánimo
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: ciudad
+    target: pueblo
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -1377,6 +1806,18 @@ relations:
 
   - source: sentar
     target: sentir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: acordar
+    target: recordar
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: impedir
+    target: permitir
     rel_type: confundir
     cefr_level: null
     prompt_template: null

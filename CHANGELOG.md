@@ -8,8 +8,8 @@
 
 ### Added
 
-- 词根扩充至 21 个：`ag`、`pon`、`cap`、`vid`、`mit`、`duc`、`fac`、`dic`、`leg`、`scrib`、`port`、`ven`、`ire`、`sta`、`sed`、`sol`、`clus`、`apert`、`aud`、`sent`、`curr`；数据集达到 198 个单词 / 214 条关系（197 条 `derivar` + 10 条 `asociar` + 7 条 `confundir`）。
-- 每个派生单词都标注 CEFR 级别，级别分布 A1 19 / A2 56 / B1 63 / B2 45 / C1 14，另有 1 个未标注（`mermar`）。
+- 词根扩充至 28 个：`ag`、`pon`、`cap`、`vid`、`mit`、`duc`、`fac`、`dic`、`leg`、`scrib`、`port`、`ven`、`ire`、`sta`、`sed`、`sol`、`clus`、`apert`、`aud`、`sent`、`curr`、`ped`、`man`、`cor`、`anim`、`pop`、`civ`、`terra`；数据集达到 263 个单词 / 284 条关系（262 条 `derivar` + 13 条 `asociar` + 9 条 `confundir`）。
+- 每个派生单词都标注 CEFR 级别，级别分布 A1 27 / A2 68 / B1 80 / B2 62 / C1 25，另有 1 个未标注（`mermar`）。
 
 ### Fixed
 

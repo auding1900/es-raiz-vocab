@@ -122,3 +122,38 @@ raices:
   - id: curr
     root_name: curr
     latin_origin: "currere (to run)"
+
+  # ---- 行走 / 脚（A2 区间）----
+  - id: ped
+    root_name: ped
+    latin_origin: "pes, pedis (foot)"
+
+  # ---- 手（A1 区间）----
+  - id: man
+    root_name: man
+    latin_origin: "manus (hand)"
+
+  # ---- 心（A1 区间）----
+  - id: cor
+    root_name: cor
+    latin_origin: "cor, cordis (heart)"
+
+  # ---- 生命 / 心灵（A2 区间）----
+  - id: anim
+    root_name: anim
+    latin_origin: "animus (life, mind, spirit)"
+
+  # ---- 人群（A2 区间）----
+  - id: pop
+    root_name: pop
+    latin_origin: "populus (people)"
+
+  # ---- 公民（A2 区间）----
+  - id: civ
+    root_name: civ
+    latin_origin: "civis (citizen)"
+
+  # ---- 土地（A1 区间）----
+  - id: terra
+    root_name: terra
+    latin_origin: "terra (earth, land)"
