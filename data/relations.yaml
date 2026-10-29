@@ -428,6 +428,447 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # dic（dicere）——说话 / 讲述
+  # ==========================================================================
+  - source: dic
+    target: decir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: dic
+    target: dedicar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dic
+    target: indicar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dic
+    target: dictar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dic
+    target: índice
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dic
+    target: predecir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dic
+    target: predicción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dic
+    target: contradicción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dic
+    target: bendecir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # leg（legere）——挑选 / 阅读
+  # ==========================================================================
+  - source: leg
+    target: leer
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: leg
+    target: lectura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: leg
+    target: recoger
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: leg
+    target: leyenda
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: leg
+    target: elegir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: leg
+    target: lector
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: leg
+    target: elección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: leg
+    target: seleccionar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: leg
+    target: colección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: leg
+    target: inteligente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  # ==========================================================================
+  # scrib（scribere）——书写
+  # ==========================================================================
+  - source: scrib
+    target: escribir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: scrib
+    target: escritor
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: scrib
+    target: escritura
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: scrib
+    target: describir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: scrib
+    target: descripción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: scrib
+    target: suscripción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: scrib
+    target: inscribir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: scrib
+    target: inscripción
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: scrib
+    target: manuscrito
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: scrib
+    target: prescribir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # port（portare）——搬运 / 携带
+  # ==========================================================================
+  - source: port
+    target: puerta
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: port
+    target: importar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: port
+    target: deporte
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: port
+    target: transporte
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: port
+    target: puerto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: port
+    target: oportunidad
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: port
+    target: exportar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: port
+    target: reportaje
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: port
+    target: soportar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: port
+    target: aportar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: port
+    target: portátil
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # ven（venire）——来到
+  # ==========================================================================
+  - source: ven
+    target: venir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ven
+    target: evento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ven
+    target: aventura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ven
+    target: ventaja
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ven
+    target: inconveniente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ven
+    target: prevenir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ven
+    target: inventar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ven
+    target: invento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ven
+    target: intervenir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ven
+    target: provenir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # ire（ire）——行走
+  # ==========================================================================
+  - source: ire
+    target: ir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ire
+    target: salir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ire
+    target: subir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: ire
+    target: inicial
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ire
+    target: iniciar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ire
+    target: inicio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ire
+    target: tránsito
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ire
+    target: transitar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ire
+    target: perecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # sta（stare）——站立
+  # ==========================================================================
+  - source: sta
+    target: estar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: sta
+    target: estado
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: estación
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: instante
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: distancia
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: existir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: asistir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sta
+    target: estable
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sta
+    target: establecer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sta
+    target: resistir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sta
+    target: insistir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -460,6 +901,24 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: ir
+    target: venir
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: importar
+    target: exportar
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: leer
+    target: escribir
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -471,6 +930,18 @@ relations:
 
   - source: emitir
     target: omitir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: predecir
+    target: prever
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: resistir
+    target: insistir
     rel_type: confundir
     cefr_level: null
     prompt_template: null

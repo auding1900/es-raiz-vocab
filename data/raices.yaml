@@ -52,3 +52,38 @@ raices:
   - id: fac
     root_name: fac
     latin_origin: "facere (to make, to do)"
+
+  # ---- 说话 / 讲述（A1 区间）----
+  - id: dic
+    root_name: dic
+    latin_origin: "dicere (to say, to tell)"
+
+  # ---- 挑选 / 阅读（A2 区间）----
+  - id: leg
+    root_name: leg
+    latin_origin: "legere (to pick out, to read)"
+
+  # ---- 书写（A2 区间）----
+  - id: scrib
+    root_name: scrib
+    latin_origin: "scribere (to write)"
+
+  # ---- 搬运 / 携带（A1 区间）----
+  - id: port
+    root_name: port
+    latin_origin: "portare (to carry)"
+
+  # ---- 来到（A1 区间）----
+  - id: ven
+    root_name: ven
+    latin_origin: "venire (to come)"
+
+  # ---- 行走（A2 区间）----
+  - id: ire
+    root_name: ire
+    latin_origin: "ire (to go)"
+
+  # ---- 站立（A1 区间）----
+  - id: sta
+    root_name: sta
+    latin_origin: "stare (to stand)"
