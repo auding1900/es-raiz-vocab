@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 92 个 · 单词 744 个 · 关系 797 条
+- 词根 99 个 · 单词 779 个 · 关系 834 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -103,3 +103,15 @@
 | `vict` | vict | vincere (to conquer, to win) | 9 | 10 | [raiz_v0_vict.md](raiz_v0_vict.md) |
 | `vid` | vid | videre (to see) | 12 | 12 | [raiz_v0_vid.md](raiz_v0_vid.md) |
 | `vir` | vir | vis (force), vir (man) | 8 | 8 | [raiz_v0_vir.md](raiz_v0_vir.md) |
+
+## 批次 `b9`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `pac` | pac | pax, pacis (peace) | 7 | 7 | [raiz_b9_pac.md](raiz_b9_pac.md) |
+| `paus` | paus | pausa (pause, halt) | 4 | 4 | [raiz_b9_paus.md](raiz_b9_paus.md) |
+| `plac` | plac | placere (to please, to be agreeable) | 6 | 6 | [raiz_b9_plac.md](raiz_b9_plac.md) |
+| `quies` | quies | quies, quietis (rest, quiet) | 7 | 7 | [raiz_b9_quies.md](raiz_b9_quies.md) |
+| `sedat` | sedat | sedare (to calm, to settle) | 4 | 4 | [raiz_b9_sedat.md](raiz_b9_sedat.md) |
+| `seren` | seren | serenus (clear, serene) | 4 | 4 | [raiz_b9_seren.md](raiz_b9_seren.md) |
+| `tranqu` | tranqu | tranquillus (calm, quiet) | 5 | 5 | [raiz_b9_tranqu.md](raiz_b9_tranqu.md) |

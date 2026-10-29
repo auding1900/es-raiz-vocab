@@ -8,6 +8,31 @@
 
 暂无。
 
+## [0.13.0] - 2026-10-29
+
+数据规模：**99 个词根 / 779 个单词 / 834 条关系**。
+
+### Changed
+
+- `mindmaps/` 产物改为**一个词根一个文件、一张图**：`raiz_<批次>_<词根>.md`（历史词根统一批次 `v0`），彻底避免单图 / 单文件过大。
+- `mindmaps/root_tree.md` 改为词根索引（按批次分组，含单词数 / 关系数 / 导图链接），不再嵌图。
+- 联想网状图按分块拆文件：`associate_graph.md` 仅保留分块导航与关系清单，图分别落在 `asociar_*.md` / `confundir_*.md`；未归属词根的联想关系单独成页 `raiz_sin_raiz.md`。
+- `data/raices.yaml` 新增可选字段 `batch`（`b9`、`c10` …），决定文件名与索引分组；省略时归入 `v0`。
+- 渲染实测：107 张图全部通过浏览器渲染（failed=0），最大单图 21,937 字符，最大单文件约 41KB。
+
+### Added
+
+- 新增 7 个词根（B 批次 9）：`pac`（pax）、`plac`（placere）、`tranqu`（tranquillus）、`seren`（serenus）、`quies`（quies）、`paus`（pausa）、`sedat`（sedare）。
+- 新增 35 条 `derivar` 关系：pac 6、plac 6、tranqu 5、seren 4、quies 6、paus 4、sedat 4。
+- 新增 2 条跨词根关系：`paz ↔ guerra`、`quieto ↔ tranquilo`（均为 `asociar`）。
+- 数据集达到 779 个单词 / 834 条关系（778 条 `derivar` + 37 条 `asociar` + 19 条 `confundir`）。
+- 级别分布 A1 46 / A2 153 / B1 196 / B2 248 / C1 133 / C2 2，另有 1 个未标注（`mermar`）。`levels/C2.md` 首次非空（`serenar`、`aquietar`）。
+
+### Notes
+
+- 词根 `sedare`（安抚）使用 id `sedat`：`sed` 已被 `sedere`（坐）占用。
+- 词根 `serenus`（晴朗）使用 id `seren` 而非 `ser`，避免与助动词 `ser` 混淆。
+
 ## [0.12.0] - 2026-10-29
 
 数据规模：**92 个词根 / 744 个单词 / 797 条关系**。

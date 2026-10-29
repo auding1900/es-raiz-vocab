@@ -480,3 +480,51 @@ raices:
   - id: fug
     root_name: fug
     latin_origin: "fugere (to flee)"
+
+  # ==========================================================================
+  # B 批次 9：和平 · 安宁
+  # ==========================================================================
+
+  # ---- 和平（B1 区间）----
+  - id: pac
+    root_name: pac
+    latin_origin: "pax, pacis (peace)"
+    batch: b9
+
+  # ---- 取悦、平静（B2 区间）----
+  - id: plac
+    root_name: plac
+    latin_origin: "placere (to please, to be agreeable)"
+    batch: b9
+
+  # ---- 安宁（B2 区间）----
+  - id: tranqu
+    root_name: tranqu
+    latin_origin: "tranquillus (calm, quiet)"
+    batch: b9
+
+  # ---- 晴朗、平静（B2 区间）----
+  # 注：id 用 `seren` 而非 `ser`，避免与助动词 ser 混淆
+  - id: seren
+    root_name: seren
+    latin_origin: "serenus (clear, serene)"
+    batch: b9
+
+  # ---- 休息（B2 区间）----
+  - id: quies
+    root_name: quies
+    latin_origin: "quies, quietis (rest, quiet)"
+    batch: b9
+
+  # ---- 停歇（B2 区间）----
+  - id: paus
+    root_name: paus
+    latin_origin: "pausa (pause, halt)"
+    batch: b9
+
+  # ---- 安抚（B2 区间）----
+  # 注：id 用 `sedat` 而非 `sed`，`sed` 已被 sedere（坐）占用
+  - id: sedat
+    root_name: sedat
+    latin_origin: "sedare (to calm, to settle)"
+    batch: b9

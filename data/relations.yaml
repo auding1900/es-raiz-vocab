@@ -4763,8 +4763,251 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 pac（pax）——和平
+  # ==========================================================================
+  - source: pac
+    target: paz
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pac
+    target: pacífico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pac
+    target: pacificar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pac
+    target: pacifismo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pac
+    target: pacifista
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pac
+    target: apaciguar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 plac（placere）——取悦、平静
+  # ==========================================================================
+  - source: plac
+    target: placer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: plac
+    target: complacer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: plac
+    target: complaciente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: plac
+    target: placentero
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: plac
+    target: plácido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: plac
+    target: implacable
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 tranqu（tranquillus）——安宁
+  # ==========================================================================
+  - source: tranqu
+    target: tranquilo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: tranqu
+    target: tranquilidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tranqu
+    target: tranquilizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tranqu
+    target: tranquilizante
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: tranqu
+    target: tranquilizador
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 seren（serenus）——晴朗、平静
+  # ==========================================================================
+  - source: seren
+    target: sereno
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: seren
+    target: serenidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: seren
+    target: serenata
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: seren
+    target: serenar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 quies（quies）——休息
+  # ==========================================================================
+  - source: quies
+    target: quieto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: quies
+    target: inquieto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: quies
+    target: inquietud
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: quies
+    target: inquietante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: quies
+    target: quietud
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: quies
+    target: aquietar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 paus（pausa）——停歇
+  # ==========================================================================
+  - source: paus
+    target: pausa
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: paus
+    target: pausado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: paus
+    target: pausar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: paus
+    target: pausadamente
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sedat（sedare）——安抚
+  # ==========================================================================
+  - source: sedat
+    target: sedante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sedat
+    target: sedar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sedat
+    target: sedación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sedat
+    target: sedativo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
+  - source: paz
+    target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: quieto
+    target: tranquilo
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   - source: reducir
     target: mermar
     rel_type: asociar

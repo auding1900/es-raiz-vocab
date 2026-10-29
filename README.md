@@ -190,7 +190,17 @@ relations:
 
 新增词根的导图按批次归档，直接点开即可查看，也可在 [`mindmaps/root_tree.md`](mindmaps/root_tree.md) 查看完整索引（含 v0 历史词根）。
 
-<!-- BATCH_INDEX -->
+**B 批次 9 —— 和平与安宁（7 个词根 / 35 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 派生单词 |
+| --- | --- | --- | --- |
+| `pac` | pax, pacis（和平） | [`raiz_b9_pac.md`](mindmaps/raiz_b9_pac.md) | paz, pacífico, pacificar, pacifismo, pacifista, apaciguar |
+| `plac` | placere（取悦、平静） | [`raiz_b9_plac.md`](mindmaps/raiz_b9_plac.md) | placer, complacer, complaciente, placentero, plácido, implacable |
+| `tranqu` | tranquillus（安宁） | [`raiz_b9_tranqu.md`](mindmaps/raiz_b9_tranqu.md) | tranquilo, tranquilidad, tranquilizar, tranquilizante, tranquilizador |
+| `seren` | serenus（晴朗、平静） | [`raiz_b9_seren.md`](mindmaps/raiz_b9_seren.md) | sereno, serenidad, serenata, serenar |
+| `quies` | quies, quietis（休息） | [`raiz_b9_quies.md`](mindmaps/raiz_b9_quies.md) | quieto, inquieto, inquietud, inquietante, quietud, aquietar |
+| `paus` | pausa（停歇） | [`raiz_b9_paus.md`](mindmaps/raiz_b9_paus.md) | pausa, pausado, pausar, pausadamente |
+| `sedat` | sedare（安抚） | [`raiz_b9_sedat.md`](mindmaps/raiz_b9_sedat.md) | sedante, sedar, sedación, sedativo |
 
 ---
 
