@@ -87,3 +87,38 @@ raices:
   - id: sta
     root_name: sta
     latin_origin: "stare (to stand)"
+
+  # ---- 坐下（A2 区间）----
+  - id: sed
+    root_name: sed
+    latin_origin: "sedere (to sit)"
+
+  # ---- 解开 / 松开（A2 区间）----
+  - id: sol
+    root_name: sol
+    latin_origin: "solvere (to loosen, to untie)"
+
+  # ---- 关闭（A2 区间）----
+  - id: clus
+    root_name: clus
+    latin_origin: "claudere (to close)"
+
+  # ---- 打开（A1 区间）----
+  - id: apert
+    root_name: apert
+    latin_origin: "aperire (to open)"
+
+  # ---- 听见（A1 区间）----
+  - id: aud
+    root_name: aud
+    latin_origin: "audire (to hear)"
+
+  # ---- 感知 / 感觉（A2 区间）----
+  - id: sent
+    root_name: sent
+    latin_origin: "sentire (to feel, to perceive)"
+
+  # ---- 奔跑（A2 区间）----
+  - id: curr
+    root_name: curr
+    latin_origin: "currere (to run)"

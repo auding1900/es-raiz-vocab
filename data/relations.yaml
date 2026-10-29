@@ -869,6 +869,411 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # sed（sedere）——坐下
+  # ==========================================================================
+  - source: sed
+    target: sentar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sed
+    target: asiento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sed
+    target: presidente
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sed
+    target: sesión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sed
+    target: residencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sed
+    target: presidencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sed
+    target: residente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sed
+    target: sede
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sed
+    target: sedimento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # sol（solvere）——解开 / 松开
+  # ==========================================================================
+  - source: sol
+    target: solución
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sol
+    target: soltar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sol
+    target: resolver
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sol
+    target: resolución
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sol
+    target: solucionar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sol
+    target: disolver
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sol
+    target: disolución
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sol
+    target: suelto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sol
+    target: absolver
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # clus（claudere）——关闭
+  # ==========================================================================
+  - source: clus
+    target: incluir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: clus
+    target: concluir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clus
+    target: conclusión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clus
+    target: excluir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: clus
+    target: exclusión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: clus
+    target: exclusivo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: clus
+    target: cláusula
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: clus
+    target: recluso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: clus
+    target: claustro
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # apert（aperire）——打开
+  # ==========================================================================
+  - source: apert
+    target: abrir
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: apert
+    target: abierto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: apert
+    target: apertura
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: apert
+    target: abridor
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: apert
+    target: abertura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: apert
+    target: reabrir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # aud（audire）——听见
+  # ==========================================================================
+  - source: aud
+    target: oír
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: aud
+    target: oído
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: aud
+    target: obedecer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: aud
+    target: audio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aud
+    target: audiencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aud
+    target: audífono
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aud
+    target: obediencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: aud
+    target: audible
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aud
+    target: auditorio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: aud
+    target: audición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # sent（sentire）——感知 / 感觉
+  # ==========================================================================
+  - source: sent
+    target: sentir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sent
+    target: sentido
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sent
+    target: sensación
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sent
+    target: sentimiento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sent
+    target: sensible
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sent
+    target: sensato
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sent
+    target: sensibilidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sent
+    target: sensual
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sent
+    target: consenso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sent
+    target: consentir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sent
+    target: resentimiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # curr（currere）——奔跑
+  # ==========================================================================
+  - source: curr
+    target: correr
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: curr
+    target: curso
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: curr
+    target: carrera
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: curr
+    target: corriente
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: curr
+    target: ocurrir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: curr
+    target: recurso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: curr
+    target: concurso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: curr
+    target: recorrer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: curr
+    target: cursor
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: curr
+    target: recurrir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -919,6 +1324,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: ver
+    target: oír
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: sentir
+    target: percibir
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -942,6 +1359,24 @@ relations:
 
   - source: resistir
     target: insistir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: sensible
+    target: sensato
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: incluir
+    target: excluir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: sentar
+    target: sentir
     rel_type: confundir
     cefr_level: null
     prompt_template: null
