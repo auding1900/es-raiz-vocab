@@ -338,3 +338,38 @@ raices:
   - id: sentent
     root_name: sentent
     latin_origin: "sententia (opinion, judgment)"
+
+  # ---- 秩序 / 次序（B1 区间）----
+  - id: ordin
+    root_name: ordin
+    latin_origin: "ordo, ordinis (order, arrangement)"
+
+  # ---- 统治 / 管理（B1 区间）----
+  - id: reg
+    root_name: reg
+    latin_origin: "regere (to rule, to guide)"
+
+  # ---- 掌舵 / 治理（B2 区间）----
+  - id: gubern
+    root_name: gubern
+    latin_origin: "gubernare (to steer, to govern)"
+
+  # ---- 主人（B1 区间）----
+  - id: domin
+    root_name: domin
+    latin_origin: "dominus (master, lord)"
+
+  # ---- 命令（B2 区间）----
+  - id: imper
+    root_name: imper
+    latin_origin: "imperare (to command)"
+
+  # ---- 委托 / 下达（B2 区间）----
+  - id: mand
+    root_name: mand
+    latin_origin: "mandare (to entrust, to order)"
+
+  # ---- 笔直 / 正确（B1 区间）----
+  - id: rect
+    root_name: rect
+    latin_origin: "rectus (straight, right)"

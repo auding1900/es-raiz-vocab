@@ -3485,6 +3485,363 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # ordin（ordo）——秩序 / 次序
+  # ==========================================================================
+  - source: ordin
+    target: orden
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ordin
+    target: ordenar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ordin
+    target: extraordinario
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ordin
+    target: desorden
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ordin
+    target: ordinario
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ordin
+    target: coordinar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ordin
+    target: coordinación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ordin
+    target: coordinador
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ordin
+    target: subordinar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # reg（regere）——统治 / 管理
+  # ==========================================================================
+  - source: reg
+    target: rey
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: reina
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: reino
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: región
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: regla
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: dirección
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: dirigir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: reg
+    target: director
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: reg
+    target: régimen
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: reg
+    target: regular
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  # ==========================================================================
+  # gubern（gubernare）——掌舵 / 治理
+  # ==========================================================================
+  - source: gubern
+    target: gobierno
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: gubern
+    target: gobernar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: gubern
+    target: gobernante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: gubern
+    target: gobernador
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: gubern
+    target: gubernativo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # domin（dominus）——主人
+  # ==========================================================================
+  - source: domin
+    target: domingo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: domin
+    target: dueño
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: domin
+    target: dominar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: domin
+    target: dominio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: domin
+    target: dominante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: domin
+    target: predominar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: domin
+    target: dominación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: domin
+    target: condominio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # imper（imperare）——命令
+  # ==========================================================================
+  - source: imper
+    target: imperio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: imper
+    target: emperador
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: imper
+    target: imperial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: imper
+    target: imperativo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: imper
+    target: imperar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: imper
+    target: imperioso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: imper
+    target: emperatriz
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # mand（mandare）——委托 / 下达
+  # ==========================================================================
+  - source: mand
+    target: mandar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mand
+    target: demanda
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mand
+    target: recomendar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: mand
+    target: mando
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mand
+    target: mandato
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mand
+    target: demandar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mand
+    target: comandante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mand
+    target: encomendar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mand
+    target: mandamiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # rect（rectus）——笔直 / 正确
+  # ==========================================================================
+  - source: rect
+    target: rectángulo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: rect
+    target: correcto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: rect
+    target: corregir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: rect
+    target: corrección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: rect
+    target: incorrecto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: rect
+    target: recto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rect
+    target: rectificar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rect
+    target: rectitud
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -3637,6 +3994,24 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: rey
+    target: emperador
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: gobierno
+    target: imperio
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: regla
+    target: orden
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -3726,6 +4101,12 @@ relations:
 
   - source: probable
     target: posible
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: mando
+    target: mandato
     rel_type: confundir
     cefr_level: null
     prompt_template: null
