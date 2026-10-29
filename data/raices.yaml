@@ -302,3 +302,39 @@ raices:
   - id: dur
     root_name: dur
     latin_origin: "durus (hard, lasting)"
+
+  # ---- 相信（B1 区间）----
+  - id: cred
+    root_name: cred
+    latin_origin: "credere (to believe)"
+
+  # ---- 信任（B1 区间）----
+  - id: fid
+    root_name: fid
+    latin_origin: "fides (trust, faith)"
+
+  # ---- 确定（B1 区间）----
+  - id: cert
+    root_name: cert
+    latin_origin: "certus (certain, settled)"
+
+  # ---- 检验 / 证明（B2 区间）----
+  - id: prob
+    root_name: prob
+    latin_origin: "probare (to test, to prove)"
+
+  # ---- 见证（B2 区间）----
+  - id: test
+    root_name: test
+    latin_origin: "testis (witness)"
+
+  # ---- 审判 / 判断（B2 区间）----
+  - id: judic
+    root_name: judic
+    latin_origin: "iudicare (to judge)"
+
+  # ---- 观点（B2 区间）----
+  # 注：id `sent` 已被 sentire（感知）占用，此处用 `sentent` 区分
+  - id: sentent
+    root_name: sentent
+    latin_origin: "sententia (opinion, judgment)"

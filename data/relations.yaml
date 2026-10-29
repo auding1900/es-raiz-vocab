@@ -3134,6 +3134,357 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # cred（credere）——相信
+  # ==========================================================================
+  - source: cred
+    target: creer
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: cred
+    target: increíble
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cred
+    target: crédito
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cred
+    target: creencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cred
+    target: creyente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cred
+    target: credibilidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cred
+    target: credencial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cred
+    target: crédulo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cred
+    target: desacreditar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # fid（fides）——信任
+  # ==========================================================================
+  - source: fid
+    target: fe
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fid
+    target: confiar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fid
+    target: confianza
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fid
+    target: fiel
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fid
+    target: desconfiar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fid
+    target: desconfianza
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fid
+    target: fidelidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fid
+    target: infiel
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fid
+    target: fianza
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # cert（certus）——确定
+  # ==========================================================================
+  - source: cert
+    target: cierto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cert
+    target: concierto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cert
+    target: certeza
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cert
+    target: certificado
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cert
+    target: incertidumbre
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cert
+    target: certificar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cert
+    target: acertar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cert
+    target: certidumbre
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cert
+    target: certificación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # prob（probare）——检验 / 证明
+  # ==========================================================================
+  - source: prob
+    target: probar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prob
+    target: prueba
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prob
+    target: probable
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prob
+    target: probabilidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: prob
+    target: aprobar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: prob
+    target: comprobar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: prob
+    target: aprobación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: prob
+    target: reprobar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: prob
+    target: probeta
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # test（testis）——见证
+  # ==========================================================================
+  - source: test
+    target: testigo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: test
+    target: testificar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: test
+    target: testimonio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: test
+    target: testamento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: test
+    target: testimonial
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: test
+    target: atestiguar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: test
+    target: testamentario
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # judic（iudicare）——审判 / 判断
+  # ==========================================================================
+  - source: judic
+    target: juicio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: judic
+    target: juez
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: judic
+    target: juzgar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: judic
+    target: judicial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: judic
+    target: jurado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: judic
+    target: juzgado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: judic
+    target: prejuicio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: judic
+    target: adjudicar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: judic
+    target: enjuiciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # sentent（sententia）——观点（`sent` 已用于 sentire）
+  # ==========================================================================
+  - source: sentent
+    target: sentencia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: sentent
+    target: sentenciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sentent
+    target: sentencioso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -3274,6 +3625,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: creer
+    target: confiar
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: prueba
+    target: testimonio
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -3357,6 +3720,12 @@ relations:
 
   - source: firma
     target: firme
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: probable
+    target: posible
     rel_type: confundir
     cefr_level: null
     prompt_template: null
