@@ -925,3 +925,51 @@ raices:
     root_name: pont
     latin_origin: "pons, pontis (bridge)"
     batch: c4
+
+  # ==========================================================================
+  # C 批次 5：分辨 · 挑选 · 裁决
+  # ==========================================================================
+
+  # ---- 分辨、筛选（C1 区间）----
+  - id: cern
+    root_name: cern
+    latin_origin: "cernere (to sift, to separate)"
+    batch: c5
+
+  # ---- 区分（C2 区间）----
+  - id: discrim
+    root_name: discrim
+    latin_origin: "discernere (to distinguish)"
+    batch: c5
+
+  # ---- 挑选（C1 区间）----
+  # 注：seleccionar 已属 leg（legere）词族，本词根不收
+  - id: select
+    root_name: select
+    latin_origin: "seligere (to pick out)"
+    batch: c5
+
+  # ---- 选出（C1 区间）----
+  # 注：elegir 已属 leg（legere）词族，本词根不收
+  - id: elect
+    root_name: elect
+    latin_origin: "eligere (to choose out)"
+    batch: c5
+
+  # ---- 选择（C1 区间）----
+  - id: opt
+    root_name: opt
+    latin_origin: "optare (to choose, to wish)"
+    batch: c5
+
+  # ---- 裁决（C2 区间）----
+  - id: arbit
+    root_name: arbit
+    latin_origin: "arbitrari (to judge)"
+    batch: c5
+
+  # ---- 细查（C2 区间）----
+  - id: scrut
+    root_name: scrut
+    latin_origin: "scrutari (to search closely)"
+    batch: c5

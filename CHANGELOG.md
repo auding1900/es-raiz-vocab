@@ -8,6 +8,22 @@
 
 暂无。
 
+## [0.22.0] - 2026-10-29
+
+数据规模：**166 个词根 / 1128 个单词 / 1203 条关系**。
+
+### Added
+
+- 新增 7 个词根（C 批次 5）：`cern`、`discrim`、`select`、`elect`、`opt`、`arbit`、`scrut`。
+- 新增 26 条 `derivar` 关系：cern 4、discrim 3、select 4、elect 4、opt 4、arbit 5、scrut 2。
+- 新增 1 条 `asociar`（`opción ↔ elección`）与 1 条 `confundir`（`selección ↔ elección`）。
+- 数据集达到 1128 个单词 / 1203 条关系（1129 条 `derivar` + 48 条 `asociar` + 26 条 `confundir`）。
+- 级别分布 A1 68 / A2 183 / B1 273 / B2 339 / C1 228 / C2 35，另有 2 个未标注（`mermar`、`muerte`）。
+
+### Notes
+
+- `judic` 已存在（v0 历史批次）；`seleccionar` / `elegir` 已属 `leg` 词族，本批次不重复声明。
+
 ## [0.21.0] - 2026-10-29
 
 数据规模：**159 个词根 / 1103 个单词 / 1175 条关系**。

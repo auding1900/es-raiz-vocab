@@ -7125,10 +7125,193 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 cern（cernere）——分辨、筛选
+  # ==========================================================================
+  - source: cern
+    target: secreto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cern
+    target: discernir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cern
+    target: secreción
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cern
+    target: discernimiento
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 discrim（discernere）——区分
+  # ==========================================================================
+  - source: discrim
+    target: discriminación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: discrim
+    target: discriminar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: discrim
+    target: discriminante
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 select（seligere）——挑选
+  # ==========================================================================
+  - source: select
+    target: selección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: select
+    target: selecto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: select
+    target: selectivo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: select
+    target: selector
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 elect（eligere）——选出
+  # ==========================================================================
+  - source: elect
+    target: elección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: elect
+    target: elegante
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: elect
+    target: electoral
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: elect
+    target: elector
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 opt（optare）——选择
+  # ==========================================================================
+  - source: opt
+    target: opción
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: opt
+    target: optar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: opt
+    target: opcional
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: opt
+    target: optativo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 arbit（arbitrari）——裁决
+  # ==========================================================================
+  - source: arbit
+    target: árbitro
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arbit
+    target: arbitrar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: arbit
+    target: arbitraje
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: arbit
+    target: arbitrario
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: arbit
+    target: arbitrio
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 scrut（scrutari）——细查
+  # ==========================================================================
+  - source: scrut
+    target: escrutinio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: scrut
+    target: escrutar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: opción
+    target: elección
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -7558,6 +7741,12 @@ relations:
 
   - source: techo
     target: teja
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: selección
+    target: elección
     rel_type: confundir
     cefr_level: null
     prompt_template: null

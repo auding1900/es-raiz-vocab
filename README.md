@@ -310,6 +310,20 @@ relations:
 | `mur` | murus（墙壁） | [`raiz_c4_mur.md`](mindmaps/raiz_c4_mur.md) | 4 |
 | `pont` | pons（桥梁） | [`raiz_c4_pont.md`](mindmaps/raiz_c4_pont.md) | 4 |
 
+**C 批次 5 —— 分辨、挑选、裁决（7 个词根 / 26 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `cern` | cernere（分辨、筛选） | [`raiz_c5_cern.md`](mindmaps/raiz_c5_cern.md) | 4 |
+| `discrim` | discernere（区分） | [`raiz_c5_discrim.md`](mindmaps/raiz_c5_discrim.md) | 3 |
+| `select` | seligere（挑选） | [`raiz_c5_select.md`](mindmaps/raiz_c5_select.md) | 4 |
+| `elect` | eligere（选出） | [`raiz_c5_elect.md`](mindmaps/raiz_c5_elect.md) | 4 |
+| `opt` | optare（选择） | [`raiz_c5_opt.md`](mindmaps/raiz_c5_opt.md) | 4 |
+| `arbit` | arbitrari（裁决） | [`raiz_c5_arbit.md`](mindmaps/raiz_c5_arbit.md) | 5 |
+| `scrut` | scrutari（细查） | [`raiz_c5_scrut.md`](mindmaps/raiz_c5_scrut.md) | 2 |
+
+> `judic` 已在 v0 历史批次；`seleccionar` / `elegir` 已属 `leg`（legere）词族，本批次不重复。
+
 ---
 
 ## 6. 本地部署与生成

@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 159 个 · 单词 1103 个 · 关系 1175 条
+- 词根 166 个 · 单词 1128 个 · 关系 1203 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -57,7 +57,7 @@
 | `jac` | jac | jacere (to throw) | 10 | 10 | [raiz_v0_jac.md](raiz_v0_jac.md) |
 | `judic` | judic | iudicare (to judge) | 9 | 9 | [raiz_v0_judic.md](raiz_v0_judic.md) |
 | `larg` | larg | largus (abundant, generous) | 5 | 5 | [raiz_v0_larg.md](raiz_v0_larg.md) |
-| `leg` | leg | legere (to pick out, to read) | 11 | 11 | [raiz_v0_leg.md](raiz_v0_leg.md) |
+| `leg` | leg | legere (to pick out, to read) | 11 | 12 | [raiz_v0_leg.md](raiz_v0_leg.md) |
 | `lib` | lib | libra (balance, scales) | 8 | 9 | [raiz_v0_lib.md](raiz_v0_lib.md) |
 | `man` | man | manus (hand) | 11 | 11 | [raiz_v0_man.md](raiz_v0_man.md) |
 | `mand` | mand | mandare (to entrust, to order) | 9 | 10 | [raiz_v0_mand.md](raiz_v0_mand.md) |
@@ -215,3 +215,15 @@
 | `pont` | pont | pons, pontis (bridge) | 4 | 4 | [raiz_c4_pont.md](raiz_c4_pont.md) |
 | `struct` | struct | struere (to build, to pile up) | 7 | 7 | [raiz_c4_struct.md](raiz_c4_struct.md) |
 | `tect` | tect | tegere (to cover) | 7 | 8 | [raiz_c4_tect.md](raiz_c4_tect.md) |
+
+## 批次 `c5`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `arbit` | arbit | arbitrari (to judge) | 5 | 5 | [raiz_c5_arbit.md](raiz_c5_arbit.md) |
+| `cern` | cern | cernere (to sift, to separate) | 4 | 4 | [raiz_c5_cern.md](raiz_c5_cern.md) |
+| `discrim` | discrim | discernere (to distinguish) | 3 | 3 | [raiz_c5_discrim.md](raiz_c5_discrim.md) |
+| `elect` | elect | eligere (to choose out) | 3 | 3 | [raiz_c5_elect.md](raiz_c5_elect.md) |
+| `opt` | opt | optare (to choose, to wish) | 5 | 5 | [raiz_c5_opt.md](raiz_c5_opt.md) |
+| `scrut` | scrut | scrutari (to search closely) | 2 | 2 | [raiz_c5_scrut.md](raiz_c5_scrut.md) |
+| `select` | select | seligere (to pick out) | 5 | 5 | [raiz_c5_select.md](raiz_c5_select.md) |
