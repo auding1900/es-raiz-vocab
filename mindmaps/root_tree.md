@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 174 个 · 单词 1161 个 · 关系 1238 条
+- 词根 181 个 · 单词 1191 个 · 关系 1270 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -240,3 +240,15 @@
 | `riv` | riv | rivus (stream) | 4 | 4 | [raiz_c6_riv.md](raiz_c6_riv.md) |
 | `torren` | torren | torrens (torrent, rushing stream) | 2 | 2 | [raiz_c6_torren.md](raiz_c6_torren.md) |
 | `und` | und | unda (wave) | 8 | 9 | [raiz_c6_und.md](raiz_c6_und.md) |
+
+## 批次 `c7`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `alg` | alg | algere (to be cold) | 3 | 3 | [raiz_c7_alg.md](raiz_c7_alg.md) |
+| `ard` | ard | ardere (to burn) | 5 | 5 | [raiz_c7_ard.md](raiz_c7_ard.md) |
+| `cal` | cal | calere (to be warm) | 6 | 6 | [raiz_c7_cal.md](raiz_c7_cal.md) |
+| `ferv` | ferv | fervere (to boil, to glow) | 3 | 3 | [raiz_c7_ferv.md](raiz_c7_ferv.md) |
+| `frig` | frig | frigidus (cold) | 5 | 5 | [raiz_c7_frig.md](raiz_c7_frig.md) |
+| `gel` | gel | gelu (frost, ice) | 7 | 7 | [raiz_c7_gel.md](raiz_c7_gel.md) |
+| `torr` | torr | torrere (to roast, to scorch) | 3 | 3 | [raiz_c7_torr.md](raiz_c7_torr.md) |

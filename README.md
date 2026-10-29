@@ -339,6 +339,20 @@ relations:
 
 > 词根 `torrens`（激流）使用 id `torren`，与 C 批次 7 的 `torr`（torrere 烤）区分。
 
+**C 批次 7 —— 火、热、冷（7 个词根 / 30 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `ard` | ardere（燃烧） | [`raiz_c7_ard.md`](mindmaps/raiz_c7_ard.md) | 4 |
+| `cal` | calere（发热） | [`raiz_c7_cal.md`](mindmaps/raiz_c7_cal.md) | 6 |
+| `ferv` | fervere（沸腾） | [`raiz_c7_ferv.md`](mindmaps/raiz_c7_ferv.md) | 3 |
+| `torr` | torrere（烤干） | [`raiz_c7_torr.md`](mindmaps/raiz_c7_torr.md) | 3 |
+| `frig` | frigidus（寒冷） | [`raiz_c7_frig.md`](mindmaps/raiz_c7_frig.md) | 5 |
+| `alg` | algere（发冷） | [`raiz_c7_alg.md`](mindmaps/raiz_c7_alg.md) | 2 |
+| `gel` | gelu（冰冻） | [`raiz_c7_gel.md`](mindmaps/raiz_c7_gel.md) | 7 |
+
+> `ign`（火焰）已在 v0 历史批次，本批次不重复。
+
 ---
 
 ## 6. 本地部署与生成

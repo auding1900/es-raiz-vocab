@@ -1026,3 +1026,49 @@ raices:
     root_name: irrig
     latin_origin: "irrigare (to irrigate)"
     batch: c6
+
+  # ==========================================================================
+  # C 批次 7：火 · 热 · 冷
+  # ==========================================================================
+
+  # ---- 燃烧（C1 区间）----
+  - id: ard
+    root_name: ard
+    latin_origin: "ardere (to burn)"
+    batch: c7
+
+  # ---- 发热（C1 区间）----
+  - id: cal
+    root_name: cal
+    latin_origin: "calere (to be warm)"
+    batch: c7
+
+  # ---- 沸腾（C2 区间）----
+  - id: ferv
+    root_name: ferv
+    latin_origin: "fervere (to boil, to glow)"
+    batch: c7
+
+  # ---- 烤干（C2 区间）----
+  - id: torr
+    root_name: torr
+    latin_origin: "torrere (to roast, to scorch)"
+    batch: c7
+
+  # ---- 寒冷（C1 区间）----
+  - id: frig
+    root_name: frig
+    latin_origin: "frigidus (cold)"
+    batch: c7
+
+  # ---- 发冷（C2 区间）----
+  - id: alg
+    root_name: alg
+    latin_origin: "algere (to be cold)"
+    batch: c7
+
+  # ---- 冰冻（C2 区间）----
+  - id: gel
+    root_name: gel
+    latin_origin: "gelu (frost, ice)"
+    batch: c7

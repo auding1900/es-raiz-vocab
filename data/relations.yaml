@@ -7524,10 +7524,217 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 ard（ardere）——燃烧
+  # ==========================================================================
+  - source: ard
+    target: arder
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ard
+    target: ardiente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ard
+    target: ardor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ard
+    target: ardimiento
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 cal（calere）——发热
+  # ==========================================================================
+  - source: cal
+    target: calor
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cal
+    target: caliente
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cal
+    target: calentar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: cal
+    target: calefacción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: cal
+    target: caldera
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cal
+    target: calórico
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 ferv（fervere）——沸腾
+  # ==========================================================================
+  - source: ferv
+    target: fervor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ferv
+    target: ferviente
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: ferv
+    target: efervescente
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 torr（torrere）——烤干
+  # ==========================================================================
+  - source: torr
+    target: tostada
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: torr
+    target: tostar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: torr
+    target: torrefacto
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 frig（frigidus）——寒冷
+  # ==========================================================================
+  - source: frig
+    target: frío
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: frig
+    target: frigorífico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: frig
+    target: refrigerador
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: frig
+    target: refrigerar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: frig
+    target: frigidez
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 alg（algere）——发冷
+  # ==========================================================================
+  - source: alg
+    target: álgido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: alg
+    target: algidez
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 gel（gelu）——冰冻
+  # ==========================================================================
+  - source: gel
+    target: helado
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: gel
+    target: hielo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: gel
+    target: congelar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: gel
+    target: congelador
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: gel
+    target: helar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: gel
+    target: gelatina
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: gel
+    target: gélido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: arder
+    target: helar
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -7981,6 +8188,12 @@ relations:
 
   - source: abundar
     target: inundar
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: álgido
+    target: gélido
     rel_type: confundir
     cefr_level: null
     prompt_template: null
