@@ -18,7 +18,7 @@
 - 新增 36 条 `derivar` 关系：car 6、am 9、dilect 5、od 3、invid 4、cup 4、appet 5。
 - 新增 2 条 `asociar` 关系：`amor ↔ odio`、`amable ↔ cariñoso`。
 - 新导图页：`mindmaps/raiz_b11_*.md`（7 个）。
-- 数据集达到 847 个单词 / 906 条关系（847 条 `derivar` + 41 条 `asociar` + 19 条 `confundir`）。
+- 数据集达到 847 个单词 / 906 条关系（846 条 `derivar` + 41 条 `asociar` + 19 条 `confundir`）。
 - 级别分布 A1 49 / A2 158 / B1 211 / B2 269 / C1 152 / C2 7，另有 1 个未标注（`mermar`）。
 
 ## [0.14.0] - 2026-10-29
