@@ -2075,6 +2075,393 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # ced（cedere）——退让 / 行进
+  # ==========================================================================
+  - source: ced
+    target: proceso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: ced
+    target: proceder
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ced
+    target: procedimiento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ced
+    target: exceso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ced
+    target: acceso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: ced
+    target: ceder
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ced
+    target: conceder
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ced
+    target: concesión
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ced
+    target: retroceder
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: ced
+    target: antecesor
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # quer（quaerere）——寻找 / 探求
+  # ==========================================================================
+  - source: quer
+    target: querer
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: quer
+    target: cuestión
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: quer
+    target: adquirir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: quer
+    target: cuestionario
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: quer
+    target: conquistar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: quer
+    target: conquista
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: quer
+    target: requisito
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: quer
+    target: requerir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: quer
+    target: adquisición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: quer
+    target: cuestionar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # prehend（prehendere）——抓住 / 理解
+  # ==========================================================================
+  - source: prehend
+    target: aprender
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: prehend
+    target: aprendizaje
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prehend
+    target: comprender
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prehend
+    target: empresa
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prehend
+    target: sorprender
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prehend
+    target: sorpresa
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: prehend
+    target: comprensión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: prehend
+    target: empresario
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: prehend
+    target: prender
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: prehend
+    target: emprender
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: prehend
+    target: aprehender
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # tract（trahere）——拖拽 / 拉出
+  # ==========================================================================
+  - source: tract
+    target: traer
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: tract
+    target: contrato
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: tract
+    target: atraer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: tract
+    target: extraer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tract
+    target: tractor
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tract
+    target: atracción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tract
+    target: distraer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tract
+    target: distracción
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tract
+    target: contraer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tract
+    target: abstracto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tract
+    target: extracto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # traj（traicere）——穿过（西语中派生词较少）
+  # ==========================================================================
+  - source: traj
+    target: trayecto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: traj
+    target: trayectoria
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: traj
+    target: trajinar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # jac（jacere）——投掷
+  # ==========================================================================
+  - source: jac
+    target: proyecto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: jac
+    target: objeto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: jac
+    target: objetivo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: jac
+    target: sujeto
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: jac
+    target: adjetivo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: jac
+    target: sujetar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: jac
+    target: proyectar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: jac
+    target: inyección
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: jac
+    target: rechazar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: jac
+    target: conjetura
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # surg（surgere）——升起
+  # ==========================================================================
+  - source: surg
+    target: surgir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: surg
+    target: surgimiento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: surg
+    target: resurgir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: surg
+    target: resurrección
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: surg
+    target: resurgimiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: surg
+    target: insurrección
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -2167,6 +2554,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: empresa
+    target: proyecto
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: surgir
+    target: subir
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -2226,6 +2625,18 @@ relations:
 
   - source: temporal
     target: temporada
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: aprender
+    target: aprehender
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: proceso
+    target: proyecto
     rel_type: confundir
     cefr_level: null
     prompt_template: null

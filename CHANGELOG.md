@@ -6,7 +6,11 @@
 
 ## [Unreleased]
 
-暂无。
+### Added
+
+- 新增 7 个词根：`ced`、`quer`、`prehend`、`tract`、`traj`、`jac`、`surg`。
+- 数据集达到 43 个词根 / 385 个单词 / 413 条关系（384 条 `derivar` + 17 条 `asociar` + 12 条 `confundir`）。
+- 级别分布 A1 36 / A2 93 / B1 115 / B2 98 / C1 42，另有 1 个未标注（`mermar`）。
 
 ## [0.4.0] - 2026-10-29
 

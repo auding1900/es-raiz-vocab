@@ -197,3 +197,38 @@ raices:
   - id: numer
     root_name: numer
     latin_origin: "numerus (number)"
+
+  # ---- 退让 / 行进（B1 区间）----
+  - id: ced
+    root_name: ced
+    latin_origin: "cedere (to yield, to go)"
+
+  # ---- 寻找 / 探求（B1 区间）----
+  - id: quer
+    root_name: quer
+    latin_origin: "quaerere (to seek, to ask)"
+
+  # ---- 抓住 / 理解（B2 区间）----
+  - id: prehend
+    root_name: prehend
+    latin_origin: "prehendere (to grasp, to seize)"
+
+  # ---- 拖拽 / 拉出（B1 区间）----
+  - id: tract
+    root_name: tract
+    latin_origin: "trahere (to draw, to pull)"
+
+  # ---- 穿过（B2 区间）----
+  - id: traj
+    root_name: traj
+    latin_origin: "traicere (to throw across)"
+
+  # ---- 投掷（B1 区间）----
+  - id: jac
+    root_name: jac
+    latin_origin: "jacere (to throw)"
+
+  # ---- 升起（B1 区间）----
+  - id: surg
+    root_name: surg
+    latin_origin: "surgere (to rise)"
