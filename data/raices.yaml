@@ -568,3 +568,49 @@ raices:
     root_name: incol
     latin_origin: "incola (inhabitant)"
     batch: b10
+
+  # ==========================================================================
+  # B 批次 11：爱 · 憎 · 欲
+  # ==========================================================================
+
+  # ---- 珍贵、喜爱（B1 区间）----
+  - id: car
+    root_name: car
+    latin_origin: "carus (dear, beloved)"
+    batch: b11
+
+  # ---- 爱（A1 区间）----
+  - id: am
+    root_name: am
+    latin_origin: "amare (to love)"
+    batch: b11
+
+  # ---- 珍爱（B2 区间）----
+  - id: dilect
+    root_name: dilect
+    latin_origin: "diligere (to value, to love)"
+    batch: b11
+
+  # ---- 憎恨（B2 区间）----
+  - id: od
+    root_name: od
+    latin_origin: "odisse (to hate)"
+    batch: b11
+
+  # ---- 嫉妒（B2 区间）----
+  - id: invid
+    root_name: invid
+    latin_origin: "invidere (to envy)"
+    batch: b11
+
+  # ---- 渴望（B2 区间）----
+  - id: cup
+    root_name: cup
+    latin_origin: "cupere (to desire)"
+    batch: b11
+
+  # ---- 渴求（B2 区间）----
+  - id: appet
+    root_name: appet
+    latin_origin: "appetere (to reach for, to desire)"
+    batch: b11

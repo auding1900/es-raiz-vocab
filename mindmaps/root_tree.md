@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 105 个 · 单词 811 个 · 关系 868 条
+- 词根 112 个 · 单词 847 个 · 关系 906 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -126,3 +126,15 @@
 | `incol` | incol | incola (inhabitant) | 3 | 3 | [raiz_b10_incol.md](raiz_b10_incol.md) |
 | `rural` | rural | ruralis (of the countryside) | 2 | 2 | [raiz_b10_rural.md](raiz_b10_rural.md) |
 | `urb` | urb | urbs, urbis (city) | 7 | 7 | [raiz_b10_urb.md](raiz_b10_urb.md) |
+
+## 批次 `b11`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `am` | am | amare (to love) | 11 | 11 | [raiz_b11_am.md](raiz_b11_am.md) |
+| `appet` | appet | appetere (to reach for, to desire) | 5 | 5 | [raiz_b11_appet.md](raiz_b11_appet.md) |
+| `car` | car | carus (dear, beloved) | 6 | 6 | [raiz_b11_car.md](raiz_b11_car.md) |
+| `cup` | cup | cupere (to desire) | 4 | 4 | [raiz_b11_cup.md](raiz_b11_cup.md) |
+| `dilect` | dilect | diligere (to value, to love) | 5 | 5 | [raiz_b11_dilect.md](raiz_b11_dilect.md) |
+| `invid` | invid | invidere (to envy) | 4 | 4 | [raiz_b11_invid.md](raiz_b11_invid.md) |
+| `od` | od | odisse (to hate) | 3 | 3 | [raiz_b11_od.md](raiz_b11_od.md) |

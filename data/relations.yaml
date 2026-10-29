@@ -5205,10 +5205,259 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 car（carus）——珍贵、喜爱
+  # ==========================================================================
+  - source: car
+    target: cariño
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: car
+    target: cariñoso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: car
+    target: caridad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: car
+    target: caritativo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: car
+    target: carestía
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: car
+    target: encarecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 am（amare）——爱
+  # ==========================================================================
+  - source: am
+    target: amor
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: am
+    target: amar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: am
+    target: amigo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: am
+    target: amistad
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: am
+    target: amable
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: am
+    target: enamorar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: am
+    target: enamorado
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: am
+    target: amante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: am
+    target: amistoso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 dilect（diligere）——珍爱
+  # ==========================================================================
+  - source: dilect
+    target: predilecto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dilect
+    target: predilección
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dilect
+    target: diligente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dilect
+    target: diligencia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dilect
+    target: dilección
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 od（odisse）——憎恨
+  # ==========================================================================
+  - source: od
+    target: odio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: od
+    target: odiar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: od
+    target: odioso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 invid（invidere）——嫉妒
+  # ==========================================================================
+  - source: invid
+    target: envidia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: invid
+    target: envidiar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: invid
+    target: envidioso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: invid
+    target: envidiable
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 cup（cupere）——渴望
+  # ==========================================================================
+  - source: cup
+    target: codicia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: cup
+    target: codiciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cup
+    target: codicioso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: cup
+    target: cupidez
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 appet（appetere）——渴求
+  # ==========================================================================
+  - source: appet
+    target: apetito
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: appet
+    target: apetecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: appet
+    target: apetecible
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: appet
+    target: apetitoso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: appet
+    target: inapetencia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: amor
+    target: odio
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: amable
+    target: cariñoso
     rel_type: asociar
     cefr_level: null
     prompt_template: null

@@ -215,6 +215,18 @@ relations:
 
 > 本批次未新增 `civ`（城邦）导图：该词根已在 v0 历史批次中。`rural` 词根与单词 rural 同名，故该词不单独声明节点。
 
+**B 批次 11 —— 爱、憎、欲（7 个词根 / 36 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 派生单词 |
+| --- | --- | --- | --- |
+| `car` | carus（珍贵、喜爱） | [`raiz_b11_car.md`](mindmaps/raiz_b11_car.md) | cariño, cariñoso, caridad, caritativo, carestía, encarecer |
+| `am` | amare（爱） | [`raiz_b11_am.md`](mindmaps/raiz_b11_am.md) | amor, amar, amigo, amistad, amable, enamorar, enamorado, amante, amistoso |
+| `dilect` | diligere（珍爱） | [`raiz_b11_dilect.md`](mindmaps/raiz_b11_dilect.md) | predilecto, predilección, diligente, diligencia, dilección |
+| `od` | odisse（憎恨） | [`raiz_b11_od.md`](mindmaps/raiz_b11_od.md) | odio, odiar, odioso |
+| `invid` | invidere（嫉妒） | [`raiz_b11_invid.md`](mindmaps/raiz_b11_invid.md) | envidia, envidiar, envidioso, envidiable |
+| `cup` | cupere（渴望） | [`raiz_b11_cup.md`](mindmaps/raiz_b11_cup.md) | codicia, codiciar, codicioso, cupidez |
+| `appet` | appetere（渴求） | [`raiz_b11_appet.md`](mindmaps/raiz_b11_appet.md) | apetito, apetecer, apetecible, apetitoso, inapetencia |
+
 ---
 
 ## 6. 本地部署与生成
