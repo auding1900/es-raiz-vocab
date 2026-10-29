@@ -2771,6 +2771,369 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # val（valere）——强壮 / 有效
+  # ==========================================================================
+  - source: val
+    target: valor
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: val
+    target: valer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: val
+    target: valorar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: val
+    target: valioso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: val
+    target: válido
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: val
+    target: validez
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: val
+    target: equivaler
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: val
+    target: equivalente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: val
+    target: prevalecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # firm（firmus）——坚固
+  # ==========================================================================
+  - source: firm
+    target: firma
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: firm
+    target: firmar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: firm
+    target: firme
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: firm
+    target: confirmar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: firm
+    target: confirmación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: firm
+    target: firmeza
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: firm
+    target: afirmar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: firm
+    target: afirmación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # fort（fortis）——强大
+  # ==========================================================================
+  - source: fort
+    target: fuerte
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: fort
+    target: fuerza
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: fort
+    target: esfuerzo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fort
+    target: fortaleza
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fort
+    target: reforzar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fort
+    target: confortable
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fort
+    target: confort
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fort
+    target: refuerzo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fort
+    target: fortificar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # pot（posse）——能够 / 力量
+  # ==========================================================================
+  - source: pot
+    target: poder
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: pot
+    target: posible
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pot
+    target: posibilidad
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pot
+    target: potente
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pot
+    target: potencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pot
+    target: poderoso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: pot
+    target: potencial
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pot
+    target: impotente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pot
+    target: potenciar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # vir（vis / vir）——力量 / 男子
+  # ==========================================================================
+  - source: vir
+    target: violencia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vir
+    target: violento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vir
+    target: violar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vir
+    target: violación
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vir
+    target: virtud
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vir
+    target: viril
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vir
+    target: virilidad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vir
+    target: virtuoso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # rob（robur）——力量 / 橡树（西语中派生词较少）
+  # ==========================================================================
+  - source: rob
+    target: roble
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rob
+    target: robusto
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: rob
+    target: robustez
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rob
+    target: corroborar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: rob
+    target: robledo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # dur（durus）——坚硬 / 持久
+  # ==========================================================================
+  - source: dur
+    target: durante
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dur
+    target: duro
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dur
+    target: durar
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dur
+    target: duración
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dur
+    target: dureza
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dur
+    target: duradero
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dur
+    target: endurecer
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dur
+    target: perdurar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: dur
+    target: endurecimiento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -2893,6 +3256,24 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: fuerte
+    target: poderoso
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: duro
+    target: firme
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: valor
+    target: fuerza
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -2970,6 +3351,12 @@ relations:
 
   - source: radicar
     target: erradicar
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: firma
+    target: firme
     rel_type: confundir
     cefr_level: null
     prompt_template: null

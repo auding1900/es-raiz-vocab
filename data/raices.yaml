@@ -267,3 +267,38 @@ raices:
   - id: fol
     root_name: fol
     latin_origin: "folium (leaf)"
+
+  # ---- 强壮 / 有效（B1 区间）----
+  - id: val
+    root_name: val
+    latin_origin: "valere (to be strong, to be worth)"
+
+  # ---- 坚固（B1 区间）----
+  - id: firm
+    root_name: firm
+    latin_origin: "firmus (firm, solid)"
+
+  # ---- 强大（B1 区间）----
+  - id: fort
+    root_name: fort
+    latin_origin: "fortis (strong)"
+
+  # ---- 能够 / 力量（B1 区间）----
+  - id: pot
+    root_name: pot
+    latin_origin: "posse (to be able)"
+
+  # ---- 力量 / 男子（B2 区间）----
+  - id: vir
+    root_name: vir
+    latin_origin: "vis (force), vir (man)"
+
+  # ---- 力量 / 橡树（B2 区间）----
+  - id: rob
+    root_name: rob
+    latin_origin: "robur (strength, oak)"
+
+  # ---- 坚硬 / 持久（B1 区间）----
+  - id: dur
+    root_name: dur
+    latin_origin: "durus (hard, lasting)"
