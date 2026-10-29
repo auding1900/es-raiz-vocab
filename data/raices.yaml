@@ -409,3 +409,38 @@ raices:
   - id: tax
     root_name: tax
     latin_origin: "taxare (to assess, to tax)"
+
+  # ---- 给予（B1 区间）----
+  - id: don
+    root_name: don
+    latin_origin: "donare (to give)"
+
+  # ---- 交付（B1 区间）----
+  - id: dare
+    root_name: dare
+    latin_origin: "dare (to give, to hand over)"
+
+  # ---- 分配 / 贡赋（B2 区间）----
+  - id: tribut
+    root_name: tribut
+    latin_origin: "tribuere (to allot, to pay tribute)"
+
+  # ---- 慷慨（B2 区间）----
+  - id: larg
+    root_name: larg
+    latin_origin: "largus (abundant, generous)"
+
+  # ---- 义务 / 礼物（B2 区间）----
+  - id: mun
+    root_name: mun
+    latin_origin: "munus, muneris (duty, gift)"
+
+  # ---- 便利 / 馈赠（B2 区间）----
+  - id: commod
+    root_name: commod
+    latin_origin: "commodus (convenient)"
+
+  # ---- 感激 / 恩惠（B1 区间）----
+  - id: grat
+    root_name: grat
+    latin_origin: "gratus (thankful, pleasing)"

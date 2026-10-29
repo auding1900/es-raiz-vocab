@@ -4139,6 +4139,339 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # don（donare）——给予（词根本身即单词 don，故不单独声明该词节点）
+  # ==========================================================================
+  - source: don
+    target: donar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: don
+    target: donación
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: don
+    target: donante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: don
+    target: donativo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: don
+    target: condonar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # dare（dare）——交付
+  # ==========================================================================
+  - source: dare
+    target: dar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: dare
+    target: dato
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: dare
+    target: tradición
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dare
+    target: tradicional
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dare
+    target: edición
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: dare
+    target: editar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dare
+    target: traición
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dare
+    target: rendir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: dare
+    target: rendimiento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # tribut（tribuere）——分配 / 贡赋
+  # ==========================================================================
+  - source: tribut
+    target: contribuir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tribut
+    target: distribuir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tribut
+    target: distribución
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: tribut
+    target: tributo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tribut
+    target: contribución
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tribut
+    target: atribuir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tribut
+    target: atributo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: tribut
+    target: retribuir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: tribut
+    target: tributario
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # larg（largus）——慷慨 / 丰足
+  # ==========================================================================
+  - source: larg
+    target: largo
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: larg
+    target: largura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: larg
+    target: largometraje
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: larg
+    target: largar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: larg
+    target: largamente
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # mun（munus）——义务 / 礼物
+  # ==========================================================================
+  - source: mun
+    target: municipio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mun
+    target: municipal
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: mun
+    target: remuneración
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mun
+    target: inmune
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mun
+    target: inmunidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mun
+    target: inmunizar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: mun
+    target: munificencia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: mun
+    target: remunerar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # commod（commodus）——便利 / 馈赠
+  # ==========================================================================
+  - source: commod
+    target: cómodo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: commod
+    target: comodidad
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: commod
+    target: incómodo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: commod
+    target: incomodidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: commod
+    target: acomodar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: commod
+    target: comodín
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: commod
+    target: acomodación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # grat（gratus）——感激 / 恩惠
+  # ==========================================================================
+  - source: grat
+    target: gracias
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: grat
+    target: agradecer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: grat
+    target: gratis
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: grat
+    target: gracia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: grat
+    target: gratitud
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: grat
+    target: agradecimiento
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: grat
+    target: gratuito
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: grat
+    target: grato
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: grat
+    target: ingrato
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -4327,6 +4660,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: dar
+    target: donar
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: gratis
+    target: gratuito
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -4422,6 +4767,18 @@ relations:
 
   - source: mando
     target: mandato
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: tradición
+    target: traición
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: contribuir
+    target: distribuir
     rel_type: confundir
     cefr_level: null
     prompt_template: null
