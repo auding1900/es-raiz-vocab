@@ -719,3 +719,55 @@ raices:
     root_name: mund
     latin_origin: "mundus (clean; the world)"
     batch: b13
+
+  # ==========================================================================
+  # C 批次 1：希腊语词根——权柄 · 大地 · 生命
+  # ==========================================================================
+
+  # ---- 统治、开端（C1 区间）----
+  - id: arch
+    root_name: arch
+    latin_origin: "arkhe (beginning, rule)"
+    batch: c1
+
+  # ---- 权力（C1 区间）----
+  - id: crac
+    root_name: crac
+    latin_origin: "kratos (power, rule)"
+    batch: c1
+
+  # ---- 城邦（C1 区间）----
+  - id: polis
+    root_name: polis
+    latin_origin: "polis (city-state)"
+    batch: c1
+
+  # ---- 人类（C1 区间）----
+  - id: anthrop
+    root_name: anthrop
+    latin_origin: "anthropos (human being)"
+    batch: c1
+
+  # ---- 大地（C1 区间）----
+  - id: geo
+    root_name: geo
+    latin_origin: "ge (earth)"
+    batch: c1
+
+  # ---- 生命（C1 区间）----
+  - id: bio
+    root_name: bio
+    latin_origin: "bios (life)"
+    batch: c1
+
+  # ---- 灵魂（C1 区间）----
+  - id: psych
+    root_name: psych
+    latin_origin: "psykhe (soul, mind)"
+    batch: c1
+
+  # ---- 言语、学科（C1 区间）----
+  - id: log
+    root_name: log
+    latin_origin: "logos (word, reason, study)"
+    batch: c1

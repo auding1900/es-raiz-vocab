@@ -8,6 +8,18 @@
 
 暂无。
 
+## [0.18.0] - 2026-10-29
+
+数据规模：**136 个词根 / 987 个单词 / 1051 条关系**。
+
+### Added
+
+- 新增 8 个希腊语词根（C 批次 1）：`arch`、`crac`、`polis`、`anthrop`、`geo`、`bio`、`psych`、`log`（`latin_origin` 字段在本批次记录希腊本源）。
+- 新增 50 条 `derivar` 关系：arch 7、crac 6、polis 6、anthrop 5、geo 6、bio 7、psych 6、log 7。
+- 新增 1 条 `asociar`（`vida ↔ muerte`）与 1 条 `confundir`（`catálogo ↔ monólogo`）。
+- 数据集达到 987 个单词 / 1051 条关系（985 条 `derivar` + 44 条 `asociar` + 22 条 `confundir`）。
+- 级别分布 A1 54 / A2 168 / B1 243 / B2 305 / C1 200 / C2 15，另有 2 个未标注（`mermar`、`muerte`）。
+
 ## [0.17.0] - 2026-10-29
 
 数据规模：**128 个词根 / 936 个单词 / 999 条关系**。

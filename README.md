@@ -255,6 +255,19 @@ relations:
 | `pur` | purus（纯净） | [`raiz_b13_pur.md`](mindmaps/raiz_b13_pur.md) | 5 |
 | `mund` | mundus（洁净、世界） | [`raiz_b13_mund.md`](mindmaps/raiz_b13_mund.md) | 4 |
 
+**C 批次 1 —— 权柄、大地、生命（8 个希腊词根 / 50 个单词）**
+
+| 词根 | 希腊本源 | 导图 | 单词 |
+| --- | --- | --- | --- |
+| `arch` | arkhe（统治、开端） | [`raiz_c1_arch.md`](mindmaps/raiz_c1_arch.md) | 7 |
+| `crac` | kratos（权力） | [`raiz_c1_crac.md`](mindmaps/raiz_c1_crac.md) | 6 |
+| `polis` | polis（城邦） | [`raiz_c1_polis.md`](mindmaps/raiz_c1_polis.md) | 6 |
+| `anthrop` | anthropos（人类） | [`raiz_c1_anthrop.md`](mindmaps/raiz_c1_anthrop.md) | 5 |
+| `geo` | ge（大地） | [`raiz_c1_geo.md`](mindmaps/raiz_c1_geo.md) | 6 |
+| `bio` | bios（生命） | [`raiz_c1_bio.md`](mindmaps/raiz_c1_bio.md) | 7 |
+| `psych` | psykhe（灵魂） | [`raiz_c1_psych.md`](mindmaps/raiz_c1_psych.md) | 6 |
+| `log` | logos（言语、学科） | [`raiz_c1_log.md`](mindmaps/raiz_c1_log.md) | 7 |
+
 ---
 
 ## 6. 本地部署与生成

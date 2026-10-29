@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 128 个 · 单词 936 个 · 关系 999 条
+- 词根 136 个 · 单词 987 个 · 关系 1051 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -164,3 +164,16 @@
 | `splendor` | splendor | splendere (to shine) | 5 | 5 | [raiz_b13_splendor.md](raiz_b13_splendor.md) |
 | `teneb` | teneb | tenebrae (darkness) | 2 | 2 | [raiz_b13_teneb.md](raiz_b13_teneb.md) |
 | `umbr` | umbr | umbra (shadow) | 5 | 5 | [raiz_b13_umbr.md](raiz_b13_umbr.md) |
+
+## 批次 `c1`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `anthrop` | anthrop | anthropos (human being) | 5 | 5 | [raiz_c1_anthrop.md](raiz_c1_anthrop.md) |
+| `arch` | arch | arkhe (beginning, rule) | 7 | 7 | [raiz_c1_arch.md](raiz_c1_arch.md) |
+| `bio` | bio | bios (life) | 8 | 8 | [raiz_c1_bio.md](raiz_c1_bio.md) |
+| `crac` | crac | kratos (power, rule) | 6 | 6 | [raiz_c1_crac.md](raiz_c1_crac.md) |
+| `geo` | geo | ge (earth) | 6 | 6 | [raiz_c1_geo.md](raiz_c1_geo.md) |
+| `log` | log | logos (word, reason, study) | 7 | 8 | [raiz_c1_log.md](raiz_c1_log.md) |
+| `polis` | polis | polis (city-state) | 6 | 6 | [raiz_c1_polis.md](raiz_c1_polis.md) |
+| `psych` | psych | psykhe (soul, mind) | 6 | 6 | [raiz_c1_psych.md](raiz_c1_psych.md) |

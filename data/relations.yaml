@@ -6024,10 +6024,340 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 arch（arkhe）——统治、开端
+  # ==========================================================================
+  - source: arch
+    target: arquitecto
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: arch
+    target: arquitectura
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: arch
+    target: archivo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: arch
+    target: monarca
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arch
+    target: jerarquía
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arch
+    target: arcaico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: arch
+    target: jerarca
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 crac（kratos）——权力
+  # ==========================================================================
+  - source: crac
+    target: democracia
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: crac
+    target: demócrata
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: crac
+    target: burocracia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: crac
+    target: burocrático
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: crac
+    target: aristocracia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: crac
+    target: autocracia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 polis（polis）——城邦
+  # ==========================================================================
+  - source: polis
+    target: política
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: polis
+    target: político
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: polis
+    target: metropolitano
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: polis
+    target: metrópolis
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: polis
+    target: cosmopolita
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: polis
+    target: acrópolis
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 anthrop（anthropos）——人类
+  # ==========================================================================
+  - source: anthrop
+    target: antropología
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anthrop
+    target: antropólogo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anthrop
+    target: filantropía
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: anthrop
+    target: antropófago
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: anthrop
+    target: misántropo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 geo（ge）——大地
+  # ==========================================================================
+  - source: geo
+    target: geografía
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: geo
+    target: geología
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: geo
+    target: geógrafo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: geo
+    target: geológico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: geo
+    target: geopolítica
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: geo
+    target: apogeo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 bio（bios）——生命
+  # ==========================================================================
+  - source: bio
+    target: vida
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: bio
+    target: biología
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: bio
+    target: biografía
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: bio
+    target: biológico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: bio
+    target: biógrafo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: bio
+    target: antibiótico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: bio
+    target: biodiversidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 psych（psykhe）——灵魂
+  # ==========================================================================
+  - source: psych
+    target: psicología
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: psych
+    target: psicológico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: psych
+    target: psicólogo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: psych
+    target: psíquico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: psych
+    target: psiquiatría
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: psych
+    target: psiquiatra
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 log（logos）——言语、学科
+  # ==========================================================================
+  - source: log
+    target: diálogo
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: log
+    target: lógico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: log
+    target: catálogo
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: log
+    target: lógica
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: log
+    target: monólogo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: log
+    target: filología
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: log
+    target: logística
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: vida
+    target: muerte
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -6409,6 +6739,12 @@ relations:
 
   - source: claridad
     target: caridad
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: catálogo
+    target: monólogo
     rel_type: confundir
     cefr_level: null
     prompt_template: null
