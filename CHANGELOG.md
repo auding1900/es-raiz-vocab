@@ -8,6 +8,23 @@
 
 暂无。
 
+## [0.12.0] - 2026-10-29
+
+数据规模：**92 个词根 / 744 个单词 / 797 条关系**。
+
+### Added
+
+- 新增 7 个词根：`bell`（bellum）、`pugn`（pugnare）、`host`（hostis）、`arma`（arma）、`milit`（miles）、`vict`（vincere）、`fug`（fugere）。
+- 新增 45 条 `derivar` 关系：bell 6、pugn 6、host 3、arma 8、milit 6、vict 8、fug 8。
+- 新增 3 条跨词根关系：`victoria ↔ guerra`（asociar）、`militar ↔ guerra`（asociar）、`vencer ↔ convencer`（confundir）。
+- 数据集达到 744 个单词 / 797 条关系（743 条 `derivar` + 35 条 `asociar` + 19 条 `confundir`）。
+- 级别分布 A1 46 / A2 150 / B1 191 / B2 239 / C1 117，另有 1 个未标注（`mermar`）。
+
+### Notes
+
+- 词根 `arma` 与单词 `arma` 同名，该词不单独声明节点（同 `flor`、`don`）。
+- `vict` 家族包含 `convencer`、`convicción`、`convincente`（拉丁 `convincere` ← `vincere`），并与 `vencer` 建立 `confundir` 关系。
+
 ## [0.11.0] - 2026-10-29
 
 数据规模：**85 个词根 / 699 个单词 / 749 条关系**。

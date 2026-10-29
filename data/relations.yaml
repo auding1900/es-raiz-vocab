@@ -4472,6 +4472,297 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # bell（bellum）——战争
+  # ==========================================================================
+  - source: bell
+    target: guerra
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: bell
+    target: rebelde
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: bell
+    target: rebelión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: bell
+    target: bélico
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: bell
+    target: rebelarse
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: bell
+    target: belicoso
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # pugn（pugnare）——打斗
+  # ==========================================================================
+  - source: pugn
+    target: pugna
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pugn
+    target: repugnante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: pugn
+    target: pugnar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pugn
+    target: repugnar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pugn
+    target: impugnar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pugn
+    target: pugnaz
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # host（hostis）——敌人（西语中派生词较少）
+  # ==========================================================================
+  - source: host
+    target: hostil
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: host
+    target: hostilidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: host
+    target: hostilizar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # arma（arma）——武器（词根本身即单词 arma，故不单独声明该词节点）
+  # ==========================================================================
+  - source: arma
+    target: alarma
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: arma
+    target: armar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: armado
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: armadura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: armamento
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: desarmar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: desarme
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: arma
+    target: armisticio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # milit（miles）——士兵
+  # ==========================================================================
+  - source: milit
+    target: militar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: milit
+    target: milicia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: milit
+    target: militante
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: milit
+    target: militancia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: milit
+    target: paramilitar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: milit
+    target: militarizar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
+  # vict（vincere）——战胜
+  # ==========================================================================
+  - source: vict
+    target: victoria
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vict
+    target: convencer
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: vict
+    target: vencer
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vict
+    target: vencedor
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vict
+    target: victorioso
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vict
+    target: invencible
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vict
+    target: convicción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: vict
+    target: convincente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  # ==========================================================================
+  # fug（fugere）——逃跑
+  # ==========================================================================
+  - source: fug
+    target: huir
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fug
+    target: refugio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fug
+    target: refugiado
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fug
+    target: fuga
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fug
+    target: fugaz
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fug
+    target: fugitivo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fug
+    target: refugiar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fug
+    target: centrífugo
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: reducir
@@ -4672,6 +4963,18 @@ relations:
     cefr_level: null
     prompt_template: null
 
+  - source: victoria
+    target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: militar
+    target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
   # ==========================================================================
   # 形近易混（confundir）——仅保留高频真实易混对
   # ==========================================================================
@@ -4779,6 +5082,12 @@ relations:
 
   - source: contribuir
     target: distribuir
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: vencer
+    target: convencer
     rel_type: confundir
     cefr_level: null
     prompt_template: null

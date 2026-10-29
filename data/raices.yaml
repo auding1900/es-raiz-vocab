@@ -444,3 +444,39 @@ raices:
   - id: grat
     root_name: grat
     latin_origin: "gratus (thankful, pleasing)"
+
+  # ---- 战争（B2 区间）----
+  - id: bell
+    root_name: bell
+    latin_origin: "bellum (war)"
+
+  # ---- 打斗（B2 区间）----
+  - id: pugn
+    root_name: pugn
+    latin_origin: "pugnare (to fight)"
+
+  # ---- 敌人（B2 区间）----
+  - id: host
+    root_name: host
+    latin_origin: "hostis (enemy)"
+
+  # ---- 武器（B2 区间）----
+  # 注：id `arma` 与单词 arma 同名，该词不单独声明节点
+  - id: arma
+    root_name: arma
+    latin_origin: "arma (weapons, arms)"
+
+  # ---- 士兵（B2 区间）----
+  - id: milit
+    root_name: milit
+    latin_origin: "miles, militis (soldier)"
+
+  # ---- 战胜（B1 区间）----
+  - id: vict
+    root_name: vict
+    latin_origin: "vincere (to conquer, to win)"
+
+  # ---- 逃跑（B1 区间）----
+  - id: fug
+    root_name: fug
+    latin_origin: "fugere (to flee)"
