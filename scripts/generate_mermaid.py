@@ -715,29 +715,41 @@ def _blocks_by_root(dataset: Dataset) -> Tuple[Dict[str, List[Relation]], List[R
 
 
 def render_associate_page(dataset: Dataset) -> str:
-    roots = {root.id: root for root in dataset.raices}
-    relations = [rel for rel in dataset.relations if rel.rel_type in ("asociar", "confundir")]
+    """联想网状图：asociar 与 confundir 各一张，避免单图超过 maxTextSize。"""
     levels = word_levels(dataset)
+    sections: List[str] = []
+    rows: List[Tuple[str, str, str, str, str]] = []
+    total_edges = 0
 
-    names = sorted({rel.source for rel in relations} | {rel.target for rel in relations}, key=sort_key)
+    for rel_type in ("asociar", "confundir"):
+        relations = [rel for rel in dataset.relations if rel.rel_type == rel_type]
+        color = EDGE_STYLE[rel_type][1].split(",")[0].replace("stroke:", "")
+        title = "语义联想（`asociar`）" if rel_type == "asociar" else "形近易混（`confundir`）"
+        sections.append("## {0} — 虚线 `{1}`".format(title, color))
+        sections.append("")
+        if not relations:
+            sections.extend(["（暂无此类关系）", ""])
+            continue
 
-    if relations:
+        names = {rel.source for rel in relations} | {rel.target for rel in relations}
         diagram = _diagram(dataset, names, relations, levels)
-        _size_guard("associate_graph", diagram)
-        body = _mermaid(diagram)
-    else:
-        body = "（暂无 `asociar` / `confundir` 关系：在 `data/relations.yaml` 中补充后可重新生成。）"
+        _size_guard("associate_graph_{0}".format(rel_type), diagram)
+        sections.append("关系 {0} 条 · 涉及单词 {1} 个".format(len(relations), len(names)))
+        sections.append("")
+        sections.append(_mermaid(diagram))
+        sections.append("")
+        total_edges += len(relations)
 
-    rows = [
-        (
-            rel.rel_type,
-            rel.source,
-            rel.target,
-            "[豆包]({0})".format(word_link(dataset, rel.source)),
-            "[豆包]({0})".format(word_link(dataset, rel.target)),
-        )
-        for rel in relations
-    ]
+        for rel in relations:
+            rows.append(
+                (
+                    rel.rel_type,
+                    rel.source,
+                    rel.target,
+                    "[豆包]({0})".format(word_link(dataset, rel.source)),
+                    "[豆包]({0})".format(word_link(dataset, rel.target)),
+                )
+            )
 
     lines = [
         GENERATED_MARK,
@@ -745,12 +757,12 @@ def render_associate_page(dataset: Dataset) -> str:
         "# 联想网状图（asociar + confundir）",
         "",
         "- 只包含 `asociar`（虚线 `#4488bb`）与 `confundir`（虚线 `#dd4444`），不含 `derivar`",
-        "- 关系 {0} 条 · 涉及单词 {1} 个".format(len(relations), len(names)),
-        "",
-        body,
+        "- 两类关系各一张图，避免单图超过 mermaid 的 `maxTextSize` 上限",
+        "- 关系 {0} 条".format(total_edges),
         "",
     ]
-    if relations:
+    lines.extend(sections)
+    if rows:
         lines.extend(["## 关系清单", "", md_table(["关系", "起点", "终点", "起点查询", "终点查询"], rows), ""])
     return "\n".join(lines)
 

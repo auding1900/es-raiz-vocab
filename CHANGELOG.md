@@ -14,6 +14,7 @@
 ### Fixed
 
 - 导图超过 mermaid 的 `maxTextSize`（50000 字符）时，GitHub 只会显示 `Maximum text size in diagram exceeded`：`root_tree.md` 改为**每个词根一张图**，单图均在 11k 字符以内。
+- `associate_graph.md` 同样拆分：`asociar` 与 `confundir` 各一张图（最大 25k），不再随联想关系增加而撞上限。
 - 生成器新增单图大小告警（超过 45000 字符即提示继续拆分），避免以后再撞上限而无人察觉。
 
 ## [0.1.0] - 2026-10-28
