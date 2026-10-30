@@ -1274,3 +1274,79 @@ raices:
     root_name: peri
     latin_origin: "peri (around)"
     batch: c10
+
+  # ==========================================================================
+  # C 批次 2 补充（c2b）：文雅 / 书面词族，主攻 C1–C2
+  # ==========================================================================
+
+  # ---- 说话（C1 区间）----
+  - id: loqu
+    root_name: loqu
+    latin_origin: "loqui (to speak)"
+    batch: c2b
+
+  # ---- 大（C1 区间）----
+  - id: magn
+    root_name: magn
+    latin_origin: "magnus (great, large)"
+    batch: c2b
+
+  # ---- 教导（C1 区间）----
+  - id: doct
+    root_name: doct
+    latin_origin: "docere (to teach)"
+    batch: c2b
+
+  # ---- 重（C1 区间）----
+  - id: grav
+    root_name: grav
+    latin_origin: "gravis (heavy, serious)"
+    batch: c2b
+
+  # ---- 轻（C1 区间）----
+  - id: lev
+    root_name: lev
+    latin_origin: "levis (light)"
+    batch: c2b
+
+  # ---- 虚假（C1 区间）----
+  - id: fals
+    root_name: fals
+    latin_origin: "falsus (false)"
+    batch: c2b
+
+  # ---- 空、虚（C1 区间）----
+  - id: van
+    root_name: van
+    latin_origin: "vanus (empty, vain)"
+    batch: c2b
+
+  # ---- 沉默（C1 区间）----
+  - id: tacit
+    root_name: tacit
+    latin_origin: "tacere (to be silent)"
+    batch: c2b
+
+  # ---- 群（C1 区间）----
+  - id: greg
+    root_name: greg
+    latin_origin: "grex, gregis (flock, herd)"
+    batch: c2b
+
+  # ---- 嬉戏（C1 区间）----
+  - id: lud
+    root_name: lud
+    latin_origin: "ludere (to play)"
+    batch: c2b
+
+  # ---- 骚动、混乱（C1 区间）----
+  - id: turb
+    root_name: turb
+    latin_origin: "turba (crowd, turmoil)"
+    batch: c2b
+
+  # ---- 主张、报复（C1 区间）----
+  - id: vindic
+    root_name: vindic
+    latin_origin: "vindicare (to claim, to avenge)"
+    batch: c2b

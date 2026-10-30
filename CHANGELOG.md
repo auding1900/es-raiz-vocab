@@ -8,6 +8,18 @@
 
 暂无。
 
+## [0.28.0] - 2026-10-30
+
+数据规模：**224 个词根 / 1389 个单词 / 1477 条关系**。
+
+### Added
+
+- 新增 12 个文雅 / 书面词族（C 批次 2 补充 `c2b`）：`loqu`、`magn`、`doct`、`grav`、`lev`、`fals`、`van`、`tacit`、`greg`、`lud`、`turb`、`vindic`。
+- 新增 68 条 `derivar` 关系，其中 **23 个 C2 词**（`locuaz`、`soliloquio`、`ventrílocuo`、`magnánimo`、`magnificar`、`doctrinal`、`docto`、`gravamen`、`gravoso`、`levitar`、`falsario`、`falsía`、`vanagloria`、`reticente`、`reticencia`、`segregación`、`gregario`、`egregio`、`colusión`、`turbulencia`、`turba`、`vindicar`、`vindicación`）与 20 个 C1 词。
+- 新增 `asociar`（`grave ↔ leve`）与 `confundir`（`segregar ↔ congregar`）。
+- 导图页：`mindmaps/raiz_c2b_*.md`（12 个）。
+- 级别分布 A1 76 / A2 214 / B1 320 / B2 402 / C1 294 / C2 **79**（C2 由 56 增至 79，占全部有级词比重 4.0% → 5.7%）。
+
 ## [0.27.0] - 2026-10-29
 
 数据规模：**212 个词根 / 1321 个单词 / 1407 条关系**。

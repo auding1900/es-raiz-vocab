@@ -8604,10 +8604,460 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 loqu（loqui）——说话
+  # ==========================================================================
+  - source: loqu
+    target: coloquio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: loqu
+    target: locución
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: loqu
+    target: elocuente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: loqu
+    target: elocuencia
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: loqu
+    target: locuaz
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: loqu
+    target: soliloquio
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: loqu
+    target: ventrílocuo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 magn（magnus）——大
+  # ==========================================================================
+  - source: magn
+    target: magnífico
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: magn
+    target: magnitud
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: magn
+    target: magnate
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: magn
+    target: magno
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: magn
+    target: magnánimo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: magn
+    target: magnificar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 doct（docere）——教导
+  # ==========================================================================
+  - source: doct
+    target: documento
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: doct
+    target: docencia
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: doct
+    target: docente
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: doct
+    target: doctrina
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: doct
+    target: documentar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: doct
+    target: doctrinal
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: doct
+    target: docto
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 grav（gravis）——重、严重
+  # ==========================================================================
+  - source: grav
+    target: grave
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: grav
+    target: gravedad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: grav
+    target: agravar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: grav
+    target: gravitar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: grav
+    target: gravamen
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: grav
+    target: gravoso
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 lev（levis）——轻
+  # ==========================================================================
+  - source: lev
+    target: ligero
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: lev
+    target: aliviar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lev
+    target: alivio
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lev
+    target: leve
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lev
+    target: levedad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: lev
+    target: levitar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 fals（falsus）——虚假
+  # ==========================================================================
+  - source: fals
+    target: falso
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fals
+    target: falsedad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fals
+    target: falsificar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: fals
+    target: falsario
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: fals
+    target: falsía
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 van（vanus）——空、虚
+  # ==========================================================================
+  - source: van
+    target: vano
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: van
+    target: vanidad
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: van
+    target: desvanecer
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: van
+    target: vanagloria
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 tacit（tacere）——沉默
+  # ==========================================================================
+  - source: tacit
+    target: tácito
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: tacit
+    target: taciturno
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: tacit
+    target: reticente
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: tacit
+    target: reticencia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 greg（grex）——群
+  # ==========================================================================
+  - source: greg
+    target: congregar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: greg
+    target: congregación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: greg
+    target: segregar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: greg
+    target: segregación
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: greg
+    target: gregario
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: greg
+    target: egregio
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 lud（ludere）——嬉戏
+  # ==========================================================================
+  - source: lud
+    target: ilusión
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: lud
+    target: aludir
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: lud
+    target: lúdico
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: lud
+    target: preludio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: lud
+    target: eludir
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: lud
+    target: colusión
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 turb（turba）——骚动
+  # ==========================================================================
+  - source: turb
+    target: turbio
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: turb
+    target: perturbar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: turb
+    target: turbulento
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: turb
+    target: turbulencia
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: turb
+    target: turba
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 vindic（vindicare）——主张、报复
+  # ==========================================================================
+  - source: vindic
+    target: vengar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vindic
+    target: venganza
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: vindic
+    target: reivindicar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vindic
+    target: reivindicación
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: vindic
+    target: vindicar
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: vindic
+    target: vindicación
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: grave
+    target: leve
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -9109,6 +9559,12 @@ relations:
 
   - source: situación
     target: sitio
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: segregar
+    target: congregar
     rel_type: confundir
     cefr_level: null
     prompt_template: null

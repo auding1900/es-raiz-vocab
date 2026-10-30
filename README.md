@@ -403,6 +403,25 @@ relations:
 
 > `extraer` / `extraordinario`（`tract` 等）、`transporte` / `transmitir`（`port` / `mit`）已属 v0 词族，本批次不重复。到此 B9→C10 全部批次完成。
 
+**C 批次 2 补充（c2b）—— 文雅 / 书面词族，加厚 C2（12 个词根 / 68 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 | C2 词 |
+| --- | --- | --- | --- | --- |
+| `loqu` | loqui（说话） | [`raiz_c2b_loqu.md`](mindmaps/raiz_c2b_loqu.md) | 7 | locuaz, soliloquio, ventrílocuo |
+| `magn` | magnus（大） | [`raiz_c2b_magn.md`](mindmaps/raiz_c2b_magn.md) | 6 | magnánimo, magnificar |
+| `doct` | docere（教导） | [`raiz_c2b_doct.md`](mindmaps/raiz_c2b_doct.md) | 7 | doctrinal, docto |
+| `grav` | gravis（重） | [`raiz_c2b_grav.md`](mindmaps/raiz_c2b_grav.md) | 6 | gravamen, gravoso |
+| `lev` | levis（轻） | [`raiz_c2b_lev.md`](mindmaps/raiz_c2b_lev.md) | 6 | levitar |
+| `fals` | falsus（虚假） | [`raiz_c2b_fals.md`](mindmaps/raiz_c2b_fals.md) | 5 | falsario, falsía |
+| `van` | vanus（空、虚） | [`raiz_c2b_van.md`](mindmaps/raiz_c2b_van.md) | 4 | vanagloria |
+| `tacit` | tacere（沉默） | [`raiz_c2b_tacit.md`](mindmaps/raiz_c2b_tacit.md) | 4 | reticente, reticencia |
+| `greg` | grex（群） | [`raiz_c2b_greg.md`](mindmaps/raiz_c2b_greg.md) | 6 | segregación, gregario, egregio |
+| `lud` | ludere（嬉戏） | [`raiz_c2b_lud.md`](mindmaps/raiz_c2b_lud.md) | 6 | colusión |
+| `turb` | turba（骚动） | [`raiz_c2b_turb.md`](mindmaps/raiz_c2b_turb.md) | 5 | turbulencia, turba |
+| `vindic` | vindicare（主张、报复） | [`raiz_c2b_vindic.md`](mindmaps/raiz_c2b_vindic.md) | 6 | vindicar, vindicación |
+
+> 本批次专为加厚 C2 而设：23 个 C2 词、 20 个 C1 词，覆盖“说话 / 沉默 / 虚假 / 轻重 / 群”等书面语主题。
+
 ---
 
 ## 6. 本地部署与生成

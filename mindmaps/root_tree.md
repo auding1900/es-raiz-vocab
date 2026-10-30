@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 212 个 · 单词 1321 个 · 关系 1407 条
+- 词根 224 个 · 单词 1389 个 · 关系 1477 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -298,3 +298,20 @@
 | `trans` | trans | trans (across) | 5 | 5 | [raiz_c10_trans.md](raiz_c10_trans.md) |
 | `ultra` | ultra | ultra (beyond) | 3 | 3 | [raiz_c10_ultra.md](raiz_c10_ultra.md) |
 | `vic` | vic | vicus (village, neighbourhood) | 3 | 3 | [raiz_c10_vic.md](raiz_c10_vic.md) |
+
+## 批次 `c2b`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `doct` | doct | docere (to teach) | 7 | 7 | [raiz_c2b_doct.md](raiz_c2b_doct.md) |
+| `fals` | fals | falsus (false) | 5 | 5 | [raiz_c2b_fals.md](raiz_c2b_fals.md) |
+| `grav` | grav | gravis (heavy, serious) | 7 | 7 | [raiz_c2b_grav.md](raiz_c2b_grav.md) |
+| `greg` | greg | grex, gregis (flock, herd) | 6 | 7 | [raiz_c2b_greg.md](raiz_c2b_greg.md) |
+| `lev` | lev | levis (light) | 6 | 6 | [raiz_c2b_lev.md](raiz_c2b_lev.md) |
+| `loqu` | loqu | loqui (to speak) | 7 | 7 | [raiz_c2b_loqu.md](raiz_c2b_loqu.md) |
+| `lud` | lud | ludere (to play) | 6 | 6 | [raiz_c2b_lud.md](raiz_c2b_lud.md) |
+| `magn` | magn | magnus (great, large) | 6 | 6 | [raiz_c2b_magn.md](raiz_c2b_magn.md) |
+| `tacit` | tacit | tacere (to be silent) | 4 | 4 | [raiz_c2b_tacit.md](raiz_c2b_tacit.md) |
+| `turb` | turb | turba (crowd, turmoil) | 5 | 5 | [raiz_c2b_turb.md](raiz_c2b_turb.md) |
+| `van` | van | vanus (empty, vain) | 4 | 4 | [raiz_c2b_van.md](raiz_c2b_van.md) |
+| `vindic` | vindic | vindicare (to claim, to avenge) | 6 | 6 | [raiz_c2b_vindic.md](raiz_c2b_vindic.md) |
