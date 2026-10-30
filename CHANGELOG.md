@@ -8,6 +8,18 @@
 
 暂无。
 
+## [0.29.0] - 2026-10-30
+
+数据规模：**232 个词根 / 1423 个单词 / 1513 条关系**。
+
+### Added
+
+- 新增 8 个文雅 / 书面词族（C 批次 2 补充二 `c2c`）：`pud`、`brev`、`sil`、`sord`、`murmur`、`fing`、`pict`、`celer`。
+- 新增 34 条 `derivar` 关系，其中 **13 个 C2 词**（`púdico`、`impúdico`、`pudibundo`、`impudor`、`breviario`、`silente`、`sordidez`、`murmurio`、`figurado`、`pictórico`、`pintoresco`、`celeridad`、`célere`）。
+- 新增 `asociar`（`silencio ↔ murmullo`）与 `confundir`（`ficticio ↔ figurado`）。
+- 导图页：`mindmaps/raiz_c2c_*.md`（8 个）。
+- C2 词数 79 → **92**（累计两批补充使 C2 从 56 增至 92，占全部有级词比重 4.0% → 6.5%）。
+
 ## [0.28.0] - 2026-10-30
 
 数据规模：**224 个词根 / 1389 个单词 / 1477 条关系**。

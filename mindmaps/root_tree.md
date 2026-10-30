@@ -2,7 +2,7 @@
 
 # 词根索引
 
-- 词根 224 个 · 单词 1389 个 · 关系 1477 条
+- 词根 232 个 · 单词 1423 个 · 关系 1513 条
 - **一个词根一个文件、一个词根一张图**（`mindmaps/raiz_<批次>_<词根>.md`），规避单图 `maxTextSize` 与单文件过大
 - 线型：`derivar` 实线 · `asociar` 蓝色虚线 · `confundir` 红色虚线
 - 节点可点击跳转豆包查询（GitHub 会忽略 mermaid 的 click，可用各页文末链接表）
@@ -315,3 +315,16 @@
 | `turb` | turb | turba (crowd, turmoil) | 5 | 5 | [raiz_c2b_turb.md](raiz_c2b_turb.md) |
 | `van` | van | vanus (empty, vain) | 4 | 4 | [raiz_c2b_van.md](raiz_c2b_van.md) |
 | `vindic` | vindic | vindicare (to claim, to avenge) | 6 | 6 | [raiz_c2b_vindic.md](raiz_c2b_vindic.md) |
+
+## 批次 `c2c`
+
+| 词根 | root_name | 拉丁本源 | 单词 | 关系 | 导图 |
+| --- | --- | --- | --- | --- | --- |
+| `brev` | brev | brevis (short) | 5 | 5 | [raiz_c2c_brev.md](raiz_c2c_brev.md) |
+| `celer` | celer | celer (swift) | 4 | 4 | [raiz_c2c_celer.md](raiz_c2c_celer.md) |
+| `fing` | fing | fingere (to shape, to feign) | 6 | 7 | [raiz_c2c_fing.md](raiz_c2c_fing.md) |
+| `murmur` | murmur | murmurare (to murmur) | 3 | 3 | [raiz_c2c_murmur.md](raiz_c2c_murmur.md) |
+| `pict` | pict | pingere, pictum (to paint) | 5 | 5 | [raiz_c2c_pict.md](raiz_c2c_pict.md) |
+| `pud` | pud | pudere (to be ashamed) | 5 | 5 | [raiz_c2c_pud.md](raiz_c2c_pud.md) |
+| `sil` | sil | silere (to be silent) | 5 | 5 | [raiz_c2c_sil.md](raiz_c2c_sil.md) |
+| `sord` | sord | sordidus (dirty, sordid) | 2 | 2 | [raiz_c2c_sord.md](raiz_c2c_sord.md) |

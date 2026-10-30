@@ -1350,3 +1350,55 @@ raices:
     root_name: vindic
     latin_origin: "vindicare (to claim, to avenge)"
     batch: c2b
+
+  # ==========================================================================
+  # C 批次 2 补充二（c2c）：文雅 / 书面词族第二组
+  # ==========================================================================
+
+  # ---- 羞耻（C2 区间）----
+  - id: pud
+    root_name: pud
+    latin_origin: "pudere (to be ashamed)"
+    batch: c2c
+
+  # ---- 短（C2 区间）----
+  - id: brev
+    root_name: brev
+    latin_origin: "brevis (short)"
+    batch: c2c
+
+  # ---- 沉默（C2 区间）----
+  - id: sil
+    root_name: sil
+    latin_origin: "silere (to be silent)"
+    batch: c2c
+
+  # ---- 卑污（C2 区间）----
+  - id: sord
+    root_name: sord
+    latin_origin: "sordidus (dirty, sordid)"
+    batch: c2c
+
+  # ---- 低语（C2 区间）----
+  - id: murmur
+    root_name: murmur
+    latin_origin: "murmurare (to murmur)"
+    batch: c2c
+
+  # ---- 塑造、虚构（C2 区间）----
+  - id: fing
+    root_name: fing
+    latin_origin: "fingere (to shape, to feign)"
+    batch: c2c
+
+  # ---- 绘画（C2 区间）----
+  - id: pict
+    root_name: pict
+    latin_origin: "pingere, pictum (to paint)"
+    batch: c2c
+
+  # ---- 迅捷（C2 区间）----
+  - id: celer
+    root_name: celer
+    latin_origin: "celer (swift)"
+    batch: c2c

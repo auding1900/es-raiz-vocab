@@ -422,6 +422,19 @@ relations:
 
 > 本批次专为加厚 C2 而设：23 个 C2 词、 20 个 C1 词，覆盖“说话 / 沉默 / 虚假 / 轻重 / 群”等书面语主题。
 
+**C 批次 2 补充二（c2c）—— 文雅 / 书面词族第二组（8 个词根 / 34 个单词）**
+
+| 词根 | 拉丁本源 | 导图 | 单词 | C2 词 |
+| --- | --- | --- | --- | --- |
+| `pud` | pudere（羞耻） | [`raiz_c2c_pud.md`](mindmaps/raiz_c2c_pud.md) | 5 | púdico, impúdico, pudibundo, impudor |
+| `brev` | brevis（短） | [`raiz_c2c_brev.md`](mindmaps/raiz_c2c_brev.md) | 5 | breviario |
+| `sil` | silere（沉默） | [`raiz_c2c_sil.md`](mindmaps/raiz_c2c_sil.md) | 4 | silente |
+| `sord` | sordidus（卑污） | [`raiz_c2c_sord.md`](mindmaps/raiz_c2c_sord.md) | 2 | sordidez |
+| `murmur` | murmurare（低语） | [`raiz_c2c_murmur.md`](mindmaps/raiz_c2c_murmur.md) | 3 | murmurio |
+| `fing` | fingere（塑造、虚构） | [`raiz_c2c_fing.md`](mindmaps/raiz_c2c_fing.md) | 6 | figurado |
+| `pict` | pingere（绘画） | [`raiz_c2c_pict.md`](mindmaps/raiz_c2c_pict.md) | 5 | pictórico, pintoresco |
+| `celer` | celer（迅捷） | [`raiz_c2c_celer.md`](mindmaps/raiz_c2c_celer.md) | 4 | celeridad, célere |
+
 ---
 
 ## 6. 本地部署与生成

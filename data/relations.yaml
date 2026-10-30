@@ -9048,10 +9048,244 @@ relations:
     prompt_template: null
 
   # ==========================================================================
+  # 词根 pud（pudere）——羞耻
+  # ==========================================================================
+  - source: pud
+    target: pudor
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: pud
+    target: púdico
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pud
+    target: impúdico
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pud
+    target: pudibundo
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pud
+    target: impudor
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 brev（brevis）——短
+  # ==========================================================================
+  - source: brev
+    target: breve
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: brev
+    target: brevedad
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: brev
+    target: abreviar
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: brev
+    target: abreviatura
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: brev
+    target: breviario
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sil（silere）——沉默
+  # ==========================================================================
+  - source: sil
+    target: silencio
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: sil
+    target: silencioso
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: sil
+    target: silenciar
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sil
+    target: silente
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 sord（sordidus）——卑污
+  # ==========================================================================
+  - source: sord
+    target: sórdido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: sord
+    target: sordidez
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 murmur（murmurare）——低语
+  # ==========================================================================
+  - source: murmur
+    target: murmurar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: murmur
+    target: murmullo
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: murmur
+    target: murmurio
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 fing（fingere）——塑造、虚构
+  # ==========================================================================
+  - source: fing
+    target: figura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: fing
+    target: fingir
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: fing
+    target: ficción
+    rel_type: derivar
+    cefr_level: B2
+    prompt_template: null
+
+  - source: fing
+    target: ficticio
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: fing
+    target: fingido
+    rel_type: derivar
+    cefr_level: C1
+    prompt_template: null
+
+  - source: fing
+    target: figurado
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 pict（pingere）——绘画
+  # ==========================================================================
+  - source: pict
+    target: pintar
+    rel_type: derivar
+    cefr_level: A1
+    prompt_template: null
+
+  - source: pict
+    target: pintura
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pict
+    target: pintor
+    rel_type: derivar
+    cefr_level: A2
+    prompt_template: null
+
+  - source: pict
+    target: pictórico
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: pict
+    target: pintoresco
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
+  # 词根 celer（celer）——迅捷
+  # ==========================================================================
+  - source: celer
+    target: acelerar
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: celer
+    target: aceleración
+    rel_type: derivar
+    cefr_level: B1
+    prompt_template: null
+
+  - source: celer
+    target: celeridad
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  - source: celer
+    target: célere
+    rel_type: derivar
+    cefr_level: C2
+    prompt_template: null
+
+  # ==========================================================================
   # 语义联想（asociar）——适量，跨词族优先
   # ==========================================================================
   - source: paz
     target: guerra
+    rel_type: asociar
+    cefr_level: null
+    prompt_template: null
+
+  - source: silencio
+    target: murmullo
     rel_type: asociar
     cefr_level: null
     prompt_template: null
@@ -9565,6 +9799,12 @@ relations:
 
   - source: segregar
     target: congregar
+    rel_type: confundir
+    cefr_level: null
+    prompt_template: null
+
+  - source: ficticio
+    target: figurado
     rel_type: confundir
     cefr_level: null
     prompt_template: null
