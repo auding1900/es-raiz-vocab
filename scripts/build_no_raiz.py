@@ -142,12 +142,21 @@ CANDIDATES: Dict[str, List[Tuple[str, str]]] = {
         ("ahorrar", "v."),
     ],
     "B2": [
+        # 阿拉伯借词
         ("alarido", "s.m."), ("albricias", "s.f."), ("algazara", "s.f."),
-        ("acecho", "s.m."), ("heráldica", "s.f."), ("jarana", "s.f."),
         ("alambique", "s.m."), ("alcancía", "s.f."), ("alcaparra", "s.f."),
         ("azar", "s.m."), ("alfiler", "s.m."), ("alicates", "s.m."),
-        ("argamasa", "s.f."), ("escarnio", "s.m."),
-        ("acechar", "v."), ("alardear", "v."), ("zaherir", "v."),
+        ("alcatraz", "s.m."), ("albornoz", "s.m."), ("azogue", "s.m."),
+        ("mezquino", "adj."), ("fulano", "s.m."), ("quiosco", "s.m."),
+        ("rehén", "s.m."), ("zaguán", "s.m."), ("argamasa", "s.f."),
+        ("jarana", "s.f."), ("alardear", "v."), ("zaherir", "v."),
+        # 日耳曼 / 法兰克借词
+        ("escarnio", "s.m."), ("galardón", "s.m."), ("espuela", "s.f."),
+        ("estribo", "s.m."), ("grima", "s.f."), ("guisa", "s.f."),
+        ("hucha", "s.f."), ("lozano", "adj."), ("toldo", "s.m."),
+        ("toalla", "s.f."), ("guarecer", "v."),
+        # 法兰西 / 伊比利亚底层词
+        ("heráldica", "s.f."), ("zamarra", "s.f."), ("chaparro", "s.m."),
     ],
     "C1": [
         ("abolengo", "s.m."), ("alcurnia", "s.f."), ("aguinaldo", "s.m."),
