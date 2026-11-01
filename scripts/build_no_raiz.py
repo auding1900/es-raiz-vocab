@@ -159,12 +159,24 @@ CANDIDATES: Dict[str, List[Tuple[str, str]]] = {
         ("heráldica", "s.f."), ("zamarra", "s.f."), ("chaparro", "s.m."),
     ],
     "C1": [
+        # 阿拉伯借词
         ("abolengo", "s.m."), ("alcurnia", "s.f."), ("aguinaldo", "s.m."),
         ("atalaya", "s.f."), ("alcaide", "s.m."), ("alguacil", "s.m."),
         ("alférez", "s.m."), ("alfanje", "s.m."), ("adarga", "s.f."),
         ("ajuar", "s.m."), ("aceña", "s.f."), ("alminar", "s.m."),
-        ("aljófar", "s.m."), ("yelmo", "s.m."), ("heraldo", "s.m."),
-        ("hidalgo", "s.m."), ("chabacano", "adj."), ("gótico", "adj."),
+        ("aljófar", "s.m."), ("almuédano", "s.m."), ("aljama", "s.f."),
+        ("azabache", "s.m."), ("aduar", "s.m."), ("arrayán", "s.m."),
+        ("zurrón", "s.m."), ("alquería", "s.f."), ("algarada", "s.f."),
+        ("algarabía", "s.f."), ("añil", "s.m."), ("maravedí", "s.m."),
+        ("fanega", "s.f."), ("almogávar", "s.m."), ("adarve", "s.m."),
+        # 日耳曼 / 法兰克借词
+        ("yelmo", "s.m."), ("heraldo", "s.m."), ("hidalgo", "s.m."),
+        ("gótico", "adj."), ("saya", "s.f."), ("randa", "s.f."),
+        ("brío", "s.m."), ("esguince", "s.m."), ("hueste", "s.f."),
+        ("arenga", "s.f."), ("feudo", "s.m."), ("vasallo", "s.m."),
+        ("mesnada", "s.f."),
+        # 巴斯克底层词
+        ("aquelarre", "s.m."), ("chabacano", "adj."),
     ],
     "C2": [
         ("antaño", "adv."), ("otrora", "adv."), ("hogaño", "adv."),
