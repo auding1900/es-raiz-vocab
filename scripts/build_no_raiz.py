@@ -119,15 +119,27 @@ CANDIDATES: Dict[str, List[Tuple[str, str]]] = {
         ("toser", "v."), ("tener", "v."),
     ],
     "B1": [
+        # 阿拉伯借词
         ("álgebra", "s.f."), ("algoritmo", "s.m."), ("alquimia", "s.f."),
         ("almanaque", "s.m."), ("arancel", "s.m."), ("jarabe", "s.m."),
         ("elixir", "s.m."), ("azahar", "s.m."), ("alcázar", "s.m."),
         ("alcoba", "s.f."), ("alfarero", "s.m."), ("tahona", "s.f."),
+        ("alhaja", "s.f."), ("almoneda", "s.f."), ("almena", "s.f."),
+        ("almirante", "s.m."), ("albarán", "s.m."), ("alféizar", "s.m."),
+        ("albóndiga", "s.f."), ("azucena", "s.f."), ("albahaca", "s.f."),
+        ("alhelí", "s.m."), ("jarra", "s.f."), ("taza", "s.f."),
+        ("alarde", "s.m."),
+        # 日耳曼借词
         ("espía", "s.m."), ("guardia", "s.f."), ("ganso", "s.m."),
         ("orgullo", "s.m."), ("esgrima", "s.f."), ("tregua", "s.f."),
-        ("brindis", "s.m."), ("alarde", "s.m."),
-        ("averiguar", "v."), ("aprovechar", "v."), ("apretar", "v."),
-        ("arrepentirse", "v."), ("atreverse", "v."), ("ahorrar", "v."),
+        ("brindis", "s.m."), ("arpa", "s.f."), ("danza", "s.f."),
+        ("galope", "s.m."), ("esquí", "s.m."), ("mariscal", "s.m."),
+        ("banquete", "s.m."),
+        # 伊比利亚 / 巴斯克底层词
+        ("pizarra", "s.f."), ("boina", "s.f."), ("garra", "s.f."),
+        ("cencerro", "s.m."),
+        # 词根失效的动词
+        ("ahorrar", "v."),
     ],
     "B2": [
         ("alarido", "s.m."), ("albricias", "s.f."), ("algazara", "s.f."),
