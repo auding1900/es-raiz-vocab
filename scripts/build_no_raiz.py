@@ -176,10 +176,10 @@ def load_extra_blacklist(path: Path) -> set:
     return words
 
 
-def build(extra: set) -> Dict[str, List[Tuple[str, str]]]:
+def build(extra: set, levels: Sequence[str] = LEVELS) -> Dict[str, List[Tuple[str, str]]]:
     blocked = repo_blacklist() | extra
     result: Dict[str, List[Tuple[str, str]]] = {}
-    for level in LEVELS:
+    for level in levels:
         kept: List[Tuple[str, str]] = []
         seen = set()
         for word, pos in CANDIDATES.get(level, []):
@@ -192,7 +192,42 @@ def build(extra: set) -> Dict[str, List[Tuple[str, str]]]:
     return result
 
 
-def render(groups: Dict[str, List[Tuple[str, str]]]) -> str:
+LEVEL_ALIASES = {"a1": "A1", "a2": "A2", "b1": "B1", "b2": "B2", "c1": "C1", "c2": "C2"}
+
+
+def parse_levels(raw: Optional[str]) -> Sequence[str]:
+    if not raw:
+        return LEVELS
+    picked: List[str] = []
+    for token in raw.replace(" ", "").split(","):
+        if not token:
+            continue
+        level = LEVEL_ALIASES.get(token.lower())
+        if level is None:
+            raise SystemExit("等级非法：{0}（可选 A1/A2/B1/B2/C1/C2）".format(token))
+        if level not in picked:
+            picked.append(level)
+    return tuple(picked) or LEVELS
+
+
+def render_yaml(groups: Dict[str, List[Tuple[str, str]]], levels: Sequence[str]) -> str:
+    """用于后续批量挂载豆包链接的片段：只有等级与单词，不含任何释义。"""
+    lines: List[str] = []
+    for level in levels:
+        if len(levels) == 1:
+            lines.append("nivel: {0}".format(level))
+            lines.append("palabras:")
+            for word, _ in groups[level]:
+                lines.append("  - {0}".format(word))
+        else:
+            lines.append("{0}:".format(level.lower()))
+            for word, _ in groups[level]:
+                lines.append("  - {0}".format(word))
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render(groups: Dict[str, List[Tuple[str, str]]], levels: Sequence[str] = LEVELS) -> str:
     lines = [
         "<!-- 由 scripts/build_no_raiz.py 自动生成，请勿手工编辑 -->",
         "",
@@ -201,7 +236,7 @@ def render(groups: Dict[str, List[Tuple[str, str]]]) -> str:
         "无法用拉丁词根拆解、与词根导图互补的高频词；只保留西语单词与 CEFR 等级，不含释义与例句。",
         "",
     ]
-    for level in LEVELS:
+    for level in levels:
         lines.append("### {0}".format(level))
         lines.append("")
         for word, pos in groups[level]:
@@ -216,13 +251,17 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="生成 no-raiz-vocab.md")
     parser.add_argument("--dry-run", action="store_true", help="只打印统计，不写盘")
     parser.add_argument("--blacklist", type=Path, default=None, help="追加黑名单文件（每行一个词）")
+    parser.add_argument("--levels", default=None, help="只输出指定等级，逗号分隔，如 A1 或 A1,A2")
+    parser.add_argument("--yaml", type=Path, default=None, help="同时输出 YAML 单词片段（不含释义）")
+    parser.add_argument("--no-md", action="store_true", help="不写 no-raiz-vocab.md")
     args = parser.parse_args(argv)
 
+    levels = parse_levels(args.levels)
     extra = load_extra_blacklist(args.blacklist) if args.blacklist else set()
-    groups = build(extra)
+    groups = build(extra, levels)
 
     total = 0
-    for level in LEVELS:
+    for level in levels:
         total += len(groups[level])
         print("{0}: {1}".format(level, len(groups[level])))
     print("total: {0}".format(total))
@@ -230,8 +269,16 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if args.dry_run:
         return 0
 
+    if args.yaml:
+        with args.yaml.open("w", encoding="utf-8", newline="\n") as handle:
+            handle.write(render_yaml(groups, levels))
+        print("written: {0}".format(args.yaml))
+
+    if args.no_md:
+        return 0
+
     with OUTPUT.open("w", encoding="utf-8", newline="\n") as handle:
-        handle.write(render(groups))
+        handle.write(render(groups, LEVELS if tuple(LEVELS) == tuple(levels) else levels))
     print("written: {0}".format(OUTPUT.relative_to(REPO_ROOT)))
     return 0
 
