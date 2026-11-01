@@ -87,22 +87,36 @@ CANDIDATES: Dict[str, List[Tuple[str, str]]] = {
         ("oler", "v."), ("salir", "v."),
     ],
     "A2": [
+        # 基础副词 / 介词
         ("acaso", "adv."), ("apenas", "adv."), ("enseguida", "adv."),
         ("despacio", "adv."), ("arriba", "adv."), ("abajo", "adv."),
         ("dentro", "adv."), ("fuera", "adv."), ("delante", "adv."),
         ("detrás", "adv."), ("cerca", "adv."), ("lejos", "adv."),
         ("encima", "adv."), ("debajo", "adv."), ("junto", "adv."),
-        ("quizás", "adv."), ("tras", "prep."),
+        ("quizás", "adv."), ("aun", "adv."), ("tal", "adv."),
+        ("demás", "adv."), ("tras", "prep."),
+        # 代词 / 限定词
+        ("quien", "pron."), ("cual", "pron."), ("cuyo", "pron."),
+        ("nada", "pron."), ("alguien", "pron."), ("nadie", "pron."),
+        ("algo", "pron."), ("otro", "pron."), ("cada", "pron."),
+        ("todo", "pron."), ("mismo", "pron."),
+        # 阿拉伯借词
         ("alcalde", "s.m."), ("azotea", "s.f."), ("algodón", "s.m."),
         ("berenjena", "s.f."), ("azafrán", "s.m."), ("azulejo", "s.m."),
         ("acequia", "s.f."), ("aljibe", "s.m."), ("tarea", "s.f."),
-        ("marfil", "s.m."), ("rincón", "s.m."), ("jardín", "s.m."),
-        ("banco", "s.m."), ("sala", "s.f."), ("banda", "s.f."),
+        ("marfil", "s.m."), ("alcachofa", "s.f."), ("albaricoque", "s.m."),
+        ("alubia", "s.f."), ("acelga", "s.f."), ("alacena", "s.f."),
+        # 日耳曼借词
+        ("rincón", "s.m."), ("jardín", "s.m."), ("banco", "s.m."),
+        ("sala", "s.f."), ("banda", "s.f."),
         ("marrón", "adj."), ("fresco", "adj."), ("rico", "adj."),
+        # 词根失效的不规则 / 高频动词
         ("guardar", "v."), ("guiar", "v."), ("robar", "v."),
-        ("despertar", "v."), ("sentar", "v."), ("acostar", "v."),
-        ("escoger", "v."), ("arrancar", "v."), ("aguantar", "v."),
-        ("quejarse", "v."), ("sonreír", "v."),
+        ("ganar", "v."), ("gastar", "v."), ("tocar", "v."),
+        ("despertar", "v."), ("acostar", "v."), ("escoger", "v."),
+        ("arrancar", "v."), ("aguantar", "v."), ("quejarse", "v."),
+        ("sonreír", "v."), ("morder", "v."), ("nevar", "v."),
+        ("toser", "v."), ("tener", "v."),
     ],
     "B1": [
         ("álgebra", "s.f."), ("algoritmo", "s.m."), ("alquimia", "s.f."),
@@ -168,8 +182,17 @@ def repo_blacklist() -> set:
 
 
 def load_extra_blacklist(path: Path) -> set:
+    """支持两种格式：每行一个词，或 yaml 片段的 palabras / nivel 列表。"""
     words = set()
-    for line in path.read_text(encoding="utf-8").splitlines():
+    text = path.read_text(encoding="utf-8")
+    if "palabras:" in text:
+        data = yaml.safe_load(text) or {}
+        items = data.get("palabras") or []
+        for item in items:
+            if isinstance(item, str) and item.strip():
+                words.add(nfc(item.strip().lower()))
+        return words
+    for line in text.splitlines():
         word = nfc(line.strip().lower())
         if word and not word.startswith("#"):
             words.add(word)
@@ -250,7 +273,8 @@ def render(groups: Dict[str, List[Tuple[str, str]]], levels: Sequence[str] = LEV
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="生成 no-raiz-vocab.md")
     parser.add_argument("--dry-run", action="store_true", help="只打印统计，不写盘")
-    parser.add_argument("--blacklist", type=Path, default=None, help="追加黑名单文件（每行一个词）")
+    parser.add_argument("--blacklist", type=Path, default=None, help="追加黑名单文件（每行一个词，或 yaml 片段的 palabras）")
+    parser.add_argument("--exclude", type=Path, action="append", default=None, help="排除已生成的批次片段（可多次指定）")
     parser.add_argument("--levels", default=None, help="只输出指定等级，逗号分隔，如 A1 或 A1,A2")
     parser.add_argument("--yaml", type=Path, default=None, help="同时输出 YAML 单词片段（不含释义）")
     parser.add_argument("--no-md", action="store_true", help="不写 no-raiz-vocab.md")
@@ -258,6 +282,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     levels = parse_levels(args.levels)
     extra = load_extra_blacklist(args.blacklist) if args.blacklist else set()
+    for path in args.exclude or []:
+        extra |= load_extra_blacklist(path)
     groups = build(extra, levels)
 
     total = 0
