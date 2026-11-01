@@ -179,13 +179,22 @@ CANDIDATES: Dict[str, List[Tuple[str, str]]] = {
         ("aquelarre", "s.m."), ("chabacano", "adj."),
     ],
     "C2": [
-        ("antaño", "adv."), ("otrora", "adv."), ("hogaño", "adv."),
-        ("allende", "adv."), ("asaz", "adv."), ("empero", "conj."),
-        ("maguer", "conj."),
-        ("alfeñique", "s.m."), ("almíbar", "s.m."), ("badulaque", "s.m."),
-        ("botarate", "s.m."), ("cenutrio", "s.m."), ("zopenco", "s.m."),
-        ("hidalguía", "s.f."), ("aljaba", "s.f."), ("alcayata", "s.f."),
-        ("rufián", "s.m."), ("baldío", "adj."),
+        # 书面功能词 / 古旧副词副词
+        ("otrora", "adv."), ("hogaño", "adv."), ("allende", "adv."),
+        ("asaz", "adv."), ("empero", "conj."), ("maguer", "conj."),
+        # 阿拉伯借词
+        ("alfeñique", "s.m."), ("almíbar", "s.m."), ("aljaba", "s.f."),
+        ("alcayata", "s.f."), ("almojarife", "s.m."), ("albur", "s.m."),
+        ("azumbre", "s.m."), ("almud", "s.m."), ("alcahuete", "s.m."),
+        ("aljez", "s.m."), ("zahorí", "s.m."),
+        ("zafio", "adj."), ("baldío", "adj."),
+        # 日耳曼借词
+        ("hidalguía", "s.f."), ("yantar", "s.f."), ("sayón", "s.m."),
+        ("ayo", "s.m."),
+        # 词源模糊的贬义俗语词
+        ("badulaque", "s.m."), ("botarate", "s.m."), ("cenutrio", "s.m."),
+        ("zopenco", "s.m."), ("gaznápiro", "s.m."), ("rufián", "s.m."),
+        ("pazguato", "adj."), ("palurdo", "adj."),
     ],
 }
 
