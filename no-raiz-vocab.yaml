@@ -1,0 +1,739 @@
+A1:
+  - palabra: "yo"
+    pos: pron.
+  - palabra: "tú"
+    pos: pron.
+  - palabra: "él"
+    pos: pron.
+  - palabra: "ella"
+    pos: pron.
+  - palabra: "nosotros"
+    pos: pron.
+  - palabra: "vosotros"
+    pos: pron.
+  - palabra: "ellos"
+    pos: pron.
+  - palabra: "me"
+    pos: pron.
+  - palabra: "te"
+    pos: pron.
+  - palabra: "se"
+    pos: pron.
+  - palabra: "nos"
+    pos: pron.
+  - palabra: "os"
+    pos: pron.
+  - palabra: "le"
+    pos: pron.
+  - palabra: "les"
+    pos: pron.
+  - palabra: "mi"
+    pos: pron.
+  - palabra: "tu"
+    pos: pron.
+  - palabra: "su"
+    pos: pron.
+  - palabra: "nuestro"
+    pos: pron.
+  - palabra: "vuestro"
+    pos: pron.
+  - palabra: "de"
+    pos: prep.
+  - palabra: "en"
+    pos: prep.
+  - palabra: "con"
+    pos: prep.
+  - palabra: "por"
+    pos: prep.
+  - palabra: "para"
+    pos: prep.
+  - palabra: "sin"
+    pos: prep.
+  - palabra: "sobre"
+    pos: prep.
+  - palabra: "hasta"
+    pos: prep.
+  - palabra: "desde"
+    pos: prep.
+  - palabra: "contra"
+    pos: prep.
+  - palabra: "según"
+    pos: prep.
+  - palabra: "hacia"
+    pos: prep.
+  - palabra: "y"
+    pos: conj.
+  - palabra: "o"
+    pos: conj.
+  - palabra: "pero"
+    pos: conj.
+  - palabra: "sino"
+    pos: conj.
+  - palabra: "porque"
+    pos: conj.
+  - palabra: "cuando"
+    pos: conj.
+  - palabra: "donde"
+    pos: conj.
+  - palabra: "como"
+    pos: conj.
+  - palabra: "si"
+    pos: conj.
+  - palabra: "que"
+    pos: conj.
+  - palabra: "ni"
+    pos: conj.
+  - palabra: "aunque"
+    pos: conj.
+  - palabra: "pues"
+    pos: conj.
+  - palabra: "no"
+    pos: adv.
+  - palabra: "muy"
+    pos: adv.
+  - palabra: "más"
+    pos: adv.
+  - palabra: "menos"
+    pos: adv.
+  - palabra: "también"
+    pos: adv.
+  - palabra: "tampoco"
+    pos: adv.
+  - palabra: "aquí"
+    pos: adv.
+  - palabra: "allí"
+    pos: adv.
+  - palabra: "ahora"
+    pos: adv.
+  - palabra: "hoy"
+    pos: adv.
+  - palabra: "ayer"
+    pos: adv.
+  - palabra: "siempre"
+    pos: adv.
+  - palabra: "nunca"
+    pos: adv.
+  - palabra: "ya"
+    pos: adv.
+  - palabra: "todavía"
+    pos: adv.
+  - palabra: "después"
+    pos: adv.
+  - palabra: "antes"
+    pos: adv.
+  - palabra: "bien"
+    pos: adv.
+  - palabra: "mal"
+    pos: adv.
+  - palabra: "así"
+    pos: adv.
+  - palabra: "casi"
+    pos: adv.
+  - palabra: "tan"
+    pos: adv.
+  - palabra: "tanto"
+    pos: adv.
+  - palabra: "bastante"
+    pos: adv.
+  - palabra: "demasiado"
+    pos: adv.
+  - palabra: "quizá"
+    pos: adv.
+  - palabra: "entonces"
+    pos: adv.
+  - palabra: "luego"
+    pos: adv.
+  - palabra: "además"
+    pos: adv.
+  - palabra: "solo"
+    pos: adv.
+  - palabra: "perro"
+    pos: s.m.
+  - palabra: "barro"
+    pos: s.m.
+  - palabra: "cerveza"
+    pos: s.f.
+  - palabra: "camisa"
+    pos: s.f.
+  - palabra: "lanza"
+    pos: s.f.
+  - palabra: "conejo"
+    pos: s.m.
+  - palabra: "sapo"
+    pos: s.m.
+  - palabra: "vega"
+    pos: s.f.
+  - palabra: "izquierda"
+    pos: s.f.
+  - palabra: "guante"
+    pos: s.m.
+  - palabra: "falda"
+    pos: s.f.
+  - palabra: "saco"
+    pos: s.m.
+  - palabra: "ropa"
+    pos: s.f.
+  - palabra: "aceite"
+    pos: s.m.
+  - palabra: "azúcar"
+    pos: s.m.
+  - palabra: "naranja"
+    pos: s.f.
+  - palabra: "limón"
+    pos: s.m.
+  - palabra: "arroz"
+    pos: s.m.
+  - palabra: "aceituna"
+    pos: s.f.
+  - palabra: "aldea"
+    pos: s.f.
+  - palabra: "almohada"
+    pos: s.f.
+  - palabra: "alfombra"
+    pos: s.f.
+  - palabra: "barrio"
+    pos: s.m.
+  - palabra: "zanahoria"
+    pos: s.f.
+  - palabra: "aduana"
+    pos: s.f.
+  - palabra: "tarifa"
+    pos: s.f.
+  - palabra: "almacén"
+    pos: s.m.
+  - palabra: "alquiler"
+    pos: s.m.
+  - palabra: "albañil"
+    pos: s.m.
+  - palabra: "alcohol"
+    pos: s.m.
+  - palabra: "ajedrez"
+    pos: s.m.
+  - palabra: "blanco"
+    pos: adj.
+  - palabra: "gris"
+    pos: adj.
+  - palabra: "azul"
+    pos: adj.
+  - palabra: "ojalá"
+    pos: interj.
+  - palabra: "ser"
+    pos: v.
+  - palabra: "haber"
+    pos: v.
+  - palabra: "saber"
+    pos: v.
+  - palabra: "andar"
+    pos: v.
+  - palabra: "jugar"
+    pos: v.
+  - palabra: "dormir"
+    pos: v.
+  - palabra: "pedir"
+    pos: v.
+  - palabra: "morir"
+    pos: v.
+  - palabra: "nacer"
+    pos: v.
+  - palabra: "caer"
+    pos: v.
+  - palabra: "reír"
+    pos: v.
+  - palabra: "cubrir"
+    pos: v.
+  - palabra: "vivir"
+    pos: v.
+  - palabra: "beber"
+    pos: v.
+  - palabra: "comer"
+    pos: v.
+  - palabra: "mentir"
+    pos: v.
+  - palabra: "servir"
+    pos: v.
+  - palabra: "vestir"
+    pos: v.
+  - palabra: "seguir"
+    pos: v.
+  - palabra: "conocer"
+    pos: v.
+  - palabra: "parecer"
+    pos: v.
+  - palabra: "ofrecer"
+    pos: v.
+  - palabra: "romper"
+    pos: v.
+  - palabra: "volver"
+    pos: v.
+  - palabra: "llover"
+    pos: v.
+  - palabra: "encender"
+    pos: v.
+  - palabra: "perder"
+    pos: v.
+  - palabra: "entender"
+    pos: v.
+  - palabra: "defender"
+    pos: v.
+  - palabra: "responder"
+    pos: v.
+  - palabra: "esconder"
+    pos: v.
+  - palabra: "deber"
+    pos: v.
+  - palabra: "oler"
+    pos: v.
+
+A2:
+  - palabra: "acaso"
+    pos: adv.
+  - palabra: "apenas"
+    pos: adv.
+  - palabra: "enseguida"
+    pos: adv.
+  - palabra: "despacio"
+    pos: adv.
+  - palabra: "arriba"
+    pos: adv.
+  - palabra: "abajo"
+    pos: adv.
+  - palabra: "dentro"
+    pos: adv.
+  - palabra: "fuera"
+    pos: adv.
+  - palabra: "delante"
+    pos: adv.
+  - palabra: "detrás"
+    pos: adv.
+  - palabra: "cerca"
+    pos: adv.
+  - palabra: "lejos"
+    pos: adv.
+  - palabra: "encima"
+    pos: adv.
+  - palabra: "debajo"
+    pos: adv.
+  - palabra: "junto"
+    pos: adv.
+  - palabra: "quizás"
+    pos: adv.
+  - palabra: "aun"
+    pos: adv.
+  - palabra: "tal"
+    pos: adv.
+  - palabra: "demás"
+    pos: adv.
+  - palabra: "tras"
+    pos: prep.
+  - palabra: "quien"
+    pos: pron.
+  - palabra: "cual"
+    pos: pron.
+  - palabra: "cuyo"
+    pos: pron.
+  - palabra: "nada"
+    pos: pron.
+  - palabra: "alguien"
+    pos: pron.
+  - palabra: "nadie"
+    pos: pron.
+  - palabra: "algo"
+    pos: pron.
+  - palabra: "otro"
+    pos: pron.
+  - palabra: "cada"
+    pos: pron.
+  - palabra: "todo"
+    pos: pron.
+  - palabra: "mismo"
+    pos: pron.
+  - palabra: "alcalde"
+    pos: s.m.
+  - palabra: "azotea"
+    pos: s.f.
+  - palabra: "algodón"
+    pos: s.m.
+  - palabra: "berenjena"
+    pos: s.f.
+  - palabra: "azafrán"
+    pos: s.m.
+  - palabra: "azulejo"
+    pos: s.m.
+  - palabra: "acequia"
+    pos: s.f.
+  - palabra: "aljibe"
+    pos: s.m.
+  - palabra: "tarea"
+    pos: s.f.
+  - palabra: "marfil"
+    pos: s.m.
+  - palabra: "alcachofa"
+    pos: s.f.
+  - palabra: "albaricoque"
+    pos: s.m.
+  - palabra: "alubia"
+    pos: s.f.
+  - palabra: "acelga"
+    pos: s.f.
+  - palabra: "alacena"
+    pos: s.f.
+  - palabra: "rincón"
+    pos: s.m.
+  - palabra: "jardín"
+    pos: s.m.
+  - palabra: "banco"
+    pos: s.m.
+  - palabra: "sala"
+    pos: s.f.
+  - palabra: "banda"
+    pos: s.f.
+  - palabra: "marrón"
+    pos: adj.
+  - palabra: "fresco"
+    pos: adj.
+  - palabra: "rico"
+    pos: adj.
+  - palabra: "guardar"
+    pos: v.
+  - palabra: "guiar"
+    pos: v.
+  - palabra: "robar"
+    pos: v.
+  - palabra: "ganar"
+    pos: v.
+  - palabra: "gastar"
+    pos: v.
+  - palabra: "tocar"
+    pos: v.
+  - palabra: "despertar"
+    pos: v.
+  - palabra: "acostar"
+    pos: v.
+  - palabra: "escoger"
+    pos: v.
+  - palabra: "arrancar"
+    pos: v.
+  - palabra: "aguantar"
+    pos: v.
+  - palabra: "quejarse"
+    pos: v.
+  - palabra: "sonreír"
+    pos: v.
+  - palabra: "morder"
+    pos: v.
+  - palabra: "nevar"
+    pos: v.
+  - palabra: "toser"
+    pos: v.
+  - palabra: "tener"
+    pos: v.
+
+B1:
+  - palabra: "álgebra"
+    pos: s.f.
+  - palabra: "algoritmo"
+    pos: s.m.
+  - palabra: "alquimia"
+    pos: s.f.
+  - palabra: "almanaque"
+    pos: s.m.
+  - palabra: "arancel"
+    pos: s.m.
+  - palabra: "jarabe"
+    pos: s.m.
+  - palabra: "elixir"
+    pos: s.m.
+  - palabra: "azahar"
+    pos: s.m.
+  - palabra: "alcázar"
+    pos: s.m.
+  - palabra: "alcoba"
+    pos: s.f.
+  - palabra: "alfarero"
+    pos: s.m.
+  - palabra: "tahona"
+    pos: s.f.
+  - palabra: "alhaja"
+    pos: s.f.
+  - palabra: "almoneda"
+    pos: s.f.
+  - palabra: "almena"
+    pos: s.f.
+  - palabra: "almirante"
+    pos: s.m.
+  - palabra: "albarán"
+    pos: s.m.
+  - palabra: "alféizar"
+    pos: s.m.
+  - palabra: "albóndiga"
+    pos: s.f.
+  - palabra: "azucena"
+    pos: s.f.
+  - palabra: "albahaca"
+    pos: s.f.
+  - palabra: "alhelí"
+    pos: s.m.
+  - palabra: "jarra"
+    pos: s.f.
+  - palabra: "taza"
+    pos: s.f.
+  - palabra: "alarde"
+    pos: s.m.
+  - palabra: "espía"
+    pos: s.m.
+  - palabra: "guardia"
+    pos: s.f.
+  - palabra: "ganso"
+    pos: s.m.
+  - palabra: "orgullo"
+    pos: s.m.
+  - palabra: "esgrima"
+    pos: s.f.
+  - palabra: "tregua"
+    pos: s.f.
+  - palabra: "brindis"
+    pos: s.m.
+  - palabra: "arpa"
+    pos: s.f.
+  - palabra: "danza"
+    pos: s.f.
+  - palabra: "galope"
+    pos: s.m.
+  - palabra: "esquí"
+    pos: s.m.
+  - palabra: "mariscal"
+    pos: s.m.
+  - palabra: "banquete"
+    pos: s.m.
+  - palabra: "pizarra"
+    pos: s.f.
+  - palabra: "boina"
+    pos: s.f.
+  - palabra: "garra"
+    pos: s.f.
+  - palabra: "cencerro"
+    pos: s.m.
+  - palabra: "ahorrar"
+    pos: v.
+
+B2:
+  - palabra: "alarido"
+    pos: s.m.
+  - palabra: "albricias"
+    pos: s.f.
+  - palabra: "algazara"
+    pos: s.f.
+  - palabra: "alambique"
+    pos: s.m.
+  - palabra: "alcancía"
+    pos: s.f.
+  - palabra: "alcaparra"
+    pos: s.f.
+  - palabra: "azar"
+    pos: s.m.
+  - palabra: "alfiler"
+    pos: s.m.
+  - palabra: "alicates"
+    pos: s.m.
+  - palabra: "alcatraz"
+    pos: s.m.
+  - palabra: "albornoz"
+    pos: s.m.
+  - palabra: "azogue"
+    pos: s.m.
+  - palabra: "mezquino"
+    pos: adj.
+  - palabra: "fulano"
+    pos: s.m.
+  - palabra: "quiosco"
+    pos: s.m.
+  - palabra: "rehén"
+    pos: s.m.
+  - palabra: "zaguán"
+    pos: s.m.
+  - palabra: "argamasa"
+    pos: s.f.
+  - palabra: "jarana"
+    pos: s.f.
+  - palabra: "alardear"
+    pos: v.
+  - palabra: "zaherir"
+    pos: v.
+  - palabra: "escarnio"
+    pos: s.m.
+  - palabra: "galardón"
+    pos: s.m.
+  - palabra: "espuela"
+    pos: s.f.
+  - palabra: "estribo"
+    pos: s.m.
+  - palabra: "grima"
+    pos: s.f.
+  - palabra: "guisa"
+    pos: s.f.
+  - palabra: "hucha"
+    pos: s.f.
+  - palabra: "lozano"
+    pos: adj.
+  - palabra: "toldo"
+    pos: s.m.
+  - palabra: "toalla"
+    pos: s.f.
+  - palabra: "guarecer"
+    pos: v.
+  - palabra: "heráldica"
+    pos: s.f.
+  - palabra: "zamarra"
+    pos: s.f.
+  - palabra: "chaparro"
+    pos: s.m.
+
+C1:
+  - palabra: "abolengo"
+    pos: s.m.
+  - palabra: "alcurnia"
+    pos: s.f.
+  - palabra: "aguinaldo"
+    pos: s.m.
+  - palabra: "atalaya"
+    pos: s.f.
+  - palabra: "alcaide"
+    pos: s.m.
+  - palabra: "alguacil"
+    pos: s.m.
+  - palabra: "alférez"
+    pos: s.m.
+  - palabra: "alfanje"
+    pos: s.m.
+  - palabra: "adarga"
+    pos: s.f.
+  - palabra: "ajuar"
+    pos: s.m.
+  - palabra: "aceña"
+    pos: s.f.
+  - palabra: "alminar"
+    pos: s.m.
+  - palabra: "aljófar"
+    pos: s.m.
+  - palabra: "almuédano"
+    pos: s.m.
+  - palabra: "aljama"
+    pos: s.f.
+  - palabra: "azabache"
+    pos: s.m.
+  - palabra: "aduar"
+    pos: s.m.
+  - palabra: "arrayán"
+    pos: s.m.
+  - palabra: "zurrón"
+    pos: s.m.
+  - palabra: "alquería"
+    pos: s.f.
+  - palabra: "algarada"
+    pos: s.f.
+  - palabra: "algarabía"
+    pos: s.f.
+  - palabra: "añil"
+    pos: s.m.
+  - palabra: "maravedí"
+    pos: s.m.
+  - palabra: "fanega"
+    pos: s.f.
+  - palabra: "almogávar"
+    pos: s.m.
+  - palabra: "adarve"
+    pos: s.m.
+  - palabra: "yelmo"
+    pos: s.m.
+  - palabra: "heraldo"
+    pos: s.m.
+  - palabra: "hidalgo"
+    pos: s.m.
+  - palabra: "gótico"
+    pos: adj.
+  - palabra: "saya"
+    pos: s.f.
+  - palabra: "randa"
+    pos: s.f.
+  - palabra: "brío"
+    pos: s.m.
+  - palabra: "esguince"
+    pos: s.m.
+  - palabra: "hueste"
+    pos: s.f.
+  - palabra: "arenga"
+    pos: s.f.
+  - palabra: "feudo"
+    pos: s.m.
+  - palabra: "vasallo"
+    pos: s.m.
+  - palabra: "mesnada"
+    pos: s.f.
+  - palabra: "aquelarre"
+    pos: s.m.
+  - palabra: "chabacano"
+    pos: adj.
+
+C2:
+  - palabra: "otrora"
+    pos: adv.
+  - palabra: "hogaño"
+    pos: adv.
+  - palabra: "allende"
+    pos: adv.
+  - palabra: "asaz"
+    pos: adv.
+  - palabra: "empero"
+    pos: conj.
+  - palabra: "maguer"
+    pos: conj.
+  - palabra: "alfeñique"
+    pos: s.m.
+  - palabra: "almíbar"
+    pos: s.m.
+  - palabra: "aljaba"
+    pos: s.f.
+  - palabra: "alcayata"
+    pos: s.f.
+  - palabra: "almojarife"
+    pos: s.m.
+  - palabra: "albur"
+    pos: s.m.
+  - palabra: "azumbre"
+    pos: s.m.
+  - palabra: "almud"
+    pos: s.m.
+  - palabra: "alcahuete"
+    pos: s.m.
+  - palabra: "aljez"
+    pos: s.m.
+  - palabra: "zahorí"
+    pos: s.m.
+  - palabra: "zafio"
+    pos: adj.
+  - palabra: "baldío"
+    pos: adj.
+  - palabra: "hidalguía"
+    pos: s.f.
+  - palabra: "yantar"
+    pos: s.f.
+  - palabra: "sayón"
+    pos: s.m.
+  - palabra: "ayo"
+    pos: s.m.
+  - palabra: "badulaque"
+    pos: s.m.
+  - palabra: "botarate"
+    pos: s.m.
+  - palabra: "cenutrio"
+    pos: s.m.
+  - palabra: "zopenco"
+    pos: s.m.
+  - palabra: "gaznápiro"
+    pos: s.m.
+  - palabra: "rufián"
+    pos: s.m.
+  - palabra: "pazguato"
+    pos: adj.
+  - palabra: "palurdo"
+    pos: adj.

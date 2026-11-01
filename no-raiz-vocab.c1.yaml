@@ -1,44 +1,86 @@
 nivel: C1
 palabras:
-  - abolengo
-  - alcurnia
-  - aguinaldo
-  - atalaya
-  - alcaide
-  - alguacil
-  - alférez
-  - alfanje
-  - adarga
-  - ajuar
-  - aceña
-  - alminar
-  - aljófar
-  - almuédano
-  - aljama
-  - azabache
-  - aduar
-  - arrayán
-  - zurrón
-  - alquería
-  - algarada
-  - algarabía
-  - añil
-  - maravedí
-  - fanega
-  - almogávar
-  - adarve
-  - yelmo
-  - heraldo
-  - hidalgo
-  - gótico
-  - saya
-  - randa
-  - brío
-  - esguince
-  - hueste
-  - arenga
-  - feudo
-  - vasallo
-  - mesnada
-  - aquelarre
-  - chabacano
+  - palabra: "abolengo"
+    pos: s.m.
+  - palabra: "alcurnia"
+    pos: s.f.
+  - palabra: "aguinaldo"
+    pos: s.m.
+  - palabra: "atalaya"
+    pos: s.f.
+  - palabra: "alcaide"
+    pos: s.m.
+  - palabra: "alguacil"
+    pos: s.m.
+  - palabra: "alférez"
+    pos: s.m.
+  - palabra: "alfanje"
+    pos: s.m.
+  - palabra: "adarga"
+    pos: s.f.
+  - palabra: "ajuar"
+    pos: s.m.
+  - palabra: "aceña"
+    pos: s.f.
+  - palabra: "alminar"
+    pos: s.m.
+  - palabra: "aljófar"
+    pos: s.m.
+  - palabra: "almuédano"
+    pos: s.m.
+  - palabra: "aljama"
+    pos: s.f.
+  - palabra: "azabache"
+    pos: s.m.
+  - palabra: "aduar"
+    pos: s.m.
+  - palabra: "arrayán"
+    pos: s.m.
+  - palabra: "zurrón"
+    pos: s.m.
+  - palabra: "alquería"
+    pos: s.f.
+  - palabra: "algarada"
+    pos: s.f.
+  - palabra: "algarabía"
+    pos: s.f.
+  - palabra: "añil"
+    pos: s.m.
+  - palabra: "maravedí"
+    pos: s.m.
+  - palabra: "fanega"
+    pos: s.f.
+  - palabra: "almogávar"
+    pos: s.m.
+  - palabra: "adarve"
+    pos: s.m.
+  - palabra: "yelmo"
+    pos: s.m.
+  - palabra: "heraldo"
+    pos: s.m.
+  - palabra: "hidalgo"
+    pos: s.m.
+  - palabra: "gótico"
+    pos: adj.
+  - palabra: "saya"
+    pos: s.f.
+  - palabra: "randa"
+    pos: s.f.
+  - palabra: "brío"
+    pos: s.m.
+  - palabra: "esguince"
+    pos: s.m.
+  - palabra: "hueste"
+    pos: s.f.
+  - palabra: "arenga"
+    pos: s.f.
+  - palabra: "feudo"
+    pos: s.m.
+  - palabra: "vasallo"
+    pos: s.m.
+  - palabra: "mesnada"
+    pos: s.f.
+  - palabra: "aquelarre"
+    pos: s.m.
+  - palabra: "chabacano"
+    pos: adj.

@@ -1,33 +1,64 @@
 nivel: C2
 palabras:
-  - otrora
-  - hogaño
-  - allende
-  - asaz
-  - empero
-  - maguer
-  - alfeñique
-  - almíbar
-  - aljaba
-  - alcayata
-  - almojarife
-  - albur
-  - azumbre
-  - almud
-  - alcahuete
-  - aljez
-  - zahorí
-  - zafio
-  - baldío
-  - hidalguía
-  - yantar
-  - sayón
-  - ayo
-  - badulaque
-  - botarate
-  - cenutrio
-  - zopenco
-  - gaznápiro
-  - rufián
-  - pazguato
-  - palurdo
+  - palabra: "otrora"
+    pos: adv.
+  - palabra: "hogaño"
+    pos: adv.
+  - palabra: "allende"
+    pos: adv.
+  - palabra: "asaz"
+    pos: adv.
+  - palabra: "empero"
+    pos: conj.
+  - palabra: "maguer"
+    pos: conj.
+  - palabra: "alfeñique"
+    pos: s.m.
+  - palabra: "almíbar"
+    pos: s.m.
+  - palabra: "aljaba"
+    pos: s.f.
+  - palabra: "alcayata"
+    pos: s.f.
+  - palabra: "almojarife"
+    pos: s.m.
+  - palabra: "albur"
+    pos: s.m.
+  - palabra: "azumbre"
+    pos: s.m.
+  - palabra: "almud"
+    pos: s.m.
+  - palabra: "alcahuete"
+    pos: s.m.
+  - palabra: "aljez"
+    pos: s.m.
+  - palabra: "zahorí"
+    pos: s.m.
+  - palabra: "zafio"
+    pos: adj.
+  - palabra: "baldío"
+    pos: adj.
+  - palabra: "hidalguía"
+    pos: s.f.
+  - palabra: "yantar"
+    pos: s.f.
+  - palabra: "sayón"
+    pos: s.m.
+  - palabra: "ayo"
+    pos: s.m.
+  - palabra: "badulaque"
+    pos: s.m.
+  - palabra: "botarate"
+    pos: s.m.
+  - palabra: "cenutrio"
+    pos: s.m.
+  - palabra: "zopenco"
+    pos: s.m.
+  - palabra: "gaznápiro"
+    pos: s.m.
+  - palabra: "rufián"
+    pos: s.m.
+  - palabra: "pazguato"
+    pos: adj.
+  - palabra: "palurdo"
+    pos: adj.

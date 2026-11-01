@@ -275,19 +275,24 @@ def parse_levels(raw: Optional[str]) -> Sequence[str]:
     return tuple(picked) or LEVELS
 
 
-def render_yaml(groups: Dict[str, List[Tuple[str, str]]], levels: Sequence[str]) -> str:
-    """用于后续批量挂载豆包链接的片段：只有等级与单词，不含任何释义。"""
+def render_yaml(groups: Dict[str, List[Tuple[str, str]]], levels: Sequence[str], with_pos: bool = False) -> str:
+    """用于后续批量挂载豆包链接的片段：只有等级与单词（可带词性），不含任何释义。
+
+    单词一律加引号，避开 YAML 1.1 把 no / on 等标记当布尔的坑。
+    """
     lines: List[str] = []
     for level in levels:
         if len(levels) == 1:
             lines.append("nivel: {0}".format(level))
             lines.append("palabras:")
-            for word, _ in groups[level]:
-                lines.append("  - {0}".format(word))
         else:
-            lines.append("{0}:".format(level.lower()))
-            for word, _ in groups[level]:
-                lines.append("  - {0}".format(word))
+            lines.append("{0}:".format(level))
+        for word, pos in groups[level]:
+            if with_pos:
+                lines.append('  - palabra: "{0}"'.format(word))
+                lines.append("    pos: {0}".format(pos))
+            else:
+                lines.append('  - "{0}"'.format(word))
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -319,6 +324,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument("--exclude", type=Path, action="append", default=None, help="排除已生成的批次片段（可多次指定）")
     parser.add_argument("--levels", default=None, help="只输出指定等级，逗号分隔，如 A1 或 A1,A2")
     parser.add_argument("--yaml", type=Path, default=None, help="同时输出 YAML 单词片段（不含释义）")
+    parser.add_argument("--yaml-pos", action="store_true", help="YAML 条目额外携带词性 pos")
     parser.add_argument("--no-md", action="store_true", help="不写 no-raiz-vocab.md")
     args = parser.parse_args(argv)
 
@@ -339,7 +345,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.yaml:
         with args.yaml.open("w", encoding="utf-8", newline="\n") as handle:
-            handle.write(render_yaml(groups, levels))
+            handle.write(render_yaml(groups, levels, args.yaml_pos))
         print("written: {0}".format(args.yaml))
 
     if args.no_md:

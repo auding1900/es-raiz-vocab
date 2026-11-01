@@ -1,73 +1,144 @@
 nivel: A2
 palabras:
-  - acaso
-  - apenas
-  - enseguida
-  - despacio
-  - arriba
-  - abajo
-  - dentro
-  - fuera
-  - delante
-  - detrás
-  - cerca
-  - lejos
-  - encima
-  - debajo
-  - junto
-  - quizás
-  - aun
-  - tal
-  - demás
-  - tras
-  - quien
-  - cual
-  - cuyo
-  - nada
-  - alguien
-  - nadie
-  - algo
-  - otro
-  - cada
-  - todo
-  - mismo
-  - alcalde
-  - azotea
-  - algodón
-  - berenjena
-  - azafrán
-  - azulejo
-  - acequia
-  - aljibe
-  - tarea
-  - marfil
-  - alcachofa
-  - albaricoque
-  - alubia
-  - acelga
-  - alacena
-  - rincón
-  - jardín
-  - banco
-  - sala
-  - banda
-  - marrón
-  - fresco
-  - rico
-  - guardar
-  - guiar
-  - robar
-  - ganar
-  - gastar
-  - tocar
-  - despertar
-  - acostar
-  - escoger
-  - arrancar
-  - aguantar
-  - quejarse
-  - sonreír
-  - morder
-  - nevar
-  - toser
-  - tener
+  - palabra: "acaso"
+    pos: adv.
+  - palabra: "apenas"
+    pos: adv.
+  - palabra: "enseguida"
+    pos: adv.
+  - palabra: "despacio"
+    pos: adv.
+  - palabra: "arriba"
+    pos: adv.
+  - palabra: "abajo"
+    pos: adv.
+  - palabra: "dentro"
+    pos: adv.
+  - palabra: "fuera"
+    pos: adv.
+  - palabra: "delante"
+    pos: adv.
+  - palabra: "detrás"
+    pos: adv.
+  - palabra: "cerca"
+    pos: adv.
+  - palabra: "lejos"
+    pos: adv.
+  - palabra: "encima"
+    pos: adv.
+  - palabra: "debajo"
+    pos: adv.
+  - palabra: "junto"
+    pos: adv.
+  - palabra: "quizás"
+    pos: adv.
+  - palabra: "aun"
+    pos: adv.
+  - palabra: "tal"
+    pos: adv.
+  - palabra: "demás"
+    pos: adv.
+  - palabra: "tras"
+    pos: prep.
+  - palabra: "quien"
+    pos: pron.
+  - palabra: "cual"
+    pos: pron.
+  - palabra: "cuyo"
+    pos: pron.
+  - palabra: "nada"
+    pos: pron.
+  - palabra: "alguien"
+    pos: pron.
+  - palabra: "nadie"
+    pos: pron.
+  - palabra: "algo"
+    pos: pron.
+  - palabra: "otro"
+    pos: pron.
+  - palabra: "cada"
+    pos: pron.
+  - palabra: "todo"
+    pos: pron.
+  - palabra: "mismo"
+    pos: pron.
+  - palabra: "alcalde"
+    pos: s.m.
+  - palabra: "azotea"
+    pos: s.f.
+  - palabra: "algodón"
+    pos: s.m.
+  - palabra: "berenjena"
+    pos: s.f.
+  - palabra: "azafrán"
+    pos: s.m.
+  - palabra: "azulejo"
+    pos: s.m.
+  - palabra: "acequia"
+    pos: s.f.
+  - palabra: "aljibe"
+    pos: s.m.
+  - palabra: "tarea"
+    pos: s.f.
+  - palabra: "marfil"
+    pos: s.m.
+  - palabra: "alcachofa"
+    pos: s.f.
+  - palabra: "albaricoque"
+    pos: s.m.
+  - palabra: "alubia"
+    pos: s.f.
+  - palabra: "acelga"
+    pos: s.f.
+  - palabra: "alacena"
+    pos: s.f.
+  - palabra: "rincón"
+    pos: s.m.
+  - palabra: "jardín"
+    pos: s.m.
+  - palabra: "banco"
+    pos: s.m.
+  - palabra: "sala"
+    pos: s.f.
+  - palabra: "banda"
+    pos: s.f.
+  - palabra: "marrón"
+    pos: adj.
+  - palabra: "fresco"
+    pos: adj.
+  - palabra: "rico"
+    pos: adj.
+  - palabra: "guardar"
+    pos: v.
+  - palabra: "guiar"
+    pos: v.
+  - palabra: "robar"
+    pos: v.
+  - palabra: "ganar"
+    pos: v.
+  - palabra: "gastar"
+    pos: v.
+  - palabra: "tocar"
+    pos: v.
+  - palabra: "despertar"
+    pos: v.
+  - palabra: "acostar"
+    pos: v.
+  - palabra: "escoger"
+    pos: v.
+  - palabra: "arrancar"
+    pos: v.
+  - palabra: "aguantar"
+    pos: v.
+  - palabra: "quejarse"
+    pos: v.
+  - palabra: "sonreír"
+    pos: v.
+  - palabra: "morder"
+    pos: v.
+  - palabra: "nevar"
+    pos: v.
+  - palabra: "toser"
+    pos: v.
+  - palabra: "tener"
+    pos: v.

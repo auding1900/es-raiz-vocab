@@ -1,37 +1,72 @@
 nivel: B2
 palabras:
-  - alarido
-  - albricias
-  - algazara
-  - alambique
-  - alcancía
-  - alcaparra
-  - azar
-  - alfiler
-  - alicates
-  - alcatraz
-  - albornoz
-  - azogue
-  - mezquino
-  - fulano
-  - quiosco
-  - rehén
-  - zaguán
-  - argamasa
-  - jarana
-  - alardear
-  - zaherir
-  - escarnio
-  - galardón
-  - espuela
-  - estribo
-  - grima
-  - guisa
-  - hucha
-  - lozano
-  - toldo
-  - toalla
-  - guarecer
-  - heráldica
-  - zamarra
-  - chaparro
+  - palabra: "alarido"
+    pos: s.m.
+  - palabra: "albricias"
+    pos: s.f.
+  - palabra: "algazara"
+    pos: s.f.
+  - palabra: "alambique"
+    pos: s.m.
+  - palabra: "alcancía"
+    pos: s.f.
+  - palabra: "alcaparra"
+    pos: s.f.
+  - palabra: "azar"
+    pos: s.m.
+  - palabra: "alfiler"
+    pos: s.m.
+  - palabra: "alicates"
+    pos: s.m.
+  - palabra: "alcatraz"
+    pos: s.m.
+  - palabra: "albornoz"
+    pos: s.m.
+  - palabra: "azogue"
+    pos: s.m.
+  - palabra: "mezquino"
+    pos: adj.
+  - palabra: "fulano"
+    pos: s.m.
+  - palabra: "quiosco"
+    pos: s.m.
+  - palabra: "rehén"
+    pos: s.m.
+  - palabra: "zaguán"
+    pos: s.m.
+  - palabra: "argamasa"
+    pos: s.f.
+  - palabra: "jarana"
+    pos: s.f.
+  - palabra: "alardear"
+    pos: v.
+  - palabra: "zaherir"
+    pos: v.
+  - palabra: "escarnio"
+    pos: s.m.
+  - palabra: "galardón"
+    pos: s.m.
+  - palabra: "espuela"
+    pos: s.f.
+  - palabra: "estribo"
+    pos: s.m.
+  - palabra: "grima"
+    pos: s.f.
+  - palabra: "guisa"
+    pos: s.f.
+  - palabra: "hucha"
+    pos: s.f.
+  - palabra: "lozano"
+    pos: adj.
+  - palabra: "toldo"
+    pos: s.m.
+  - palabra: "toalla"
+    pos: s.f.
+  - palabra: "guarecer"
+    pos: v.
+  - palabra: "heráldica"
+    pos: s.f.
+  - palabra: "zamarra"
+    pos: s.f.
+  - palabra: "chaparro"
+    pos: s.m.

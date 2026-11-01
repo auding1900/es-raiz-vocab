@@ -1,45 +1,88 @@
 nivel: B1
 palabras:
-  - álgebra
-  - algoritmo
-  - alquimia
-  - almanaque
-  - arancel
-  - jarabe
-  - elixir
-  - azahar
-  - alcázar
-  - alcoba
-  - alfarero
-  - tahona
-  - alhaja
-  - almoneda
-  - almena
-  - almirante
-  - albarán
-  - alféizar
-  - albóndiga
-  - azucena
-  - albahaca
-  - alhelí
-  - jarra
-  - taza
-  - alarde
-  - espía
-  - guardia
-  - ganso
-  - orgullo
-  - esgrima
-  - tregua
-  - brindis
-  - arpa
-  - danza
-  - galope
-  - esquí
-  - mariscal
-  - banquete
-  - pizarra
-  - boina
-  - garra
-  - cencerro
-  - ahorrar
+  - palabra: "álgebra"
+    pos: s.f.
+  - palabra: "algoritmo"
+    pos: s.m.
+  - palabra: "alquimia"
+    pos: s.f.
+  - palabra: "almanaque"
+    pos: s.m.
+  - palabra: "arancel"
+    pos: s.m.
+  - palabra: "jarabe"
+    pos: s.m.
+  - palabra: "elixir"
+    pos: s.m.
+  - palabra: "azahar"
+    pos: s.m.
+  - palabra: "alcázar"
+    pos: s.m.
+  - palabra: "alcoba"
+    pos: s.f.
+  - palabra: "alfarero"
+    pos: s.m.
+  - palabra: "tahona"
+    pos: s.f.
+  - palabra: "alhaja"
+    pos: s.f.
+  - palabra: "almoneda"
+    pos: s.f.
+  - palabra: "almena"
+    pos: s.f.
+  - palabra: "almirante"
+    pos: s.m.
+  - palabra: "albarán"
+    pos: s.m.
+  - palabra: "alféizar"
+    pos: s.m.
+  - palabra: "albóndiga"
+    pos: s.f.
+  - palabra: "azucena"
+    pos: s.f.
+  - palabra: "albahaca"
+    pos: s.f.
+  - palabra: "alhelí"
+    pos: s.m.
+  - palabra: "jarra"
+    pos: s.f.
+  - palabra: "taza"
+    pos: s.f.
+  - palabra: "alarde"
+    pos: s.m.
+  - palabra: "espía"
+    pos: s.m.
+  - palabra: "guardia"
+    pos: s.f.
+  - palabra: "ganso"
+    pos: s.m.
+  - palabra: "orgullo"
+    pos: s.m.
+  - palabra: "esgrima"
+    pos: s.f.
+  - palabra: "tregua"
+    pos: s.f.
+  - palabra: "brindis"
+    pos: s.m.
+  - palabra: "arpa"
+    pos: s.f.
+  - palabra: "danza"
+    pos: s.f.
+  - palabra: "galope"
+    pos: s.m.
+  - palabra: "esquí"
+    pos: s.m.
+  - palabra: "mariscal"
+    pos: s.m.
+  - palabra: "banquete"
+    pos: s.m.
+  - palabra: "pizarra"
+    pos: s.f.
+  - palabra: "boina"
+    pos: s.f.
+  - palabra: "garra"
+    pos: s.f.
+  - palabra: "cencerro"
+    pos: s.m.
+  - palabra: "ahorrar"
+    pos: v.

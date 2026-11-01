@@ -1,144 +1,286 @@
 nivel: A1
 palabras:
-  - yo
-  - tú
-  - él
-  - ella
-  - nosotros
-  - vosotros
-  - ellos
-  - me
-  - te
-  - se
-  - nos
-  - os
-  - le
-  - les
-  - mi
-  - tu
-  - su
-  - nuestro
-  - vuestro
-  - de
-  - en
-  - con
-  - por
-  - para
-  - sin
-  - sobre
-  - hasta
-  - desde
-  - contra
-  - según
-  - hacia
-  - y
-  - o
-  - pero
-  - sino
-  - porque
-  - cuando
-  - donde
-  - como
-  - si
-  - que
-  - ni
-  - aunque
-  - pues
-  - no
-  - muy
-  - más
-  - menos
-  - también
-  - tampoco
-  - aquí
-  - allí
-  - ahora
-  - hoy
-  - ayer
-  - siempre
-  - nunca
-  - ya
-  - todavía
-  - después
-  - antes
-  - bien
-  - mal
-  - así
-  - casi
-  - tan
-  - tanto
-  - bastante
-  - demasiado
-  - quizá
-  - entonces
-  - luego
-  - además
-  - solo
-  - perro
-  - barro
-  - cerveza
-  - camisa
-  - lanza
-  - conejo
-  - sapo
-  - vega
-  - izquierda
-  - guante
-  - falda
-  - saco
-  - ropa
-  - aceite
-  - azúcar
-  - naranja
-  - limón
-  - arroz
-  - aceituna
-  - aldea
-  - almohada
-  - alfombra
-  - barrio
-  - zanahoria
-  - aduana
-  - tarifa
-  - almacén
-  - alquiler
-  - albañil
-  - alcohol
-  - ajedrez
-  - blanco
-  - gris
-  - azul
-  - ojalá
-  - ser
-  - haber
-  - saber
-  - andar
-  - jugar
-  - dormir
-  - pedir
-  - morir
-  - nacer
-  - caer
-  - reír
-  - cubrir
-  - vivir
-  - beber
-  - comer
-  - mentir
-  - servir
-  - vestir
-  - seguir
-  - conocer
-  - parecer
-  - ofrecer
-  - romper
-  - volver
-  - llover
-  - encender
-  - perder
-  - entender
-  - defender
-  - responder
-  - esconder
-  - deber
-  - oler
+  - palabra: "yo"
+    pos: pron.
+  - palabra: "tú"
+    pos: pron.
+  - palabra: "él"
+    pos: pron.
+  - palabra: "ella"
+    pos: pron.
+  - palabra: "nosotros"
+    pos: pron.
+  - palabra: "vosotros"
+    pos: pron.
+  - palabra: "ellos"
+    pos: pron.
+  - palabra: "me"
+    pos: pron.
+  - palabra: "te"
+    pos: pron.
+  - palabra: "se"
+    pos: pron.
+  - palabra: "nos"
+    pos: pron.
+  - palabra: "os"
+    pos: pron.
+  - palabra: "le"
+    pos: pron.
+  - palabra: "les"
+    pos: pron.
+  - palabra: "mi"
+    pos: pron.
+  - palabra: "tu"
+    pos: pron.
+  - palabra: "su"
+    pos: pron.
+  - palabra: "nuestro"
+    pos: pron.
+  - palabra: "vuestro"
+    pos: pron.
+  - palabra: "de"
+    pos: prep.
+  - palabra: "en"
+    pos: prep.
+  - palabra: "con"
+    pos: prep.
+  - palabra: "por"
+    pos: prep.
+  - palabra: "para"
+    pos: prep.
+  - palabra: "sin"
+    pos: prep.
+  - palabra: "sobre"
+    pos: prep.
+  - palabra: "hasta"
+    pos: prep.
+  - palabra: "desde"
+    pos: prep.
+  - palabra: "contra"
+    pos: prep.
+  - palabra: "según"
+    pos: prep.
+  - palabra: "hacia"
+    pos: prep.
+  - palabra: "y"
+    pos: conj.
+  - palabra: "o"
+    pos: conj.
+  - palabra: "pero"
+    pos: conj.
+  - palabra: "sino"
+    pos: conj.
+  - palabra: "porque"
+    pos: conj.
+  - palabra: "cuando"
+    pos: conj.
+  - palabra: "donde"
+    pos: conj.
+  - palabra: "como"
+    pos: conj.
+  - palabra: "si"
+    pos: conj.
+  - palabra: "que"
+    pos: conj.
+  - palabra: "ni"
+    pos: conj.
+  - palabra: "aunque"
+    pos: conj.
+  - palabra: "pues"
+    pos: conj.
+  - palabra: "no"
+    pos: adv.
+  - palabra: "muy"
+    pos: adv.
+  - palabra: "más"
+    pos: adv.
+  - palabra: "menos"
+    pos: adv.
+  - palabra: "también"
+    pos: adv.
+  - palabra: "tampoco"
+    pos: adv.
+  - palabra: "aquí"
+    pos: adv.
+  - palabra: "allí"
+    pos: adv.
+  - palabra: "ahora"
+    pos: adv.
+  - palabra: "hoy"
+    pos: adv.
+  - palabra: "ayer"
+    pos: adv.
+  - palabra: "siempre"
+    pos: adv.
+  - palabra: "nunca"
+    pos: adv.
+  - palabra: "ya"
+    pos: adv.
+  - palabra: "todavía"
+    pos: adv.
+  - palabra: "después"
+    pos: adv.
+  - palabra: "antes"
+    pos: adv.
+  - palabra: "bien"
+    pos: adv.
+  - palabra: "mal"
+    pos: adv.
+  - palabra: "así"
+    pos: adv.
+  - palabra: "casi"
+    pos: adv.
+  - palabra: "tan"
+    pos: adv.
+  - palabra: "tanto"
+    pos: adv.
+  - palabra: "bastante"
+    pos: adv.
+  - palabra: "demasiado"
+    pos: adv.
+  - palabra: "quizá"
+    pos: adv.
+  - palabra: "entonces"
+    pos: adv.
+  - palabra: "luego"
+    pos: adv.
+  - palabra: "además"
+    pos: adv.
+  - palabra: "solo"
+    pos: adv.
+  - palabra: "perro"
+    pos: s.m.
+  - palabra: "barro"
+    pos: s.m.
+  - palabra: "cerveza"
+    pos: s.f.
+  - palabra: "camisa"
+    pos: s.f.
+  - palabra: "lanza"
+    pos: s.f.
+  - palabra: "conejo"
+    pos: s.m.
+  - palabra: "sapo"
+    pos: s.m.
+  - palabra: "vega"
+    pos: s.f.
+  - palabra: "izquierda"
+    pos: s.f.
+  - palabra: "guante"
+    pos: s.m.
+  - palabra: "falda"
+    pos: s.f.
+  - palabra: "saco"
+    pos: s.m.
+  - palabra: "ropa"
+    pos: s.f.
+  - palabra: "aceite"
+    pos: s.m.
+  - palabra: "azúcar"
+    pos: s.m.
+  - palabra: "naranja"
+    pos: s.f.
+  - palabra: "limón"
+    pos: s.m.
+  - palabra: "arroz"
+    pos: s.m.
+  - palabra: "aceituna"
+    pos: s.f.
+  - palabra: "aldea"
+    pos: s.f.
+  - palabra: "almohada"
+    pos: s.f.
+  - palabra: "alfombra"
+    pos: s.f.
+  - palabra: "barrio"
+    pos: s.m.
+  - palabra: "zanahoria"
+    pos: s.f.
+  - palabra: "aduana"
+    pos: s.f.
+  - palabra: "tarifa"
+    pos: s.f.
+  - palabra: "almacén"
+    pos: s.m.
+  - palabra: "alquiler"
+    pos: s.m.
+  - palabra: "albañil"
+    pos: s.m.
+  - palabra: "alcohol"
+    pos: s.m.
+  - palabra: "ajedrez"
+    pos: s.m.
+  - palabra: "blanco"
+    pos: adj.
+  - palabra: "gris"
+    pos: adj.
+  - palabra: "azul"
+    pos: adj.
+  - palabra: "ojalá"
+    pos: interj.
+  - palabra: "ser"
+    pos: v.
+  - palabra: "haber"
+    pos: v.
+  - palabra: "saber"
+    pos: v.
+  - palabra: "andar"
+    pos: v.
+  - palabra: "jugar"
+    pos: v.
+  - palabra: "dormir"
+    pos: v.
+  - palabra: "pedir"
+    pos: v.
+  - palabra: "morir"
+    pos: v.
+  - palabra: "nacer"
+    pos: v.
+  - palabra: "caer"
+    pos: v.
+  - palabra: "reír"
+    pos: v.
+  - palabra: "cubrir"
+    pos: v.
+  - palabra: "vivir"
+    pos: v.
+  - palabra: "beber"
+    pos: v.
+  - palabra: "comer"
+    pos: v.
+  - palabra: "mentir"
+    pos: v.
+  - palabra: "servir"
+    pos: v.
+  - palabra: "vestir"
+    pos: v.
+  - palabra: "seguir"
+    pos: v.
+  - palabra: "conocer"
+    pos: v.
+  - palabra: "parecer"
+    pos: v.
+  - palabra: "ofrecer"
+    pos: v.
+  - palabra: "romper"
+    pos: v.
+  - palabra: "volver"
+    pos: v.
+  - palabra: "llover"
+    pos: v.
+  - palabra: "encender"
+    pos: v.
+  - palabra: "perder"
+    pos: v.
+  - palabra: "entender"
+    pos: v.
+  - palabra: "defender"
+    pos: v.
+  - palabra: "responder"
+    pos: v.
+  - palabra: "esconder"
+    pos: v.
+  - palabra: "deber"
+    pos: v.
+  - palabra: "oler"
+    pos: v.
