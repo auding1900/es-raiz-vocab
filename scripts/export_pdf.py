@@ -20,6 +20,8 @@ PDF 是静态版本，不保留网页上的豆包跳转。
 
 import argparse
 import html
+import json
+import os
 import re
 import shutil
 import subprocess
@@ -236,35 +238,104 @@ def find_mmdc(explicit: Optional[str]) -> Optional[List[str]]:
     return None
 
 
-def ensure_puppeteer_config(dist: Path) -> Path:
+CHROME_CANDIDATES: Tuple[str, ...] = (
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium",
+    "/usr/bin/chromium-browser",
+    "C:/Program Files/Google/Chrome/Application/chrome.exe",
+    "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+)
+
+
+def detect_chrome(explicit: Optional[str]) -> Optional[str]:
+    """优先用 --chrome / 环境变量，其次探测系统已装浏览器。
+
+    puppeteer 默认想用自己下载的 chrome-headless-shell；没装就会报
+    “Could not find chrome-headless-shell”。直接用系统 Chrome 可以免掉这一步。
+    """
+    for value in (explicit, os.environ.get("ES_RAIZ_CHROME"), os.environ.get("PUPPETEER_EXECUTABLE_PATH")):
+        if value and Path(value).exists():
+            return value
+    for candidate in CHROME_CANDIDATES:
+        if Path(candidate).exists():
+            return candidate
+    return None
+
+
+def ensure_puppeteer_config(dist: Path, chrome: Optional[str]) -> Path:
     path = dist / "puppeteer.json"
-    if not path.exists():
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text('{\n  "args": ["--no-sandbox", "--disable-setuid-sandbox"]\n}\n', encoding="utf-8")
+    config = {"args": ["--no-sandbox", "--disable-setuid-sandbox"]}
+    if chrome:
+        config["executablePath"] = chrome
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
     return path
 
 
-def render_png(mmdc: Sequence[str], mmd_path: Path, png_path: Path, puppeteer: Path, timeout: int) -> bool:
-    cmd = list(mmdc) + [
-        "-i", str(mmd_path),
-        "-o", str(png_path),
-        "-w", "2000",
-        "-b", "white",
-        "-p", str(puppeteer),
+def _error_line(text: str) -> str:
+    """从 mmdc 输出里挑一行最有信息量的错误。"""
+    lines = [line.strip() for line in (text or "").splitlines() if line.strip()]
+    for line in lines:
+        if line.lower().startswith("error"):
+            return line
+    for line in reversed(lines):
+        if not line.startswith("at "):
+            return line
+    return "unknown"
+
+
+def mmdc_option_variants(puppeteer: Path) -> List[List[str]]:
+    """不同版本 mermaid-cli 的尺寸参数不一样：
+
+    - v11+ 用 `--size <px>`（`-w/--width` 已移除）
+    - v10 及以前用 `-w <px>`
+    - 兜底：只给输入 / 输出，尺寸由 mermaid 自己决定
+    """
+    return [
+        ["--size", "2000", "-b", "white", "-p", str(puppeteer)],
+        ["-w", "2000", "-b", "white", "-p", str(puppeteer)],
+        ["-b", "white"],
     ]
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-    except subprocess.TimeoutExpired:
-        warn("渲染超时（{0}s），跳过 {1}".format(timeout, mmd_path.name))
-        return False
-    except OSError as exc:
-        warn("无法执行 mmdc：{0}".format(exc))
-        return False
-    if result.returncode != 0 or not png_path.exists():
-        detail = (result.stderr or result.stdout or "").strip().splitlines()
-        warn("渲染失败跳过 {0}：{1}".format(mmd_path.name, detail[-1] if detail else "unknown"))
-        return False
-    return True
+
+
+_OPTION_VARIANT_INDEX = None  # 记住第一个可用的参数组合，避免每个文件都试错
+
+
+def render_png(mmdc: Sequence[str], mmd_path: Path, png_path: Path, puppeteer: Path, timeout: int) -> bool:
+    global _OPTION_VARIANT_INDEX
+
+    variants = mmdc_option_variants(puppeteer)
+    order = [_OPTION_VARIANT_INDEX] if _OPTION_VARIANT_INDEX is not None else list(range(len(variants)))
+    last_error = ""
+
+    for index in order:
+        cmd = list(mmdc) + ["-i", str(mmd_path), "-o", str(png_path)] + variants[index]
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        except subprocess.TimeoutExpired:
+            warn("渲染超时（{0}s），跳过 {1}".format(timeout, mmd_path.name))
+            return False
+        except OSError as exc:
+            warn("无法执行 mmdc：{0}".format(exc))
+            return False
+
+        if result.returncode == 0 and png_path.exists():
+            _OPTION_VARIANT_INDEX = index
+            return True
+
+        last_error = _error_line(result.stderr or result.stdout)
+        # 只有“参数不认”才换下一套参数；真正的渲染错误直接跳过
+        if "unknown option" not in last_error.lower():
+            break
+
+    warn("渲染失败跳过 {0}：{1}".format(mmd_path.name, last_error))
+    if "chrome" in last_error.lower():
+        warn("提示：puppeteer 找不到浏览器。可先执行 npx puppeteer browsers install chrome-headless-shell，"
+             "或用 --chrome 指定本机 Chrome 路径")
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -536,6 +607,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument("--engine", choices=("reportlab", "weasyprint"), default="reportlab",
                         help="PDF 排版引擎（默认 reportlab，无需系统库）")
     parser.add_argument("--mmdc", default=None, help="mmdc 可执行文件路径（默认自动探测）")
+    parser.add_argument("--chrome", default=None, help="传给 puppeteer 的浏览器路径（默认自动探测系统 Chrome）")
     parser.add_argument("--timeout", type=int, default=180, help="单个 mmd 渲染超时秒数")
     parser.add_argument("--dry-run", action="store_true", help="只扫描并打印计划")
     args = parser.parse_args(argv)
@@ -569,7 +641,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if mmdc is None:
         warn("未找到 mermaid-cli，请先 npm i -g @mermaid-js/mermaid-cli 或用 --mmdc 指定")
         return 3
-    puppeteer = ensure_puppeteer_config(dist)
+    puppeteer = ensure_puppeteer_config(dist, detect_chrome(args.chrome))
+    if detect_chrome(args.chrome):
+        log("使用浏览器：{0}".format(detect_chrome(args.chrome)))
 
     builder = build_volume_pdf_weasy if args.engine == "weasyprint" else build_volume_pdf
     summary: List[Tuple[str, int, int, int]] = []

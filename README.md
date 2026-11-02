@@ -589,6 +589,11 @@ python scripts/export_pdf.py --only C2     # 只导某一册
 python scripts/export_pdf.py --dry-run     # 只看分册计划，不渲染
 ```
 
+> 首次运行若报 `Could not find chrome-headless-shell`：脚本会自动探测并复用系统已装的 Chrome / Chromium / Edge；
+> 也可显式指定 `--chrome "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`，
+> 或执行 `npx puppeteer browsers install chrome-headless-shell` 让 puppeteer 自备浏览器。
+> 排版引擎默认 ReportLab（纯 Python）；改用 `--engine weasyprint` 需额外装 `weasyprint` 与系统 pango。
+
 产出位置：`dist/src/`（抽出的 `.mmd`）、`dist/img/`（PNG）、`dist/pdf/`（最终 PDF）。
 
 分册规则：脚本扫描目录结构，不硬编码任何词根清单；若仓库里存在 `A1/` … `C2/` 这样的等级目录则按其归册，否则按每个词族中单词 CEFR 级别的**众数**归册（可用 `--level-rule lowest|highest|mode` 调整）。单个 `.mmd` 渲染失败只告警并跳过，不中断整体导出。
