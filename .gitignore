@@ -67,3 +67,8 @@ $RECYCLE.BIN/
 *.swp
 *.swo
 *~
+
+# ---- PDF 导出产物（scripts/export_pdf.py）----
+# dist/ 里是渲染出的 PNG 与 PDF，仅用于手动上传到 GitHub Releases，
+# 不提交进代码主分支。
+dist/

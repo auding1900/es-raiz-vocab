@@ -1,0 +1,10 @@
+# es-raiz-vocab 依赖（只用于脚本，运行仓库本身不需要）
+#
+# 生成 Mermaid 导图
+PyYAML>=6.0
+#
+# PDF 导出：ReportLab 负责排版（纯 Python，无需系统库；5.x 需 Python 3.10+，
+# 因此 Python 3.9 环境锁定 4.x）
+reportlab>=4.0,<5
+# 可选：想用 --engine weasyprint 时再装（需要系统 pango，macOS 可 brew install pango）
+# weasyprint>=60.0

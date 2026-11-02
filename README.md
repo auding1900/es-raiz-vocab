@@ -97,7 +97,9 @@ es-raiz-vocab/
 │   └── relations.yaml   # 关系边：source / target / rel_type / cefr_level / prompt_template
 ├── scripts/
 │   ├── generate_mermaid.py   # 读取 yaml，渲染 mindmaps/ 与 levels/ 下的静态 md
-│   └── build_no_raiz.py      # 生成 no-raiz-vocab.md 与配套 YAML 片段
+│   ├── build_no_raiz.py      # 生成 no-raiz-vocab.md 与配套 YAML 片段
+│   └── export_pdf.py         # 按等级导出离线 PDF（A1–C2 + index-toc）
+├── requirements.txt     # 脚本依赖（PyYAML / ReportLab）
 ├── mindmaps/            # 产物：root_tree.md（索引）+ raiz_<批次>_<词根>.md（一词根一文件一图）
 │                        #       + associate_graph.md（联想索引）+ asociar_*.md / confundir_*.md
 └── levels/              # 产物：A1.md ~ C2.md 分级清单
@@ -555,7 +557,45 @@ python3 scripts/generate_mermaid.py
 
 ---
 
-## 9. 定级声明
+## 9. 离线 PDF 版本
+
+仓库提供一份可离线浏览的静态打包版本：把 `mindmaps/` 下的 Mermaid 导图按 CEFR 等级拆成 6 册 PDF，另加一份总目录。
+
+| 文件 | 内容 |
+| --- | --- |
+| `A1.pdf` … `C2.pdf` | 每个等级一册：封面（含离线说明）＋ 带页码的目录 ＋ 该级别词根导图 |
+| `index-toc.pdf` | 分册总目录：各册词根数 / 图数 / 页数，以及全部词根页清单 |
+
+**下载位置**：在仓库的 **Releases** 页（以 `vX.Y.Z` 标签发布），不在代码主分支里——`dist/` 已加入 `.gitignore`，PDF 只为分发临时生成。
+
+**PDF 的局限**（重要）：
+
+- 静态快照，**没有任何超链接**：Mermaid 的 `click` 跳豆包在 PDF 中不存在；
+- 查词义、语体、搭配、近义词辨析、公版例句，请回到仓库原版 Mermaid 文件点单词；
+- 内容随 `data/*.yaml` 变化，PDF 不会自动更新，需要重新导出。
+
+**自己导出一份**：
+
+```bash
+# 1) 装渲染器（Node 环境，只需一次；不装全局时脚本会自动改用 npx）
+npm install -g @mermaid-js/mermaid-cli
+
+# 2) 装 Python 依赖
+pip install -r requirements.txt
+
+# 3) 导出（产物在 dist/pdf/）
+python scripts/export_pdf.py
+python scripts/export_pdf.py --only C2     # 只导某一册
+python scripts/export_pdf.py --dry-run     # 只看分册计划，不渲染
+```
+
+产出位置：`dist/src/`（抽出的 `.mmd`）、`dist/img/`（PNG）、`dist/pdf/`（最终 PDF）。
+
+分册规则：脚本扫描目录结构，不硬编码任何词根清单；若仓库里存在 `A1/` … `C2/` 这样的等级目录则按其归册，否则按每个词族中单词 CEFR 级别的**众数**归册（可用 `--level-rule lowest|highest|mode` 调整）。单个 `.mmd` 渲染失败只告警并跳过，不中断整体导出。
+
+---
+
+## 10. 定级声明
 
 - 仓库里的 CEFR 级别（A1–C2）是**基于常见教学经验的参考坐标**，用于给词族分层、安排学习顺序，**不是 DELE 官方词表**；
 - 本项目与 Instituto Cervantes / DELE 考试机构**没有任何隶属或授权关系**；
@@ -564,7 +604,7 @@ python3 scripts/generate_mermaid.py
 
 ---
 
-## 10. 开源协议
+## 11. 开源协议
 
 本项目以 [MIT License](LICENSE) 授权，可自由使用、修改、分发，请保留版权声明。
 
