@@ -593,6 +593,9 @@ python scripts/export_pdf.py --dry-run     # 只看分册计划，不渲染
 > 也可显式指定 `--chrome "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`，
 > 或执行 `npx puppeteer browsers install chrome-headless-shell` 让 puppeteer 自备浏览器。
 > 排版引擎默认 ReportLab（纯 Python）；改用 `--engine weasyprint` 需额外装 `weasyprint` 与系统 pango。
+>
+> **请用装好依赖的解释器执行**：仓库里有虚拟环境时用 `.env/bin/python scripts/export_pdf.py`；
+> 直接用系统 `python3`（如 anaconda 自带的那份）会因缺少 `reportlab` 而失败——脚本会在渲染前检查依赖并提示，不会白跑一遍渲染。
 
 产出位置：`dist/src/`（抽出的 `.mmd`）、`dist/img/`（PNG）、`dist/pdf/`（最终 PDF）。
 

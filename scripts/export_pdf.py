@@ -597,6 +597,40 @@ def build_volume_pdf_weasy(level: str, entries: List[Tuple[str, Path, Path]], ou
 # ---------------------------------------------------------------------------
 
 
+def preflight(engine: str) -> bool:
+    """渲染前先检查依赖，避免花几分钟渲染完图像才在组装 PDF 时崩溃。"""
+    problems: List[str] = []
+
+    try:
+        import yaml  # noqa: F401
+    except ImportError:
+        problems.append("PyYAML")
+
+    if engine == "reportlab":
+        try:
+            import reportlab  # noqa: F401
+        except ImportError:
+            problems.append("reportlab")
+    else:
+        try:
+            import weasyprint  # noqa: F401
+        except Exception:
+            problems.append("weasyprint（或系统库 pango 缺失）")
+
+    if not problems:
+        return True
+
+    sys.stderr.write(
+        "\n[error] 当前 Python 缺少依赖：{0}\n"
+        "        解释器：{1}\n"
+        "        修复：pip install -r requirements.txt\n"
+        "        若仓库里有虚拟环境，请用它的解释器执行：.env/bin/python scripts/export_pdf.py\n\n".format(
+            "、".join(problems), sys.executable
+        )
+    )
+    return False
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="按 CEFR 等级导出静态 PDF（产物不进主分支）")
     parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parent.parent, help="仓库根目录")
@@ -621,6 +655,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         if level not in LEVELS:
             sys.stderr.write("未知等级：{0}\n".format(level))
             return 2
+
+    if not preflight(args.engine):
+        return 4
 
     log("扫描仓库：{0}".format(repo))
     volumes = plan_volumes(repo, args.level_rule)
