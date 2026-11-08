@@ -1,6 +1,7 @@
-# 60-second demo script
+# Demo script (target: 60 seconds; actual file: 10 seconds)
 
-- Status: **not recorded**
+- Status: **recorded — 2026-11-08**
+- Actual file: `assets/demo.gif` (640 × 640, 23 frames, 10.02 s, ≈2.3 fps average, 162,870 bytes)
 - Target output: `assets/demo.gif`
 - Audience: Spanish learners, etymology fans, and open-source maintainers who have never seen the repo
 - Goal: in 60 seconds, show that this is a **navigable map**, not a word list, and that the repo stores structure while an LLM produces the content
@@ -18,6 +19,19 @@
 | Hide | notifications, bookmarks, personal account avatars, tokens, unrelated tabs |
 
 If GitHub Pages is not enabled yet, record the same flow in VSCode Markdown Preview with Mermaid support. Do not fake a live site.
+
+## Recorded file (actual)
+
+| Field | Value |
+| --- | --- |
+| Dimensions | 640 × 640 |
+| Frames | 23 |
+| Duration | 10.02 s |
+| Average frame rate | ≈2.3 fps (GIF frame delays vary) |
+| Size | 162,870 bytes (≈159 KiB) |
+| Recorded | 2026-11-08 |
+
+The current file is a compressed, square, 10-second capture. It does **not** match the original 55–60 s / 1920 × 1080 / 30 fps plan below; keep the shot list as the specification for a future high-resolution re-record. Do not run `scripts/make_demo_placeholder.py` while the real GIF is present, because it would overwrite it.
 
 ## Shot list
 
@@ -49,11 +63,12 @@ If GitHub Pages is not enabled yet, record the same flow in VSCode Markdown Prev
 - A Pages URL that is still 404.
 - Personal account names, tokens, or private repositories.
 
-## After recording
+## After recording (done for the current file)
 
-1. Export to `assets/demo.gif`.
-2. Check file size; if over 10 MB, reduce fps/width or trim the middle.
-3. Replace the existing `assets/demo.gif` (currently a labeled placeholder) with the real recording. The README already embeds that path, so no Markdown change is required.
-4. Update the image alt text in `README.md` and `README.zh-CN.md` if the recording differs from the shot list.
-5. Add `assets/demo.gif` to the same commit as the README change.
-6. Verify the GIF plays on GitHub (not just locally).
+- [x] Export to `assets/demo.gif`.
+- [x] Confirm file size (162,870 bytes; well under 10 MB).
+- [x] Replace the placeholder; the README path is unchanged.
+- [x] Update the alt text in both READMEs to describe the 10-second capture.
+- [x] Add `assets/demo.gif` to the same commit as the README/docs update.
+- [ ] Confirm the GIF plays on GitHub after the push (not just locally).
+- [x] Do not run `make_demo_placeholder.py` while the real file is present.

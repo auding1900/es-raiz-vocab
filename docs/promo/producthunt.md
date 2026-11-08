@@ -13,13 +13,14 @@
 | GitHub | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
 | PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08）；PH 页面与 Maker comment 仍不必提“下载 PDF” |
 | Social preview | `assets/root_tree.png` | 图片存在；**是否已上传到 GitHub 未核实** |
-| Demo video | 无 | `assets/demo.gif` 是占位图，**不是录屏**；不能当 demo video 上传 |
+| Demo asset | `assets/demo.gif` | 真实 10 秒录屏（640 × 640，23 帧，≈2.3 fps）；不是 2 分钟 demo video |
 
 ## 前置阻塞项（发布前必须解决）
 
-1. **没有真实 demo video。** `assets/demo.gif` 是明确标注的占位图。PH 的 demo video 必须 < 2 分钟，且应展示真实产品；在录制完成前，**不要**把占位 GIF 或它的截帧放进 gallery，也不要声称有 demo。
-2. **没有 Release。** PDF 下载暂时不存在；PH 文案不要承诺离线 PDF。
-3. **Social preview 未核实。** GitHub 仓库卡片可能仍是默认图，影响 PH 页面外的分享效果。
+1. **没有 2 分钟 demo video。** 已有真实 10 秒 GIF（`assets/demo.gif`）；PH 若要 video，仍需另录 < 2 分钟版本，或只用 gallery 截图。
+2. **Social preview 未核实。** GitHub 仓库卡片可能仍是默认图，影响 PH 页面外的分享效果。
+
+已解决：Release 已发布（`v0.29.1`）；PDF 不是 PH 的主打内容。
 
 ## 目标受众
 
@@ -87,7 +88,7 @@ Maker comment 写作要求：
 
 | 顺序 | 内容 | 素材来源 | 说明 |
 | --- | --- | --- | --- |
-| 1 | 主视觉：`vid` 词族横向卡片 + 一句话定位 | `assets/root_tree.png` | 原图 1200 × 630，需**加边距**到 1270 × 760，不要拉伸变形 |
+| 1 | 主视觉：`mut` 词族卡片 + 一句话定位 | `assets/root_tree.png` | 原图 1280 × 640；加边距到 1270 × 760，不要拉伸变形 |
 | 2 | 站点 `#map` 视图：左侧词根列表 + 右侧 Mermaid 图 | 浏览器截图 | 展示“可导航”，不是静态图片 |
 | 3 | 站点 `#levels` 视图：A1–C2 切换 + 搜索框 | 浏览器截图 | 展示 1,419 个带级别的词 |
 | 4 | 数据模型：YAML 片段 + 三种关系类型 | 代码截图或排版图 | 解释 “structure only” 到底存了什么 |
@@ -97,18 +98,18 @@ Maker comment 写作要求：
 要求：
 
 - 全部 1270 × 760，PNG/JPG，文字在移动端也能读。
-- **不要**使用 `assets/demo.gif` 的截帧：它是占位图，画面里明确写着 placeholder，放进 gallery 会直接损害可信度。
+- 可以使用 `assets/demo.gif` 的真实截帧，但 GIF 只有 640 × 640；1270 × 760 需要重新截屏或高质量重排，不要直接放大。
 - 不要用模糊放大图；`root_tree.png` 放大到 1270 宽会略软，建议重新用原始 SVG 导出，而不是直接放大 PNG。
 - 截图里隐藏浏览器书签、账号头像、通知、其他标签页。
 - 不放二维码、公众号、微信群。
-- 如果之后录了真实 demo video（< 2 分钟），再替换第 5 张或追加视频；录制前不要占位。
+- 目前只有 10 秒 GIF；如果要上传 PH video，需另录 < 2 分钟版本。
 
-## Demo video（当前不可用）
+## Demo asset（已录制，非完整 video）
 
 - PH 允许上传 demo video，建议 < 2 分钟。
-- 当前**没有**真实录屏；`assets/demo.gif` 是占位图。
-- 录制脚本见 [`demo-script.md`](demo-script.md)，但需要剪到 90 秒以内：只保留“词根索引 → 一个词族 → 复制 prompt → 离线仓库视图”四段。
-- 录制完成前，PH 页面只放 gallery 截图，不写 “watch the demo”。
+- 当前有真实 10 秒 GIF：`assets/demo.gif`（640 × 640，23 帧，≈2.3 fps）。
+- 它不是 2 分钟 video；若 PH 页面需要视频，另录 < 2 分钟版本，或只用 gallery 截图。
+- gallery 截帧见 [`demo-script.md`](demo-script.md)；注意 1270 × 760 的可读性。
 
 ## Topic tags（选 3 个，最多准备 5 个）
 
@@ -160,7 +161,7 @@ Maker comment 写作要求：
 
 ## 人工发布前检查清单
 
-- [ ] 已录制真实 demo video（< 2 分钟）或明确决定**不放视频**；未使用占位 GIF。
+- [ ] 已确认 `assets/demo.gif` 为真实录屏；如上传 video，已录 < 2 分钟版本；gallery 截帧已检查。
 - [ ] 6 张 gallery 均为 1270 × 760，文字可读，无个人信息。
 - [ ] `assets/root_tree.png` 未直接拉伸；如放大，已从 SVG 重新导出。
 - [ ] Tagline ≤ 60 字符（当前 45 / 47 / 45），short description ≤ 260 字符（当前 238）。

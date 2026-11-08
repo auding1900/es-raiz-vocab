@@ -41,9 +41,9 @@ You navigate the map, pick a word, and send a prepared query to an LLM. The repo
 
 ## See it in motion
 
-![Labeled placeholder for the 60-second demo GIF — see docs/promo/demo-script.md](assets/demo.gif)
+![A 10-second demo GIF of the live root map: root search, a family graph, and the no-root list](assets/demo.gif)
 
-*This is a labeled placeholder, not a recording. The 60-second shot list is in [`docs/promo/demo-script.md`](docs/promo/demo-script.md). Replace `assets/demo.gif` with the real recording when it exists.*
+*A 10-second screen recording of the live site: root map, family graph, and no-root list. The original 60-second shot list is in [`docs/promo/demo-script.md`](docs/promo/demo-script.md).*
 
 ---
 
@@ -164,7 +164,7 @@ es-raiz-vocab/
 │   ├── export_pdf.py         # optional offline PDF bundles -> dist/pdf/
 │   ├── make_root_tree_card.py    # optional: legacy 1200x630 card
 │   ├── make_root_tree_social_card.py  # optional: 1280x640 card from the real base
-│   └── make_demo_placeholder.py  # optional: labeled assets/demo.gif placeholder
+│   └── make_demo_placeholder.py  # optional: regenerate the placeholder (not the real GIF)
 ├── mindmaps/                 # generated: root index + one graph per family
 ├── levels/                   # generated: A1.md ... C2.md
 ├── no-raiz-vocab.md          # generated: no-root word list

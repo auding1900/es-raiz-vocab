@@ -41,9 +41,9 @@
 
 ## 看它动起来
 
-![60 秒演示 GIF 的占位图——分镜脚本见 docs/promo/demo-script.md](assets/demo.gif)
+![10 秒演示 GIF：词根搜索、词族图与无词根清单](assets/demo.gif)
 
-*这是一张明确标注的占位图，不是录屏。60 秒分镜脚本见 [`docs/promo/demo-script.md`](docs/promo/demo-script.md)。录好后用真实录屏替换 `assets/demo.gif`。*
+*站点真实录屏，10 秒：词根搜索、词族图与无词根清单。原始 60 秒分镜脚本见 [`docs/promo/demo-script.md`](docs/promo/demo-script.md)。*
 
 ---
 
@@ -164,7 +164,7 @@ es-raiz-vocab/
 │   ├── export_pdf.py         # 可选离线 PDF -> dist/pdf/
 │   ├── make_root_tree_card.py    # 可选：旧版 1200x630 卡片
 │   ├── make_root_tree_social_card.py  # 可选：从真实底图合成 1280x640 卡片
-│   └── make_demo_placeholder.py  # 可选：生成 assets/demo.gif 占位图
+│   └── make_demo_placeholder.py  # 可选：重新生成占位图（不要覆盖真实 GIF）
 ├── mindmaps/                 # 生成物：词根索引 + 每个词族一张图
 ├── levels/                   # 生成物：A1.md ... C2.md
 ├── no-raiz-vocab.md          # 生成物：无词根词清单

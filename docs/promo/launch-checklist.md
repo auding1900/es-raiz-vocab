@@ -9,7 +9,7 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | English landing page | Done | `README.md` |
 | Chinese landing page | Done | `README.md.zh-CN.md` |
 | Root map image | Done | `assets/root_tree.svg`, `assets/root_tree.png` |
-| Demo GIF | **Placeholder only — record manually** | `assets/demo.gif` is a labeled placeholder, not a recording |
+| Demo GIF | **Recorded — 2026-11-08** | `assets/demo.gif`: 640 × 640, 23 frames, 10.02 s, ≈2.3 fps, 162,870 bytes |
 | PDF export | **Built locally** | `dist/pdf/` has 7 PDFs + `SHA256SUMS.txt`; git-ignored, not committed |
 | Static site | **Built locally; deployed** | `site/index.html`; `site/` is git-ignored; Pages workflow runs from `main` |
 | Release | **Published — 2026-11-08** | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>; 8 assets |
@@ -23,26 +23,27 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | --- | --- | --- | --- |
 | Pages enabled and reachable | **OK** | Site loads and renders the root map | Real Pages URL is used; `{{PAGES_URL}}` is not needed |
 | PDF Release published | **OK** | v0.29.1 published with 8 assets | Real Release URL is used; no release placeholder remains |
-| Real demo GIF recorded | **BLOCKED** | `assets/demo.gif` is a labeled placeholder | Product Hunt must not upload it as a demo video; gallery uses screenshots only |
+| Real demo GIF recorded | **OK** | `assets/demo.gif`: 640 × 640, 23 frames, 10.02 s, 162,870 bytes | Product Hunt may use real frames, but 1270 × 760 gallery frames still need checking |
 | Social preview uploaded | **UNVERIFIED** | No API/CLI check available | Reddit link cards may show a default GitHub image; verify manually before posting |
 | `site/` and `dist/` not committed | **OK** | Both are git-ignored | No generated artifacts in the repo |
 
 ## Required human actions
 
-### 1. Record `assets/demo.gif`
+### 1. Verify `assets/demo.gif` (recorded)
 
-- [ ] Follow [`demo-script.md`](demo-script.md) shot by shot.
-- [ ] Use 1920 × 1080, 30 fps, 55–60 seconds.
-- [ ] Hide notifications, personal accounts, tokens, and unrelated tabs.
-- [ ] Replace the current `assets/demo.gif` (a labeled placeholder) with the real recording, target ≤ 10 MB.
-- [ ] The README already embeds `assets/demo.gif`; update the alt text only if the recording differs from the shot list.
-- [ ] Verify the GIF plays on GitHub, not just locally.
+The real recording is in place: 640 × 640, 23 frames, 10.02 s, ≈2.3 fps, 162,870 bytes. It is a compressed square capture, not the original 1920 × 1080 / 55–60 s plan.
+
+- [x] Real recording replaced the labeled placeholder.
+- [x] The READMEs keep the `assets/demo.gif` path.
+- [x] Alt text updated to the 10-second capture.
+- [ ] Confirm the GIF plays on GitHub after the push.
+- [ ] Do not run `make_demo_placeholder.py` while the real file is present; it would overwrite it.
 
 ### 2. Upload the social preview
 
 - [ ] Open the repository on GitHub.
 - [ ] **Settings → Social preview → Edit → Upload an image**.
-- [ ] Upload `assets/root_tree.png` (landscape 1200 × 630).
+- [ ] Upload `assets/root_tree.png` (1280 × 640).
 - [ ] Check the text and the diagram are both legible at small size.
 - [ ] Save and reload the repository page.
 - [ ] Do **not** claim the preview is active until the upload is confirmed.
@@ -123,7 +124,7 @@ Release record: id `438154786`, tag `v0.29.1` at commit `886a5ec`.
 - [ ] Confirm Pages is reachable and the map, levels, search, and copy-prompt button work on desktop and mobile.
 - [ ] Confirm the published Release URL is reachable and the 8 assets are downloadable.
 - [ ] Upload the Social preview and check the card on new Reddit, old Reddit, and mobile.
-- [ ] Replace `assets/demo.gif` with a real recording; re-check the file size and playback on GitHub.
+- [x] Replace `assets/demo.gif` with the real recording; re-check the file size and playback on GitHub.
 - [ ] Re-read every target community's current rules; rules change faster than drafts.
 - [ ] Start or continue 2–4 weeks of genuine participation in the target subreddits and on Product Hunt.
 
@@ -167,7 +168,7 @@ Release record: id `438154786`, tag `v0.29.1` at commit `886a5ec`.
 - [ ] Never beg for upvotes on Product Hunt launch day, by DM, email, Discord, or group chat.
 - [ ] Never promise “passes DELE”, “most effective”, or any absolute learning result.
 - [ ] Never publish a Release link before the Release exists.
-- [ ] Never present the placeholder `assets/demo.gif` as a real demo.
+- [ ] Never overwrite the real `assets/demo.gif` with `make_demo_placeholder.py`; never present a placeholder as a real recording.
 - [ ] Never mass-submit the same PR to multiple awesome lists.
 - [ ] Never buy a V2EX invite code or account just to post.
 

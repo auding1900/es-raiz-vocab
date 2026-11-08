@@ -12,7 +12,7 @@ README visuals for `es-raiz-vocab`.
 | `root_tree_family.png` | Legacy pure PNG render of the older `vid` family (1013 × 1600) | `mindmaps/raiz_v0_vid.md` |
 | `root_tree.png` | 1280 × 640 social card, composed locally from the `mut` base with Pillow | `scripts/make_root_tree_social_card.py` |
 | `root_tree-spec.md` | Social preview spec, selected branch, render commands, and QA checklist | handwritten |
-| `demo.gif` | **Labeled placeholder, not a recording** (1200 × 630) | `scripts/make_demo_placeholder.py` |
+| `demo.gif` | Real 10-second screen recording (640 × 640, 23 frames, ≈2.3 fps, 162,870 bytes) | recorded 2026-11-08 |
 
 ## Why the asset is rendered from a family page, not `root_tree.md`
 
@@ -57,8 +57,8 @@ PUPPETEER_EXECUTABLE_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google
 # 4. Compose the 1280 × 640 social card from the real base
 python scripts/make_root_tree_social_card.py
 
-# 5. Regenerate the labeled demo placeholder (optional)
-python scripts/make_demo_placeholder.py
+# 5. Do not run make_demo_placeholder.py after the real recording exists;
+#    it would overwrite assets/demo.gif with the labeled placeholder.
 ```
 
 Legacy assets: `root_tree_family.png` and `scripts/make_root_tree_card.py` produce the older 1200 × 630 `vid` card. Do not use that script for `root_tree.png`; use `make_root_tree_social_card.py`.
@@ -76,6 +76,7 @@ On Linux, replace the Chrome path with the installed Chrome/Chromium executable,
 - Do not ask an image model to generate the graph structure from a text prompt; use the rendered base and image-to-image expansion only.
 - Do not crop a node or change a CEFR label/color to make the card fit.
 - Do not upload the legacy 1200 × 630 card as the new social preview.
-- Do not present the placeholder GIF as a real recording.
+- Do not overwrite the real recording with `make_demo_placeholder.py`; the script is only for a fresh checkout/placeholder.
+- Do not present a placeholder GIF as a real recording.
 - Do not fabricate a star count or user testimonial.
 - Re-render the assets after changing the data or the Mermaid generator.
