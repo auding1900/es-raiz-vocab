@@ -8,6 +8,30 @@
 
 暂无。
 
+## [0.29.1] - 2026-11-08
+
+数据规模不变：**232 个词根 / 1423 个单词 / 1513 条关系**。
+
+### Added
+
+- 英文 / 中文双语落地页（`README.md`、`README.zh-CN.md`）。
+- 由生成物构建的单页静态站点（`scripts/build_site.py`），通过 GitHub Actions 部署到 GitHub Pages。
+- 词根图卡片与社交预览素材（`assets/`）。
+- 离线 PDF 包：A1–C2 六个等级 + 索引目录，附 `SHA256SUMS.txt`。
+
+### Changed
+
+- 重写 README，明确“只存结构、释义与例句按需生成”的边界。
+- `scripts/export_pdf.py` 新增 `--reuse-images`，复用已渲染图片。
+
+### Fixed
+
+- 移除与 `pages.yml` 冲突的重复 Pages 工作流。
+
+### Docs
+
+- 新增 Phase 3 渠道草稿与 Phase 4 元数据、收尾报告（`docs/promo/`）。
+
 ## [0.29.0] - 2026-10-30
 
 数据规模：**232 个词根 / 1423 个单词 / 1513 条关系**。

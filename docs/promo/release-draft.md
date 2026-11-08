@@ -9,12 +9,12 @@
 
 | Field | Value |
 | --- | --- |
-| Tag | `v0.29.0` (matches the latest `CHANGELOG.md` entry) |
+| Tag | `v0.29.1` |
 | Target | `main` |
-| Title | `v0.29.0 — A navigable Spanish root map (232 roots / 1,423 words)` |
+| Title | `v0.29.1 — A navigable Spanish root map (232 roots / 1,423 words)` |
 | Type | Draft first, then publish after review |
 
-If `v0.29.0` already exists by the time you publish, bump the patch version and update `CHANGELOG.md` first. Do not reuse a tag.
+`v0.29.0` already exists as a tag (it points to the C2 data batch, commit `ec3d2df`), so this release uses `v0.29.1` instead of reusing or moving that tag. `CHANGELOG.md` has the matching `0.29.1` entry.
 
 ## Release body (copy from here)
 
@@ -90,11 +90,11 @@ Attach `SHA256SUMS.txt` too. Verify each PDF opens and has the expected page cou
 Command template (do **not** run automatically):
 
 ```bash
-gh release create v0.29.0 \
+gh release create v0.29.1 \
   dist/pdf/A1.pdf dist/pdf/A2.pdf dist/pdf/B1.pdf \
   dist/pdf/B2.pdf dist/pdf/C1.pdf dist/pdf/C2.pdf \
   dist/pdf/index-toc.pdf dist/pdf/SHA256SUMS.txt \
-  --title "v0.29.0 — A navigable Spanish root map" \
+  --title "v0.29.1 — A navigable Spanish root map" \
   --draft
 ```
 

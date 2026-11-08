@@ -11,11 +11,21 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | Root map image | Done | `assets/root_tree.svg`, `assets/root_tree.png` |
 | Demo GIF | **Placeholder only — record manually** | `assets/demo.gif` is a labeled placeholder, not a recording |
 | PDF export | **Built locally** | `dist/pdf/` has 7 PDFs + `SHA256SUMS.txt`; git-ignored, not committed |
-| Static site | **Built locally; CI workflow added** | `site/index.html`; `site/` is git-ignored |
-| Release | **Not published** | Draft in `docs/promo/release-draft.md` |
-| Pages | **Workflow added; not enabled** | `.github/workflows/pages.yml`; enable manually in Settings |
-| Social preview | **Not uploaded** | Manual step below |
-| Community posts | **Not created / not posted** | Phase 3 |
+| Static site | **Built locally; deployed** | `site/index.html`; `site/` is git-ignored; Pages workflow runs from `main` |
+| Release | **Not published — verified 2026-11-08** | GitHub Releases shows “There aren’t any releases here”; draft in `docs/promo/release-draft.md` |
+| Pages | **Live — verified 2026-11-08** | <https://auding1900.github.io/es-raiz-vocab/> returns the site |
+| Social preview | **Not verified** | No CLI/API evidence; manual step below |
+| Community posts | **Drafts written; not posted** | `docs/promo/reddit-coolgithubprojects.md`, `reddit-spanish-learners.md`, `xiaohongshu.md`, `forum-zh.md`, `producthunt.md`, `awesome-list-pr.md` |
+
+## Phase 3 prerequisite check (2026-11-08)
+
+| Prerequisite | Result | Evidence | Effect on drafts |
+| --- | --- | --- | --- |
+| Pages enabled and reachable | **OK** | Site loads and renders the root map | Real Pages URL is used; `{{PAGES_URL}}` is not needed |
+| PDF Release published | **BLOCKED** | GitHub Releases page: no releases | `{{RELEASE_URL}}` placeholder is kept; no draft contains a `releases/...` link |
+| Real demo GIF recorded | **BLOCKED** | `assets/demo.gif` is a labeled placeholder | Product Hunt must not upload it as a demo video; gallery uses screenshots only |
+| Social preview uploaded | **UNVERIFIED** | No API/CLI check available | Reddit link cards may show a default GitHub image; verify manually before posting |
+| `site/` and `dist/` not committed | **OK** | Both are git-ignored | No generated artifacts in the repo |
 
 ## Required human actions
 
@@ -39,11 +49,11 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 
 There is no API/CLI step here; GitHub social preview is a web-UI setting.
 
-### 3. Enable GitHub Pages
+### 3. Verify GitHub Pages (already live as of 2026-11-08)
 
-Phase 2 adds `.github/workflows/pages.yml`. `site/` is generated in CI and is git-ignored.
+Phase 2 adds `.github/workflows/pages.yml`; `site/` is generated in CI and is git-ignored. The site was reachable on 2026-11-08, so keep these steps for re-verification after workflow or data changes.
 
-- [ ] Merge/push the workflow to `main`.
+- [ ] Confirm the workflow is on `main`.
 - [ ] **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 - [ ] Trigger the workflow: push to `main`, or use **Actions → pages → Run workflow**.
 - [ ] Wait for both the `build` and `deploy` jobs to succeed.
@@ -57,9 +67,11 @@ Phase 2 adds `.github/workflows/pages.yml`. `site/` is generated in CI and is gi
   4. the repository is public and the `github-pages` environment is allowed;
   5. the deploy job URL matches the repository name;
   6. try the URL with a trailing slash.
-- [ ] Only then treat the README “Online demo” link as live.
+- [ ] Re-check the README “Online demo” link after any workflow or data change.
 
-### 4. Publish the PDF Release (if not already generated)
+### 4. Publish the PDF Release (currently not published)
+
+GitHub Releases reported no releases on 2026-11-08. Until a release exists, keep `{{RELEASE_URL}}` in promo drafts and do not add a release link to either README.
 
 - [ ] Check `dist/pdf/A1.pdf` … `C2.pdf` and `index-toc.pdf` exist.
 - [ ] If they do not exist, follow [`pdf-build.md`](pdf-build.md).
@@ -105,6 +117,61 @@ Do not leave the README pointing at a release that does not exist. The current w
 - [ ] `gh repo edit` commands are human-executed only.
 - [ ] Community posts are Phase 3 drafts only; no auto-posting.
 
+## 9. Phase 3 cross-channel timeline
+
+### T−14 days
+
+- [ ] Confirm Pages is reachable and the map, levels, search, and copy-prompt button work on desktop and mobile.
+- [ ] Confirm a PDF Release exists and its URL is real; otherwise keep `{{RELEASE_URL}}` and treat the release as a blocker.
+- [ ] Upload the Social preview and check the card on new Reddit, old Reddit, and mobile.
+- [ ] Replace `assets/demo.gif` with a real recording; re-check the file size and playback on GitHub.
+- [ ] Re-read every target community's current rules; rules change faster than drafts.
+- [ ] Start or continue 2–4 weeks of genuine participation in the target subreddits and on Product Hunt.
+
+### T−7 days
+
+- [ ] Submit the first awesome-list PR (start with `jqhoogland/awesome-language-learning`).
+- [ ] Submit at most one more awesome-list PR; do not batch.
+- [ ] Continue non-promotional participation in r/Spanish and r/learnspanish.
+- [ ] Verify account age/karma against each community's (often unpublished) thresholds.
+- [ ] Prepare the Reddit link post and read it once as a stranger: does it stand without the link?
+
+### T−1 day
+
+- [ ] Finish the Product Hunt draft: tagline, short description, gallery, Maker comment, topics.
+- [ ] Confirm the gallery is 1270 × 760 and contains no placeholder GIF frames.
+- [ ] Human read-through of every Reddit and Xiaohongshu draft; remove marketing tone and absolutes.
+- [ ] Confirm no draft contains `{{RELEASE_URL}}` as a visible link.
+- [ ] Decide the exact publish order and times; write them down.
+
+### T day
+
+- [ ] Publish one channel at a time, in this order: awesome-list PR → Chinese developer post → Xiaohongshu → Reddit (megathread first) → Product Hunt.
+- [ ] Do not post the same link in two subreddits on the same day.
+- [ ] Record the published URL, timestamp, and channel for each post.
+- [ ] Stay online for the first 2 hours after each post; reply to every substantive comment.
+
+### T+1 to T+7
+
+- [ ] Reply to comments daily; do not argue with criticism.
+- [ ] Check GitHub Traffic → Referrers; record which channels actually send visitors.
+- [ ] Do not repost the same link in the same community.
+- [ ] If a post was removed, read the reason before considering any follow-up; wait at least 7 days.
+- [ ] Record real numbers only (visitors, referrers, comments); never convert them into marketing claims.
+
+## 10. Never do
+
+- [ ] Never buy upvotes, stars, comments, or reviews.
+- [ ] Never fabricate testimonials, user counts, learning outcomes, or “used by N people”.
+- [ ] Never use multiple accounts to post or upvote the same link.
+- [ ] Never post self-promotion in a subreddit that forbids it, or outside its designated megathread.
+- [ ] Never beg for upvotes on Product Hunt launch day, by DM, email, Discord, or group chat.
+- [ ] Never promise “passes DELE”, “most effective”, or any absolute learning result.
+- [ ] Never publish a Release link before the Release exists.
+- [ ] Never present the placeholder `assets/demo.gif` as a real demo.
+- [ ] Never mass-submit the same PR to multiple awesome lists.
+- [ ] Never buy a V2EX invite code or account just to post.
+
 ## Final sign-off
 
 | Check | Owner | Date | Result |
@@ -116,3 +183,7 @@ Do not leave the README pointing at a release that does not exist. The current w
 | PDFs built and verified | | | |
 | Release published and linked | | | |
 | Bilingual README links confirmed | | | |
+| Phase 3 channel drafts reviewed | | | |
+| Social preview verified on three Reddit surfaces | | | |
+| Real demo GIF recorded | | | |
+| First awesome-list PR submitted | | | |
