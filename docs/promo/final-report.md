@@ -26,15 +26,14 @@
 | Phase 1 | 英文落地页 `README.md`、中文页 `README.zh-CN.md`、`assets/` 图资产、`demo-script.md`、`release-draft.md`、`pdf-build.md`、`launch-checklist.md`；本地 PDF 导出 | 完成；PDF 已构建并随 `v0.29.1` 发布 |
 | Phase 2 | `scripts/build_site.py`、`site/index.html`（git-ignored）、`.github/workflows/pages.yml`、`site-notes.md`；Pages 已上线 | 完成；`https://auding1900.github.io/es-raiz-vocab/` 可访问（待人工最终确认） |
 | Phase 3 | 6 份渠道草稿：Reddit ×2、小红书、中文开发者渠道、Product Hunt、Awesome-list PR；`launch-checklist.md` 增加跨渠道时间线与 Never-do | 完成；全部为草稿，未发布 |
-| Phase 4 | `github-metadata.md`、本文件；README 条件性检查；最终校验 | 完成；B1 已解决，B2–B4 保留 |
+| Phase 4 | `github-metadata.md`、本文件；README 条件性检查；最终校验 | 完成；B1/B2 已解决，B3/B4 保留 |
 
 ### 当前**没有**完成的事
 
-- `assets/demo.gif` 仍是占位图，不是真实录屏。
 - Social preview 未核实。
 - Pages URL 机器可访问，但未由人工在桌面/移动端最终确认。
 
-PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）。B2–B4 不是 Phase 4 的失败项，而是 Phase 4 之外的人工阻塞项，见第 4 节。
+PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）；`assets/demo.gif` 已替换为真实 10 秒录屏（162,870 bytes）。B3/B4 不是 Phase 4 的失败项，而是 Phase 4 之外的人工阻塞项，见第 4 节。
 
 ## 2. 改动文件清单
 
@@ -55,8 +54,8 @@ PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）。B2–B4 不
 | `assets/README.md` | 手写 | 资产说明、来源与再生成方式 |
 | `assets/root_tree.svg` | 生成 | 由真实词族图/Mermaid 渲染导出，非手绘 |
 | `assets/root_tree_family.png` | 生成 | `vid` 词族的真实渲染图（1013 × 1600） |
-| `assets/root_tree.png` | 生成 | 1200 × 630 横版卡片，供 README 与 Social preview 使用 |
-| `assets/demo.gif` | 生成（占位） | 1200 × 630；**标注过的占位图，不是录屏**，由 `make_demo_placeholder.py` 生成 |
+| `assets/root_tree.png` | 生成 | 1280 × 640 横版 `mut` 卡片，供 README 与 Social preview 使用 |
+| `assets/demo.gif` | 录制 | 640 × 640，23 帧，10.02 s，≈2.3 fps，162,870 bytes；真实录屏（2026-11-08） |
 
 ### `docs/promo/`
 
@@ -88,7 +87,7 @@ PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）。B2–B4 不
 | `scripts/export_pdf.py` | 手写（修改） | 新增 `--reuse-images`，复用已渲染图，避免重复跑 mmdc |
 | `scripts/build_site.py` | 手写（新增） | 从生成的 Markdown 构建单页 `site/index.html` |
 | `scripts/make_root_tree_card.py` | 手写（新增） | 生成 1200 × 630 横版卡片 |
-| `scripts/make_demo_placeholder.py` | 手写（新增） | 生成占位 `assets/demo.gif` |
+| `scripts/make_demo_placeholder.py` | 手写（新增） | 生成占位 GIF；仅在缺少真实录屏时使用，当前真实录屏不使用此脚本 |
 
 ### `.github/`
 
@@ -145,11 +144,11 @@ README 条件性检查结论：
 | # | 阻塞项 | 当前证据 | 影响渠道 | 解决动作 | 解决后回写文件 |
 | --- | --- | --- | --- | --- | --- |
 | B1 | **PDF Release（已解决）** | 2026-11-08 发布 `v0.29.1`，8 个附件大小校验通过 | 已解除；README 与渠道草稿已更新 | 已完成 | `README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`、`docs/promo/final-report.md`、6 份渠道草稿 |
-| B2 | **`assets/demo.gif` 仍是占位图** | 文件内明确标注 placeholder；由 `make_demo_placeholder.py` 生成 | Product Hunt（不能上传为 demo video，gallery 不能用其截帧）；README 的 “See it in motion” 只能显示占位说明 | 按 `demo-script.md` 录制 55–60 秒真实流程，替换 `assets/demo.gif`，验证 GitHub 上可播放、≤ 10 MB | `README.md` / `README.zh-CN.md` 的 alt text（如录屏与分镜不同）、`docs/promo/producthunt.md`、`docs/promo/launch-checklist.md`、本文件 |
-| B3 | **Social preview 未核实** | 无 API/CLI 证据；`gh repo edit` 不能设置 | Reddit link post 缩略图、PH 站外分享、任何 Open Graph 卡片 | 人工在 **Settings → Social preview** 上传 `assets/root_tree.png`（1200 × 630），检查 new Reddit / old Reddit / 移动端 | `docs/promo/github-metadata.md`（标记已上传）、`docs/promo/launch-checklist.md`、`docs/promo/reddit-coolgithubprojects.md`（如需要）、本文件 |
+| B2 | **`assets/demo.gif`（已解决）** | 2026-11-08 替换为真实录屏：640 × 640，23 帧，10.02 s，≈2.3 fps，162,870 bytes；提交 `989706e` | 已解除；PH 可用真实截帧，但 1270 × 760 gallery 仍待检查 | 已完成 | `README.md`、`README.zh-CN.md`、`docs/promo/demo-script.md`、`docs/promo/launch-checklist.md`、`docs/promo/producthunt.md`、本文件 |
+| B3 | **Social preview 未核实** | 无 API/CLI 证据；`gh repo edit` 不能设置 | Reddit link post 缩略图、PH 站外分享、任何 Open Graph 卡片 | 人工在 **Settings → Social preview** 上传 `assets/root_tree.png`（1280 × 640），检查 new Reddit / old Reddit / 移动端 | `docs/promo/github-metadata.md`（标记已上传）、`docs/promo/launch-checklist.md`、`docs/promo/reddit-coolgithubprojects.md`（如需要）、本文件 |
 | B4 | **Pages URL 未人工最终验证** | 2026-11-08 机器抓取成功并渲染词根图；未由人工在桌面/移动端逐项点验 | README 双语“在线体验”、`github-metadata.md` 的 Website、PH Website、Reddit / awesome-list 链接 | 人工打开桌面 + 移动端，验证 Mermaid、词根搜索、A1–C2 切换、单词搜索、豆包跳转、复制指令、no-root 视图 | `README.md`、`README.zh-CN.md`（可移除“若链接尚未生效”的保守说明）、`docs/promo/github-metadata.md`、`docs/promo/launch-checklist.md`、本文件 |
 
-> 说明：B1 已解决；B2 仍是发布类阻塞，B3/B4 是可信度/体验类阻塞。它们不影响仓库本地可运行，但会影响对外发布质量。
+> 说明：B1/B2 已解决；B3/B4 是可信度/体验类阻塞。它们不影响仓库本地可运行，但会影响对外发布质量。
 
 ## 5. 条件性待办
 
@@ -164,13 +163,14 @@ README 条件性检查结论：
 
 回写文件：`README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`（另含本文件与渠道草稿）。
 
-### 5.2 `demo.gif` 替换后
+### 5.2 `demo.gif` 替换后（已完成）
 
-- [ ] 确认 README 的嵌入路径仍是 `assets/demo.gif`，无需改 Markdown 路径。
-- [ ] 如果真实录屏与 `demo-script.md` 分镜不同，更新两版 README 的 alt text。
+- [x] 确认 README 的嵌入路径仍是 `assets/demo.gif`，未改 Markdown 路径。
+- [x] 真实录屏为 640 × 640、23 帧、10.02 s、≈2.3 fps、162,870 bytes；已更新两版 README 的 alt text。
 - [ ] 确认 GitHub 页面上 GIF 能播放，而不只是本地能播。
-- [ ] 确认 Product Hunt gallery 可以从真实录屏截帧；在录制完成前不要使用占位图。
-- [ ] 更新 `docs/promo/launch-checklist.md` 与 `docs/promo/producthunt.md` 的状态。
+- [ ] 确认 Product Hunt gallery 可以从真实录屏截帧，并检查 1270 × 760 的可读性。
+- [x] 更新 `docs/promo/demo-script.md` 与 `launch-checklist.md` 的状态。
+- [x] 提交：`989706e`（真实 GIF 与 README/文档更新）。
 
 ### 5.3 Social preview 上传后
 
@@ -199,7 +199,7 @@ README 条件性检查结论：
 | 4 | Reddit megathread | 需要 2–4 周真实参与；B3（Social preview）建议先完成 | **暂缓** | 先参与、后发链接；不要主动开帖 |
 | 5 | Product Hunt | **B2 必须先解决**（真实 demo）；gallery 1270 × 760；发布前 2–4 周 PH 参与 | **阻塞** | 占位 GIF 不能提交；Release 已发布，但 PH 不以 PDF 为卖点 |
 
-原则：**先做不依赖 Release 和 demo 的动作**；Product Hunt 放在最后，且必须等真实 demo 与素材齐备。
+原则：**先做不依赖 Social preview 的动作**；Release 与 demo GIF 已完成，Product Hunt 仍需 gallery 截帧和参与记录。
 
 ## 7. 不做什么
 
@@ -208,7 +208,7 @@ README 条件性检查结论：
 - 不刷票、不买 upvote / star / 评论 / 评价。
 - 不伪造 star 数、用户数、学习成果、使用数据、社区反馈。
 - 不在 Release 不存在时推广 PDF 下载；本次已在发布后才加链接。
-- 不在 `assets/demo.gif` 仍是占位图时提交 Product Hunt，也不把它当 demo video。
+- 不在 demo 素材或 gallery 未验证时提交 Product Hunt，也不要把 10 秒 GIF 说成完整 demo video。
 - 不使用编造的 URL；占位符只在未验证时保留。
 - 不新增推广渠道（本阶段只有 Phase 3 已列出的渠道）。
 - 不买 V2EX 邀请码或账号。
@@ -221,7 +221,7 @@ README 条件性检查结论：
 
 1. **人工验证 Pages**（B4）：桌面 + 移动端各走一遍；记录截图与时间。
 2. **上传 Social preview**（B3）：`assets/root_tree.png`；检查三端卡片。
-3. **录制并替换 `demo.gif`**（B2）：按 `demo-script.md`，55–60 秒，≤ 10 MB；验证 GitHub 播放。
+3. **（已完成）`demo.gif`**：真实录屏 640 × 640，23 帧，10.02 s，162,870 bytes；GitHub 播放与 PH 截帧仍待人工检查。
 4. **提交 1 个 awesome-list PR**：`jqhoogland/awesome-language-learning` 的 `languages/es/README.md`；只投 1 个。
 5. **准备小红书 7 张图**：从实时站点截 `rad` / `loqu` / `vid`；1080 × 1440；打码个人信息。
 
