@@ -12,7 +12,7 @@
 | 仓库名（正文只写名字） | `es-raiz-vocab` | 已确认存在 |
 | 仓库 URL（放主页简介 / 评论区回复） | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
 | 在线站点 | <https://auding1900.github.io/es-raiz-vocab/> | 2026-11-08 实测可访问 |
-| PDF Release | `{{RELEASE_URL}}` | **未发布**，阻塞项；笔记中不要提“Release 下载” |
+| PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08）；笔记中仍不必提“Release 下载” |
 
 ## 目标受众
 

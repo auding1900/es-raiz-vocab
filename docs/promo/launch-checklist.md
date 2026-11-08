@@ -12,7 +12,7 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | Demo GIF | **Placeholder only — record manually** | `assets/demo.gif` is a labeled placeholder, not a recording |
 | PDF export | **Built locally** | `dist/pdf/` has 7 PDFs + `SHA256SUMS.txt`; git-ignored, not committed |
 | Static site | **Built locally; deployed** | `site/index.html`; `site/` is git-ignored; Pages workflow runs from `main` |
-| Release | **Not published — verified 2026-11-08** | GitHub Releases shows “There aren’t any releases here”; draft in `docs/promo/release-draft.md` |
+| Release | **Published — 2026-11-08** | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>; 8 assets |
 | Pages | **Live — verified 2026-11-08** | <https://auding1900.github.io/es-raiz-vocab/> returns the site |
 | Social preview | **Not verified** | No CLI/API evidence; manual step below |
 | Community posts | **Drafts written; not posted** | `docs/promo/reddit-coolgithubprojects.md`, `reddit-spanish-learners.md`, `xiaohongshu.md`, `forum-zh.md`, `producthunt.md`, `awesome-list-pr.md` |
@@ -22,7 +22,7 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | Prerequisite | Result | Evidence | Effect on drafts |
 | --- | --- | --- | --- |
 | Pages enabled and reachable | **OK** | Site loads and renders the root map | Real Pages URL is used; `{{PAGES_URL}}` is not needed |
-| PDF Release published | **BLOCKED** | GitHub Releases page: no releases | `{{RELEASE_URL}}` placeholder is kept; no draft contains a `releases/...` link |
+| PDF Release published | **OK** | v0.29.1 published with 8 assets | Real Release URL is used; no `{{RELEASE_URL}}` remains |
 | Real demo GIF recorded | **BLOCKED** | `assets/demo.gif` is a labeled placeholder | Product Hunt must not upload it as a demo video; gallery uses screenshots only |
 | Social preview uploaded | **UNVERIFIED** | No API/CLI check available | Reddit link cards may show a default GitHub image; verify manually before posting |
 | `site/` and `dist/` not committed | **OK** | Both are git-ignored | No generated artifacts in the repo |
@@ -69,20 +69,19 @@ Phase 2 adds `.github/workflows/pages.yml`; `site/` is generated in CI and is gi
   6. try the URL with a trailing slash.
 - [ ] Re-check the README “Online demo” link after any workflow or data change.
 
-### 4. Publish the PDF Release (currently not published)
+### 4. Verify the PDF Release (published 2026-11-08)
 
-GitHub Releases reported no releases on 2026-11-08. Until a release exists, keep `{{RELEASE_URL}}` in promo drafts and do not add a release link to either README.
+The PDF release is published as `v0.29.1` with 8 assets. Both READMEs link to it; see <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>.
 
-- [ ] Check `dist/pdf/A1.pdf` … `C2.pdf` and `index-toc.pdf` exist.
-- [ ] If they do not exist, follow [`pdf-build.md`](pdf-build.md).
-- [ ] Open each PDF and verify the cover, TOC, and one graph page.
-- [ ] Generate `SHA256SUMS.txt`.
-- [ ] Follow [`release-draft.md`](release-draft.md) to create a **draft** release.
-- [ ] Upload all seven PDFs plus checksums.
-- [ ] Publish only after human approval.
-- [ ] After publishing, update both READMEs with the real release link.
+- [x] Check `dist/pdf/A1.pdf` … `C2.pdf` and `index-toc.pdf` exist.
+- [x] Verify page counts: A1 10 / A2 36 / B1 62 / B2 76 / C1 51 / C2 12 / index 6.
+- [x] Generate and verify `SHA256SUMS.txt` (`shasum -a 256 -c` passes).
+- [x] Create a draft release and upload all seven PDFs plus checksums.
+- [x] Verify every uploaded asset size against `dist/pdf/` (8/8 matched).
+- [x] Publish the release.
+- [x] Update both READMEs with the real release link.
 
-Do not leave the README pointing at a release that does not exist. The current wording deliberately says PDFs are built locally and are not linked from a release.
+Release record: id `438154786`, tag `v0.29.1` at commit `886a5ec`.
 
 ### 5. Confirm the bilingual README links
 
@@ -92,7 +91,7 @@ Do not leave the README pointing at a release that does not exist. The current w
 - [ ] Both pages use the same online-demo URL.
 - [ ] Both pages say the prompt works with any LLM, not only Doubao.
 - [ ] Both pages say generated files must not be hand-edited.
-- [ ] Both pages avoid claiming a published release or a live Pages site.
+- [ ] Both pages link to the same release (`v0.29.1`) and the same live Pages URL.
 
 ### 6. Verify the repository state
 
@@ -122,7 +121,7 @@ Do not leave the README pointing at a release that does not exist. The current w
 ### T−14 days
 
 - [ ] Confirm Pages is reachable and the map, levels, search, and copy-prompt button work on desktop and mobile.
-- [ ] Confirm a PDF Release exists and its URL is real; otherwise keep `{{RELEASE_URL}}` and treat the release as a blocker.
+- [ ] Confirm the published Release URL is reachable and the 8 assets are downloadable.
 - [ ] Upload the Social preview and check the card on new Reddit, old Reddit, and mobile.
 - [ ] Replace `assets/demo.gif` with a real recording; re-check the file size and playback on GitHub.
 - [ ] Re-read every target community's current rules; rules change faster than drafts.
@@ -141,7 +140,7 @@ Do not leave the README pointing at a release that does not exist. The current w
 - [ ] Finish the Product Hunt draft: tagline, short description, gallery, Maker comment, topics.
 - [ ] Confirm the gallery is 1270 × 760 and contains no placeholder GIF frames.
 - [ ] Human read-through of every Reddit and Xiaohongshu draft; remove marketing tone and absolutes.
-- [ ] Confirm no draft contains `{{RELEASE_URL}}` as a visible link.
+- [ ] Confirm no draft contains a visible `releases/...` link unless the channel actually needs the PDF bundle.
 - [ ] Decide the exact publish order and times; write them down.
 
 ### T day

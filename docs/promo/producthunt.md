@@ -11,7 +11,7 @@
 | --- | --- | --- |
 | 官网 / 首链 | <https://auding1900.github.io/es-raiz-vocab/> | 2026-11-08 实测可访问 |
 | GitHub | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
-| PDF Release | `{{RELEASE_URL}}` | **未发布**，阻塞项；PH 页面与 Maker comment 不要提“下载 PDF” |
+| PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08）；PH 页面与 Maker comment 仍不必提“下载 PDF” |
 | Social preview | `assets/root_tree.png` | 图片存在；**是否已上传到 GitHub 未核实** |
 | Demo video | 无 | `assets/demo.gif` 是占位图，**不是录屏**；不能当 demo video 上传 |
 
@@ -129,7 +129,7 @@ Maker comment 写作要求：
 - PH 的 “Website” 字段填在线站点：`https://auding1900.github.io/es-raiz-vocab/`。
 - Maker comment 里放 GitHub 链接一次；不要在每条评论里重复。
 - 不在 tagline、short description 里放 URL。
-- 不放 `{{RELEASE_URL}}`，因为 Release 尚不存在。
+- PH 页面不需要 Release 链接；Release 已发布，但 PDF 不是本次发布重点，避免把 PH 页面变成下载页。
 
 ## 该平台的具体合规提醒
 
@@ -168,7 +168,7 @@ Maker comment 写作要求：
 - [ ] Maker comment 没有功能清单堆砌、没有 star/用户数、没有 “please support”。
 - [ ] Topic tags 已选 3 个，未选 `Artificial Intelligence`。
 - [ ] Website 字段是在线站点，GitHub 链接只在 Maker comment 出现一次。
-- [ ] Release 链接未出现（当前 `{{RELEASE_URL}}` 未发布）。
+- [ ] PH 页面未把 PDF 下载当作重点（Release 已发布，但 PH 仍以在线站点为首链）。
 - [ ] 发布前 2–4 周已有真实 PH 参与记录。
 - [ ] 发布日日历提醒设在太平洋时间 12:01 AM；全天有人在线回评论。
 - [ ] 已准备好首批评论回复模板（技术问题、质疑、竞品对比各一条），但不复制粘贴同一句。

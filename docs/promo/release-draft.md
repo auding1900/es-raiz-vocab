@@ -1,22 +1,25 @@
-# GitHub Release draft
+# GitHub Release — published record
 
-- Status: **draft only — not published**
+- Status: **published** on 2026-11-08
+- URL: <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>
+- Release id: `438154786`
+- Tag: `v0.29.1` → commit `886a5ec`
+- Assets: 8 files (`A1.pdf` … `C2.pdf`, `index-toc.pdf`, `SHA256SUMS.txt`); every uploaded size was checked against `dist/pdf/`
 - PDFs were built locally on 2026-11-08 (A1 10 / A2 36 / B1 62 / B2 76 / C1 51 / C2 12 pages; `index-toc.pdf` 6 pages). They are in `dist/pdf/` and are **not** committed.
-- Do not run `gh release create` until a human has reviewed the PDFs, the notes, and the README wording.
-- The repository currently has **no** published release. The README says PDFs are built locally and are not linked from a release; do not change that until this release is actually public.
+- Both `README.md` and `README.zh-CN.md` now link to this release.
 
-## Suggested tag and title
+## Published tag and title
 
 | Field | Value |
 | --- | --- |
 | Tag | `v0.29.1` |
-| Target | `main` |
+| Target | `886a5ec` |
 | Title | `v0.29.1 — A navigable Spanish root map (232 roots / 1,423 words)` |
-| Type | Draft first, then publish after review |
+| Type | Published (draft created, assets verified, then published) |
 
 `v0.29.0` already exists as a tag (it points to the C2 data batch, commit `ec3d2df`), so this release uses `v0.29.1` instead of reusing or moving that tag. `CHANGELOG.md` has the matching `0.29.1` entry.
 
-## Release body (copy from here)
+## Published release body
 
 ```markdown
 ## A navigable Spanish root map
@@ -76,18 +79,18 @@ shasum -a 256 A1.pdf A2.pdf B1.pdf B2.pdf C1.pdf C2.pdf index-toc.pdf > SHA256SU
 
 Attach `SHA256SUMS.txt` too. Verify each PDF opens and has the expected page count before uploading.
 
-## Manual publish steps
+## Manual publish steps (kept for the next release)
 
 1. Build the PDFs and confirm all seven files exist.
 2. Open each PDF once; check the cover, table of contents, and at least one graph page.
 3. Generate `SHA256SUMS.txt`.
-4. Create a **draft** release in the GitHub web UI, or run the command below after review.
+4. Create a **draft** release in the GitHub web UI or via the API.
 5. Upload the seven PDFs plus `SHA256SUMS.txt`.
-6. Verify the release preview.
-7. Publish only after human approval.
-8. **After publishing**, update both README files: replace “not currently linked from a release” with the real release link. This is a required follow-up, not an automatic step.
+6. Verify asset sizes and names against `dist/pdf/`.
+7. Publish.
+8. Update both README files with the release link.
 
-Command template (do **not** run automatically):
+Command template used for v0.29.1 (the `gh` CLI was unavailable; the release was created through the GitHub REST API with the same payload):
 
 ```bash
 gh release create v0.29.1 \

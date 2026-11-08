@@ -19,7 +19,7 @@ A navigable Spanish root map: 232 Latin/Greek roots, 1,423 words, 1,513 typed re
 
 - 一句话说清三件事：**navigable root map**、**structure-only repo**、**content generated on demand via any LLM**。
 - 不写 “best / most effective / covers the full DELE syllabus”。
-- 不写 “PDF available in Releases”：Release 尚未发布，见 `final-report.md` 阻塞项。
+- 不写 “PDF available in Releases”：Release 已发布，但仓库描述的重点应是在线站点与结构数据，不是 PDF 下载。
 - 不写 star 数、用户数、使用量。
 - 字符数按 ASCII 计约 258；使用 `–` / `—` 后约 260，仍低于 350 上限。
 

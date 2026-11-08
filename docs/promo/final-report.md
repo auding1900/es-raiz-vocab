@@ -2,8 +2,8 @@
 
 - 日期：2026-11-08
 - 仓库：`auding1900/es-raiz-vocab`（本地工作区路径省略，避免把个人路径写入仓库）
-- 分支 / 提交：`main` @ `60f4f4d`（Phase 3/4 文档尚未提交）
-- 范围：Phase 0–4 收尾。**未发帖、未执行 `gh`、未新增推广渠道、未进入新的发布动作。**
+- 分支 / 提交：`main` @ `886a5ec`（Phase 3/4 文档已提交；Release 发布后有 README 回写提交）
+- 范围：Phase 0–4 收尾 + PDF Release `v0.29.1` 发布。**未发帖、未执行 `gh`、未新增推广渠道。**
 
 ## 1. 项目一句话定位与当前完成度
 
@@ -23,19 +23,18 @@
 | 阶段 | 产出 | 状态 |
 | --- | --- | --- |
 | Phase 0 | `docs/promo/00-audit.md`：README、数据、脚本、仓库元数据审计；风险清单 R1–R10；建议 Description / Topics | 完成 |
-| Phase 1 | 英文落地页 `README.md`、中文页 `README.zh-CN.md`、`assets/` 图资产、`demo-script.md`、`release-draft.md`、`pdf-build.md`、`launch-checklist.md`；本地 PDF 导出 | 完成；PDF 已本地构建，未发布 Release |
+| Phase 1 | 英文落地页 `README.md`、中文页 `README.zh-CN.md`、`assets/` 图资产、`demo-script.md`、`release-draft.md`、`pdf-build.md`、`launch-checklist.md`；本地 PDF 导出 | 完成；PDF 已构建并随 `v0.29.1` 发布 |
 | Phase 2 | `scripts/build_site.py`、`site/index.html`（git-ignored）、`.github/workflows/pages.yml`、`site-notes.md`；Pages 已上线 | 完成；`https://auding1900.github.io/es-raiz-vocab/` 可访问（待人工最终确认） |
 | Phase 3 | 6 份渠道草稿：Reddit ×2、小红书、中文开发者渠道、Product Hunt、Awesome-list PR；`launch-checklist.md` 增加跨渠道时间线与 Never-do | 完成；全部为草稿，未发布 |
-| Phase 4 | `github-metadata.md`、本文件；README 条件性检查；最终校验 | 完成；阻塞项保留 |
+| Phase 4 | `github-metadata.md`、本文件；README 条件性检查；最终校验 | 完成；B1 已解决，B2–B4 保留 |
 
 ### 当前**没有**完成的事
 
-- PDF Release 未发布（GitHub Releases 为空）。
 - `assets/demo.gif` 仍是占位图，不是真实录屏。
 - Social preview 未核实。
 - Pages URL 机器可访问，但未由人工在桌面/移动端最终确认。
 
-这些不是 Phase 4 的失败项，而是 Phase 4 之外的人工阻塞项，见第 4 节。
+PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）。B2–B4 不是 Phase 4 的失败项，而是 Phase 4 之外的人工阻塞项，见第 4 节。
 
 ## 2. 改动文件清单
 
@@ -124,44 +123,44 @@
 | 7 | `git ls-files \| grep -E '^(site\|dist)/\|\.env\|__pycache__'` | **PASS** | 无输出，生成物/环境未被跟踪 |
 | 8 | `git grep` token / 私钥模式扫描 | **PASS** | 无 `ghp_`、`github_pat_`、私钥、`api_key`、`password` 命中 |
 | 9 | `git status --short --ignored` | **PASS** | `site/`、`dist/`、`.env/`、`__pycache__/`、`.DS_Store`、`.vscode/` 均为 ignored，未出现在普通 status |
-| 10 | 占位符检查 | **PASS** | 6 份渠道草稿均保留 `{{RELEASE_URL}}`；`{{PAGES_URL}}` 仅在 `launch-checklist.md` 中说明“不需要”；无编造的 `releases/...` URL |
-| 11 | README 双语一致性 | **PASS** | 顶部互链正确；两版统计数字、A1–C2 表、在线体验 URL 一致；均无 Release 链接 |
+| 10 | 占位符检查 | **PASS** | Release 发布后，渠道草稿中的 `{{RELEASE_URL}}` 已全部替换为真实 `v0.29.1` URL；`{{PAGES_URL}}` 未使用（Pages 已验证）；无编造 URL |
+| 11 | README 双语一致性 | **PASS** | 顶部互链正确；两版统计数字、A1–C2 表、在线体验 URL、Release 链接一致 |
+| 12 | Release 附件校验 | **PASS** | `v0.29.1` 已发布；8 个附件（7 PDF + `SHA256SUMS.txt`）远端大小与 `dist/pdf/` 完全一致；tag 指向 `886a5ec` |
 
 关于占位符的说明：
 
-- `{{RELEASE_URL}}` 因 Release 未发布，在 6 份渠道草稿中**全部保留**，没有被替换成任何编造的 Release URL。
+- `{{RELEASE_URL}}` 在 Release 发布前保留；发布后 6 份渠道草稿中的占位符已替换为真实 URL `https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1`。
 - `{{PAGES_URL}}` 没有出现在渠道草稿中：Pages 已在 2026-11-08 实测可访问，因此草稿直接使用真实 URL `https://auding1900.github.io/es-raiz-vocab/`；只有 `launch-checklist.md` 在说明中提到 `{{PAGES_URL}}` 不需要使用。
-- 如果之后 Pages 失效或迁移，再把真实 URL 统一替换为 `{{PAGES_URL}}`，而不是逐个手改。
+- 后续渠道正文仍不需要 PDF 下载链接；Release URL 只作为记录。
 
 README 条件性检查结论：
 
-- `README.md` 第 233 行：`Prebuilt PDFs are **not committed** and are not currently linked from a release.` — 没有指向空 Release 的承诺。
-- `README.zh-CN.md` 第 233 行：`预构建 PDF **不提交进仓库**，当前也没有指向某个 Release 的下载链接。` — 同样安全。
-- 两版都把 Release 描述为“维护者可以附到 GitHub Release”，并链接到 `release-draft.md`，没有绝对化下载承诺。
+- Release 发布前，`README.md` 与 `README.zh-CN.md` 均写“尚未链接 Release”，没有指向空 Release 的绝对化承诺。
+- Release 发布后，两版已在 “Offline PDFs / 离线 PDF” 段落加入 `v0.29.1` 链接；没有提前使用未来 URL。
 - 两版第 10 行的在线体验链接一致：`https://auding1900.github.io/es-raiz-vocab/`。
-- 因此本次**没有修改 README**；只在第 4 节把“Pages URL 人工确认”和“Release 发布后回写”列为条件性待办。
+- 两版统计数字与 A1–C2 表一致。
 
 ## 4. 阻塞项清单（Phase 4 之外）
 
 | # | 阻塞项 | 当前证据 | 影响渠道 | 解决动作 | 解决后回写文件 |
 | --- | --- | --- | --- | --- | --- |
-| B1 | **PDF Release 未发布** | GitHub Releases 页面显示 “There aren’t any releases here” | 所有草稿中的 `{{RELEASE_URL}}`；README 的“离线 PDF”只能本地构建；PH / Reddit 不能承诺 PDF 下载 | 按 `pdf-build.md` 确认 7 个 PDF + `SHA256SUMS.txt`，按 `release-draft.md` 创建并发布 Release | `README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`、`docs/promo/final-report.md`；如渠道草稿需要 PDF 链接，替换其中的 `{{RELEASE_URL}}` |
+| B1 | **PDF Release 未发布 → 已解决** | 2026-11-08 发布 `v0.29.1`，8 个附件大小校验通过 | 已解除；README 与渠道草稿已更新 | 已完成 | `README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`、`docs/promo/final-report.md`、6 份渠道草稿 |
 | B2 | **`assets/demo.gif` 仍是占位图** | 文件内明确标注 placeholder；由 `make_demo_placeholder.py` 生成 | Product Hunt（不能上传为 demo video，gallery 不能用其截帧）；README 的 “See it in motion” 只能显示占位说明 | 按 `demo-script.md` 录制 55–60 秒真实流程，替换 `assets/demo.gif`，验证 GitHub 上可播放、≤ 10 MB | `README.md` / `README.zh-CN.md` 的 alt text（如录屏与分镜不同）、`docs/promo/producthunt.md`、`docs/promo/launch-checklist.md`、本文件 |
 | B3 | **Social preview 未核实** | 无 API/CLI 证据；`gh repo edit` 不能设置 | Reddit link post 缩略图、PH 站外分享、任何 Open Graph 卡片 | 人工在 **Settings → Social preview** 上传 `assets/root_tree.png`（1200 × 630），检查 new Reddit / old Reddit / 移动端 | `docs/promo/github-metadata.md`（标记已上传）、`docs/promo/launch-checklist.md`、`docs/promo/reddit-coolgithubprojects.md`（如需要）、本文件 |
 | B4 | **Pages URL 未人工最终验证** | 2026-11-08 机器抓取成功并渲染词根图；未由人工在桌面/移动端逐项点验 | README 双语“在线体验”、`github-metadata.md` 的 Website、PH Website、Reddit / awesome-list 链接 | 人工打开桌面 + 移动端，验证 Mermaid、词根搜索、A1–C2 切换、单词搜索、豆包跳转、复制指令、no-root 视图 | `README.md`、`README.zh-CN.md`（可移除“若链接尚未生效”的保守说明）、`docs/promo/github-metadata.md`、`docs/promo/launch-checklist.md`、本文件 |
 
-> 说明：B1 与 B2 是**发布类阻塞**；B3 与 B4 是**可信度/体验类阻塞**。四者都不影响仓库本地可运行，但都会影响对外发布质量。
+> 说明：B1 已解决；B2 仍是发布类阻塞，B3/B4 是可信度/体验类阻塞。它们不影响仓库本地可运行，但会影响对外发布质量。
 
 ## 5. 条件性待办
 
-### 5.1 Release 发布后
+### 5.1 Release 发布后（已完成）
 
-- [ ] 在 `README.md` 的 “Offline PDFs” 段落，把“not currently linked from a release”改为真实 Release 链接与简短下载说明。
-- [ ] 在 `README.zh-CN.md` 的“离线 PDF”段落做同样修改。
-- [ ] 更新 `docs/promo/release-draft.md`：状态改为 **published**，补发布日期、tag、附件数量、Release URL。
-- [ ] 替换渠道草稿中的 `{{RELEASE_URL}}`（仅当该渠道确实需要 PDF 链接；Reddit / PH 草稿默认不需要）。
-- [ ] 更新本文件第 4 节 B1 状态。
-- [ ] **不要**在 Release 发布前提前改 README。
+- [x] 在 `README.md` 的 “Offline PDFs” 段落加入真实 `v0.29.1` Release 链接。
+- [x] 在 `README.zh-CN.md` 的“离线 PDF”段落做同样修改。
+- [x] 更新 `docs/promo/release-draft.md`：状态改为 **published**，补发布日期、tag、附件数量、Release URL。
+- [x] 将渠道草稿中的 `{{RELEASE_URL}}` 替换为真实 URL（渠道正文仍不需要 PDF 下载链接）。
+- [x] 更新本文件第 4 节 B1 状态。
+- [x] 发布后才回写 README，未提前使用未来 URL。
 
 ### 5.2 `demo.gif` 替换后
 
@@ -193,22 +192,22 @@ README 条件性检查结论：
 | 顺序 | 动作 | 前置阻塞项 | 现在能否开始 | 备注 |
 | --- | --- | --- | --- | --- |
 | 1 | Awesome-list PR（先 `jqhoogland/awesome-language-learning`） | 无硬阻塞；建议先完成 B4（Pages 人工确认） | **可以** | 只投 1 个；用仓库链接，不用 Release |
-| 2 | 中文开发者渠道（V2EX → 掘金/知乎） | 无硬阻塞；V2EX 账号可能受限 | **可以**（V2EX 无法发帖则跳过） | 技术角度写，不写西语教学；Release 未发布不影响 |
+| 2 | 中文开发者渠道（V2EX → 掘金/知乎） | 无硬阻塞；V2EX 账号可能受限 | **可以**（V2EX 无法发帖则跳过） | 技术角度写，不写西语教学；Release 已发布，不影响本渠道 |
 | 3 | 小红书 | 需要 7 张 1080 × 1440 截图 | **可以**（先截图） | 不使用 demo.gif；截图来自实时站点 |
 | 4 | Reddit megathread | 需要 2–4 周真实参与；B3（Social preview）建议先完成 | **暂缓** | 先参与、后发链接；不要主动开帖 |
-| 5 | Product Hunt | **B2 必须先解决**（真实 demo）；gallery 1270 × 760；发布前 2–4 周 PH 参与 | **阻塞** | 占位 GIF 不能提交；Release 未发布也不要提 PDF 下载 |
+| 5 | Product Hunt | **B2 必须先解决**（真实 demo）；gallery 1270 × 760；发布前 2–4 周 PH 参与 | **阻塞** | 占位 GIF 不能提交；Release 已发布，但 PH 不以 PDF 为卖点 |
 
 原则：**先做不依赖 Release 和 demo 的动作**；Product Hunt 放在最后，且必须等真实 demo 与素材齐备。
 
 ## 7. 不做什么
 
 - 不发帖、不评论、不私信、不群发。
-- 不执行 `gh` 命令（本文件只记录建议命令，由人工执行）。
+- 不再执行 `gh` 命令；Release 已通过 GitHub REST API 发布。
 - 不刷票、不买 upvote / star / 评论 / 评价。
 - 不伪造 star 数、用户数、学习成果、使用数据、社区反馈。
-- 不在 Release 为空时推广 PDF 下载，不写“去 Releases 下载”。
+- 不在 Release 不存在时推广 PDF 下载；本次已在发布后才加链接。
 - 不在 `assets/demo.gif` 仍是占位图时提交 Product Hunt，也不把它当 demo video。
-- 不把 `{{PAGES_URL}}` / `{{RELEASE_URL}}` 替换成编造的 URL。
+- 不使用编造的 URL；占位符只在未验证时保留。
 - 不新增推广渠道（本阶段只有 Phase 3 已列出的渠道）。
 - 不买 V2EX 邀请码或账号。
 - 不在禁止 self-promotion 的 sub 硬发，不在 PH 发布日 begging for upvotes。
@@ -226,10 +225,10 @@ README 条件性检查结论：
 
 ### 第 2 周
 
-6. **发布 PDF Release**（B1）：7 个 PDF + `SHA256SUMS.txt`；发布后再回写两版 README。
+6. **（已完成）PDF Release**：`v0.29.1`，2026-11-08 发布，8 个附件；两版 README 已回写。
 7. **发 1 篇中文技术稿**：先 V2EX（若账号可用），或先掘金/知乎；不要同日多平台群发。
 8. **开始 Reddit 真实参与**：只回答问题，不发自己的链接；为 T+2 周的 megathread 做准备。
 9. **复查 GitHub Traffic → Referrers**：只记录真实来源，不对外宣称排名或增长。
 10. **Product Hunt 仍暂缓**：等 demo、gallery、PH 参与记录齐备后再排期；不要把“准备中”写成“已发布”。
 
-> 最小可交付版本：完成第 1–3 项（Pages 确认 + Social preview + 真实 demo），即可让 Phase 3 的 Reddit / PH 草稿具备基本发布条件；Release 与 awesome-list 可以并行但不要互相阻塞。
+> 最小可交付版本：完成第 1–3 项（Pages 确认 + Social preview + 真实 demo），即可让 Phase 3 的 Reddit / PH 草稿具备基本发布条件。Release 已完成；awesome-list 可以并行，但不要为了赶进度群发 PR。

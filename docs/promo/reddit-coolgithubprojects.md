@@ -11,9 +11,9 @@
 | --- | --- | --- |
 | 仓库（link post 的 URL 字段） | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
 | 在线站点 | <https://auding1900.github.io/es-raiz-vocab/> | 2026-11-08 实测可访问 |
-| PDF Release | `{{RELEASE_URL}}` | **未发布**（GitHub Releases 显示 “There aren’t any releases here”），阻塞项 |
+| PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08）；正文仍不必放 Release 链接 |
 
-> 本渠道草稿不需要 Release 链接。正文中**不要**补任何 `releases/...` URL。
+> 本渠道草稿不需要 Release 链接。Release 已发布，但正文仍只保留仓库链接。
 
 ## 目标受众
 
@@ -122,6 +122,6 @@ I would rather get criticism of the data model than praise. Is “level on the e
 - [ ] 正文通读一遍，确认“离开链接也值得读”，且没有中文营销腔。
 - [ ] 正文与 URL 字段加起来只有一个仓库链接。
 - [ ] 未出现 star / 用户数 / 评价 / “please star” / “upvote”。
-- [ ] 未出现具体 Release 链接（当前 Release 未发布）。
+- [ ] 正文未出现具体 Release 链接（本渠道只放仓库链接；Release 已发布）。
 - [ ] 发布后 2 小时内在线回评论；被自动移除时先读原因，不重发。
 - [ ] 记录发布 URL、发布时间、首日评论数与移除状态到 launch 记录。

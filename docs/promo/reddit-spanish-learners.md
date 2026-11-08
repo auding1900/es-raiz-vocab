@@ -11,9 +11,9 @@
 | --- | --- | --- |
 | 仓库 | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
 | 在线站点 | <https://auding1900.github.io/es-raiz-vocab/> | 2026-11-08 实测可访问 |
-| PDF Release | `{{RELEASE_URL}}` | **未发布**，阻塞项 |
+| PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08） |
 
-> 本渠道草稿优先使用仓库链接。Release 未发布，任何位置都不要写 `releases/...`。
+> 本渠道草稿优先使用仓库链接。Release 已发布，但正文不需要 PDF 链接。
 
 ## 目标受众
 

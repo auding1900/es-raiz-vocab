@@ -11,7 +11,7 @@
 | --- | --- | --- |
 | 仓库 | <https://github.com/auding1900/es-raiz-vocab> | 已确认存在 |
 | 在线 demo | <https://auding1900.github.io/es-raiz-vocab/> | 2026-11-08 实测可访问 |
-| PDF Release | `{{RELEASE_URL}}` | **未发布**；条目里不要提 PDF 下载 |
+| PDF Release | <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1> | 已发布（2026-11-08）；条目里仍不必提 PDF 下载 |
 
 ## 目标受众
 
@@ -153,7 +153,7 @@ I maintain the project. Happy to adjust the wording, section, or format to match
 ## 链接放置方式
 
 - 条目只放仓库链接；demo 仅在 PR 正文中出现，避免列表条目变成双链接。
-- 不放 Release 链接（`{{RELEASE_URL}}` 尚未发布）。
+- 不放 Release 链接；Release 已发布，但 awesome-list 条目应保持一行，不塞下载页。
 - 不在条目描述里写 “please star / check it out”。
 - 不在 PR 评论里重复贴链接。
 

@@ -230,7 +230,7 @@ Commit `data/` together with the regenerated `mindmaps/` and `levels/` files. If
 
 ## Offline PDFs
 
-Prebuilt PDFs are **not committed** and are not currently linked from a release. Build them locally:
+Prebuilt PDFs are **not committed**. The current bundle is attached to the [v0.29.1 release](https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1). You can also build them locally:
 
 ```bash
 pip install -r requirements.txt
@@ -238,7 +238,7 @@ npm install -g @mermaid-js/mermaid-cli   # or let the script fall back to npx
 python scripts/export_pdf.py --chrome "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
-Output: `dist/pdf/A1.pdf` … `C2.pdf` plus `index-toc.pdf`. `dist/` is git-ignored. Maintainers can attach these files to a GitHub Release; the draft and upload steps are in [`docs/promo/release-draft.md`](docs/promo/release-draft.md). Detailed build notes: [`docs/promo/pdf-build.md`](docs/promo/pdf-build.md).
+Output: `dist/pdf/A1.pdf` … `C2.pdf` plus `index-toc.pdf`. `dist/` is git-ignored. The release assets are built from the same data; upload notes are in [`docs/promo/release-draft.md`](docs/promo/release-draft.md). Detailed build notes: [`docs/promo/pdf-build.md`](docs/promo/pdf-build.md).
 
 PDFs are static snapshots and do not preserve clickable lookup links.
 

@@ -230,7 +230,7 @@ git diff --check
 
 ## 离线 PDF
 
-预构建 PDF **不提交进仓库**，当前也没有指向某个 Release 的下载链接。需要时在本地构建：
+预构建 PDF **不提交进仓库**。当前版本已附在 [v0.29.1 Release](https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1)。也可以在本地构建：
 
 ```bash
 pip install -r requirements.txt
@@ -238,7 +238,7 @@ npm install -g @mermaid-js/mermaid-cli   # 或让脚本自动改用 npx
 python scripts/export_pdf.py --chrome "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
-产物在 `dist/pdf/A1.pdf` … `C2.pdf`，外加 `index-toc.pdf`。`dist/` 已加入 `.gitignore`。维护者可以把这些文件附到 GitHub Release；发布草稿与上传步骤见 [`docs/promo/release-draft.md`](docs/promo/release-draft.md)，构建细节见 [`docs/promo/pdf-build.md`](docs/promo/pdf-build.md)。
+产物在 `dist/pdf/A1.pdf` … `C2.pdf`，外加 `index-toc.pdf`。`dist/` 已加入 `.gitignore`。Release 附件与仓库使用同一份数据；上传记录见 [`docs/promo/release-draft.md`](docs/promo/release-draft.md)，构建细节见 [`docs/promo/pdf-build.md`](docs/promo/pdf-build.md)。
 
 PDF 是静态快照，不保留可点击的查询链接。
 
