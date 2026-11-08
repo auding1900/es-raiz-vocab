@@ -14,9 +14,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)
 
-![一张横向卡片，内容来自自动生成的西语词族图：词根 vid（videre，看见）及其派生词，节点按 CEFR 着色，并带一条 asociar 联想边](assets/root_tree.png)
+![一张横向卡片，内容来自自动生成的西语词族图：词根 mut（mutare，改变）及其派生词，节点按 CEFR 着色](assets/root_tree.png)
 
-*卡片内容来自真实生成的词族页：词根 `vid`（“看见”）、它的派生词、CEFR 配色，以及一条 `asociar` 联想边。完整索引包含 232 个词根，每个词根链接到自己的图页。*
+*卡片内容来自真实生成的词族页：词根 `mut`（“改变”）和 5 个 C1/C2 派生词。完整索引包含 232 个词根，每个词根链接到自己的图页。*
 
 ---
 
@@ -162,7 +162,8 @@ es-raiz-vocab/
 │   ├── generate_mermaid.py   # data -> mindmaps/ + levels/
 │   ├── build_no_raiz.py      # data -> no-raiz-vocab.md + 可选 YAML
 │   ├── export_pdf.py         # 可选离线 PDF -> dist/pdf/
-│   ├── make_root_tree_card.py    # 可选：生成 README / 社交预览横版卡片
+│   ├── make_root_tree_card.py    # 可选：旧版 1200x630 卡片
+│   ├── make_root_tree_social_card.py  # 可选：从真实底图合成 1280x640 卡片
 │   └── make_demo_placeholder.py  # 可选：生成 assets/demo.gif 占位图
 ├── mindmaps/                 # 生成物：词根索引 + 每个词族一张图
 ├── levels/                   # 生成物：A1.md ... C2.md

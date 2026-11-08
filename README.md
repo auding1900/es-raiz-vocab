@@ -14,9 +14,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)
 
-![A landscape card built from a real generated Spanish root-family map for vid (videre, "to see"), with CEFR-colored derivative nodes and an associative link to oír](assets/root_tree.png)
+![A landscape card built from a real generated Spanish root-family map for mut (mutare, to change), with CEFR-colored derivative nodes](assets/root_tree.png)
 
-*Built from a real generated page: root `vid` (“to see”), its derivatives, CEFR colors, and one `asociar` link. The full index contains 232 roots and links to one page per family.*
+*Built from a real generated page: root `mut` (“to change”) and its five C1/C2 derivatives. The full index contains 232 roots and links to one page per family.*
 
 ---
 
@@ -162,7 +162,8 @@ es-raiz-vocab/
 │   ├── generate_mermaid.py   # data -> mindmaps/ + levels/
 │   ├── build_no_raiz.py      # data -> no-raiz-vocab.md + optional YAML
 │   ├── export_pdf.py         # optional offline PDF bundles -> dist/pdf/
-│   ├── make_root_tree_card.py    # optional: landscape README / social card
+│   ├── make_root_tree_card.py    # optional: legacy 1200x630 card
+│   ├── make_root_tree_social_card.py  # optional: 1280x640 card from the real base
 │   └── make_demo_placeholder.py  # optional: labeled assets/demo.gif placeholder
 ├── mindmaps/                 # generated: root index + one graph per family
 ├── levels/                   # generated: A1.md ... C2.md

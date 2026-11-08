@@ -1,10 +1,10 @@
 # Social preview card spec — `assets/root_tree.png`
 
-- Status: **base render ready; final 1280 × 640 card not yet produced**
+- Status: **complete — 1280 × 640 card composed locally with Pillow**
 - Last updated: 2026-11-08
 - Target file: `assets/root_tree.png`
-- Current `assets/root_tree.png`: still the old **1200 × 630** `vid` card. Replace it; do not upload it as the new GitHub Social preview.
-- README reference: both `README.md` and `README.zh-CN.md` already point to `assets/root_tree.png`; keep that path.
+- Current `assets/root_tree.png`: **1280 × 640** `mut` card, composed on 2026-11-08 by `scripts/make_root_tree_social_card.py`; no image model was used.
+- README reference: both `README.md` and `README.zh-CN.md` point to `assets/root_tree.png`; the path is unchanged.
 
 ## 1. Selected branch
 
@@ -43,8 +43,8 @@ Why this branch:
 | --- | --- | --- |
 | `assets/root_tree.svg` | Exact render of the extracted `mut` Mermaid block, `graph LR`; `click` lines removed so the SVG has no interactive links | Ready |
 | `assets/root_tree-social-base.svg` | Top-down presentation layout (`graph TD`) of the same nodes, edges, labels, and classes; **only `rankdir` changed** | Ready |
-| `assets/root_tree-social-base.png` | 1600 × 392 PNG of the top-down layout, intended as the image-to-image base for 豆包 | Ready |
-| `assets/root_tree.png` | Final 1280 × 640 social card | **Still the old 1200 × 630 `vid` card; replace manually** |
+| `assets/root_tree-social-base.png` | 1600 × 392 PNG of the top-down layout, used as the base for the local 1280 × 640 composition (also usable for image-to-image) | Ready |
+| `assets/root_tree.png` | Final 1280 × 640 social card | **Ready — composed locally with `scripts/make_root_tree_social_card.py`** |
 
 The generated page remains `graph LR`. The `TD` version exists only because a left-to-right family graph stacks seven or more siblings vertically and becomes unreadable when fitted into a 2:1 social card. No node, edge, label, CEFR value, or color was changed.
 
@@ -92,15 +92,17 @@ Suggested composition:
 
 The diagram can run full-width under the title. Leave the bottom area empty rather than adding more text.
 
-## 5. Recommended workflow
+## 5. Completed workflow
 
-1. Start from `assets/root_tree-social-base.png` (1600 × 392) or `assets/root_tree-social-base.svg`.
-2. Use 豆包 / Seedream as an **image-to-image / canvas-expansion** tool, not as a text-to-image generator.
-3. Expand the canvas to **1280 × 640**, keep the diagram unchanged, add only the project name and the one sentence.
-4. Export PNG at 1280 × 640, sRGB, < 1 MB.
-5. Verify every character manually against this spec and `mindmaps/raiz_b12_mut.md`.
-6. Replace `assets/root_tree.png`. Do not change the README image path.
-7. Upload the new file in **GitHub → Settings → Social preview**, then check new Reddit, old Reddit, and mobile.
+The current card was composed locally with `scripts/make_root_tree_social_card.py` on 2026-11-08. No image model was used.
+
+1. Render the real `mut` Mermaid block to `assets/root_tree-social-base.png`.
+2. Run `python scripts/make_root_tree_social_card.py`; it scales the diagram uniformly and adds only the project name and the one sentence.
+3. Verify every character against this spec and `mindmaps/raiz_b12_mut.md`.
+4. Replace `assets/root_tree.png`; the README image path stays the same.
+5. Upload the file in **GitHub → Settings → Social preview**, then check new Reddit, old Reddit, and mobile.
+
+For a future redesign, the same rule applies: start from the real render. The 豆包 prompt below is optional and must be used as **image-to-image**, never text-to-image.
 
 Suggested 豆包 prompt (image-to-image):
 
