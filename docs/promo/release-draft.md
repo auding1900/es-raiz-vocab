@@ -4,7 +4,7 @@
 - URL: <https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>
 - Release id: `438154786`
 - Tag: `v0.29.1` → commit `886a5ec`
-- Assets: 8 files (`A1.pdf` … `C2.pdf`, `index-toc.pdf`, `SHA256SUMS.txt`); every uploaded size was checked against `dist/pdf/`
+- Assets: 8 files = 7 PDFs (`A1.pdf` … `C2.pdf`, `index-toc.pdf`) + `SHA256SUMS.txt`; every uploaded size was checked against `dist/pdf/`
 - PDFs were built locally on 2026-11-08 (A1 10 / A2 36 / B1 62 / B2 76 / C1 51 / C2 12 pages; `index-toc.pdf` 6 pages). They are in `dist/pdf/` and are **not** committed.
 - Both `README.md` and `README.zh-CN.md` now link to this release.
 

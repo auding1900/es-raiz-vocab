@@ -22,7 +22,7 @@ This checklist covers Phase 1 assets, the Phase 2 static site/Pages workflow, an
 | Prerequisite | Result | Evidence | Effect on drafts |
 | --- | --- | --- | --- |
 | Pages enabled and reachable | **OK** | Site loads and renders the root map | Real Pages URL is used; `{{PAGES_URL}}` is not needed |
-| PDF Release published | **OK** | v0.29.1 published with 8 assets | Real Release URL is used; no `{{RELEASE_URL}}` remains |
+| PDF Release published | **OK** | v0.29.1 published with 8 assets | Real Release URL is used; no release placeholder remains |
 | Real demo GIF recorded | **BLOCKED** | `assets/demo.gif` is a labeled placeholder | Product Hunt must not upload it as a demo video; gallery uses screenshots only |
 | Social preview uploaded | **UNVERIFIED** | No API/CLI check available | Reddit link cards may show a default GitHub image; verify manually before posting |
 | `site/` and `dist/` not committed | **OK** | Both are git-ignored | No generated artifacts in the repo |

@@ -123,19 +123,19 @@ PDF Release 已在 2026-11-08 发布为 `v0.29.1`（8 个附件）。B2–B4 不
 | 7 | `git ls-files \| grep -E '^(site\|dist)/\|\.env\|__pycache__'` | **PASS** | 无输出，生成物/环境未被跟踪 |
 | 8 | `git grep` token / 私钥模式扫描 | **PASS** | 无 `ghp_`、`github_pat_`、私钥、`api_key`、`password` 命中 |
 | 9 | `git status --short --ignored` | **PASS** | `site/`、`dist/`、`.env/`、`__pycache__/`、`.DS_Store`、`.vscode/` 均为 ignored，未出现在普通 status |
-| 10 | 占位符检查 | **PASS** | Release 发布后，渠道草稿中的 `{{RELEASE_URL}}` 已全部替换为真实 `v0.29.1` URL；`{{PAGES_URL}}` 未使用（Pages 已验证）；无编造 URL |
+| 10 | 占位符检查 | **PASS** | Release 发布后，渠道草稿中的 Release 占位符已全部替换为真实 `v0.29.1` URL；`{{PAGES_URL}}` 未使用（Pages 已验证）；无编造 URL |
 | 11 | README 双语一致性 | **PASS** | 顶部互链正确；两版统计数字、A1–C2 表、在线体验 URL、Release 链接一致 |
 | 12 | Release 附件校验 | **PASS** | `v0.29.1` 已发布；8 个附件（7 PDF + `SHA256SUMS.txt`）远端大小与 `dist/pdf/` 完全一致；tag 指向 `886a5ec` |
 
 关于占位符的说明：
 
-- `{{RELEASE_URL}}` 在 Release 发布前保留；发布后 6 份渠道草稿中的占位符已替换为真实 URL `https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1`。
+- Release 占位符在发布前保留；发布后 6 份渠道草稿中的占位符已替换为真实 URL `https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1`。
 - `{{PAGES_URL}}` 没有出现在渠道草稿中：Pages 已在 2026-11-08 实测可访问，因此草稿直接使用真实 URL `https://auding1900.github.io/es-raiz-vocab/`；只有 `launch-checklist.md` 在说明中提到 `{{PAGES_URL}}` 不需要使用。
 - 后续渠道正文仍不需要 PDF 下载链接；Release URL 只作为记录。
 
 README 条件性检查结论：
 
-- Release 发布前，`README.md` 与 `README.zh-CN.md` 均写“尚未链接 Release”，没有指向空 Release 的绝对化承诺。
+- Release 发布前，`README.md` 与 `README.zh-CN.md` 均未提供 Release 下载链接，没有指向空 Release 的绝对化承诺。
 - Release 发布后，两版已在 “Offline PDFs / 离线 PDF” 段落加入 `v0.29.1` 链接；没有提前使用未来 URL。
 - 两版第 10 行的在线体验链接一致：`https://auding1900.github.io/es-raiz-vocab/`。
 - 两版统计数字与 A1–C2 表一致。
@@ -144,7 +144,7 @@ README 条件性检查结论：
 
 | # | 阻塞项 | 当前证据 | 影响渠道 | 解决动作 | 解决后回写文件 |
 | --- | --- | --- | --- | --- | --- |
-| B1 | **PDF Release 未发布 → 已解决** | 2026-11-08 发布 `v0.29.1`，8 个附件大小校验通过 | 已解除；README 与渠道草稿已更新 | 已完成 | `README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`、`docs/promo/final-report.md`、6 份渠道草稿 |
+| B1 | **PDF Release（已解决）** | 2026-11-08 发布 `v0.29.1`，8 个附件大小校验通过 | 已解除；README 与渠道草稿已更新 | 已完成 | `README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`、`docs/promo/final-report.md`、6 份渠道草稿 |
 | B2 | **`assets/demo.gif` 仍是占位图** | 文件内明确标注 placeholder；由 `make_demo_placeholder.py` 生成 | Product Hunt（不能上传为 demo video，gallery 不能用其截帧）；README 的 “See it in motion” 只能显示占位说明 | 按 `demo-script.md` 录制 55–60 秒真实流程，替换 `assets/demo.gif`，验证 GitHub 上可播放、≤ 10 MB | `README.md` / `README.zh-CN.md` 的 alt text（如录屏与分镜不同）、`docs/promo/producthunt.md`、`docs/promo/launch-checklist.md`、本文件 |
 | B3 | **Social preview 未核实** | 无 API/CLI 证据；`gh repo edit` 不能设置 | Reddit link post 缩略图、PH 站外分享、任何 Open Graph 卡片 | 人工在 **Settings → Social preview** 上传 `assets/root_tree.png`（1200 × 630），检查 new Reddit / old Reddit / 移动端 | `docs/promo/github-metadata.md`（标记已上传）、`docs/promo/launch-checklist.md`、`docs/promo/reddit-coolgithubprojects.md`（如需要）、本文件 |
 | B4 | **Pages URL 未人工最终验证** | 2026-11-08 机器抓取成功并渲染词根图；未由人工在桌面/移动端逐项点验 | README 双语“在线体验”、`github-metadata.md` 的 Website、PH Website、Reddit / awesome-list 链接 | 人工打开桌面 + 移动端，验证 Mermaid、词根搜索、A1–C2 切换、单词搜索、豆包跳转、复制指令、no-root 视图 | `README.md`、`README.zh-CN.md`（可移除“若链接尚未生效”的保守说明）、`docs/promo/github-metadata.md`、`docs/promo/launch-checklist.md`、本文件 |
@@ -158,9 +158,11 @@ README 条件性检查结论：
 - [x] 在 `README.md` 的 “Offline PDFs” 段落加入真实 `v0.29.1` Release 链接。
 - [x] 在 `README.zh-CN.md` 的“离线 PDF”段落做同样修改。
 - [x] 更新 `docs/promo/release-draft.md`：状态改为 **published**，补发布日期、tag、附件数量、Release URL。
-- [x] 将渠道草稿中的 `{{RELEASE_URL}}` 替换为真实 URL（渠道正文仍不需要 PDF 下载链接）。
+- [x] 将渠道草稿中的 Release 占位符替换为真实 URL（渠道正文仍不需要 PDF 下载链接）。
 - [x] 更新本文件第 4 节 B1 状态。
 - [x] 发布后才回写 README，未提前使用未来 URL。
+
+回写文件：`README.md`、`README.zh-CN.md`、`docs/promo/release-draft.md`（另含本文件与渠道草稿）。
 
 ### 5.2 `demo.gif` 替换后
 

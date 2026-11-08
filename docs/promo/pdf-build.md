@@ -129,8 +129,4 @@ dist/
 
 ## Release wording
 
-Do not add a “Download the PDFs from Releases” line to either README until the release is actually published. The current README wording is deliberate:
-
-> Prebuilt PDFs are not committed and are not currently linked from a release. Build them locally…
-
-After publishing, update both README files with the real release URL.
+The release is published as `v0.29.1` (<https://github.com/auding1900/es-raiz-vocab/releases/tag/v0.29.1>). Both READMEs link to it. If you rebuild PDFs for a future release, do not change the README link until that release is actually public.
