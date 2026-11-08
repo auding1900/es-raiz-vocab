@@ -643,6 +643,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument("--mmdc", default=None, help="mmdc 可执行文件路径（默认自动探测）")
     parser.add_argument("--chrome", default=None, help="传给 puppeteer 的浏览器路径（默认自动探测系统 Chrome）")
     parser.add_argument("--timeout", type=int, default=180, help="单个 mmd 渲染超时秒数")
+    parser.add_argument("--reuse-images", action="store_true",
+                        help="复用 dist/img 下已有 PNG，不重新渲染（适合分批渲染后统一组装）")
     parser.add_argument("--dry-run", action="store_true", help="只扫描并打印计划")
     args = parser.parse_args(argv)
 
@@ -675,11 +677,11 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     jobs = write_mmd_files(repo, dist, volumes, wanted)
     mmdc = find_mmdc(args.mmdc)
-    if mmdc is None:
+    if mmdc is None and not args.reuse_images:
         warn("未找到 mermaid-cli，请先 npm i -g @mermaid-js/mermaid-cli 或用 --mmdc 指定")
         return 3
-    puppeteer = ensure_puppeteer_config(dist, detect_chrome(args.chrome))
-    if detect_chrome(args.chrome):
+    puppeteer = ensure_puppeteer_config(dist, detect_chrome(args.chrome)) if mmdc else None
+    if mmdc and detect_chrome(args.chrome):
         log("使用浏览器：{0}".format(detect_chrome(args.chrome)))
 
     builder = build_volume_pdf_weasy if args.engine == "weasyprint" else build_volume_pdf
@@ -691,8 +693,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         log("{0}：渲染 {1} 张图".format(level, len(entries)))
         rendered: List[Tuple[str, Path, Path]] = []
         for title, mmd_path, png_path in entries:
+            if args.reuse_images and png_path.exists():
+                log("  = {0}（复用）".format(png_path.relative_to(dist)))
+                rendered.append((title, png_path, mmd_path))
+                continue
             log("  - {0} -> {1}".format(mmd_path.name, png_path.relative_to(dist)))
-            if render_png(mmdc, mmd_path, png_path, puppeteer, args.timeout):
+            if mmdc is not None and render_png(mmdc, mmd_path, png_path, puppeteer, args.timeout):
                 rendered.append((title, png_path, mmd_path))
         if not rendered:
             warn("{0} 没有可用图片，跳过该分册".format(level))

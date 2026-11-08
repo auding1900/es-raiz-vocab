@@ -5,6 +5,7 @@
 # ---- Python ----
 __pycache__/
 *.py[cod]
+*.pyc
 *$py.class
 *.so
 .Python
@@ -22,6 +23,7 @@ wheels/
 MANIFEST
 
 # ---- 虚拟环境 ----
+.env
 .env/
 .venv/
 venv/
@@ -72,3 +74,7 @@ $RECYCLE.BIN/
 # dist/ 里是渲染出的 PNG 与 PDF，仅用于手动上传到 GitHub Releases，
 # 不提交进代码主分支。
 dist/
+
+# ---- GitHub Pages 构建产物（scripts/build_site.py）----
+# site/ 由 GitHub Actions 构建并上传，不提交进仓库。
+site/

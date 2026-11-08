@@ -8,3 +8,6 @@ PyYAML>=6.0
 reportlab>=4.0,<5
 # 可选：想用 --engine weasyprint 时再装（需要系统 pango，macOS 可 brew install pango）
 # weasyprint>=60.0
+#
+# 可选：仅 scripts/make_demo_placeholder.py 与 scripts/make_root_tree_card.py 需要
+# pillow>=9
