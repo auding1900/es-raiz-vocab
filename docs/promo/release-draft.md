@@ -90,7 +90,7 @@ Attach `SHA256SUMS.txt` too. Verify each PDF opens and has the expected page cou
 7. Publish.
 8. Update both README files with the release link.
 
-Command template used for v0.29.1 (the `gh` CLI was unavailable; the release was created through the GitHub REST API with the same payload):
+Command template for the next release (the `gh` CLI was unavailable on 2026-11-08; `v0.29.1` was created through the GitHub REST API with the same payload, then published after asset verification):
 
 ```bash
 gh release create v0.29.1 \
